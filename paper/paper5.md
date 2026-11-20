@@ -163,7 +163,7 @@ Statement 1 is the classical estimability condition for a two-way additive layou
 
 **Inference and reproducibility.** The patient is the resampling unit throughout [30], and exploratory analyses carry no correction across analyses. A verifier checks the results stated in the main text, each copy of them, and the supplementary numbers they rest on against the result files. Each script that writes a reported result, except training, reproduced in a fresh directory to a relative tolerance of $10^{-9}$, timing fields excluded. This includes both runs of the route test, whose files need the pinned package versions (Supplementary Material, "Reproducing these analyses"). This confirms the pipeline, not the measurement.
 
-Artifact claims now have an estimand, a transfer condition and an equivalence rule. Concept claims have a footprint-relative target that, under the additive form, a library identifies only through a route ending in a latently neutral control; the concept effect $\theta^C$ needs C3, which the current edit fails by design. Section IV applies these tools.
+Artifact claims now have an estimand, a transfer condition and an equivalence rule. Concept claims have a footprint-relative target that, under the additive form, a library identifies only through a route ending in a latently neutral control; the concept effect $\theta^C$ needs C3. The current edit fails the fixed-level part of C3b by design, and C3a is untested. Section IV applies these tools.
 
 ## IV. Results
 
