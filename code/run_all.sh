@@ -81,6 +81,7 @@ SCRIPTS=(
   c86_batch_context_first_run
   c87_route_feature_strata
   c88_artifact_inv_epoch1
+  c89_fullfold_artifact
   make_figures_split
   make_fig_edit_examples
   make_fig_shrinkage
@@ -136,12 +137,12 @@ done
 } >> "$MASTER"
 
 # compare what was produced against the numbers the manuscript states
-"$PY" "$HERE/verify_paper3.py" > "$LOG/verify_paper3.log" 2>&1
+"$PY" "$HERE/verify_paper5.py" > "$LOG/verify_paper5.log" 2>&1
 vrc=$?
 case $vrc in
-    0) echo "verification (paper3): passed, see log/verify_paper3.log" ;;
-    2) echo "verification (paper3): NOT RUN, paper3.md or supplementary3.md missing in paper/ or PAPER_DIR (see log/verify_paper3.log)" ;;
-    *) echo "verification (paper3): FAILED rc=$vrc, see log/verify_paper3.log" ;;
+    0) echo "verification (paper5): passed, see log/verify_paper5.log" ;;
+    2) echo "verification (paper5): NOT RUN, paper5.md or supplementary5.md missing in paper/ or PAPER_DIR (see log/verify_paper5.log)" ;;
+    *) echo "verification (paper5): FAILED rc=$vrc, see log/verify_paper5.log" ;;
 esac >> "$MASTER"
 echo "=== all done $(date -Is) ===" >> "$MASTER"
 

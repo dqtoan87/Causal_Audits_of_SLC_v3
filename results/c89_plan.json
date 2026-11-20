@@ -1,0 +1,38 @@
+{
+ "analysis": "c89_fullfold_artifact: artifact tier on the whole audit fold",
+ "status": "POST HOC sensitivity, declared before running; headline results (c56, c60) were seen. Never replaces the headline. Report whatever it shows.",
+ "fixed_at": "2026-11-20T20:02:28+0700",
+ "script": "code/c89_fullfold_artifact.py",
+ "script_sha256_at_plan": "4b4c0f6b395e9e17303333fb367494667fb1a89add76fdf6559e0ccdd23acbd1",
+ "source": "paper/v5_work/ext01_response_plan.md, Section 4, AN1; review item P1-1",
+ "images": "all 4,233 audit-fold images (frozen_split), 83 malignant + 4,150 benign frame, 199 patients (198 with benign, 44 with malignant)",
+ "scoring": "c60_design_coverage.score_frame unchanged: six dj_* checkpoints, held-out overlays hair_light, hair, hair_heavy, ruler; ImageNet normalisation (guarded); bf16 autocast; batch 32 in chunks of 128; per-image magnitude = mean |dp| over the 4 overlays, signed = mean dp",
+ "overlay_realization_primary": "c60 rule: RandomState(42 + fold position); differs from Table 1 (RandomState(42 + cohort index))",
+ "overlay_realization_secondary": "hybrid: 183 cohort images carry the Table 1 realization (c85 vectors), the other 4,050 the c60 rule",
+ "cells": "36 components = 6 checkpoints x {all, mal, ben} x {magnitude, signed}; 18 magnitude cells carry the exceedance claims",
+ "all_weighting_primary": "(83*mal + 100*ben)/183, fixed design weights in every resample (c60 design target)",
+ "all_weighting_secondary": "image-weighted pooled mean over 4,233 images",
+ "band": "c56 protocol: studentized max-statistic patient bootstrap over 36 components, 20,000 resamples of patients with all their images, RandomState(41), 95th percentile; interval est +- crit*se; marginal = 2.5/97.5 percentiles of draws (c40)",
+ "readouts": [
+  "frontier = min simultaneous lower end over 18 magnitude cells",
+  "count exceeding 0.05 jointly",
+  "count exceeding 0.05 marginally",
+  "signed decisions (c56.decide)",
+  "18-magnitude-only critical value"
+ ],
+ "rounding": "lower ends and frontiers floor to 3 dp; upper ends ceil to 3 dp; estimates round to 3 dp",
+ "checks": {
+  "band_code": "band() on c85 vectors with pooled rule reproduces c56 crit 3.118 and frontier 0.0422 (done before plan, max diff 6e-8)",
+  "dry_run": "score_frame on first 32 and 20 cohort ids vs c85 vectors; pass if n32 max abs diff <= 1e-6; stop if fail",
+  "full_run": "fold means of mal/ben reproduce c60 design targets (report max abs diff; pass at 1e-6)"
+ },
+ "outputs": [
+  "results/c89_fullfold_vectors.npz",
+  "results/c89_fullfold_band.json",
+  "results/c89_dryrun.json",
+  "log/c89_*.log",
+  "log/c89_run_info.txt",
+  "log/c89_exit_code.txt"
+ ],
+ "no_tuning": "no choice above is changed after outputs are seen"
+}

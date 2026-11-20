@@ -1,0 +1,5 @@
+  scored 32/32 (11s)
+dry run n=32: max abs diff vs c85 = 0
+  scored 20/20 (5s)
+dry run n=20: max abs diff vs c85 = 0.25
+dry run pass: True -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c89_dryrun.json

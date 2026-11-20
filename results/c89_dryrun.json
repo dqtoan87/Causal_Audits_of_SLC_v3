@@ -1,0 +1,65 @@
+{
+ "what": "score_frame on leading cohort images in cohort order vs results/c85_artifact_vectors.npz",
+ "n32": {
+  "per_checkpoint": {
+   "b3-ERM": {
+    "max_abs_diff_mag": 0.0,
+    "max_abs_diff_sgn": 0.0
+   },
+   "b3-Slim": {
+    "max_abs_diff_mag": 0.0,
+    "max_abs_diff_sgn": 0.0
+   },
+   "b3-Inv": {
+    "max_abs_diff_mag": 0.0,
+    "max_abs_diff_sgn": 0.0
+   },
+   "r50-ERM": {
+    "max_abs_diff_mag": 0.0,
+    "max_abs_diff_sgn": 0.0
+   },
+   "r50-Slim": {
+    "max_abs_diff_mag": 0.0,
+    "max_abs_diff_sgn": 0.0
+   },
+   "r50-Inv": {
+    "max_abs_diff_mag": 0.0,
+    "max_abs_diff_sgn": 0.0
+   }
+  },
+  "max_abs_diff": 0.0,
+  "sec": 23.6
+ },
+ "n20": {
+  "per_checkpoint": {
+   "b3-ERM": {
+    "max_abs_diff_mag": 0.020858794450759888,
+    "max_abs_diff_sgn": 0.18212126195430756
+   },
+   "b3-Slim": {
+    "max_abs_diff_mag": 0.24726539850234985,
+    "max_abs_diff_sgn": 0.25
+   },
+   "b3-Inv": {
+    "max_abs_diff_mag": 0.003683924674987793,
+    "max_abs_diff_sgn": 0.003683924674987793
+   },
+   "r50-ERM": {
+    "max_abs_diff_mag": 0.0014400780200958252,
+    "max_abs_diff_sgn": 0.0014647990465164185
+   },
+   "r50-Slim": {
+    "max_abs_diff_mag": 0.002353355288505554,
+    "max_abs_diff_sgn": 0.002353355288505554
+   },
+   "r50-Inv": {
+    "max_abs_diff_mag": 0.000822901725769043,
+    "max_abs_diff_sgn": 0.0012782365083694458
+   }
+  },
+  "max_abs_diff": 0.25,
+  "sec": 16.6
+ },
+ "criterion": "n32 max abs diff <= 1e-6 (c85 is stored as float32)",
+ "pass": true
+}

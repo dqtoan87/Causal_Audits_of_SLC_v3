@@ -1,0 +1,12 @@
+c89 full-fold artifact band (POST HOC sensitivity)
+started: 2026-11-20T20:04:18+0700
+command: tmux new-session -d -s c89 "bash /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/log/c89_run.sh"
+  runs: /mnt/data2/Toan/Causal_ML_XAI/.venv/bin/python -u code/c89_fullfold_artifact.py (cwd /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear)
+tmux session: c89; pane pid: 3034373; python pid: 3034376 (pgrep at launch returned 3033025 in error; verified with ps)
+script sha256: 4b4c0f6b395e9e17303333fb367494667fb1a89add76fdf6559e0ccdd23acbd1
+plan: results/c89_plan.json (fixed_at 2026-11-20T20:02:28+0700)
+seeds: overlays RandomState(42 + fold position) via c60.score_frame; bootstrap RandomState(41), 20000 resamples
+dry run: results/c89_dryrun.json, log/c89_dryrun.log (n32 max abs diff vs c85 = 0, pass)
+outputs: results/c89_fullfold_vectors.npz, results/c89_fullfold_band.json
+log: log/c89_full.log; exit code + end time: log/c89_exit_code.txt
+restart: bash /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/log/c89_run.sh (reuses cached scores if present)

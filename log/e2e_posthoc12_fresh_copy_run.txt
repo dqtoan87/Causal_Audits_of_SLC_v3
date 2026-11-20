@@ -1,0 +1,39 @@
+# Twelfth fresh-directory run: c89 (2026-11-20)
+# The directory was a copy of the working tree of this repository at commit 80925cf97419c4795c11bc6ee4a6fa6481689159 with c89 added (not yet
+# committed), without .git and without the three result files c89 writes, which were moved aside before the run:
+# c89_dryrun.json, c89_fullfold_band.json and c89_fullfold_vectors.npz. It held the stored split and audit cohort,
+# the c60 and c85 results that c89 checks against, the plan c89_plan.json, and symlinks to the six audited
+# checkpoints dj_{erm,slim,causal}_{b3,r50}.pt of release checkpoints-v1.1 (checked against its SHA256SUMS).
+# DATA_ROOT was left at the README's path on this machine, so c89 rescored the 4,233 audit-fold images from the
+# ISIC-2024 images. c89 ran twice, as when its results were produced: --dry-run, then the full analysis.
+# Results are compared with the committed files leaf by leaf at a relative tolerance of 1e-9, ignoring the timing
+# fields runtime_sec, scoring_sec and sec; NPZ arrays must be identical.
+#
+# Outcome: every number equals the committed one. c89_fullfold_vectors.npz is byte-identical. c89_dryrun.json and
+# c89_fullfold_band.json differ only in their timing fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-20T20:54:56+07:00 pid 3317362 ===
+interpreter <venv>/bin/python: Pillow 12.1.1, NumPy 2.4.2, SciPy 1.17.0, torch 2.10.0+cu128
+-- checkpoints (symlinks to the released files), against SHA256SUMS of checkpoints-v1.1
+dj_causal_b3.pt: OK
+dj_causal_r50.pt: OK
+dj_erm_b3.pt: OK
+dj_erm_r50.pt: OK
+dj_slim_b3.pt: OK
+dj_slim_r50.pt: OK
+-- post hoc manifest before the run (c89 entries)
+results/c89_plan.json: OK
+c89_fullfold_artifact --dry-run    rc=0     41s
+c89_fullfold_artifact              rc=0    836s
+=== finished 2026-11-20T21:09:37+07:00 ===
+
+== comparison (the three result files written by the run)
+c89_dryrun.json              EQUAL (29 leaves) (byte-identical: False)
+c89_fullfold_band.json       EQUAL (874 leaves) (byte-identical: False)
+c89_fullfold_vectors.npz     IDENTICAL arrays (byte-identical: True)
+files compared: 3, differing: 0
+compare rc=0
+
+== summary
+files written: 3, differing: 0 (apart from timing fields)

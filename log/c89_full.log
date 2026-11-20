@@ -1,0 +1,14 @@
+audit fold: 4233 images, 83 malignant, 199 patients
+  scored 128/4233 (40s)
+  scored 768/4233 (223s)
+  scored 1408/4233 (427s)
+  scored 2048/4233 (605s)
+  scored 2688/4233 (784s)
+  scored 3328/4233 (953s)
+  scored 3968/4233 (1130s)
+stage 1: scored 4233 images in 1206s -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c89_fullfold_vectors.npz
+check vs c60 design targets: max abs diff 0
+primary: crit 3.060 frontier 0.0700 exceed joint 18 marginal 18 (0s)
+pooled: crit 3.069 frontier 0.0698 exceed joint 18 marginal 18
+hybrid: crit 3.080 frontier 0.0651 exceed joint 18 marginal 18
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c89_fullfold_band.json (1219s)
