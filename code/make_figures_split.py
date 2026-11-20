@@ -222,9 +222,11 @@ def p2_fig1_dag():
     box = dict(boxstyle="round,pad=0.28", fc="#eef3fb", ec="0.45", lw=0.9)
     obs = dict(boxstyle="round,pad=0.28", fc="#e7f5e9", ec="0.45", lw=0.9)
     # artifact chain
-    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}$", ha="center", va="center", fontsize=MD, bbox=obs)
-    a2.text(0.72, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
-    _rung(a2, 0.86, 0.18, 0.63, "T1  transfer\nassumed, untested", "assumed", ASSC)
+    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S)$", ha="center", va="center", fontsize=MD, bbox=obs)
+    a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q)$", ha="center", va="center", fontsize=MD, bbox=box)
+    a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
+    _rung(a2, 0.86, 0.21, 0.38, "coverage\nnot shown", "assumed", ASSC)
+    _rung(a2, 0.86, 0.62, 0.81, "T1  transfer\nassumed, untested", "assumed", ASSC)
     a2.text(0.0, 0.98, "artifact side", fontsize=SM, weight="bold", ha="left", color="0.30")
     # concept chain
     a2.text(0.0, 0.63, "concept side", fontsize=SM, weight="bold", ha="left", color="0.30")
@@ -257,10 +259,10 @@ def p2_fig1_dag():
 # ----------------------------------------------------------------- paper 3, figure 1
 def p3_fig1_dag():
     """Working graph with the latent disease state Dis, and the identification ladder."""
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(W2, 4.35),
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(W2, 4.75),
                                  gridspec_kw={"width_ratios": [1.0, 1.28]})
     for ax in (a1, a2):
-        ax.axis("off"); ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+        ax.axis("off"); ax.set_xlim(0, 1); ax.set_ylim(-0.17, 1)
 
     Z = node(a1, "Z", 0.14, 0.86, rx=0.070, ry=0.090)
     D = node(a1, "D", 0.50, 0.86, rx=0.070, ry=0.090, dashed=True, label="Dis")
@@ -279,9 +281,11 @@ def p3_fig1_dag():
     a2.set_title("(b) The identification ladder", fontsize=LG, weight="bold", pad=2)
     box = dict(boxstyle="round,pad=0.28", fc="#eef3fb", ec="0.45", lw=0.9)
     obs = dict(boxstyle="round,pad=0.28", fc="#e7f5e9", ec="0.45", lw=0.9)
-    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}$", ha="center", va="center", fontsize=MD, bbox=obs)
-    a2.text(0.72, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
-    _rung(a2, 0.86, 0.18, 0.63, "T1  transfer\nassumed, untested", "assumed", ASSC)
+    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S)$", ha="center", va="center", fontsize=MD, bbox=obs)
+    a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q)$", ha="center", va="center", fontsize=MD, bbox=box)
+    a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
+    _rung(a2, 0.86, 0.21, 0.38, "coverage\nnot shown", "assumed", ASSC)
+    _rung(a2, 0.86, 0.62, 0.81, "T1  transfer\nassumed, untested", "assumed", ASSC)
     a2.text(0.0, 0.98, "artifact side", fontsize=SM, weight="bold", ha="left", color="0.30")
     a2.text(0.0, 0.71, "concept side", fontsize=SM, weight="bold", ha="left", color="0.30")
     a2.text(0.06, 0.52, r"$R(e)$", ha="center", va="center", fontsize=MD, bbox=obs)
@@ -300,12 +304,17 @@ def p3_fig1_dag():
     a2.text(0.80, 0.355, "C1b", ha="left", va="center", fontsize=SM, color=ASSC)
     a2.text(0.06, 0.12, r"$R(e^{\ast})$", ha="center", va="center", fontsize=MD, bbox=obs)
     a2.text(0.90, 0.12, r"$\theta^{C}$", ha="center", va="center", fontsize=MD, bbox=box)
-    _rung(a2, 0.12, 0.16, 0.84, "C3  a: assumed, untested\nb: fixed level not met by the edit", "tested", BADC)
+    a2.text(0.90, -0.10, r"$\theta^{C}_{\mathrm{sh}}$", ha="center", va="center", fontsize=MD, bbox=box)
+    _rung(a2, 0.12, 0.16, 0.84, "C3  a: assumed, untested\nb: fixed level not arranged by the edit", "assumed", ASSC)
+    a2.annotate("", xy=(0.835, -0.10), xytext=(0.12, 0.075),
+                arrowprops=dict(arrowstyle="-|>", lw=1.5, color=ASSC, ls=(0, (4, 2)), mutation_scale=12))
+    a2.text(0.40, -0.075, "C3a and off-target C3b: assumed;\nproxy evidence weighs against", ha="center",
+            va="top", fontsize=SM, color=ASSC)
     a2.annotate("", xy=(0.975, 0.17), xytext=(0.975, 0.47),
                 arrowprops=dict(arrowstyle="<->", lw=0.9, color="0.45", ls=(0, (2, 2))))
     a2.text(0.96, 0.255, r"differ by" "\n" r"$g(M(e^{\ast}))$", ha="right", va="center", fontsize=SM, color="0.30")
     fig.text(0.5, 0.190, "Green box: estimated from the audited images.   Amber dashed rung: "
-             "granted or assumed, not established.   Red rung: not satisfied by the design.",
+             "granted or assumed, not established.   Red rung: not satisfied by the library.",
              ha="center", va="center", fontsize=SM, color="0.25")
     fig.text(0.5, 0.145, "Z: measured confounders   Dis: disease state (latent)   C: clinical appearance   "
              "X: image   U: artifact   Y: recorded label   f: classifier output",

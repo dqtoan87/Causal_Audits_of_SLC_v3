@@ -1,0 +1,36 @@
+# Thirteenth fresh-directory run: c90 (2026-11-20)
+# The directory was a copy of the tracked files of this repository at commit 685f2d3c092b7f6e7cfd45b21121d1481230a92f,
+# without .git, with code/c90_posthoc_rereads.py added (not yet committed). c90 reads stored results only:
+# c25_screen_full.json, c82_image_set_checks.json, c80_route_null_calibration.json, c80_route_null_draws_{first,second}.npz
+# and c54_synthetic_scm.json, and imports code/c54_synthetic_scm.py. Its result file c90_posthoc_rereads.json was absent
+# from the copy. No checkpoint and no image is read. The written file is compared with the committed one leaf by leaf
+# at a relative tolerance of 1e-9.
+#
+# Outcome: every number equals the committed one; the file is byte-identical.
+
+== inputs (sha256 in the fresh copy)
+ad521d672dbd3abe007ae2d2b70491be849280e731fea1c527c95d64c449d3fb  results/c25_screen_full.json
+fedd72e64a367d8b3c92d3691a187e8e53644e080d42307f72d0841016d7c857  results/c82_image_set_checks.json
+401c0af51632e1c0ebbd813c78d48b34a6db3e11327e76af19da970eb5f7be3f  results/c80_route_null_draws_first.npz
+f2c99291a87f5e8556fe3a9ec8b23efad8dcf6e8921b22597e9e376aa58b1883  results/c80_route_null_draws_second.npz
+06ac67de5cb518f52d6c5a47798ccdbbd4fef4a019975aa1eeaefd1ca123f684  results/c80_route_null_calibration.json
+debe909ac5773fedf682d61bb5cf7d32cc1e06ede63e9b41b45a03f6e636152b  results/c54_synthetic_scm.json
+
+== run log
+=== post hoc fresh-directory run started 2026-11-20T23:54:49+07:00 ===
+interpreter <venv>/bin/python: NumPy 2.4.2
+contrast@2 argmax {'hf_change': 12, 'lesion_cov': 2, 'frac_altered': 1, 'support_rms': 2, 'lab_dE': 2} A1 ['rotd'] A1 w/o dE ['rotd'] A1+A2 w/o dE []
+color_var@2 argmax {'hf_change': 14, 'lesion_cov': 1, 'frac_altered': 3, 'support_rms': 1} A1 ['rotd'] A1 w/o dE ['rotd'] A1+A2 w/o dE []
+contrast@0 argmax {'hf_change': 13, 'lesion_cov': 4, 'lab_dE': 1, 'support_rms': 1} A1 ['invdose', 'rotd'] A1 w/o dE ['invdose', 'rotd'] A1+A2 w/o dE []
+color_var@0 argmax {'hf_change': 15, 'lesion_cov': 1, 'lab_dE': 2, 'support_rms': 1} A1 ['invdose', 'rotd'] A1 w/o dE ['invdose', 'rotd'] A1+A2 w/o dE []
+L^g floors {'ERM': 0.745, 'Inv': 1.092, 'Slim': 0.926}
+first {'identity_residual_of_estimates': 0.0, 'rate_feasible_nearest_to_sign_of_estimate': 0.036, 'rate_feasible_least_favourable_found': 0.213, 'upper_bound_one_minus_joint_coverage': 0.223, 'rate_unconstrained_worst_found_c80': 0.2165, 'mcse_least_favourable': 0.0092}
+second {'identity_residual_of_estimates': 0.0, 'rate_feasible_nearest_to_sign_of_estimate': 0.0525, 'rate_feasible_least_favourable_found': 0.262, 'upper_bound_one_minus_joint_coverage': 0.2675, 'rate_unconstrained_worst_found_c80': 0.2655, 'mcse_least_favourable': 0.0098}
+B5 {'target_rebuilt': 1.117, 'target_stored': 1.117, 'target_matches': True, 'distance_rebuilt': 0.1183, 'distance_stored': 0.1183, 'route_sum_R0': 1.0304, 'g_gap': -0.0866, 'realized_ratio_L_prime': 0.7324, 'route_sum_noisy_stored': 1.0293, 'noise_part': -0.001, 'R0_interval_at_L_0.5': [0.9712186505047004, 1.08952817915958], 'R0_covers_target_at_L_0.5': False, 'R0_interval_at_L_1.0': [0.9120638861772605, 1.1486829434870198], 'R0_covers_target_at_L_1.0': True, 'R0_interval_at_L_2.0': [0.793754357522381, 1.2669924721418995], 'R0_covers_target_at_L_2.0': True}
+wrote <fresh>/results/c90_posthoc_rereads.json
+c90_posthoc_rereads              rc=0      2s
+=== finished 2026-11-20T23:54:51+07:00 ===
+
+== comparison
+c90_posthoc_rereads.json     EQUAL (729 leaves) (byte-identical: True)
+files compared: 1, differing: 0

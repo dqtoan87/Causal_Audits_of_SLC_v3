@@ -1,0 +1,1131 @@
+{
+ "note": "post hoc rereads of stored results; chosen after the results were seen",
+ "a_screen_descriptors": {
+  "tolerances_main": [
+   0.1,
+   0.1,
+   0.15,
+   0.95
+  ],
+  "targets": {
+   "contrast@2": {
+    "n_controls": 19,
+    "argmax_counts": {
+     "hf_change": 12,
+     "lesion_cov": 2,
+     "frac_altered": 1,
+     "support_rms": 2,
+     "lab_dE": 2
+    },
+    "n_controls_above_tol_by_descriptor": {
+     "hf_change": 18,
+     "lesion_cov": 14,
+     "support_rms": 12,
+     "lab_dE": 12,
+     "frac_altered": 10,
+     "mean_abs": 9
+    },
+    "pass_A1": [
+     "rotd"
+    ],
+    "pass_A1_without_dE": [
+     "rotd"
+    ],
+    "pass_A1_A2_without_dE": [],
+    "controls": {
+     "rotd": {
+      "max_abs_smd": 0.045984128053130284,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [],
+      "max_abs_smd_without_dE": 0.045984128053130284,
+      "passes_A2": false
+     },
+     "sgnd": {
+      "max_abs_smd": 1.220597011149739,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change"
+      ],
+      "max_abs_smd_without_dE": 1.220597011149739,
+      "passes_A2": false
+     },
+     "permd": {
+      "max_abs_smd": 2.5438430089326913,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.5438430089326913,
+      "passes_A2": false
+     },
+     "hybrid_m": {
+      "max_abs_smd": 0.9077418171031406,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE"
+      ],
+      "max_abs_smd_without_dE": 0.9077418171031406,
+      "passes_A2": false
+     },
+     "texswap_m": {
+      "max_abs_smd": 2.332332940736889,
+      "argmax_descriptor": "frac_altered",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.332332940736889,
+      "passes_A2": true
+     },
+     "globrot_m": {
+      "max_abs_smd": 2.319929202644742,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.319929202644742,
+      "passes_A2": true
+     },
+     "warp2_m": {
+      "max_abs_smd": 0.9078161315306584,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.9078161315306584,
+      "passes_A2": false
+     },
+     "pixperm_m": {
+      "max_abs_smd": 1.396523611792314,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.396523611792314,
+      "passes_A2": true
+     },
+     "warp_m": {
+      "max_abs_smd": 1.0030786254580648,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.0030786254580648,
+      "passes_A2": false
+     },
+     "hue_m": {
+      "max_abs_smd": 2.2746516873408122,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lesion_cov",
+       "mean_abs"
+      ],
+      "max_abs_smd_without_dE": 2.2746516873408122,
+      "passes_A2": true
+     },
+     "rotax_m": {
+      "max_abs_smd": 1.673390453095254,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE"
+      ],
+      "max_abs_smd_without_dE": 1.673390453095254,
+      "passes_A2": false
+     },
+     "flip_m": {
+      "max_abs_smd": 0.7506595912121787,
+      "argmax_descriptor": "support_rms",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.7506595912121787,
+      "passes_A2": false
+     },
+     "jitter_m": {
+      "max_abs_smd": 0.6787546709283131,
+      "argmax_descriptor": "lab_dE",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.6437378687153835,
+      "passes_A2": false
+     },
+     "noise_m": {
+      "max_abs_smd": 1.3081148607571433,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.3081148607571433,
+      "passes_A2": false
+     },
+     "invdose": {
+      "max_abs_smd": 0.41318667878107007,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change"
+      ],
+      "max_abs_smd_without_dE": 0.41318667878107007,
+      "passes_A2": false
+     },
+     "u:hue": {
+      "max_abs_smd": 2.3091068979660463,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs"
+      ],
+      "max_abs_smd_without_dE": 2.3091068979660463,
+      "passes_A2": true
+     },
+     "u:flip": {
+      "max_abs_smd": 0.7506596206611278,
+      "argmax_descriptor": "support_rms",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.7506596206611278,
+      "passes_A2": false
+     },
+     "u:jitter": {
+      "max_abs_smd": 0.9406271056364426,
+      "argmax_descriptor": "lab_dE",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.882920882224338,
+      "passes_A2": false
+     },
+     "u:noise": {
+      "max_abs_smd": 1.7990436554862836,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.7990436554862836,
+      "passes_A2": true
+     }
+    }
+   },
+   "color_var@2": {
+    "n_controls": 19,
+    "argmax_counts": {
+     "hf_change": 14,
+     "lesion_cov": 1,
+     "frac_altered": 3,
+     "support_rms": 1
+    },
+    "n_controls_above_tol_by_descriptor": {
+     "hf_change": 18,
+     "lesion_cov": 14,
+     "support_rms": 14,
+     "frac_altered": 14,
+     "lab_dE": 11,
+     "mean_abs": 8
+    },
+    "pass_A1": [
+     "rotd"
+    ],
+    "pass_A1_without_dE": [
+     "rotd"
+    ],
+    "pass_A1_A2_without_dE": [],
+    "controls": {
+     "rotd": {
+      "max_abs_smd": 0.0483798884468299,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [],
+      "max_abs_smd_without_dE": 0.0483798884468299,
+      "passes_A2": false
+     },
+     "sgnd": {
+      "max_abs_smd": 1.3727316665661944,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change"
+      ],
+      "max_abs_smd_without_dE": 1.3727316665661944,
+      "passes_A2": false
+     },
+     "permd": {
+      "max_abs_smd": 2.2418337985408603,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.2418337985408603,
+      "passes_A2": false
+     },
+     "hybrid_m": {
+      "max_abs_smd": 0.9955912530704193,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.9955912530704193,
+      "passes_A2": false
+     },
+     "texswap_m": {
+      "max_abs_smd": 2.39248557264571,
+      "argmax_descriptor": "frac_altered",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.39248557264571,
+      "passes_A2": true
+     },
+     "globrot_m": {
+      "max_abs_smd": 2.4281497534596426,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.4281497534596426,
+      "passes_A2": true
+     },
+     "warp2_m": {
+      "max_abs_smd": 0.8472699342767476,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.8472699342767476,
+      "passes_A2": false
+     },
+     "pixperm_m": {
+      "max_abs_smd": 1.5291710688671025,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.5291710688671025,
+      "passes_A2": true
+     },
+     "warp_m": {
+      "max_abs_smd": 0.985886983205161,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.985886983205161,
+      "passes_A2": false
+     },
+     "hue_m": {
+      "max_abs_smd": 2.360586413551853,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.360586413551853,
+      "passes_A2": true
+     },
+     "rotax_m": {
+      "max_abs_smd": 1.8057857130410278,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.8057857130410278,
+      "passes_A2": false
+     },
+     "flip_m": {
+      "max_abs_smd": 0.4356104493701172,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.4356104493701172,
+      "passes_A2": false
+     },
+     "jitter_m": {
+      "max_abs_smd": 0.7538347837003486,
+      "argmax_descriptor": "frac_altered",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs"
+      ],
+      "max_abs_smd_without_dE": 0.7538347837003486,
+      "passes_A2": false
+     },
+     "noise_m": {
+      "max_abs_smd": 1.2857734177225262,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.2857734177225262,
+      "passes_A2": false
+     },
+     "invdose": {
+      "max_abs_smd": 0.39158043226499656,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change"
+      ],
+      "max_abs_smd_without_dE": 0.39158043226499656,
+      "passes_A2": false
+     },
+     "u:hue": {
+      "max_abs_smd": 2.393738609811182,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.393738609811182,
+      "passes_A2": true
+     },
+     "u:flip": {
+      "max_abs_smd": 0.3204845943626354,
+      "argmax_descriptor": "support_rms",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.3204845943626354,
+      "passes_A2": false
+     },
+     "u:jitter": {
+      "max_abs_smd": 1.0734623843714646,
+      "argmax_descriptor": "frac_altered",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs"
+      ],
+      "max_abs_smd_without_dE": 1.0734623843714646,
+      "passes_A2": false
+     },
+     "u:noise": {
+      "max_abs_smd": 1.7810704791209904,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.7810704791209904,
+      "passes_A2": true
+     }
+    }
+   },
+   "contrast@0": {
+    "n_controls": 19,
+    "argmax_counts": {
+     "hf_change": 13,
+     "lesion_cov": 4,
+     "lab_dE": 1,
+     "support_rms": 1
+    },
+    "n_controls_above_tol_by_descriptor": {
+     "hf_change": 16,
+     "lesion_cov": 15,
+     "support_rms": 11,
+     "lab_dE": 10,
+     "frac_altered": 5,
+     "mean_abs": 5
+    },
+    "pass_A1": [
+     "invdose",
+     "rotd"
+    ],
+    "pass_A1_without_dE": [
+     "invdose",
+     "rotd"
+    ],
+    "pass_A1_A2_without_dE": [],
+    "controls": {
+     "rotd": {
+      "max_abs_smd": 0.04439643541227368,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [],
+      "max_abs_smd_without_dE": 0.04439643541227368,
+      "passes_A2": false
+     },
+     "sgnd": {
+      "max_abs_smd": 1.1879418798402386,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change"
+      ],
+      "max_abs_smd_without_dE": 1.1879418798402386,
+      "passes_A2": false
+     },
+     "permd": {
+      "max_abs_smd": 2.551688716830195,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.551688716830195,
+      "passes_A2": false
+     },
+     "hybrid_m": {
+      "max_abs_smd": 0.7564107418636372,
+      "argmax_descriptor": "lab_dE",
+      "descriptors_above_tol": [
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.4058127067002093,
+      "passes_A2": false
+     },
+     "texswap_m": {
+      "max_abs_smd": 1.0543647176356366,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.0543647176356366,
+      "passes_A2": false
+     },
+     "globrot_m": {
+      "max_abs_smd": 2.3083170083708926,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.3083170083708926,
+      "passes_A2": true
+     },
+     "warp2_m": {
+      "max_abs_smd": 1.2164254646096142,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov"
+      ],
+      "max_abs_smd_without_dE": 1.2164254646096142,
+      "passes_A2": false
+     },
+     "pixperm_m": {
+      "max_abs_smd": 1.3460001604459706,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.3460001604459706,
+      "passes_A2": true
+     },
+     "warp_m": {
+      "max_abs_smd": 1.1446377303559754,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov"
+      ],
+      "max_abs_smd_without_dE": 1.1446377303559754,
+      "passes_A2": false
+     },
+     "hue_m": {
+      "max_abs_smd": 2.055282902234791,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov"
+      ],
+      "max_abs_smd_without_dE": 2.055282902234791,
+      "passes_A2": true
+     },
+     "rotax_m": {
+      "max_abs_smd": 1.969040906669554,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE"
+      ],
+      "max_abs_smd_without_dE": 1.969040906669554,
+      "passes_A2": false
+     },
+     "flip_m": {
+      "max_abs_smd": 0.773347880322746,
+      "argmax_descriptor": "support_rms",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.773347880322746,
+      "passes_A2": false
+     },
+     "jitter_m": {
+      "max_abs_smd": 0.6774024510897995,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.6774024510897995,
+      "passes_A2": false
+     },
+     "noise_m": {
+      "max_abs_smd": 1.3272697044497963,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.3272697044497963,
+      "passes_A2": true
+     },
+     "invdose": {
+      "max_abs_smd": 0.04627407936714032,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [],
+      "max_abs_smd_without_dE": 0.04627407936714032,
+      "passes_A2": false
+     },
+     "u:hue": {
+      "max_abs_smd": 1.9488384424089917,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs"
+      ],
+      "max_abs_smd_without_dE": 1.9488384424089917,
+      "passes_A2": false
+     },
+     "u:flip": {
+      "max_abs_smd": 1.3825207746471246,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.3825207746471246,
+      "passes_A2": false
+     },
+     "u:jitter": {
+      "max_abs_smd": 1.247070231967132,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.247070231967132,
+      "passes_A2": false
+     },
+     "u:noise": {
+      "max_abs_smd": 2.609193647796081,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.609193647796081,
+      "passes_A2": false
+     }
+    }
+   },
+   "color_var@0": {
+    "n_controls": 19,
+    "argmax_counts": {
+     "hf_change": 15,
+     "lesion_cov": 1,
+     "lab_dE": 2,
+     "support_rms": 1
+    },
+    "n_controls_above_tol_by_descriptor": {
+     "hf_change": 16,
+     "lesion_cov": 14,
+     "support_rms": 14,
+     "lab_dE": 10,
+     "frac_altered": 6,
+     "mean_abs": 5
+    },
+    "pass_A1": [
+     "invdose",
+     "rotd"
+    ],
+    "pass_A1_without_dE": [
+     "invdose",
+     "rotd"
+    ],
+    "pass_A1_A2_without_dE": [],
+    "controls": {
+     "rotd": {
+      "max_abs_smd": 0.046572445669913025,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [],
+      "max_abs_smd_without_dE": 0.046572445669913025,
+      "passes_A2": false
+     },
+     "sgnd": {
+      "max_abs_smd": 1.3870012411122568,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change"
+      ],
+      "max_abs_smd_without_dE": 1.3870012411122568,
+      "passes_A2": false
+     },
+     "permd": {
+      "max_abs_smd": 2.2726054924160444,
+      "argmax_descriptor": "lesion_cov",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.2726054924160444,
+      "passes_A2": false
+     },
+     "hybrid_m": {
+      "max_abs_smd": 0.8579395913063467,
+      "argmax_descriptor": "lab_dE",
+      "descriptors_above_tol": [
+       "lab_dE",
+       "lesion_cov"
+      ],
+      "max_abs_smd_without_dE": 0.3060453697926587,
+      "passes_A2": false
+     },
+     "texswap_m": {
+      "max_abs_smd": 0.906501299353265,
+      "argmax_descriptor": "lab_dE",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.8847665339086951,
+      "passes_A2": false
+     },
+     "globrot_m": {
+      "max_abs_smd": 2.4199868517757985,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.4199868517757985,
+      "passes_A2": true
+     },
+     "warp2_m": {
+      "max_abs_smd": 1.1815249373926375,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.1815249373926375,
+      "passes_A2": false
+     },
+     "pixperm_m": {
+      "max_abs_smd": 1.5691477089432917,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.5691477089432917,
+      "passes_A2": true
+     },
+     "warp_m": {
+      "max_abs_smd": 1.2271218764702476,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.2271218764702476,
+      "passes_A2": false
+     },
+     "hue_m": {
+      "max_abs_smd": 2.1769135998759963,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.1769135998759963,
+      "passes_A2": false
+     },
+     "rotax_m": {
+      "max_abs_smd": 2.0947152152590527,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.0947152152590527,
+      "passes_A2": false
+     },
+     "flip_m": {
+      "max_abs_smd": 0.350629864218738,
+      "argmax_descriptor": "support_rms",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 0.350629864218738,
+      "passes_A2": false
+     },
+     "jitter_m": {
+      "max_abs_smd": 0.6289928380543784,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lesion_cov"
+      ],
+      "max_abs_smd_without_dE": 0.6289928380543784,
+      "passes_A2": false
+     },
+     "noise_m": {
+      "max_abs_smd": 1.116492377747696,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.116492377747696,
+      "passes_A2": true
+     },
+     "invdose": {
+      "max_abs_smd": 0.04849166425023352,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [],
+      "max_abs_smd_without_dE": 0.04849166425023352,
+      "passes_A2": false
+     },
+     "u:hue": {
+      "max_abs_smd": 2.034491517011822,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "hf_change",
+       "lab_dE",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.034491517011822,
+      "passes_A2": false
+     },
+     "u:flip": {
+      "max_abs_smd": 1.367763705699993,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.367763705699993,
+      "passes_A2": false
+     },
+     "u:jitter": {
+      "max_abs_smd": 1.2325849704565022,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 1.2325849704565022,
+      "passes_A2": false
+     },
+     "u:noise": {
+      "max_abs_smd": 2.6031835742359775,
+      "argmax_descriptor": "hf_change",
+      "descriptors_above_tol": [
+       "frac_altered",
+       "hf_change",
+       "lab_dE",
+       "lesion_cov",
+       "mean_abs",
+       "support_rms"
+      ],
+      "max_abs_smd_without_dE": 2.6031835742359775,
+      "passes_A2": false
+     }
+    }
+   }
+  }
+ },
+ "b_lipschitz_per_model": {
+  "note": "floor of L^g per checkpoint, 58 images of the library protocol; envelope = max over checkpoints",
+  "per_model": {
+   "ERM": {
+    "n_pairs": 7,
+    "floor": 0.7448444960809736,
+    "binding_target": "color_var@0",
+    "binding_pair": [
+     "pixperm_m",
+     "noise_m"
+    ],
+    "gap": 7.524157558021875,
+    "distance": 10.10164886444151,
+    "conservative_floor": 0.4503475243779124
+   },
+   "Inv": {
+    "n_pairs": 7,
+    "floor": 1.0922930951543137,
+    "binding_target": "color_var@0",
+    "binding_pair": [
+     "pixperm_m",
+     "noise_m"
+    ],
+    "gap": 11.033961304302874,
+    "distance": 10.10164886444151,
+    "conservative_floor": 0.7248574948765709
+   },
+   "Slim": {
+    "n_pairs": 7,
+    "floor": 0.9264947606484983,
+    "binding_target": "color_var@0",
+    "binding_pair": [
+     "pixperm_m",
+     "noise_m"
+    ],
+    "gap": 9.359124746815912,
+    "distance": 10.10164886444151,
+    "conservative_floor": 0.5440740529592296
+   }
+  },
+  "envelope_floor": 1.0922930951543137,
+  "envelope_floor_stored": 1.0922930951543137
+ },
+ "c_cycle_test_feasible_size": {
+  "feasible_sign_patterns": [
+   [
+    1,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    1,
+    -1,
+    -1
+   ],
+   [
+    1,
+    -1,
+    1,
+    -1
+   ],
+   [
+    -1,
+    1,
+    -1,
+    1
+   ],
+   [
+    -1,
+    -1,
+    1,
+    1
+   ],
+   [
+    -1,
+    -1,
+    -1,
+    -1
+   ]
+  ],
+  "first": {
+   "identity_residual_of_estimates": 9.55307317695997e-08,
+   "rate_feasible_nearest_to_sign_of_estimate": 0.036,
+   "rate_feasible_least_favourable_found": 0.213,
+   "upper_bound_one_minus_joint_coverage": 0.22299999999999998,
+   "rate_unconstrained_worst_found_c80": 0.2165,
+   "mcse_least_favourable": 0.009155080556718221
+  },
+  "second": {
+   "identity_residual_of_estimates": 1.3681975286061743e-07,
+   "rate_feasible_nearest_to_sign_of_estimate": 0.0525,
+   "rate_feasible_least_favourable_found": 0.262,
+   "upper_bound_one_minus_joint_coverage": 0.26749999999999996,
+   "rate_unconstrained_worst_found_c80": 0.2655,
+   "mcse_least_favourable": 0.009832497139587684
+  }
+ },
+ "d_b5_structural": {
+  "target_rebuilt": 1.1170197305757723,
+  "target_stored": 1.1170197305757723,
+  "target_matches": true,
+  "distance_rebuilt": 0.1183095286548796,
+  "distance_stored": 0.1183095286548796,
+  "route_sum_R0": 1.0303734148321402,
+  "g_gap": -0.08664631574363214,
+  "realized_ratio_L_prime": 0.7323697146692881,
+  "route_sum_noisy_stored": 1.0293488716370254,
+  "noise_part": -0.001024543195114802,
+  "R0_interval_at_L_0.5": [
+   0.9712186505047004,
+   1.08952817915958
+  ],
+  "R0_covers_target_at_L_0.5": false,
+  "R0_interval_at_L_1.0": [
+   0.9120638861772605,
+   1.1486829434870198
+  ],
+  "R0_covers_target_at_L_1.0": true,
+  "R0_interval_at_L_2.0": [
+   0.793754357522381,
+   1.2669924721418995
+  ],
+  "R0_covers_target_at_L_2.0": true
+ }
+}

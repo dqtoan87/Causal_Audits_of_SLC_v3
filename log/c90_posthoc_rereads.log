@@ -1,0 +1,9 @@
+contrast@2 argmax {'hf_change': 12, 'lesion_cov': 2, 'frac_altered': 1, 'support_rms': 2, 'lab_dE': 2} A1 ['rotd'] A1 w/o dE ['rotd'] A1+A2 w/o dE []
+color_var@2 argmax {'hf_change': 14, 'lesion_cov': 1, 'frac_altered': 3, 'support_rms': 1} A1 ['rotd'] A1 w/o dE ['rotd'] A1+A2 w/o dE []
+contrast@0 argmax {'hf_change': 13, 'lesion_cov': 4, 'lab_dE': 1, 'support_rms': 1} A1 ['invdose', 'rotd'] A1 w/o dE ['invdose', 'rotd'] A1+A2 w/o dE []
+color_var@0 argmax {'hf_change': 15, 'lesion_cov': 1, 'lab_dE': 2, 'support_rms': 1} A1 ['invdose', 'rotd'] A1 w/o dE ['invdose', 'rotd'] A1+A2 w/o dE []
+L^g floors {'ERM': 0.745, 'Inv': 1.092, 'Slim': 0.926}
+first {'identity_residual_of_estimates': 0.0, 'rate_feasible_nearest_to_sign_of_estimate': 0.036, 'rate_feasible_least_favourable_found': 0.213, 'upper_bound_one_minus_joint_coverage': 0.223, 'rate_unconstrained_worst_found_c80': 0.2165, 'mcse_least_favourable': 0.0092}
+second {'identity_residual_of_estimates': 0.0, 'rate_feasible_nearest_to_sign_of_estimate': 0.0525, 'rate_feasible_least_favourable_found': 0.262, 'upper_bound_one_minus_joint_coverage': 0.2675, 'rate_unconstrained_worst_found_c80': 0.2655, 'mcse_least_favourable': 0.0098}
+B5 {'target_rebuilt': 1.117, 'target_stored': 1.117, 'target_matches': True, 'distance_rebuilt': 0.1183, 'distance_stored': 0.1183, 'route_sum_R0': 1.0304, 'g_gap': -0.0866, 'realized_ratio_L_prime': 0.7324, 'route_sum_noisy_stored': 1.0293, 'noise_part': -0.001, 'R0_interval_at_L_0.5': [0.9712186505047004, 1.08952817915958], 'R0_covers_target_at_L_0.5': False, 'R0_interval_at_L_1.0': [0.9120638861772605, 1.1486829434870198], 'R0_covers_target_at_L_1.0': True, 'R0_interval_at_L_2.0': [0.793754357522381, 1.2669924721418995], 'R0_covers_target_at_L_2.0': True}
+wrote /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c90_posthoc_rereads.json
