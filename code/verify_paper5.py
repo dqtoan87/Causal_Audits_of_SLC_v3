@@ -104,6 +104,19 @@ def check(claim, got, want, tol=0.0, floor=False, ceil=False, text=None, where="
     rows.append((st, claim, g, w))
 
 
+def table_block(doc, marker, claim):
+    """The text of a printed table, from its marker to the blank line after its header rule.
+    A missing marker or rule is reported as a not-ok row, and an empty string is returned, so no parser raises."""
+    tx = TEXT[doc]
+    i = tx.find(marker)
+    j = tx.find("| --- ", i) if i >= 0 else -1
+    if i < 0 or j < 0:
+        rows.append(("MISMATCH", "%s: table marker not found" % claim, "-", repr(marker[:60])))
+        return ""
+    k = tx.find("\n\n", j)
+    return tx[i:] if k < 0 else tx[i:k]
+
+
 def num(s):
     return float(s.replace("−", "-").replace("+", ""))
 
@@ -223,32 +236,33 @@ if d:
           text="seven of the eighteen cells still exceed")
     # Table 4, cell by cell
     # v5: the full table is Supplementary Table S43; main Table 1 is its compact form (checked below)
-    tbl = TEXT["supp"][TEXT["supp"].index("**TABLE S43."):]
-    tbl = tbl[:tbl.index("\n\n", tbl.index("| --- "))]
+    tbl = table_block("supp", "**TABLE S43.", "Table S43")
     bk = mk = None
     nrow = nbad = 0
     vmap = {"exceeds": "exceedance", "within": "equivalence", "indet.": "indeterminate"}
     for line in tbl.splitlines():
         if not line.startswith("| ") or line.startswith("| Backbone") or line.startswith("| ---"):
             continue
-        f = [x.strip() for x in line.strip("|").split("|")]
-        bk = {"EfficientNet-B3": "b3", "ResNet-50": "r50"}.get(f[0], bk)
-        mk = f[1] or mk
-        c = cells[(bk, mk, f[2])]
-        m1 = re.match(r"([−+\d.]+) \[([−+\d.]+), ([−+\d.]+)\]", f[3])
-        m2 = re.match(r"([−+\d.]+) \[([−+\d.]+), ([−+\d.]+)\]", f[4])
-        printed = [num(x) for x in m1.groups() + m2.groups()]
-        actual = [c["mean"]] + c["ci"] + [c["signed_mean"]] + c["signed_ci"]
-        ok = all(abs(a - p) <= 5e-4 + 1e-9 for a, p in zip(actual, printed))
-        ok &= (vmap[f[5]], vmap[f[6]], vmap[f[7]]) == (c["verdict"], c["signed_verdict"], c["joint_verdict"])
+        try:
+            f = [x.strip() for x in line.strip("|").split("|")]
+            bk = {"EfficientNet-B3": "b3", "ResNet-50": "r50"}.get(f[0], bk)
+            mk = f[1] or mk
+            c = cells[(bk, mk, f[2])]
+            m1 = re.match(r"([−+\d.]+) \[([−+\d.]+), ([−+\d.]+)\]", f[3])
+            m2 = re.match(r"([−+\d.]+) \[([−+\d.]+), ([−+\d.]+)\]", f[4])
+            printed = [num(x) for x in m1.groups() + m2.groups()]
+            actual = [c["mean"]] + c["ci"] + [c["signed_mean"]] + c["signed_ci"]
+            ok = all(abs(a - p) <= 5e-4 + 1e-9 for a, p in zip(actual, printed))
+            ok &= (vmap[f[5]], vmap[f[6]], vmap[f[7]]) == (c["verdict"], c["signed_verdict"], c["joint_verdict"])
+        except (KeyError, IndexError, AttributeError, ValueError):
+            actual, ok = "unparsable row", False
         nrow += 1
         nbad += not ok
         if not ok:
             rows.append(("MISMATCH", "Table 4 row %s %s %s" % (bk, mk, f[2]), str(actual), line))
     check("Table S43: all 18 rows match c30 (values, intervals, verdicts)", nrow - nbad, 18)
     # v5: main Table 1 (compact) equals Table S43 cell by cell: magnitude [CI]; signed mean, signed verdict
-    _t1 = TEXT["paper"][TEXT["paper"].index("**TABLE 1."):]
-    _t1 = _t1[:_t1.index("\n\n", _t1.index("| --- "))]
+    _t1 = table_block("paper", "**TABLE 1.", "Table 1")
     _full, _bk, _mk = {}, None, None
     for line in tbl.splitlines():
         if not line.startswith("| ") or line.startswith("| Backbone") or line.startswith("| ---"):
@@ -261,8 +275,11 @@ if d:
         if not line.startswith("| ") or line.startswith("| Checkpoint") or line.startswith("| ---"):
             continue
         f = [x.strip() for x in line.strip("|").split("|")]
-        _b, _m = f[0].rsplit(" ", 1)
-        _n1 += sum(f[1 + k] == _full[(_b, _m, g)] for k, g in enumerate(("all", "malignant", "benign")))
+        try:
+            _b, _m = f[0].rsplit(" ", 1)
+            _n1 += sum(f[1 + k] == _full[(_b, _m, g)] for k, g in enumerate(("all", "malignant", "benign")))
+        except (KeyError, IndexError, ValueError):
+            rows.append(("MISMATCH", "Table 1 row unparsable", "-", line[:80]))
     check("Table 1 (main, compact): 18 cells equal Table S43 character for character", _n1, 18)
 
 d = load("c40_simultaneous")
@@ -649,8 +666,8 @@ if d:
         _g2 = [sum(r["targets"][t]["controls"][c]["g2"] for r in _con["images"]) / len(_con["images"])
                for t in ("contrast@2", "color_var@2") for c in ("rad4", "rad16", "hue4", "hue16")]
         _md = lambda k, cs: max(statistics.median(abs(r["targets"][t]["controls"][c][k]) for r in _con["images"]) * 100 for t in tks for c in cs)
-        check("IV-B: median mismatches up to 69% (HF, any control) and 162% (CIELAB, hue)", "%.0f %d" % (round(_md("rel_hf", ("rad4", "rad16", "hue4", "hue16")), 1), math.floor(_md("rel_dE", ("hue4", "hue16")))), "69 162",
-              text=["median mismatches of up to 69% in high-frequency change and 162% in CIELAB $\\Delta E$ (Supplementary Table S30)", "@supp:the high-frequency change by 7.6 to 69.0%", "@supp:The hue controls missed $\\Delta E$ by 139 to 162%"], strict=True)
+        check("IV-B: median mismatches up to 69% (HF, any control) and 163% (CIELAB, hue), upper bounds rounded up", "%d %d" % (math.ceil(round(_md("rel_hf", ("rad4", "rad16", "hue4", "hue16")), 1)), math.ceil(round(_md("rel_dE", ("hue4", "hue16")), 1))), "69 163",
+              text=["median mismatches of up to 69% in high-frequency change and 163% in CIELAB $\\Delta E$ (Supplementary Table S30)", "@supp:the high-frequency change by 7.6 to 69.0%", "@supp:The hue controls missed $\\Delta E$ by 139 to 162%"], strict=True)
         check("high doses: seven of eight controls fail G2 on most images", sum(x < 0.5 for x in _g2), 7,
               text="seven of the eight controls fail the independent CIELAB check G2 on most images")
 d = load("c56_simultaneous36")
@@ -1032,20 +1049,22 @@ if d:
     check("sign changes for one of three models", flips, 1, text="changes sign for one model")
     # Table S29, cell by cell
     tx = TEXT["supp"]
-    t = tx[tx.index("| Model | Placebo | mean relative shift of the contrast, variegation and size proxies"):]
-    t = t[:t.index("\n\n")]
+    t = table_block("supp", "| Model | Placebo | mean relative shift of the contrast, variegation and size proxies", "Table S29")
     name = {"ERM": "erm", "Slim": "slim", "Inv": "causal"}
     mk = None
     bad = n = 0
     for line in t.splitlines()[2:]:
         f = [x.strip() for x in line.strip("|").split("|")]
-        mk = name.get(f[0], mk)
-        p = f[1]
-        mv = d["models"][mk]
-        got = ([100 * d["placebo_proxychg"][p]] + mv["placebo_cace"][p] + mv["A_corr_by_placebo"][p]["contrast"]
-               + mv["A_corr_by_placebo"][p]["color"] + [mv["A_corr_by_placebo"][p]["A"]])
-        nums = [num(x) for x in re.findall(r"[−+]?\d+\.\d+", line)]
-        ok = len(nums) == 11 and abs(nums[0] - got[0]) <= 0.05 and all(abs(x - y) <= 5e-3 + 1e-9 for x, y in zip(nums[1:], got[1:]))
+        p = f[1] if len(f) > 1 else "?"
+        try:
+            mk = name.get(f[0], mk)
+            mv = d["models"][mk]
+            got = ([100 * d["placebo_proxychg"][p]] + mv["placebo_cace"][p] + mv["A_corr_by_placebo"][p]["contrast"]
+                   + mv["A_corr_by_placebo"][p]["color"] + [mv["A_corr_by_placebo"][p]["A"]])
+            nums = [num(x) for x in re.findall(r"[−+]?\d+\.\d+", line)]
+            ok = len(nums) == 11 and abs(nums[0] - got[0]) <= 0.05 and all(abs(x - y) <= 5e-3 + 1e-9 for x, y in zip(nums[1:], got[1:]))
+        except (KeyError, IndexError, ValueError):
+            got, ok = [], False
         n += 1
         bad += not ok
         if not ok:
@@ -1981,7 +2000,7 @@ check("label proxy never called histopathological; V-E states no verified count"
       "%s %s %s" % ("read as histopathological" in TEXT["supp"] or "histopathological diagnosis by this proxy" in TEXT["supp"],
                     "no verified count of such labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["paper"]), "False True True")
 check("reproduction scope: verifier reads the repository's paper/, only the cross-pipeline comparisons need more (unreleased reimplementation); no 'only external dependency'",
-      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "the repository's `paper/` directory, or from a directory passed with `--paper-dir`. Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
+      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `paper5-submission`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
                        "for them only the stored result files can be checked" in TEXT["supp"], "The only external dependency" in TEXT["supp"]),
       "False True True False")
 check("C1a constrains only duplicate operators on this library; diagnostic (T) neither tests nor rejects C1a (Table 2, III-C, IV-B, S6)",
@@ -2355,7 +2374,7 @@ if _c89:
     check("c89: rise attributable to overlays and batches about 0.005", round(_pr["frontier_36"] - _hy["frontier_36"], 3), 0.005, 0.0005)
     check("c89: main-text copy (IV-A) and Table 3", "%.3f %d" % (math.floor(_pr["frontier_36"] * 1000) / 1000, _pr["n_exceed_0.05_joint"]), "0.069 18",
           text=["A post hoc analysis of the whole audit fold on that realization, with no benign draw, gives a frontier of 0.069, above the cohort's 0.042, with all 18 cells exceeding 0.05 jointly (Supplementary Section S2)",
-                "17 of 18 at 0.05; whole fold, other realization, post hoc: below 0.069", "estimated; other overlay realization: fold-level coverage 95.4% over benign redraws",
+                "17 of 18 at 0.05; whole fold, other realization, post hoc: below 0.069", "estimated; coverage for $Q$ not shown; other overlay realization: fold-level coverage 95.4% over benign redraws",
                 "@supp:The whole fold thus supports a higher frontier than the audit cohort's 0.042; single cohorts of the design can fall lower, as the redraw range above shows"], where="paper", strict=True)
 else:
     rows.append(("MISSING", "c89_fullfold_band", "-", "-"))
