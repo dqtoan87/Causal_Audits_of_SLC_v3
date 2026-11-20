@@ -1,0 +1,35 @@
+[second_run] disagreeing cells across variants: [3, 6]; disagree in every variant: ['causal|contrast@2', 'erm|contrast@2']; smallest lower bounds: {'erm|contrast@2|D_rad4-rad16': 0.721, 'causal|contrast@2|D_rad4-rad16': 1.403, 'causal|contrast@2|D_rad4-hue4': 0.518, 'slim|color_var@2|D_rad4-rad16': -0.356}
+   pre-specified                            3  {'erm|contra|rad4-rad16': '5.02 [1.20]', 'causal|contra|rad4-rad16': '6.62 [1.99]', 'causal|contra|rad4-hue4': '4.90 [1.02]', 'slim|color_|rad4-rad16': '6.16 [0.62]'}
+   floor per model                          3  {'erm|contra|rad4-rad16': '4.57 [1.81]', 'causal|contra|rad4-rad16': '6.59 [2.05]', 'causal|contra|rad4-hue4': '5.06 [1.34]', 'slim|color_|rad4-rad16': '5.27 [1.78]'}
+   floor on the first run's images          3  {'erm|contra|rad4-rad16': '4.63 [1.90]', 'causal|contra|rad4-rad16': '5.42 [1.91]', 'causal|contra|rad4-hue4': '3.72 [0.52]', 'slim|color_|rad4-rad16': '5.27 [1.81]'}
+   scored in full precision                 6  {'erm|contra|rad4-rad16': '4.61 [0.73]', 'causal|contra|rad4-rad16': '6.48 [1.86]', 'causal|contra|rad4-hue4': '5.15 [1.26]', 'slim|color_|rad4-rad16': '5.84 [0.52]'}
+   scored in mixed bf16 batches             3  {'erm|contra|rad4-rad16': '5.01 [1.20]', 'causal|contra|rad4-rad16': '6.62 [2.00]', 'causal|contra|rad4-hue4': '4.91 [1.02]', 'slim|color_|rad4-rad16': '5.38 [-0.36]'}
+   floor read in full precision             3  {'erm|contra|rad4-rad16': '4.90 [1.15]', 'causal|contra|rad4-rad16': '6.49 [1.96]', 'causal|contra|rad4-hue4': '4.80 [0.99]', 'slim|color_|rad4-rad16': '5.99 [0.56]'}
+   clip eta = 0.0001, bf16                  4  {'erm|contra|rad4-rad16': '3.76 [1.13]', 'causal|contra|rad4-rad16': '5.05 [1.51]', 'causal|contra|rad4-hue4': '3.86 [0.99]', 'slim|color_|rad4-rad16': '4.51 [0.75]'}
+   clip eta = 1e-05, bf16                   3  {'erm|contra|rad4-rad16': '4.39 [1.17]', 'causal|contra|rad4-rad16': '5.83 [1.76]', 'causal|contra|rad4-hue4': '4.38 [1.02]', 'slim|color_|rad4-rad16': '5.32 [0.67]'}
+   clip eta = 1e-06, bf16                   3  {'erm|contra|rad4-rad16': '5.02 [1.20]', 'causal|contra|rad4-rad16': '6.62 [1.99]', 'causal|contra|rad4-hue4': '4.90 [1.02]', 'slim|color_|rad4-rad16': '6.16 [0.62]'}
+   clip eta = 1e-07, bf16                   3  {'erm|contra|rad4-rad16': '5.64 [1.24]', 'causal|contra|rad4-rad16': '7.40 [2.22]', 'causal|contra|rad4-hue4': '5.43 [1.01]', 'slim|color_|rad4-rad16': '6.97 [0.58]'}
+   clip eta = 1e-08, bf16                   3  {'erm|contra|rad4-rad16': '6.27 [1.27]', 'causal|contra|rad4-rad16': '8.19 [2.44]', 'causal|contra|rad4-hue4': '5.95 [1.00]', 'slim|color_|rad4-rad16': '7.77 [0.52]'}
+   clip eta = 0.0001, fp32                  6  {'erm|contra|rad4-rad16': '3.46 [0.73]', 'causal|contra|rad4-rad16': '4.95 [1.40]', 'causal|contra|rad4-hue4': '4.04 [1.21]', 'slim|color_|rad4-rad16': '4.39 [0.71]'}
+   clip eta = 1e-05, fp32                   6  {'erm|contra|rad4-rad16': '4.03 [0.74]', 'causal|contra|rad4-rad16': '5.73 [1.64]', 'causal|contra|rad4-hue4': '4.61 [1.27]', 'slim|color_|rad4-rad16': '5.09 [0.56]'}
+   clip eta = 1e-06, fp32                   6  {'erm|contra|rad4-rad16': '4.61 [0.73]', 'causal|contra|rad4-rad16': '6.48 [1.86]', 'causal|contra|rad4-hue4': '5.15 [1.26]', 'slim|color_|rad4-rad16': '5.84 [0.52]'}
+   clip eta = 1e-07, fp32                   5  {'erm|contra|rad4-rad16': '5.18 [0.73]', 'causal|contra|rad4-rad16': '7.16 [2.03]', 'causal|contra|rad4-hue4': '5.62 [1.19]', 'slim|color_|rad4-rad16': '6.59 [0.49]'}
+   clip eta = 1e-08, fp32                   5  {'erm|contra|rad4-rad16': '5.76 [0.72]', 'causal|contra|rad4-rad16': '7.84 [2.19]', 'causal|contra|rad4-hue4': '6.09 [1.10]', 'slim|color_|rad4-rad16': '7.34 [0.45]'}
+[first_run] disagreeing cells across variants: [2, 6]; disagree in every variant: ['erm|contrast@2', 'slim|color_var@2']; smallest lower bounds: {'erm|contrast@2|D_rad4-rad16': 1.21, 'slim|color_var@2|D_rad4-rad16': 0.634, 'slim|contrast@0|D_rad4-rad16': 0.283}
+   pre-specified                            3  {'erm|contra|rad4-rad16': '4.63 [1.92]', 'slim|color_|rad4-rad16': '5.27 [1.84]', 'slim|contra|rad4-rad16': '1.99 [0.51]'}
+   floor per model                          3  {'erm|contra|rad4-rad16': '4.57 [1.88]', 'slim|color_|rad4-rad16': '5.27 [1.86]', 'slim|contra|rad4-rad16': '1.99 [0.52]'}
+   floor passed under both Inv checkpoints  2  {'erm|contra|rad4-rad16': '5.02 [1.21]', 'slim|color_|rad4-rad16': '6.16 [0.63]', 'slim|contra|rad4-rad16': '2.22 [0.28]'}
+   scored in full precision                 5  {}
+   scored in mixed bf16 batches             4  {}
+   floor read in full precision             3  {'erm|contra|rad4-rad16': '4.63 [1.92]', 'slim|color_|rad4-rad16': '5.27 [1.84]', 'slim|contra|rad4-rad16': '1.99 [0.51]'}
+   clip eta = 0.0001, bf16                  4  {'erm|contra|rad4-rad16': '3.37 [1.50]', 'slim|color_|rad4-rad16': '3.89 [1.53]', 'slim|contra|rad4-rad16': '1.68 [0.61]'}
+   clip eta = 1e-05, bf16                   3  {'erm|contra|rad4-rad16': '4.00 [1.72]', 'slim|color_|rad4-rad16': '4.58 [1.68]', 'slim|contra|rad4-rad16': '1.83 [0.57]'}
+   clip eta = 1e-06, bf16                   3  {'erm|contra|rad4-rad16': '4.63 [1.92]', 'slim|color_|rad4-rad16': '5.27 [1.84]', 'slim|contra|rad4-rad16': '1.99 [0.51]'}
+   clip eta = 1e-07, bf16                   2  {'erm|contra|rad4-rad16': '5.26 [2.12]', 'slim|color_|rad4-rad16': '5.97 [2.02]', 'slim|contra|rad4-rad16': '2.14 [0.45]'}
+   clip eta = 1e-08, bf16                   2  {'erm|contra|rad4-rad16': '5.89 [2.32]', 'slim|color_|rad4-rad16': '6.67 [2.19]', 'slim|contra|rad4-rad16': '2.30 [0.38]'}
+   clip eta = 0.0001, fp32                  6  {'erm|contra|rad4-rad16': '3.19 [1.28]', 'slim|color_|rad4-rad16': '4.19 [1.78]', 'slim|contra|rad4-rad16': '1.65 [0.58]'}
+   clip eta = 1e-05, fp32                   5  {'erm|contra|rad4-rad16': '3.79 [1.46]', 'slim|color_|rad4-rad16': '4.95 [1.98]', 'slim|contra|rad4-rad16': '1.80 [0.53]'}
+   clip eta = 1e-06, fp32                   5  {'erm|contra|rad4-rad16': '4.39 [1.64]', 'slim|color_|rad4-rad16': '5.73 [2.23]', 'slim|contra|rad4-rad16': '1.96 [0.47]'}
+   clip eta = 1e-07, fp32                   5  {'erm|contra|rad4-rad16': '4.99 [1.81]', 'slim|color_|rad4-rad16': '6.49 [2.48]', 'slim|contra|rad4-rad16': '2.11 [0.40]'}
+   clip eta = 1e-08, fp32                   5  {'erm|contra|rad4-rad16': '5.59 [1.97]', 'slim|color_|rad4-rad16': '7.24 [2.72]', 'slim|contra|rad4-rad16': '2.26 [0.33]'}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c73_route_robustness_table.json

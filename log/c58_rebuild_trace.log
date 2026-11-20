@@ -1,0 +1,9 @@
+L2_L3_this_pipeline {'hair_light': 0.0103, 'hair': 0.0372, 'hair_heavy': 0.1289, 'ruler': 0.0047} mixture 0.0453 [0.0330558642745018, 0.05885879695415497] indeterminate
+L2_L3_reimplementation_cached {'hair_light': 0.0077, 'hair': 0.0389, 'hair_heavy': 0.103, 'ruler': 0.0032} mixture 0.0382 [0.02823927786920611, 0.04862066221569466] equivalence
+L4_this_pipeline_bright_ruler {'hair_light': 0.0103, 'hair': 0.0372, 'hair_heavy': 0.1289, 'ruler': 0.0035} mixture 0.045 [0.03305082395672798, 0.05826067551970482] indeterminate
+L5_this_pipeline_single_blend_hair {'hair_light': 0.0104, 'hair': 0.0363, 'hair_heavy': 0.1267, 'ruler': 0.0047} mixture 0.0445 [0.03234186768531799, 0.058048419654369354] indeterminate
+L6_reimplementation_inference_on_this_pipeline_edits {'hair_light': 0.0114, 'hair': 0.0394, 'hair_heavy': 0.1342, 'ruler': 0.0049} mixture 0.0475 [0.03536517173051834, 0.06103387102484703] indeterminate
+L1 {'max_abs': 0.7377905026078224, 'mean_abs': 0.017328249537547052, 'benign_mean_abs': 0.006015322618135172, 'worst_image': 'ISIC_6334282', 'worst_label': 1, 'share_images_over_0.05': 0.05405405405405406}
+L6 {'reimpl_inference_vs_reimpl_cache_mean_abs': 0.01606294010550897, 'reimpl_inference_vs_this_pipeline_mean_abs': 0.0027436395175755024, 'reimpl_inference_vs_this_pipeline_max_abs': 0.024591445922851562}
+L7 {'mean_abs': 0.01606294010550897, 'max_abs': 0.7221378684043884, 'share_over_0.05': 0.04864864864864865, 'rerun_vs_this_pipeline_mean_abs': 0.0027436395175755024}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c58_rebuild_trace.json

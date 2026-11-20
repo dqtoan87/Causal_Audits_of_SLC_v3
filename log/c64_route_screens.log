@@ -1,0 +1,27 @@
+rebuild reproduces the recorded frontier mismatches to 0.00e+00
+registered contrast@0  rad4   n=77 maxSMD=0.884 link=8.84 A1=0 A2=1 (shift 0.029 ratio 0.124; target 0.000 off 0.059) A2t=1 A3=0.987 G2=0.79 off(ctrl/edit)=0.049/0.253 valid=0 valid_t=0
+registered contrast@0  rad16  n=77 maxSMD=0.376 link=3.76 A1=0 A2=0 (shift 0.037 ratio 0.155; target 0.000 off 0.073) A2t=1 A3=0.987 G2=0.66 off(ctrl/edit)=0.053/0.253 valid=0 valid_t=0
+registered contrast@0  hue4   n=77 maxSMD=0.944 link=9.44 A1=0 A2=1 (shift 0.022 ratio 0.095; target 0.000 off 0.044) A2t=1 A3=0.987 G2=0.66 off(ctrl/edit)=0.265/0.251 valid=0 valid_t=0
+registered contrast@0  hue16  n=78 maxSMD=0.942 link=9.42 A1=0 A2=1 (shift 0.021 ratio 0.090; target 0.000 off 0.042) A2t=1 A3=1.000 G2=0.42 off(ctrl/edit)=0.256/0.252 valid=0 valid_t=0
+registered contrast@2  rad4   n=76 maxSMD=0.750 link=7.50 A1=0 A2=0 (shift 0.176 ratio 0.260; target 0.000 off 0.353) A2t=1 A3=0.974 G2=0.13 off(ctrl/edit)=0.200/0.789 valid=0 valid_t=0
+registered contrast@2  rad16  n=77 maxSMD=0.182 link=1.82 A1=0 A2=0 (shift 0.199 ratio 0.293; target 0.000 off 0.397) A2t=1 A3=0.987 G2=0.23 off(ctrl/edit)=0.264/0.785 valid=0 valid_t=0
+registered contrast@2  hue4   n=77 maxSMD=0.957 link=9.57 A1=0 A2=0 (shift 0.171 ratio 0.252; target 0.000 off 0.342) A2t=1 A3=0.987 G2=0.52 off(ctrl/edit)=1.486/0.785 valid=0 valid_t=0
+registered contrast@2  hue16  n=75 maxSMD=0.929 link=9.29 A1=0 A2=0 (shift 0.150 ratio 0.221; target 0.000 off 0.299) A2t=1 A3=0.962 G2=0.36 off(ctrl/edit)=1.290/0.785 valid=0 valid_t=0
+registered color_var@0 rad4   n=78 maxSMD=0.766 link=7.66 A1=0 A2=0 (shift 0.025 ratio 0.174; target 0.000 off 0.049) A2t=1 A3=1.000 G2=0.96 off(ctrl/edit)=0.025/0.161 valid=0 valid_t=0
+registered color_var@0 rad16  n=78 maxSMD=0.274 link=2.74 A1=0 A2=0 (shift 0.065 ratio 0.458; target 0.000 off 0.130) A2t=1 A3=1.000 G2=0.82 off(ctrl/edit)=0.032/0.161 valid=0 valid_t=0
+registered color_var@0 hue4   n=78 maxSMD=1.083 link=10.83 A1=0 A2=1 (shift 0.011 ratio 0.080; target 0.000 off 0.023) A2t=1 A3=1.000 G2=0.00 off(ctrl/edit)=0.030/0.161 valid=0 valid_t=0
+registered color_var@0 hue16  n=78 maxSMD=1.086 link=10.86 A1=0 A2=1 (shift 0.016 ratio 0.110; target 0.000 off 0.031) A2t=1 A3=1.000 G2=0.01 off(ctrl/edit)=0.042/0.161 valid=0 valid_t=0
+registered color_var@2 rad4   n=77 maxSMD=0.492 link=4.92 A1=0 A2=0 (shift 0.091 ratio 0.223; target 0.000 off 0.182) A2t=1 A3=0.987 G2=0.35 off(ctrl/edit)=0.278/0.509 valid=0 valid_t=0
+registered color_var@2 rad16  n=77 maxSMD=0.008 link=0.08 A1=1 A2=0 (shift 0.234 ratio 0.572; target 0.000 off 0.467) A2t=1 A3=0.987 G2=0.39 off(ctrl/edit)=0.288/0.509 valid=0 valid_t=1
+registered color_var@2 hue4   n=77 maxSMD=1.049 link=10.49 A1=0 A2=0 (shift 0.077 ratio 0.188; target 0.000 off 0.154) A2t=1 A3=0.987 G2=0.00 off(ctrl/edit)=0.196/0.509 valid=0 valid_t=0
+registered color_var@2 hue16  n=77 maxSMD=1.053 link=10.53 A1=0 A2=0 (shift 0.103 ratio 0.253; target 0.000 off 0.207) A2t=1 A3=0.987 G2=0.00 off(ctrl/edit)=0.171/0.509 valid=0 valid_t=0
+frontier   contrast@0  rad    n=74 maxSMD=0.178 link=1.78 A1=0 A2=0 (shift 0.043 ratio 0.179; target 0.000 off 0.085) A2t=1 A3=0.949 G2=0.57 off(ctrl/edit)=0.064/0.254 valid=0 valid_t=0
+frontier   contrast@0  hue    n=75 maxSMD=0.923 link=9.23 A1=0 A2=1 (shift 0.023 ratio 0.098; target 0.000 off 0.046) A2t=1 A3=0.962 G2=0.43 off(ctrl/edit)=0.252/0.253 valid=0 valid_t=0
+frontier   contrast@2  rad    n=73 maxSMD=0.056 link=0.56 A1=1 A2=0 (shift 0.203 ratio 0.300; target 0.000 off 0.406) A2t=1 A3=0.936 G2=0.19 off(ctrl/edit)=0.260/0.792 valid=0 valid_t=0
+frontier   contrast@2  hue    n=73 maxSMD=0.904 link=9.04 A1=0 A2=0 (shift 0.146 ratio 0.216; target 0.000 off 0.292) A2t=1 A3=0.936 G2=0.37 off(ctrl/edit)=1.224/0.785 valid=0 valid_t=0
+frontier   color_var@0 rad    n=77 maxSMD=0.123 link=1.23 A1=0 A2=0 (shift 0.110 ratio 0.777; target 0.000 off 0.221) A2t=1 A3=0.987 G2=0.90 off(ctrl/edit)=0.036/0.160 valid=0 valid_t=0
+frontier   color_var@0 hue    n=78 maxSMD=1.085 link=10.85 A1=0 A2=1 (shift 0.010 ratio 0.070; target 0.000 off 0.020) A2t=1 A3=1.000 G2=0.00 off(ctrl/edit)=0.025/0.161 valid=0 valid_t=0
+frontier   color_var@2 rad    n=77 maxSMD=0.006 link=0.06 A1=1 A2=0 (shift 0.291 ratio 0.712; target 0.000 off 0.582) A2t=1 A3=0.987 G2=0.40 off(ctrl/edit)=0.260/0.509 valid=0 valid_t=1
+frontier   color_var@2 hue    n=77 maxSMD=1.050 link=10.50 A1=0 A2=0 (shift 0.083 ratio 0.203; target 0.000 off 0.166) A2t=1 A3=0.987 G2=0.00 off(ctrl/edit)=0.169/0.509 valid=0 valid_t=0
+edit off-target: {'contrast@0': {'median_rel_cielab': 0.252, 'mean_rel_proxy': 0.227}, 'contrast@2': {'median_rel_cielab': 0.784, 'mean_rel_proxy': 0.677}, 'color_var@0': {'median_rel_cielab': 0.161, 'mean_rel_proxy': 0.069}, 'color_var@2': {'median_rel_cielab': 0.507, 'mean_rel_proxy': 0.168}}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c64_route_screens.json (14s)

@@ -1,0 +1,231 @@
+{
+ "design": "Conditional logistic regression stratified by patient, with an exposure-by-modifier interaction. Main effects of patient-constant modifiers are absorbed by the strata; their interaction with the exposure is not, because the exposure varies within a stratum. The reported delta is the log ratio of odds ratios between modifier groups; delta = 0 is the common-odds-ratio restriction the primary model imposes.",
+ "modifier_axes": {
+  "sex_male": "recorded sex, constant within every patient",
+  "age_ge60": "age at or above 60, constant within 942 of 1,042 patients",
+  "ita_light": "the lighter half of the individual typology angle quartiles, varies within patient",
+  "site_limb": "extremity versus head or trunk, varies within patient"
+ },
+ "concepts": {
+  "C_color": {
+   "column": "tbp_lv_norm_color",
+   "common_or": 2.7148472799226155,
+   "common_log_or": 0.998735701314873,
+   "n_strata": 239,
+   "n_cases": 349,
+   "axes": {
+    "sex_male": {
+     "or_group0": 2.8676930693275144,
+     "or_group1": 2.6574641295059087,
+     "delta_log_or": -0.07613556463871413,
+     "se_delta": 0.3348372326468626,
+     "ratio_of_ors": 0.9266905715712089,
+     "ci_ratio_of_ors": [
+      0.4807458433989922,
+      1.7862981598912235
+     ],
+     "z": -0.22738082033729742,
+     "p": 0.8201276328786516,
+     "n_cases_group0": 105,
+     "n_cases_group1": 244,
+     "converged": true
+    },
+    "age_ge60": {
+     "or_group0": 3.351890276307395,
+     "or_group1": 2.5114477393261674,
+     "delta_log_or": -0.28866507284430487,
+     "se_delta": 0.35863077812047944,
+     "ratio_of_ors": 0.7492631119455677,
+     "ci_ratio_of_ors": [
+      0.3709895447790125,
+      1.5132372834300838
+     ],
+     "z": -0.8049088099943555,
+     "p": 0.4208723040957453,
+     "n_cases_group0": 117,
+     "n_cases_group1": 232,
+     "converged": true
+    },
+    "ita_light": {
+     "or_group0": 3.111723957545807,
+     "or_group1": 2.4370940742532823,
+     "delta_log_or": -0.24437052341180987,
+     "se_delta": 0.28516421420943555,
+     "ratio_of_ors": 0.7831973875264308,
+     "ci_ratio_of_ors": [
+      0.4478520336012832,
+      1.3696446634299009
+     ],
+     "z": -0.856946668744118,
+     "p": 0.3914743592427725,
+     "n_cases_group0": 164,
+     "n_cases_group1": 185,
+     "converged": true
+    },
+    "site_limb": {
+     "or_group0": 1.9758052068063734,
+     "or_group1": 5.064915624504649,
+     "delta_log_or": 0.9413614641088542,
+     "se_delta": 0.28594272650684627,
+     "ratio_of_ors": 2.5634691147977144,
+     "ci_ratio_of_ors": [
+      1.463621318941919,
+      4.489804717570221
+     ],
+     "z": 3.29213292329125,
+     "p": 0.000994306045476351,
+     "n_cases_group0": 238,
+     "n_cases_group1": 111,
+     "converged": true
+    }
+   }
+  },
+  "D_size": {
+   "column": "tbp_lv_areaMM2",
+   "common_or": 2.4247101978089782,
+   "common_log_or": 0.8857120111898752,
+   "n_strata": 248,
+   "n_cases": 362,
+   "axes": {
+    "sex_male": {
+     "or_group0": 2.6193630418126994,
+     "or_group1": 2.3481695911555835,
+     "delta_log_or": -0.10929504712681133,
+     "se_delta": 0.2953518394328163,
+     "ratio_of_ors": 0.8964658787926398,
+     "ci_ratio_of_ors": [
+      0.5024874309406698,
+      1.599345620118306
+     ],
+     "z": -0.37005033500620094,
+     "p": 0.7113449863042316,
+     "n_cases_group0": 112,
+     "n_cases_group1": 250,
+     "converged": true
+    },
+    "age_ge60": {
+     "or_group0": 3.2408903490181244,
+     "or_group1": 2.180308737920769,
+     "delta_log_or": -0.39638160146069784,
+     "se_delta": 0.3183371732840835,
+     "ratio_of_ors": 0.672749924594433,
+     "ci_ratio_of_ors": [
+      0.3604786810784416,
+      1.2555318380765195
+     ],
+     "z": -1.2451627856447907,
+     "p": 0.21307191892637647,
+     "n_cases_group0": 122,
+     "n_cases_group1": 240,
+     "converged": true
+    },
+    "ita_light": {
+     "or_group0": 2.1143428210271007,
+     "or_group1": 2.6893060838757044,
+     "delta_log_or": 0.24053915765624595,
+     "se_delta": 0.25937497197691267,
+     "ratio_of_ors": 1.2719347388373374,
+     "ci_ratio_of_ors": [
+      0.7650333988979351,
+      2.114702419778986
+     ],
+     "z": 0.9273799851346362,
+     "p": 0.3537292787246058,
+     "n_cases_group0": 171,
+     "n_cases_group1": 191,
+     "converged": true
+    },
+    "site_limb": {
+     "or_group0": 1.9108717164892828,
+     "or_group1": 3.811370906868931,
+     "delta_log_or": 0.6904294084862267,
+     "se_delta": 0.2739540659188744,
+     "ratio_of_ors": 1.9945718354507382,
+     "ci_ratio_of_ors": [
+      1.1658838154710944,
+      3.412275523497016
+     ],
+     "z": 2.5202378587463,
+     "p": 0.011727555548407839,
+     "n_cases_group0": 240,
+     "n_cases_group1": 122,
+     "converged": true
+    }
+   }
+  },
+  "contrast_LB": {
+   "column": "tbp_lv_deltaLBnorm",
+   "common_or": 2.679304915831166,
+   "common_log_or": 0.9855574011187147,
+   "n_strata": 219,
+   "n_cases": 299,
+   "axes": {
+    "sex_male": {
+     "or_group0": 2.7082515111471817,
+     "or_group1": 2.6679456539404782,
+     "delta_log_or": -0.014994469564201588,
+     "se_delta": 0.3618228850023644,
+     "ratio_of_ors": 0.9851173877164641,
+     "ci_ratio_of_ors": [
+      0.4847280222679706,
+      2.0020634727092714
+     ],
+     "z": -0.041441462620872095,
+     "p": 0.9669439587807698,
+     "n_cases_group0": 90,
+     "n_cases_group1": 209,
+     "converged": true
+    },
+    "age_ge60": {
+     "or_group0": 1.9585223215453569,
+     "or_group1": 3.0443009660612677,
+     "delta_log_or": 0.44108103568642154,
+     "se_delta": 0.34037506703332265,
+     "ratio_of_ors": 1.5543866580285821,
+     "ci_ratio_of_ors": [
+      0.7976749497146247,
+      3.028950430901273
+     ],
+     "z": 1.295867642512252,
+     "p": 0.19502108877587487,
+     "n_cases_group0": 101,
+     "n_cases_group1": 198,
+     "converged": true
+    },
+    "ita_light": {
+     "or_group0": 3.233789560154483,
+     "or_group1": 2.31212113256209,
+     "delta_log_or": -0.33548934555176313,
+     "se_delta": 0.286729833295899,
+     "ratio_of_ors": 0.714988124475124,
+     "ci_ratio_of_ors": [
+      0.4075955811597356,
+      1.2542040242092674
+     ],
+     "z": -1.1700538506767286,
+     "p": 0.24197929855383904,
+     "n_cases_group0": 149,
+     "n_cases_group1": 150,
+     "converged": true
+    },
+    "site_limb": {
+     "or_group0": 1.928211723330392,
+     "or_group1": 5.027553067990669,
+     "delta_log_or": 0.9583403929870924,
+     "se_delta": 0.2763758160836904,
+     "ratio_of_ors": 2.6073656783432058,
+     "ci_ratio_of_ors": [
+      1.5168621004957428,
+      4.481854862337372
+     ],
+     "z": 3.4675262349904514,
+     "p": 0.0005252724654820094,
+     "n_cases_group0": 201,
+     "n_cases_group1": 98,
+     "converged": true
+    }
+   }
+  }
+ },
+ "runtime_sec": 624.1
+}

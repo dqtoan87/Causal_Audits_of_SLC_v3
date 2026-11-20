@@ -1,0 +1,23 @@
+83 images / 44 patients
+
+target         control set         |C|  α/β bracketed by model
+contrast@2     A1+A3                 1  N/N  N/N  N/N
+contrast@2     A3                    9  N/Y  N/N  N/N
+contrast@2     all                  15  Y/Y  Y/N  Y/N
+
+color_var@2    A1+A3                 1  N/N  N/N  N/N
+color_var@2    A3                    9  N/Y  Y/N  N/N
+color_var@2    all                  15  Y/Y  Y/Y  Y/N
+
+contrast@0     A1+A3                 2  Y/N  N/N  N/N
+contrast@0     A3                   13  Y/Y  Y/N  N/N
+contrast@0     all                  15  Y/Y  Y/Y  N/N
+
+color_var@0    A1+A3                 2  Y/N  N/N  N/N
+color_var@0    A3                   13  Y/Y  Y/N  N/N
+color_var@0    all                  15  Y/Y  Y/Y  N/N
+
+A1+A3  |C| [1, 2]  bracketed  0/12  edge |SMD| n/a
+A3     |C| [9, 13]  bracketed  2/12  edge |SMD| [1.35, 2.09]
+all    |C| [15, 15]  bracketed  7/12  edge |SMD| [0.44, 2.09]
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c45_bracketing.json

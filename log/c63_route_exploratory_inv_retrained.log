@@ -1,0 +1,19 @@
+[erm] scored (48s)
+[slim] scored (50s)
+[causal] scored (52s)
+/mnt/data2/Toan/Causal_ML_XAI/.venv/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1593: RuntimeWarning: All-NaN slice encountered
+  return fnb._ureduce(a,
+/mnt/data2/Toan/Causal_ML_XAI/.venv/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+crit 2.859, analysed 9 of 48
+  erm|contrast@0|D_rad4-hue4         n=30/24  D=-1.416  sim[-2.840,+0.008]  indeterminate
+  slim|contrast@0|D_rad4-hue4        n=30/24  D=-3.596  sim[-8.150,+0.958]  indeterminate
+  causal|contrast@0|D_rad4-hue4      n=30/24  D=+0.252  sim[-1.413,+1.917]  indeterminate
+  erm|contrast@0|D_rad4-rad16        n=34/27  D=+0.494  sim[-0.012,+0.999]  indeterminate
+  slim|contrast@0|D_rad4-rad16       n=34/27  D=+2.208  sim[+0.394,+4.022]  indeterminate
+  causal|contrast@0|D_rad4-rad16     n=34/27  D=+0.178  sim[-1.427,+1.784]  indeterminate
+  erm|color_var@0|D_rad4-rad16       n=33/26  D=-0.076  sim[-0.544,+0.392]  indeterminate
+  slim|color_var@0|D_rad4-rad16      n=33/26  D=+0.649  sim[-0.388,+1.686]  indeterminate
+  causal|color_var@0|D_rad4-rad16    n=33/26  D=-0.060  sim[-1.656,+1.536]  indeterminate
+summary {'exceeds': 0, 'within': 0, 'indeterminate': 9, 'direction': {'exceeds': 0, 'within': 0, 'indeterminate': 3}, 'scale': {'exceeds': 0, 'within': 0, 'indeterminate': 6}}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c63_route_exploratory.json (52s)

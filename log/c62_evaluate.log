@@ -1,0 +1,35 @@
+[erm] scored (109s)
+[slim] scored (114s)
+[causal] scored (119s)
+/mnt/data2/Toan/Causal_ML_XAI/.venv/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1593: RuntimeWarning: All-NaN slice encountered
+  return fnb._ureduce(a,
+/mnt/data2/Toan/Causal_ML_XAI/.venv/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+primary {'routes disagree': 3, 'routes agree': 2, 'indeterminate': 7, 'direction_pair_exceeds': 0, 'scale_pair_exceeds': 3} crit 3.304
+   erm|contrast@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   slim|contrast@0 routes disagree {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'exceeds', 'hue4-hue16': 'indeterminate'}
+   causal|contrast@0 routes agree {'rad4-hue4': 'within', 'rad16-hue16': 'within', 'rad4-rad16': 'within', 'hue4-hue16': 'within'}
+   erm|contrast@2 routes disagree {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'exceeds', 'hue4-hue16': 'indeterminate'}
+   slim|contrast@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   causal|contrast@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'within', 'hue4-hue16': 'within'}
+   erm|color_var@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'within', 'hue4-hue16': 'indeterminate'}
+   slim|color_var@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   causal|color_var@0 routes agree {'rad4-hue4': 'within', 'rad16-hue16': 'within', 'rad4-rad16': 'within', 'hue4-hue16': 'within'}
+   erm|color_var@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   slim|color_var@2 routes disagree {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'exceeds', 'hue4-hue16': 'indeterminate'}
+   causal|color_var@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'within', 'hue4-hue16': 'within'}
+secondary_independent {'routes disagree': 0, 'routes agree': 0, 'indeterminate': 0, 'direction_pair_exceeds': 0, 'scale_pair_exceeds': 0} crit nan
+secondary_all_g1 {'routes disagree': 2, 'routes agree': 0, 'indeterminate': 10, 'direction_pair_exceeds': 0, 'scale_pair_exceeds': 2} crit 3.278
+   erm|contrast@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   slim|contrast@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   causal|contrast@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'within', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'within'}
+   erm|contrast@2 routes disagree {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'exceeds', 'hue4-hue16': 'indeterminate'}
+   slim|contrast@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   causal|contrast@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'within'}
+   erm|color_var@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'within', 'hue4-hue16': 'indeterminate'}
+   slim|color_var@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   causal|color_var@0 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'within', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'within'}
+   erm|color_var@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'indeterminate', 'hue4-hue16': 'indeterminate'}
+   slim|color_var@2 routes disagree {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'exceeds', 'hue4-hue16': 'indeterminate'}
+   causal|color_var@2 indeterminate {'rad4-hue4': 'indeterminate', 'rad16-hue16': 'indeterminate', 'rad4-rad16': 'within', 'hue4-hue16': 'within'}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c62_evaluation.json (122s)

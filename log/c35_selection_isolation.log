@@ -1,0 +1,74 @@
+##### C35 tách riêng hiệu ứng chọn checkpoint 07:56:51 #####
+  TRAIN 6615 ảnh / 745 bệnh nhân / 315 ca dương   (split gốc, không giảm cỡ)
+  FOLD0 3978 ảnh / 199 bệnh nhân / 78 ca dương   (vừa audit, vừa là nơi nhánh A chọn)
+  EVAL  178 ảnh / 90 bệnh nhân (78 ác tính) — cùng bộ ảnh với audit hậu-chọn của bài
+
+[erm] huấn luyện (plain, 15 epoch cố định) ...
+      [erm] ep01/15  fold0_auc=0.9128  (241s)
+      [erm] ep02/15  fold0_auc=0.9179  (154s)
+      [erm] ep03/15  fold0_auc=0.9052  (141s)
+      [erm] ep04/15  fold0_auc=0.8765  (133s)
+      [erm] ep05/15  fold0_auc=0.8437  (141s)
+      [erm] ep06/15  fold0_auc=0.8785  (146s)
+      [erm] ep07/15  fold0_auc=0.8565  (140s)
+      [erm] ep08/15  fold0_auc=0.8455  (156s)
+      [erm] ep09/15  fold0_auc=0.8624  (136s)
+      [erm] ep10/15  fold0_auc=0.8435  (128s)
+      [erm] ep11/15  fold0_auc=0.8720  (124s)
+      [erm] ep12/15  fold0_auc=0.8579  (128s)
+      [erm] ep13/15  fold0_auc=0.8488  (133s)
+      [erm] ep14/15  fold0_auc=0.8466  (130s)
+      [erm] ep15/15  fold0_auc=0.8486  (138s)
+[erm] leaky = epoch 2 (fold0 AUROC 0.9179); blind = epoch 15 (fold0 AUROC 0.8486)  (2221s)
+
+[slim] huấn luyện (plain, 15 epoch cố định) ...
+      [slim] ep01/15  fold0_auc=0.9027  (138s)
+      [slim] ep02/15  fold0_auc=0.8928  (149s)
+      [slim] ep03/15  fold0_auc=0.9159  (147s)
+      [slim] ep04/15  fold0_auc=0.8776  (139s)
+      [slim] ep05/15  fold0_auc=0.9120  (142s)
+      [slim] ep06/15  fold0_auc=0.9017  (132s)
+      [slim] ep07/15  fold0_auc=0.9156  (128s)
+      [slim] ep08/15  fold0_auc=0.8878  (129s)
+      [slim] ep09/15  fold0_auc=0.8743  (128s)
+      [slim] ep10/15  fold0_auc=0.8910  (127s)
+      [slim] ep11/15  fold0_auc=0.8741  (132s)
+      [slim] ep12/15  fold0_auc=0.8674  (132s)
+      [slim] ep13/15  fold0_auc=0.8734  (129s)
+      [slim] ep14/15  fold0_auc=0.8704  (129s)
+      [slim] ep15/15  fold0_auc=0.8756  (125s)
+[slim] leaky = epoch 3 (fold0 AUROC 0.9159); blind = epoch 15 (fold0 AUROC 0.8756)  (4240s)
+
+[causal] huấn luyện (causal, 15 epoch cố định) ...
+      [causal] ep01/15  fold0_auc=0.8998  (141s)
+      [causal] ep02/15  fold0_auc=0.9079  (137s)
+      [causal] ep03/15  fold0_auc=0.8733  (133s)
+      [causal] ep04/15  fold0_auc=0.9098  (140s)
+      [causal] ep05/15  fold0_auc=0.9185  (167s)
+      [causal] ep06/15  fold0_auc=0.9032  (192s)
+      [causal] ep07/15  fold0_auc=0.8796  (182s)
+      [causal] ep08/15  fold0_auc=0.8909  (186s)
+      [causal] ep09/15  fold0_auc=0.8915  (187s)
+      [causal] ep10/15  fold0_auc=0.8896  (190s)
+      [causal] ep11/15  fold0_auc=0.8973  (203s)
+      [causal] ep12/15  fold0_auc=0.9008  (308s)
+      [causal] ep13/15  fold0_auc=0.8795  (470s)
+      [causal] ep14/15  fold0_auc=0.8804  (558s)
+      [causal] ep15/15  fold0_auc=0.8741  (855s)
+[causal] leaky = epoch 5 (fold0 AUROC 0.9185); blind = epoch 15 (fold0 AUROC 0.8741)  (8303s)
+
+============================================================================================
+HIỆU ỨNG CHỌN CHECKPOINT, cỡ tập huấn luyện giữ nguyên 315 ca dương
+model subgroup      leaky E|Δp|   blind E|Δp|    tỉ số   phán quyết (leaky / blind)
+ERM   all                 0.412         0.247     1.66   exceedance / exceedance
+ERM   malignant           0.584         0.410     1.43   exceedance / exceedance
+ERM   benign              0.277         0.121     2.30   exceedance / exceedance
+Slim  all                 0.348         0.259     1.34   exceedance / exceedance
+Slim  malignant           0.556         0.436     1.27   exceedance / exceedance
+Slim  benign              0.185         0.121     1.53   exceedance / exceedance
+Inv   all                 0.298         0.225     1.32   exceedance / exceedance
+Inv   malignant           0.287         0.350     0.82   exceedance / exceedance
+Inv   benign              0.306         0.128     2.39   exceedance / exceedance
+
+tỉ số leaky/blind: 0.82 đến 2.39 | vượt ngưỡng 18/18 ô
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P2_clear/results/c35_selection_isolation.json  (8316s)

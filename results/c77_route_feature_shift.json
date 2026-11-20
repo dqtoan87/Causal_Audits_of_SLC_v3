@@ -1,0 +1,144 @@
+{
+ "encoder": "torchvision resnet50 IMAGENET1K_V2, pooled; shares no weights with the audited checkpoints",
+ "n_images": 78,
+ "natural_nn_median": 8.277641296386719,
+ "natural_nn_q95": 11.382936477661133,
+ "unedited_norm_median": 13.61863899230957,
+ "unedited_norm_max_ratio": 1.276796579360962,
+ "targets": {
+  "contrast@0": {
+   "n_images": 45,
+   "edit": {
+    "shift_median_over_nn": 0.40656012296676636,
+    "share_beyond_q95": 0.0,
+    "norm_ratio_max": 1.2364555597305298,
+    "norm_ratio_median": 0.9990894794464111
+   },
+   "rad4": {
+    "shift_median_over_nn": 0.6727455854415894,
+    "share_beyond_q95": 0.0,
+    "norm_ratio_max": 1.3021012544631958,
+    "norm_ratio_median": 1.0099475383758545
+   },
+   "rad16": {
+    "shift_median_over_nn": 0.5223865509033203,
+    "share_beyond_q95": 0.0,
+    "norm_ratio_max": 1.2357710599899292,
+    "norm_ratio_median": 0.9771957993507385
+   },
+   "hue4": {
+    "shift_median_over_nn": 0.9156854152679443,
+    "share_beyond_q95": 0.13333333333333333,
+    "norm_ratio_max": 1.3375550508499146,
+    "norm_ratio_median": 1.0050873756408691
+   },
+   "hue16": {
+    "shift_median_over_nn": 0.9533970952033997,
+    "share_beyond_q95": 0.13333333333333333,
+    "norm_ratio_max": 1.2995940446853638,
+    "norm_ratio_median": 0.9961565136909485
+   }
+  },
+  "contrast@2": {
+   "n_images": 44,
+   "edit": {
+    "shift_median_over_nn": 0.9169597029685974,
+    "share_beyond_q95": 0.0,
+    "norm_ratio_max": 1.299257755279541,
+    "norm_ratio_median": 0.9959545135498047
+   },
+   "rad4": {
+    "shift_median_over_nn": 1.4121865034103394,
+    "share_beyond_q95": 0.5909090909090909,
+    "norm_ratio_max": 1.3504406213760376,
+    "norm_ratio_median": 0.9951127767562866
+   },
+   "rad16": {
+    "shift_median_over_nn": 1.3010514974594116,
+    "share_beyond_q95": 0.45454545454545453,
+    "norm_ratio_max": 1.3074136972427368,
+    "norm_ratio_median": 1.0272263288497925
+   },
+   "hue4": {
+    "shift_median_over_nn": 1.6295474767684937,
+    "share_beyond_q95": 0.8409090909090909,
+    "norm_ratio_max": 1.2507247924804688,
+    "norm_ratio_median": 1.006974220275879
+   },
+   "hue16": {
+    "shift_median_over_nn": 1.6015136241912842,
+    "share_beyond_q95": 0.8409090909090909,
+    "norm_ratio_max": 1.2240657806396484,
+    "norm_ratio_median": 0.9887248277664185
+   }
+  },
+  "color_var@0": {
+   "n_images": 47,
+   "edit": {
+    "shift_median_over_nn": 0.42264899611473083,
+    "share_beyond_q95": 0.0,
+    "norm_ratio_max": 1.2276790142059326,
+    "norm_ratio_median": 0.9928788542747498
+   },
+   "rad4": {
+    "shift_median_over_nn": 0.6297689080238342,
+    "share_beyond_q95": 0.0,
+    "norm_ratio_max": 1.2579542398452759,
+    "norm_ratio_median": 0.9882822036743164
+   },
+   "rad16": {
+    "shift_median_over_nn": 0.5365634560585022,
+    "share_beyond_q95": 0.0,
+    "norm_ratio_max": 1.2636419534683228,
+    "norm_ratio_median": 0.9663894772529602
+   },
+   "hue4": {
+    "shift_median_over_nn": 0.7164604067802429,
+    "share_beyond_q95": 0.02127659574468085,
+    "norm_ratio_max": 1.3030377626419067,
+    "norm_ratio_median": 0.9650753736495972
+   },
+   "hue16": {
+    "shift_median_over_nn": 0.7349916696548462,
+    "share_beyond_q95": 0.02127659574468085,
+    "norm_ratio_max": 1.2789047956466675,
+    "norm_ratio_median": 0.9895017147064209
+   }
+  },
+  "color_var@2": {
+   "n_images": 46,
+   "edit": {
+    "shift_median_over_nn": 0.9794453382492065,
+    "share_beyond_q95": 0.08695652173913043,
+    "norm_ratio_max": 1.252301812171936,
+    "norm_ratio_median": 1.0058866739273071
+   },
+   "rad4": {
+    "shift_median_over_nn": 1.4826792478561401,
+    "share_beyond_q95": 0.6521739130434783,
+    "norm_ratio_max": 1.325329303741455,
+    "norm_ratio_median": 0.9989792108535767
+   },
+   "rad16": {
+    "shift_median_over_nn": 1.4106518030166626,
+    "share_beyond_q95": 0.5652173913043478,
+    "norm_ratio_max": 1.2301467657089233,
+    "norm_ratio_median": 0.9944232702255249
+   },
+   "hue4": {
+    "shift_median_over_nn": 1.5649281740188599,
+    "share_beyond_q95": 0.782608695652174,
+    "norm_ratio_max": 1.2474371194839478,
+    "norm_ratio_median": 0.9706318378448486
+   },
+   "hue16": {
+    "shift_median_over_nn": 1.5633008480072021,
+    "share_beyond_q95": 0.782608695652174,
+    "norm_ratio_max": 1.2112449407577515,
+    "norm_ratio_median": 0.9965261220932007
+   }
+  }
+ },
+ "largest_norm_ratio": 1.3504406213760376,
+ "runtime_sec": 107.5
+}

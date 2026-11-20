@@ -1,0 +1,27 @@
+##### C30 audit on the patient-disjoint fold 16:09:17 #####
+AUDIT eval: 183 images / 100 patients (83 malignant)
+================================================================================================
+backbone model subgroup     E|Δp| held-out                95% CI     magnitude     E[Δp]              95% CI     direction         joint
+b3       ERM   all                   0.373        [0.305, 0.445]    exceedance    -0.313    [-0.395, -0.234]    exceedance    exceedance
+b3       ERM   malignant             0.553        [0.458, 0.631]    exceedance    -0.523    [-0.614, -0.412]    exceedance    exceedance
+b3       ERM   benign                0.224        [0.193, 0.256]    exceedance    -0.139    [-0.179, -0.099]    exceedance    exceedance
+b3       Slim  all                   0.551        [0.491, 0.607]    exceedance    -0.458    [-0.525, -0.386]    exceedance    exceedance
+b3       Slim  malignant             0.769        [0.722, 0.812]    exceedance    -0.717    [-0.777, -0.647]    exceedance    exceedance
+b3       Slim  benign                0.370        [0.328, 0.414]    exceedance    -0.243    [-0.301, -0.188]    exceedance    exceedance
+b3       Inv   all                   0.223        [0.167, 0.277]    exceedance    -0.135    [-0.194, -0.072]    exceedance    exceedance
+b3       Inv   malignant             0.383        [0.307, 0.445]    exceedance    -0.307    [-0.384, -0.213]    exceedance    exceedance
+b3       Inv   benign                0.091        [0.063, 0.124]    exceedance     0.008     [-0.023, 0.036]   equivalence    exceedance
+------------------------------------------------------------------------------------------------
+r50      ERM   all                   0.215        [0.184, 0.247]    exceedance     0.171      [0.136, 0.209]    exceedance    exceedance
+r50      ERM   malignant             0.121        [0.091, 0.161]    exceedance     0.053      [0.017, 0.097] indeterminate    exceedance
+r50      ERM   benign                0.293        [0.272, 0.315]    exceedance     0.270      [0.241, 0.296]    exceedance    exceedance
+r50      Slim  all                   0.143        [0.131, 0.157]    exceedance     0.038      [0.005, 0.072] indeterminate    exceedance
+r50      Slim  malignant             0.122        [0.105, 0.140]    exceedance    -0.068    [-0.099, -0.023] indeterminate    exceedance
+r50      Slim  benign                0.160        [0.142, 0.180]    exceedance     0.125      [0.099, 0.151]    exceedance    exceedance
+r50      Inv   all                   0.106        [0.099, 0.114]    exceedance     0.061      [0.041, 0.081] indeterminate    exceedance
+r50      Inv   malignant             0.085        [0.077, 0.093]    exceedance    -0.006     [-0.024, 0.018]   equivalence    exceedance
+r50      Inv   benign                0.123        [0.113, 0.132]    exceedance     0.116      [0.104, 0.126]    exceedance    exceedance
+------------------------------------------------------------------------------------------------
+  exceeding tolerance 0.05: 18/18 cells
+================================================================================================
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c30_disjoint_audit.json   (72s)

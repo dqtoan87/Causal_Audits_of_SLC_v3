@@ -1,0 +1,28 @@
+[16:40:54] audit cohort: 183 images, 100 patients, 83 malignant
+[16:41:33]   seed 42: overlays done, altered pixels hair_light=1.02% hair=2.36% hair_heavy=4.07% ruler=1.05%
+[16:42:12]   seed 1: overlays done, altered pixels hair_light=1.02% hair=2.36% hair_heavy=4.02% ruler=1.04%
+[16:42:51]   seed 2: overlays done, altered pixels hair_light=1.02% hair=2.36% hair_heavy=4.03% ruler=1.04%
+[16:43:29]   seed 3: overlays done, altered pixels hair_light=1.02% hair=2.36% hair_heavy=4.03% ruler=1.03%
+[16:44:07]   seed 7: overlays done, altered pixels hair_light=1.02% hair=2.36% hair_heavy=4.04% ruler=1.04%
+[16:44:46]   seed 11: overlays done, altered pixels hair_light=1.02% hair=2.37% hair_heavy=4.04% ruler=1.05%
+[16:45:25]   seed 99: overlays done, altered pixels hair_light=1.02% hair=2.36% hair_heavy=4.09% ruler=1.05%
+[16:45:49]   b3   ERM   all        magnitude 0.3633 to 0.3840 (5.6% of seed 42) | smallest lower bound 0.2992 | verdicts ['exceedance']
+[16:45:49]   b3   ERM   malignant  magnitude 0.5435 to 0.5766 (6.0% of seed 42) | smallest lower bound 0.4577 | verdicts ['exceedance']
+[16:45:49]   b3   ERM   benign     magnitude 0.2105 to 0.2285 (8.0% of seed 42) | smallest lower bound 0.1799 | verdicts ['exceedance']
+[16:46:13]   b3   Slim  all        magnitude 0.5409 to 0.5662 (4.6% of seed 42) | smallest lower bound 0.4845 | verdicts ['exceedance']
+[16:46:13]   b3   Slim  malignant  magnitude 0.7414 to 0.7692 (3.6% of seed 42) | smallest lower bound 0.6848 | verdicts ['exceedance']
+[16:46:13]   b3   Slim  benign     magnitude 0.3696 to 0.4021 (8.8% of seed 42) | smallest lower bound 0.3280 | verdicts ['exceedance']
+[16:46:36]   b3   Inv   all        magnitude 0.2180 to 0.2341 (7.2% of seed 42) | smallest lower bound 0.1628 | verdicts ['exceedance']
+[16:46:36]   b3   Inv   malignant  magnitude 0.3737 to 0.3940 (5.3% of seed 42) | smallest lower bound 0.2988 | verdicts ['exceedance']
+[16:46:36]   b3   Inv   benign     magnitude 0.0836 to 0.1062 (24.9% of seed 42) | smallest lower bound 0.0585 | verdicts ['exceedance']
+[16:46:59]   r50  ERM   all        magnitude 0.2085 to 0.2153 (3.2% of seed 42) | smallest lower bound 0.1758 | verdicts ['exceedance']
+[16:46:59]   r50  ERM   malignant  magnitude 0.1176 to 0.1283 (8.8% of seed 42) | smallest lower bound 0.0853 | verdicts ['exceedance']
+[16:46:59]   r50  ERM   benign     magnitude 0.2765 to 0.2933 (5.7% of seed 42) | smallest lower bound 0.2508 | verdicts ['exceedance']
+[16:47:22]   r50  Slim  all        magnitude 0.1427 to 0.1492 (4.5% of seed 42) | smallest lower bound 0.1303 | verdicts ['exceedance']
+[16:47:22]   r50  Slim  malignant  magnitude 0.1225 to 0.1376 (12.3% of seed 42) | smallest lower bound 0.1045 | verdicts ['exceedance']
+[16:47:22]   r50  Slim  benign     magnitude 0.1586 to 0.1659 (4.6% of seed 42) | smallest lower bound 0.1393 | verdicts ['exceedance']
+[16:47:44]   r50  Inv   all        magnitude 0.1028 to 0.1067 (3.7% of seed 42) | smallest lower bound 0.0960 | verdicts ['exceedance']
+[16:47:44]   r50  Inv   malignant  magnitude 0.0854 to 0.0910 (6.5% of seed 42) | smallest lower bound 0.0772 | verdicts ['exceedance']
+[16:47:44]   r50  Inv   benign     magnitude 0.1157 to 0.1228 (5.8% of seed 42) | smallest lower bound 0.1067 | verdicts ['exceedance']
+[16:47:44] saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c50_overlay_seed.json
+[16:47:44]   18/18 cells with a verdict stable across 7 realizations | smallest lower bound 0.0585

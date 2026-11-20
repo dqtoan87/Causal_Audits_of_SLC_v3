@@ -1,0 +1,10 @@
+[17:00:30] audit set: 183 images
+[17:00:49] overlays done; % pixels changed: hair_light=1.02 hair=2.36 hair_heavy=4.07 ruler=1.05 vignette=67.59 jitter=95.60
+[17:00:50]   hair_light   feature 1.0555  ΔE  0.22  pixel  1.02%
+[17:00:51]   hair         feature 1.1678  ΔE  0.76  pixel  2.36%
+[17:00:52]   hair_heavy   feature 1.2603  ΔE  1.68  pixel  4.07%
+[17:00:52]   ruler        feature 0.2777  ΔE  0.48  pixel  1.05%
+[17:00:53]   vignette     feature 0.8702  ΔE  9.65  pixel 67.59%
+[17:00:54]   jitter       feature 0.1521  ΔE  8.62  pixel 95.60%
+[17:00:55]   between lesions feature 0.9499  ΔE 17.56
+[17:00:55] saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c52_overlay_perceptual.json

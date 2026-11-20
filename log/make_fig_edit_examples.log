@@ -1,0 +1,38 @@
+{
+ "audit_image": "ISIC_4114301",
+ "route_image": "ISIC_5583714",
+ "altered_pct": {
+  "hair": 2.24609375,
+  "hair_skin": 1.813616044819355,
+  "hair_lesion": 0.43247765861451626,
+  "ruler": 1.0483099147677422,
+  "ruler_skin": 0.9925063699483871
+ },
+ "route_rel_pct": {
+  "rad4": {
+   "lab_dE": 96.53718180145736,
+   "hf_change": 237.4662306974221,
+   "mean_abs": 100.0,
+   "frac_altered": 100.0
+  },
+  "rad16": {
+   "lab_dE": 95.64387724323026,
+   "hf_change": 168.01649125650303,
+   "mean_abs": 100.0,
+   "frac_altered": 100.0
+  },
+  "hue4": {
+   "lab_dE": 206.75528303666397,
+   "hf_change": 265.9678261259392,
+   "mean_abs": 100.0,
+   "frac_altered": 100.0
+  },
+  "hue16": {
+   "lab_dE": 210.21980084663062,
+   "hf_change": 169.4022789249995,
+   "mean_abs": 100.0,
+   "frac_altered": 100.0
+  }
+ }
+}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/paper/figures/p3_fig_edits.png

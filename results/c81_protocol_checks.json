@@ -1,0 +1,119 @@
+{
+ "library": {
+  "items_per_batch": 89,
+  "edits": 88,
+  "n_images": 83,
+  "duplicate_label_pairs": [
+   {
+    "a": "L:globrot_m@2",
+    "b": "contrast@2|globrot_m",
+    "model": "erm",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": 0.22427701303757816
+   },
+   {
+    "a": "L:globrot_m@2",
+    "b": "contrast@2|globrot_m",
+    "model": "slim",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": -1.704983226865171
+   },
+   {
+    "a": "L:globrot_m@2",
+    "b": "contrast@2|globrot_m",
+    "model": "causal",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": 0.05876309254083289
+   },
+   {
+    "a": "L:pixperm_m@2",
+    "b": "contrast@2|pixperm_m",
+    "model": "erm",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": -9.137756247477359
+   },
+   {
+    "a": "L:pixperm_m@2",
+    "b": "contrast@2|pixperm_m",
+    "model": "slim",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": -10.892090563673571
+   },
+   {
+    "a": "L:pixperm_m@2",
+    "b": "contrast@2|pixperm_m",
+    "model": "causal",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": -12.170598943549466
+   },
+   {
+    "a": "L:w2s24@2",
+    "b": "contrast@2|warp2_m",
+    "model": "erm",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": -8.400382522269187
+   },
+   {
+    "a": "L:w2s24@2",
+    "b": "contrast@2|warp2_m",
+    "model": "slim",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": -14.249519963580441
+   },
+   {
+    "a": "L:w2s24@2",
+    "b": "contrast@2|warp2_m",
+    "model": "causal",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": -6.258045182170638
+   },
+   {
+    "a": "color_var@2|texswap_m",
+    "b": "contrast@2|texswap_m",
+    "model": "erm",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": 0.25069058192781657
+   },
+   {
+    "a": "color_var@2|texswap_m",
+    "b": "contrast@2|texswap_m",
+    "model": "slim",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": 0.6430643125470862
+   },
+   {
+    "a": "color_var@2|texswap_m",
+    "b": "contrast@2|texswap_m",
+    "model": "causal",
+    "n_images": 83,
+    "max_abs_difference": 0.0,
+    "mean_response": 0.03565535487898861
+   }
+  ],
+  "duplicates_identical": true
+ },
+ "route_test": {
+  "c63_route_scores.npz": {
+   "items_per_batch": 25,
+   "edited_versions": 24,
+   "n_images": 78
+  },
+  "c63_route_scores_inv_retrained.npz": {
+   "items_per_batch": 25,
+   "edited_versions": 24,
+   "n_images": 78
+  }
+ },
+ "note": "one batch list per image within each tier; library and route-test responses are never combined in one equation"
+}

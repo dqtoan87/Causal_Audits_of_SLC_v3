@@ -1,0 +1,12 @@
+[16:47:52] disease side: max OR difference 2.752e-09, strata counts match True
+[16:47:52] model side: 17/18 cells with the same verdict; disagreeing ['r50|Inv|benign']
+[16:47:59] image cohorts: 183 and 185, 14 images shared
+[16:52:22]   overlay here: done 7 realizations
+[16:56:48]   overlay other: done 7 realizations
+[16:57:05]   ckpt here  × cohort here : 0.1228 -> exceedance
+[16:57:18]   ckpt here  × cohort other: 0.1235 -> exceedance
+[16:57:31]   ckpt other × cohort here : 0.0433 -> indeterminate
+[16:57:42]   ckpt other × cohort other: 0.0453 -> indeterminate
+[16:57:42]   checkpoint effect 0.0796 vs image-cohort effect 0.0006
+[16:57:42]   seed sweep on the other checkpoint: 0.0429 to 0.0514, verdicts ['indeterminate']
+[16:57:42] saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c51_independent_rebuild.json

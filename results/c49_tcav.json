@@ -1,0 +1,307 @@
+{
+ "n_images": 183,
+ "n_patients": 100,
+ "dose": 1.0,
+ "n_random_cavs": 20,
+ "seed": 42,
+ "note": "TCAV on the same checkpoints, concepts and audit images as the concept tier. The CAV is trained to separate activations of concept-edited images from activations of the originals, so the concept direction comes from the very intervention the paper performs. Significance is against N_RAND random CAVs from permuted labels, the standard TCAV control.",
+ "models": {
+  "dj_erm_b3": {
+   "label": "EfficientNet-B3 ERM",
+   "feature_dim": 1536,
+   "concepts": {
+    "contrast": {
+     "cav_accuracy_mean": 0.864071038251366,
+     "cav_accuracy_heldout_mean": 0.7281420765027322,
+     "tcav_mean": 0.8,
+     "tcav_sd": 0.41039134083406165,
+     "tcav_range": [
+      0.0,
+      1.0
+     ],
+     "null_mean": 0.45,
+     "null_sd": 0.5104177855340405,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.022160594278112202,
+     "significant": true,
+     "n_cav": 20,
+     "n_random": 20
+    },
+    "color_var": {
+     "cav_accuracy_mean": 0.8560109289617485,
+     "cav_accuracy_heldout_mean": 0.7120218579234974,
+     "tcav_mean": 0.85,
+     "tcav_sd": 0.36634754853252327,
+     "tcav_range": [
+      0.0,
+      1.0
+     ],
+     "null_mean": 0.45,
+     "null_sd": 0.5104177855340405,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.007381607219067096,
+     "significant": true,
+     "n_cav": 20,
+     "n_random": 20
+    }
+   }
+  },
+  "dj_slim_b3": {
+   "label": "EfficientNet-B3 Slim",
+   "feature_dim": 1536,
+   "concepts": {
+    "contrast": {
+     "cav_accuracy_mean": 0.8546448087431694,
+     "cav_accuracy_heldout_mean": 0.7092896174863389,
+     "tcav_mean": 0.8743169398907102,
+     "tcav_sd": 0.14413019810360467,
+     "tcav_range": [
+      0.4808743169398907,
+      1.0
+     ],
+     "null_mean": 0.5191256830601093,
+     "null_sd": 0.4488653922681308,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.00266143434997192,
+     "significant": true,
+     "n_cav": 20,
+     "n_random": 20
+    },
+    "color_var": {
+     "cav_accuracy_mean": 0.8631147540983607,
+     "cav_accuracy_heldout_mean": 0.7262295081967214,
+     "tcav_mean": 0.839071038251366,
+     "tcav_sd": 0.2104952840677798,
+     "tcav_range": [
+      0.46994535519125685,
+      1.0
+     ],
+     "null_mean": 0.5311475409836066,
+     "null_sd": 0.4462619859388037,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.009519501636807946,
+     "significant": true,
+     "n_cav": 20,
+     "n_random": 20
+    }
+   }
+  },
+  "dj_causal_b3": {
+   "label": "EfficientNet-B3 Inv",
+   "feature_dim": 1536,
+   "concepts": {
+    "contrast": {
+     "cav_accuracy_mean": 0.8610655737704918,
+     "cav_accuracy_heldout_mean": 0.7224043715846995,
+     "tcav_mean": 0.4972677595628415,
+     "tcav_sd": 0.3559625262674159,
+     "tcav_range": [
+      0.10382513661202186,
+      1.0
+     ],
+     "null_mean": 0.4614754098360655,
+     "null_sd": 0.420951648569228,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.7731649103946356,
+     "significant": false,
+     "n_cav": 20,
+     "n_random": 20
+    },
+    "color_var": {
+     "cav_accuracy_mean": 0.8416666666666666,
+     "cav_accuracy_heldout_mean": 0.683879781420765,
+     "tcav_mean": 0.5254098360655737,
+     "tcav_sd": 0.3257060049090953,
+     "tcav_range": [
+      0.16939890710382513,
+      1.0
+     ],
+     "null_mean": 0.47103825136612026,
+     "null_sd": 0.36552349002687473,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.6223265840598404,
+     "significant": false,
+     "n_cav": 20,
+     "n_random": 20
+    }
+   }
+  },
+  "dj_erm_r50": {
+   "label": "ResNet-50 ERM",
+   "feature_dim": 2048,
+   "concepts": {
+    "contrast": {
+     "cav_accuracy_mean": 0.9366120218579235,
+     "cav_accuracy_heldout_mean": 0.873224043715847,
+     "tcav_mean": 0.25,
+     "tcav_sd": 0.4442616583193193,
+     "tcav_range": [
+      0.0,
+      1.0
+     ],
+     "null_mean": 0.55,
+     "null_sd": 0.5104177855340404,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.0548058292407654,
+     "significant": false,
+     "n_cav": 20,
+     "n_random": 20
+    },
+    "color_var": {
+     "cav_accuracy_mean": 0.9259562841530056,
+     "cav_accuracy_heldout_mean": 0.851912568306011,
+     "tcav_mean": 0.15,
+     "tcav_sd": 0.36634754853252327,
+     "tcav_range": [
+      0.0,
+      1.0
+     ],
+     "null_mean": 0.4,
+     "null_sd": 0.5026246899500346,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.08093954402771388,
+     "significant": false,
+     "n_cav": 20,
+     "n_random": 20
+    }
+   }
+  },
+  "dj_slim_r50": {
+   "label": "ResNet-50 Slim",
+   "feature_dim": 2048,
+   "concepts": {
+    "contrast": {
+     "cav_accuracy_mean": 0.9349726775956283,
+     "cav_accuracy_heldout_mean": 0.8699453551912569,
+     "tcav_mean": 0.9989071038251367,
+     "tcav_sd": 0.003363863449459525,
+     "tcav_range": [
+      0.9890710382513661,
+      1.0
+     ],
+     "null_mean": 0.48497267759562834,
+     "null_sd": 0.39660900711350366,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 1.3906755564078427e-05,
+     "significant": true,
+     "n_cav": 20,
+     "n_random": 20
+    },
+    "color_var": {
+     "cav_accuracy_mean": 0.9288251366120217,
+     "cav_accuracy_heldout_mean": 0.8576502732240436,
+     "tcav_mean": 0.9579234972677597,
+     "tcav_sd": 0.11549944882862992,
+     "tcav_range": [
+      0.5956284153005464,
+      1.0
+     ],
+     "null_mean": 0.5934426229508196,
+     "null_sd": 0.43052341814195716,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.001410014997120407,
+     "significant": true,
+     "n_cav": 20,
+     "n_random": 20
+    }
+   }
+  },
+  "dj_causal_r50": {
+   "label": "ResNet-50 Inv",
+   "feature_dim": 2048,
+   "concepts": {
+    "contrast": {
+     "cav_accuracy_mean": 0.8673497267759563,
+     "cav_accuracy_heldout_mean": 0.7781420765027323,
+     "tcav_mean": 0.6945355191256831,
+     "tcav_sd": 0.35991810641819594,
+     "tcav_range": [
+      0.0,
+      1.0
+     ],
+     "null_mean": 0.4836065573770492,
+     "null_sd": 0.32628078636617136,
+     "null_range": [
+      0.0,
+      0.9836065573770492
+     ],
+     "p_vs_random": 0.059679052117811625,
+     "significant": false,
+     "n_cav": 20,
+     "n_random": 20
+    },
+    "color_var": {
+     "cav_accuracy_mean": 0.8512295081967214,
+     "cav_accuracy_heldout_mean": 0.7469945355191256,
+     "tcav_mean": 0.8456284153005464,
+     "tcav_sd": 0.22549370503769794,
+     "tcav_range": [
+      0.0,
+      1.0
+     ],
+     "null_mean": 0.6213114754098361,
+     "null_sd": 0.3781172220232841,
+     "null_range": [
+      0.0,
+      1.0
+     ],
+     "p_vs_random": 0.029731434699798026,
+     "significant": true,
+     "n_cav": 20,
+     "n_random": 20
+    }
+   }
+  }
+ },
+ "summary": {
+  "n_cells": 12,
+  "n_significant": 7,
+  "tcav_mean_range": [
+   0.15,
+   0.9989071038251367
+  ],
+  "cav_accuracy_heldout_range": [
+   0.683879781420765,
+   0.873224043715847
+  ],
+  "cav_accuracy_range": [
+   0.8416666666666666,
+   0.9366120218579235
+  ],
+  "null_sd_range": [
+   0.32628078636617136,
+   0.5104177855340405
+  ]
+ },
+ "runtime_sec": 73.9
+}

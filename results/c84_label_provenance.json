@@ -1,0 +1,124 @@
+{
+ "note": "Binary target as distributed. A histopathological diagnosis is an iddx_full other than the bare 'Benign'. Reads no model output.",
+ "target_by_iddx_1": {
+  "Benign": {
+   "0": 400552,
+   "1": 0
+  },
+  "Indeterminate": {
+   "0": 114,
+   "1": 0
+  },
+  "Malignant": {
+   "0": 0,
+   "1": 393
+  }
+ },
+ "indeterminate_coded_as_target_0": true,
+ "cohort": {
+  "n_images": 401059,
+  "n_patients": 1042,
+  "n_target_1": 393,
+  "iddx_1_counts": {
+   "Benign": 400552,
+   "Malignant": 393,
+   "Indeterminate": 114
+  },
+  "n_indeterminate": 114,
+  "n_histopathology": 1068,
+  "n_histopathology_malignant": 393,
+  "n_histopathology_not_malignant": 675
+ },
+ "frame_train": {
+  "n_images": 4872,
+  "n_patients": 553,
+  "n_target_1": 232,
+  "iddx_1_counts": {
+   "Benign": 4638,
+   "Malignant": 232,
+   "Indeterminate": 2
+  },
+  "n_indeterminate": 2,
+  "n_histopathology": 243,
+  "n_histopathology_malignant": 232,
+  "n_histopathology_not_malignant": 11
+ },
+ "frame_select": {
+  "n_images": 3978,
+  "n_patients": 203,
+  "n_target_1": 78,
+  "iddx_1_counts": {
+   "Benign": 3897,
+   "Malignant": 78,
+   "Indeterminate": 3
+  },
+  "n_indeterminate": 3,
+  "n_histopathology": 85,
+  "n_histopathology_malignant": 78,
+  "n_histopathology_not_malignant": 7
+ },
+ "frame_audit": {
+  "n_images": 4233,
+  "n_patients": 199,
+  "n_target_1": 83,
+  "iddx_1_counts": {
+   "Benign": 4149,
+   "Malignant": 83,
+   "Indeterminate": 1
+  },
+  "n_indeterminate": 1,
+  "n_histopathology": 90,
+  "n_histopathology_malignant": 83,
+  "n_histopathology_not_malignant": 7
+ },
+ "audit_183": {
+  "n_images": 183,
+  "n_patients": 100,
+  "n_target_1": 83,
+  "iddx_1_counts": {
+   "Benign": 100,
+   "Malignant": 83
+  },
+  "n_indeterminate": 0,
+  "n_histopathology": 83,
+  "n_histopathology_malignant": 83,
+  "n_histopathology_not_malignant": 0,
+  "subset_of_audit_frame": true
+ },
+ "audit_183_malignant": {
+  "n_images": 83,
+  "n_patients": 44,
+  "n_target_1": 83,
+  "iddx_1_counts": {
+   "Malignant": 83
+  },
+  "n_indeterminate": 0,
+  "n_histopathology": 83,
+  "n_histopathology_malignant": 83,
+  "n_histopathology_not_malignant": 0
+ },
+ "audit_183_benign": {
+  "n_images": 100,
+  "n_patients": 75,
+  "n_target_1": 0,
+  "iddx_1_counts": {
+   "Benign": 100
+  },
+  "n_indeterminate": 0,
+  "n_histopathology": 0,
+  "n_histopathology_malignant": 0,
+  "n_histopathology_not_malignant": 0
+ },
+ "route_test_78": {
+  "n_images": 78,
+  "n_patients": 54,
+  "n_target_1": 78,
+  "iddx_1_counts": {
+   "Malignant": 78
+  },
+  "n_indeterminate": 0,
+  "n_histopathology": 78,
+  "n_histopathology_malignant": 78,
+  "n_histopathology_not_malignant": 0
+ }
+}

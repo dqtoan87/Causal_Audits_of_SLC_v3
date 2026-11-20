@@ -1,0 +1,1079 @@
+{
+ "n_images": 83,
+ "n_patients": 44,
+ "balance_tol": 0.1,
+ "overlap_tol": 0.95,
+ "note": "Does the concept edit's response function lie inside the range the controls span? Reported over three nested control sets so that the power of the test is visible: with one or two admissible controls the test cannot pass by construction.",
+ "targets": {
+  "contrast@2": {
+   "sets": {
+    "A1+A3": {
+     "controls": [
+      "rotd"
+     ],
+     "n": 1,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.18030407819283367,
+       "concept_beta": 0.5410331133914089,
+       "control_alpha_range": [
+        0.2282035165384121,
+        0.2282035165384121
+       ],
+       "control_beta_range": [
+        0.05161930129241133,
+        0.05161930129241133
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "rotd"
+       ],
+       "edge_control_smd": [
+        0.045984128053130284,
+        0.045984128053130284
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.24034274383722518,
+       "concept_beta": 1.0363548418491217,
+       "control_alpha_range": [
+        0.29297300232455703,
+        0.29297300232455703
+       ],
+       "control_beta_range": [
+        -0.13944894247624484,
+        -0.13944894247624484
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "rotd"
+       ],
+       "edge_control_smd": [
+        0.045984128053130284,
+        0.045984128053130284
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.13320036893211282,
+       "concept_beta": 1.5535091599950053,
+       "control_alpha_range": [
+        0.5263404994690205,
+        0.5263404994690205
+       ],
+       "control_beta_range": [
+        -0.7105379254019486,
+        -0.7105379254019486
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "rotd"
+       ],
+       "edge_control_smd": [
+        0.045984128053130284,
+        0.045984128053130284
+       ]
+      }
+     }
+    },
+    "A3": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "globrot_m",
+      "pixperm_m",
+      "rotax_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 9,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.18030407819283367,
+       "concept_beta": 0.5410331133914089,
+       "control_alpha_range": [
+        0.2282035165384121,
+        1.1247318802033768
+       ],
+       "control_beta_range": [
+        -13.172208831530243,
+        1.590781231136805
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": true,
+       "both": false,
+       "edge_controls": [
+        "hybrid_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        0.9077418171031406,
+        1.220597011149739
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.24034274383722518,
+       "concept_beta": 1.0363548418491217,
+       "control_alpha_range": [
+        0.29297300232455703,
+        1.9543191305184597
+       ],
+       "control_beta_range": [
+        -12.332374236868223,
+        0.25624969877285175
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "hybrid_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        0.9077418171031406,
+        1.220597011149739
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.13320036893211282,
+       "concept_beta": 1.5535091599950053,
+       "control_alpha_range": [
+        0.20805676505742363,
+        1.051957832247787
+       ],
+       "control_beta_range": [
+        -12.625237333363403,
+        0.21579945037408657
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "globrot_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        2.319929202644742,
+        1.220597011149739
+       ]
+      }
+     }
+    },
+    "all": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "texswap_m",
+      "globrot_m",
+      "warp2_m",
+      "pixperm_m",
+      "warp_m",
+      "hue_m",
+      "rotax_m",
+      "flip_m",
+      "jitter_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 15,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.18030407819283367,
+       "concept_beta": 0.5410331133914089,
+       "control_alpha_range": [
+        0.10518071823640875,
+        1.4890632364358016
+       ],
+       "control_beta_range": [
+        -13.172208831530243,
+        1.590781231136805
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "hybrid_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        0.9077418171031406,
+        1.220597011149739
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.24034274383722518,
+       "concept_beta": 1.0363548418491217,
+       "control_alpha_range": [
+        -0.027949893901854792,
+        1.9543191305184597
+       ],
+       "control_beta_range": [
+        -12.332374236868223,
+        0.6724423392644522
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "flip_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        0.7506595912121787,
+        1.220597011149739
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.13320036893211282,
+       "concept_beta": 1.5535091599950053,
+       "control_alpha_range": [
+        0.021985781212212802,
+        1.051957832247787
+       ],
+       "control_beta_range": [
+        -12.625237333363403,
+        0.21579945037408657
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "globrot_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        2.319929202644742,
+        1.220597011149739
+       ]
+      }
+     }
+    }
+   }
+  },
+  "color_var@2": {
+   "sets": {
+    "A1+A3": {
+     "controls": [
+      "rotd"
+     ],
+     "n": 1,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.11152384416913638,
+       "concept_beta": 0.521898700579553,
+       "control_alpha_range": [
+        0.13146431816758208,
+        0.13146431816758208
+       ],
+       "control_beta_range": [
+        0.14129406069385197,
+        0.14129406069385197
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "rotd"
+       ],
+       "edge_control_smd": [
+        0.0483798884468299,
+        0.0483798884468299
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.25483134483986114,
+       "concept_beta": 0.6329055631321843,
+       "control_alpha_range": [
+        0.24107695401118165,
+        0.24107695401118165
+       ],
+       "control_beta_range": [
+        -0.09709988810700551,
+        -0.09709988810700551
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "rotd"
+       ],
+       "edge_control_smd": [
+        0.0483798884468299,
+        0.0483798884468299
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.10944935710830196,
+       "concept_beta": 1.3305470716813101,
+       "control_alpha_range": [
+        0.4041455298936365,
+        0.4041455298936365
+       ],
+       "control_beta_range": [
+        -0.3780919972817461,
+        -0.3780919972817461
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "rotd"
+       ],
+       "edge_control_smd": [
+        0.0483798884468299,
+        0.0483798884468299
+       ]
+      }
+     }
+    },
+    "A3": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "globrot_m",
+      "pixperm_m",
+      "rotax_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 9,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.11152384416913638,
+       "concept_beta": 0.521898700579553,
+       "control_alpha_range": [
+        0.13146431816758208,
+        1.001942324401866
+       ],
+       "control_beta_range": [
+        -13.541729693548637,
+        1.628096050839292
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": true,
+       "both": false,
+       "edge_controls": [
+        "hybrid_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        0.9955912530704193,
+        1.3727316665661944
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.25483134483986114,
+       "concept_beta": 0.6329055631321843,
+       "control_alpha_range": [
+        0.24107695401118165,
+        1.2380787432303748
+       ],
+       "control_beta_range": [
+        -10.105088394445685,
+        0.12711172943046695
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "hybrid_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.9955912530704193,
+        1.5291710688671025
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.10944935710830196,
+       "concept_beta": 1.3305470716813101,
+       "control_alpha_range": [
+        0.19657643951317658,
+        1.1212024736481507
+       ],
+       "control_beta_range": [
+        -12.127177002951623,
+        0.1496065000923057
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "globrot_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        2.4281497534596426,
+        1.3727316665661944
+       ]
+      }
+     }
+    },
+    "all": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "texswap_m",
+      "globrot_m",
+      "warp2_m",
+      "pixperm_m",
+      "warp_m",
+      "hue_m",
+      "rotax_m",
+      "flip_m",
+      "jitter_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 15,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.11152384416913638,
+       "concept_beta": 0.521898700579553,
+       "control_alpha_range": [
+        0.10518071823640875,
+        1.3632554767100928
+       ],
+       "control_beta_range": [
+        -13.541729693548637,
+        1.628096050839292
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "hybrid_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        0.9955912530704193,
+        1.3727316665661944
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.25483134483986114,
+       "concept_beta": 0.6329055631321843,
+       "control_alpha_range": [
+        -0.027949893901854792,
+        1.2380787432303748
+       ],
+       "control_beta_range": [
+        -10.105088394445685,
+        0.6695299979404489
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "flip_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.4356104493701172,
+        1.5291710688671025
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.10944935710830196,
+       "concept_beta": 1.3305470716813101,
+       "control_alpha_range": [
+        0.021985781212212802,
+        1.1212024736481507
+       ],
+       "control_beta_range": [
+        -12.127177002951623,
+        0.1496065000923057
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "globrot_m",
+        "sgnd"
+       ],
+       "edge_control_smd": [
+        2.4281497534596426,
+        1.3727316665661944
+       ]
+      }
+     }
+    }
+   }
+  },
+  "contrast@0": {
+   "sets": {
+    "A1+A3": {
+     "controls": [
+      "rotd",
+      "invdose"
+     ],
+     "n": 2,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.017091944239818534,
+       "concept_beta": 0.0974549891505086,
+       "control_alpha_range": [
+        -0.002354134758482466,
+        0.018066046158294376
+       ],
+       "control_beta_range": [
+        -0.12838656806741905,
+        -0.0827707810594705
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "invdose"
+       ],
+       "edge_control_smd": [
+        0.04439643541227368,
+        0.04627407936714032
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.1098232096682082,
+       "concept_beta": 0.42375602991110944,
+       "control_alpha_range": [
+        -0.006687205399240863,
+        0.09076005578714538
+       ],
+       "control_beta_range": [
+        -0.28862987287442265,
+        0.15167508288253007
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "invdose"
+       ],
+       "edge_control_smd": [
+        0.04439643541227368,
+        0.04627407936714032
+       ]
+      },
+      "Inv": {
+       "concept_alpha": -0.003711841749578064,
+       "concept_beta": 0.5939093779747195,
+       "control_alpha_range": [
+        0.08170802248999419,
+        0.0891895283855898
+       ],
+       "control_beta_range": [
+        -0.6287562585347344,
+        0.06364349120492395
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "invdose"
+       ],
+       "edge_control_smd": [
+        0.04439643541227368,
+        0.04627407936714032
+       ]
+      }
+     }
+    },
+    "A3": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "globrot_m",
+      "warp2_m",
+      "pixperm_m",
+      "warp_m",
+      "rotax_m",
+      "flip_m",
+      "jitter_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 13,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.017091944239818534,
+       "concept_beta": 0.0974549891505086,
+       "control_alpha_range": [
+        -0.04641257216077593,
+        1.4418189743361813
+       ],
+       "control_beta_range": [
+        -9.789742206265222,
+        0.6147619808999507
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "rotax_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        1.969040906669554,
+        1.3460001604459706
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.1098232096682082,
+       "concept_beta": 0.42375602991110944,
+       "control_alpha_range": [
+        -0.009385887266708812,
+        1.3598832163052996
+       ],
+       "control_beta_range": [
+        -11.172560848777595,
+        0.31385954754439643
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "hybrid_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.7564107418636372,
+        1.3460001604459706
+       ]
+      },
+      "Inv": {
+       "concept_alpha": -0.003711841749578064,
+       "concept_beta": 0.5939093779747195,
+       "control_alpha_range": [
+        0.07000283494886789,
+        1.3264775591165403
+       ],
+       "control_beta_range": [
+        -10.698423114208397,
+        0.06364349120492395
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.04439643541227368,
+        1.3460001604459706
+       ]
+      }
+     }
+    },
+    "all": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "texswap_m",
+      "globrot_m",
+      "warp2_m",
+      "pixperm_m",
+      "warp_m",
+      "hue_m",
+      "rotax_m",
+      "flip_m",
+      "jitter_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 15,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.017091944239818534,
+       "concept_beta": 0.0974549891505086,
+       "control_alpha_range": [
+        -0.04641257216077593,
+        1.4418189743361813
+       ],
+       "control_beta_range": [
+        -9.789742206265222,
+        0.6147619808999507
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "rotax_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        1.969040906669554,
+        1.3460001604459706
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.1098232096682082,
+       "concept_beta": 0.42375602991110944,
+       "control_alpha_range": [
+        -0.027949893901854792,
+        1.3598832163052996
+       ],
+       "control_beta_range": [
+        -11.172560848777595,
+        0.539071747303419
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "texswap_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        1.0543647176356366,
+        1.3460001604459706
+       ]
+      },
+      "Inv": {
+       "concept_alpha": -0.003711841749578064,
+       "concept_beta": 0.5939093779747195,
+       "control_alpha_range": [
+        0.021985781212212802,
+        1.3264775591165403
+       ],
+       "control_beta_range": [
+        -10.698423114208397,
+        0.06364349120492395
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.04439643541227368,
+        1.3460001604459706
+       ]
+      }
+     }
+    }
+   }
+  },
+  "color_var@0": {
+   "sets": {
+    "A1+A3": {
+     "controls": [
+      "rotd",
+      "invdose"
+     ],
+     "n": 2,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.008807789871192469,
+       "concept_beta": 0.14747818813480074,
+       "control_alpha_range": [
+        0.003771919811401583,
+        0.0389939024491147
+       ],
+       "control_beta_range": [
+        -0.024900477427411614,
+        0.004111132219631015
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "invdose"
+       ],
+       "edge_control_smd": [
+        0.046572445669913025,
+        0.04849166425023352
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.10144830343815107,
+       "concept_beta": 0.34932851825682426,
+       "control_alpha_range": [
+        -0.021420932697977492,
+        0.06007762763825238
+       ],
+       "control_beta_range": [
+        -0.2864134142370525,
+        0.08678888245821098
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "invdose"
+       ],
+       "edge_control_smd": [
+        0.046572445669913025,
+        0.04849166425023352
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.010176436123026784,
+       "concept_beta": 0.5516005782482818,
+       "control_alpha_range": [
+        0.062199105787722975,
+        0.07970796207550188
+       ],
+       "control_beta_range": [
+        -0.5082936524465442,
+        0.32834754906165253
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "invdose"
+       ],
+       "edge_control_smd": [
+        0.046572445669913025,
+        0.04849166425023352
+       ]
+      }
+     }
+    },
+    "A3": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "globrot_m",
+      "warp2_m",
+      "pixperm_m",
+      "warp_m",
+      "rotax_m",
+      "flip_m",
+      "jitter_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 13,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.008807789871192469,
+       "concept_beta": 0.14747818813480074,
+       "control_alpha_range": [
+        0.003771919811401583,
+        1.1410079914073177
+       ],
+       "control_beta_range": [
+        -10.100443869303387,
+        0.6128342211888813
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "rotax_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        2.0947152152590527,
+        1.5691477089432917
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.10144830343815107,
+       "concept_beta": 0.34932851825682426,
+       "control_alpha_range": [
+        -0.021420932697977492,
+        1.0444655528988072
+       ],
+       "control_beta_range": [
+        -12.66350890150396,
+        0.22200256033132107
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotax_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        2.0947152152590527,
+        1.5691477089432917
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.010176436123026784,
+       "concept_beta": 0.5516005782482818,
+       "control_alpha_range": [
+        0.062199105787722975,
+        1.2297404736079816
+       ],
+       "control_beta_range": [
+        -9.854554292712452,
+        0.32834754906165253
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.046572445669913025,
+        1.5691477089432917
+       ]
+      }
+     }
+    },
+    "all": {
+     "controls": [
+      "rotd",
+      "sgnd",
+      "permd",
+      "hybrid_m",
+      "texswap_m",
+      "globrot_m",
+      "warp2_m",
+      "pixperm_m",
+      "warp_m",
+      "hue_m",
+      "rotax_m",
+      "flip_m",
+      "jitter_m",
+      "noise_m",
+      "invdose"
+     ],
+     "n": 15,
+     "models": {
+      "ERM": {
+       "concept_alpha": 0.008807789871192469,
+       "concept_beta": 0.14747818813480074,
+       "control_alpha_range": [
+        0.003771919811401583,
+        1.1410079914073177
+       ],
+       "control_beta_range": [
+        -10.100443869303387,
+        0.6128342211888813
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "rotax_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        2.0947152152590527,
+        1.5691477089432917
+       ]
+      },
+      "Slim": {
+       "concept_alpha": 0.10144830343815107,
+       "concept_beta": 0.34932851825682426,
+       "control_alpha_range": [
+        -0.02762922555066613,
+        1.0444655528988072
+       ],
+       "control_beta_range": [
+        -12.66350890150396,
+        0.5385707176137897
+       ],
+       "alpha_bracketed": true,
+       "beta_bracketed": true,
+       "both": true,
+       "edge_controls": [
+        "texswap_m",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.906501299353265,
+        1.5691477089432917
+       ]
+      },
+      "Inv": {
+       "concept_alpha": 0.010176436123026784,
+       "concept_beta": 0.5516005782482818,
+       "control_alpha_range": [
+        0.021252503902588052,
+        1.2297404736079816
+       ],
+       "control_beta_range": [
+        -9.854554292712452,
+        0.32834754906165253
+       ],
+       "alpha_bracketed": false,
+       "beta_bracketed": false,
+       "both": false,
+       "edge_controls": [
+        "rotd",
+        "pixperm_m"
+       ],
+       "edge_control_smd": [
+        0.046572445669913025,
+        1.5691477089432917
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "summary": {
+  "A1+A3": {
+   "set_size_range": [
+    1,
+    2
+   ],
+   "cells_bracketed": 0,
+   "edge_control_smd_range": null
+  },
+  "A3": {
+   "set_size_range": [
+    9,
+    13
+   ],
+   "cells_bracketed": 2,
+   "edge_control_smd_range": [
+    1.3460001604459706,
+    2.0947152152590527
+   ]
+  },
+  "all": {
+   "set_size_range": [
+    15,
+    15
+   ],
+   "cells_bracketed": 7,
+   "edge_control_smd_range": [
+    0.4356104493701172,
+    2.0947152152590527
+   ]
+  }
+ }
+}

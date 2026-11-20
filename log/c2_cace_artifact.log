@@ -1,0 +1,32 @@
+##### PHASE C2: CaCE artifact 15:49:11 (dev=cuda) #####
+eval: 178 images (truly malignant=78)
+interventions: held-out=['hair_light', 'hair', 'hair_heavy', 'ruler'] | coupled=['patch', 'vignette', 'jitter'] | sanity=['identity']
+  %pixels changed: hair_light=1.0% hair=2.4% hair_heavy=4.1% ruler=1.0% patch=2.7% vignette=67.3% jitter=93.8% identity=0.0%
+[erm] done (10s, n_kept=77, p_mal=0.823)
+[slim] done (10s, n_kept=77, p_mal=0.905)
+[causal] done (10s, n_kept=67, p_mal=0.775)
+
+================================================================================================
+CaCE ARTIFACT (negative control): faithful = |CaCE|≈0 (logit CI contains 0). Clean evidence = held-out (hair/ruler)
+================================================================================================
+artifact    coupling                         erm                  slim                causal
+                           CaCE_logit [CI] faith CaCE_logit [CI] faith CaCE_logit [CI] faith
+------------------------------------------------------------------------------------------------
+hair_light  held-out          -5.64[-7.3,-3.9] ✗ -13.42[-15.4,-11.1] ✗    -5.50[-7.6,-3.6] ✗
+hair        held-out       -13.66[-14.9,-12.4] ✗ -14.36[-16.2,-12.3] ✗ -18.09[-19.5,-16.6] ✗
+hair_heavy  held-out       -14.66[-15.6,-13.6] ✗ -14.04[-16.1,-11.7] ✗ -17.69[-19.1,-16.3] ✗
+ruler       held-out       -11.58[-13.2,-10.0] ✗ -14.65[-16.6,-12.4] ✗    -4.28[-5.4,-3.2] ✗
+patch       train-coupled     -0.40[-0.5,-0.3] ✗    -0.57[-0.8,-0.4] ✗    -0.37[-0.5,-0.2] ✗
+vignette    train-coupled     +0.12[-0.1,+0.4] ✓    +1.12[+0.8,+1.4] ✗    -0.74[-1.1,-0.4] ✗
+jitter      train-coupled     -0.22[-0.4,-0.0] ✗    -0.40[-0.7,-0.2] ✗    -0.28[-0.7,+0.0] ✓
+identity    n/a               +0.00[+0.0,+0.0] ✓    +0.00[+0.0,+0.0] ✓    +0.00[+0.0,+0.0] ✓
+------------------------------------------------------------------------------------------------
+HELD-OUT |Δlogit|            11.502[10.70,12.32]   16.057[15.46,16.65]   11.578[10.48,12.63]
+coupled |Δlogit|                0.602[0.53,0.69]      0.927[0.80,1.06]      0.746[0.60,0.93]
+pred_mal_prob (calib)                      0.823                 0.905                 0.775
+identity (sanity≈0)                      +0.0000               +0.0000               +0.0000
+hair dose monotonic                          YES                    no                    no
+================================================================================================
+Reading: CaCE_logit > 0 = the artifact pushes the prediction toward malignant (shortcut). faith ✓ = CI contains 0 (model ignores the artifact = causally faithful). Compare models on the held-out rows only; coupled rows are in-distribution only (CAUSAL was trained to avoid them). identity must be ≈0.
+
+Saved: /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/tier2_cace_artifact.json

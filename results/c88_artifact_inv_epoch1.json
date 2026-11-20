@@ -1,0 +1,57 @@
+{
+ "note": "post hoc reporting; c30 criterion unchanged; epoch-1 EfficientNet-B3 Inv checkpoint",
+ "checkpoint_sha256": "39de9dbc3938d4d064750bc3bf910cbcb586d5c76b7523a42c88cf11b1fe335a",
+ "margin_p": 0.05,
+ "boot": 4000,
+ "cells": {
+  "all": {
+   "mean": 0.15886974334716797,
+   "ci": [
+    0.14363601803779602,
+    0.17366112768650055
+   ],
+   "verdict": "exceedance",
+   "signed_mean": -0.03840158134698868,
+   "signed_ci": [
+    -0.0668095201253891,
+    -0.0103513328358531
+   ],
+   "signed_verdict": "indeterminate",
+   "joint_verdict": "exceedance"
+  },
+  "malignant": {
+   "mean": 0.18125782907009125,
+   "ci": [
+    0.15560145676136017,
+    0.20244929194450378
+   ],
+   "verdict": "exceedance",
+   "signed_mean": -0.11289583891630173,
+   "signed_ci": [
+    -0.14196713268756866,
+    -0.07545258104801178
+   ],
+   "signed_verdict": "exceedance",
+   "joint_verdict": "exceedance"
+  },
+  "benign": {
+   "mean": 0.1402876228094101,
+   "ci": [
+    0.12766480445861816,
+    0.15271221101284027
+   ],
+   "verdict": "exceedance",
+   "signed_mean": 0.023428646847605705,
+   "signed_ci": [
+    0.0022638035006821156,
+    0.045190464705228806
+   ],
+   "signed_verdict": "equivalence",
+   "joint_verdict": "exceedance"
+  }
+ },
+ "audit_auroc": 0.8836746987951807,
+ "p0_mean_malignant": 0.6104854345321655,
+ "identity_max_abs_dlogit": 0.0,
+ "runtime_sec": 48.7
+}

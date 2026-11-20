@@ -1,0 +1,435 @@
+{
+ "n_units": 400,
+ "seed": 42,
+ "clip_bound": 13.8155,
+ "note": "Synthetic response with a known concept component. Part A runs the observable admissibility screen and the placebo estimator over five control regimes. Part B instantiates each clause of Statement 1 and Statement 2, and reports the interval left by an explicit component-range restriction.",
+ "response_model": {
+  "beta": [
+   0.9,
+   1.4,
+   0.5,
+   -0.3,
+   0.7,
+   1.1
+  ],
+  "gamma": 1.6,
+  "alpha_edit": 0.22,
+  "form": "dl = M@beta - alpha*L0 + gamma*tanh(1.5*dC) + eta",
+  "noise_free": "fields ending in _noise_free use the structural response R0 = M@beta - alpha*L0 + gamma*tanh(1.5*dC), to which Statement 1 applies; the other estimates add the realized noise eta"
+ },
+ "target_h": 1.1170197305757723,
+ "regimes": {
+  "R1_valid": {
+   "note": "footprint matched, no concept movement, same shrinkage coefficient",
+   "screen": {
+    "max_abs_smd": 0.0,
+    "proxy_ratio": 0.0,
+    "overlap": 1.0,
+    "A1_balance": true,
+    "A2_proxy_neutrality": true,
+    "A3_overlap": true,
+    "admissible": true,
+    "smd": {
+     "frac_altered": 0.0,
+     "mean_abs": 0.0,
+     "lab_dE": 0.0,
+     "support_rms": 0.0,
+     "lesion_cov": 0.0,
+     "hf_change": 0.0
+    }
+   },
+   "estimate": 1.1255316295356614,
+   "target": 1.1170197305757723,
+   "error": 0.00851189895988913,
+   "abs_error_frac_of_target": 0.0076201867584752845,
+   "estimate_noise_free": 1.1170197305757723,
+   "error_noise_free": 0.0,
+   "abs_error_frac_of_target_noise_free": 0.0
+  },
+  "R2_footprint_mismatch": {
+   "note": "control footprint scaled by 1.35, concept untouched",
+   "screen": {
+    "max_abs_smd": 1.7603476909821056,
+    "proxy_ratio": 0.0,
+    "overlap": 1.0,
+    "A1_balance": false,
+    "A2_proxy_neutrality": true,
+    "A3_overlap": true,
+    "admissible": false,
+    "smd": {
+     "frac_altered": 1.656218842988193,
+     "mean_abs": 1.7079468601937409,
+     "lab_dE": 1.7603476909821056,
+     "support_rms": 1.602455926994285,
+     "lesion_cov": 1.6800506069593282,
+     "hf_change": 1.6300520799936833
+    }
+   },
+   "estimate": -0.40143724493724875,
+   "target": 1.1170197305757723,
+   "error": -1.518456975513021,
+   "abs_error_frac_of_target": 1.359382411920626,
+   "estimate_noise_free": -0.3992907949377882,
+   "error_noise_free": -1.5163105255135605,
+   "abs_error_frac_of_target_noise_free": 1.3574608254520018
+  },
+  "R3_concept_contamination": {
+   "note": "footprint matched but the control moves the concept by 40 percent",
+   "screen": {
+    "max_abs_smd": 0.0,
+    "proxy_ratio": 0.4,
+    "overlap": 1.0,
+    "A1_balance": true,
+    "A2_proxy_neutrality": false,
+    "A3_overlap": true,
+    "admissible": false,
+    "smd": {
+     "frac_altered": 0.0,
+     "mean_abs": 0.0,
+     "lab_dE": 0.0,
+     "support_rms": 0.0,
+     "lesion_cov": 0.0,
+     "hf_change": 0.0
+    }
+   },
+   "estimate": 0.5660902957439875,
+   "target": 1.1170197305757723,
+   "error": -0.5509294348317848,
+   "abs_error_frac_of_target": 0.4932137004847766,
+   "estimate_noise_free": 0.5744959419002651,
+   "error_noise_free": -0.5425237886755072,
+   "abs_error_frac_of_target_noise_free": 0.48568863541547397
+  },
+  "R4_model_state": {
+   "note": "footprint matched and concept neutral, shrinkage coefficient differs",
+   "screen": {
+    "max_abs_smd": 0.0,
+    "proxy_ratio": 0.0,
+    "overlap": 1.0,
+    "A1_balance": true,
+    "A2_proxy_neutrality": true,
+    "A3_overlap": true,
+    "admissible": true,
+    "smd": {
+     "frac_altered": 0.0,
+     "mean_abs": 0.0,
+     "lab_dE": 0.0,
+     "support_rms": 0.0,
+     "lesion_cov": 0.0,
+     "hf_change": 0.0
+    }
+   },
+   "estimate": 1.192292736655232,
+   "target": 1.1170197305757723,
+   "error": 0.07527300607945975,
+   "abs_error_frac_of_target": 0.06738735585329364,
+   "estimate_noise_free": 1.193890230522265,
+   "error_noise_free": 0.07687049994649264,
+   "abs_error_frac_of_target_noise_free": 0.06881749519936362,
+   "predicted_bias_from_formula": 0.0768704999464935,
+   "formula_abs_error": 0.0015974938670337557
+  },
+  "R5_proxy_blind": {
+   "note": "footprint matched, proxy reads zero, latent concept still moves",
+   "screen": {
+    "max_abs_smd": 0.0,
+    "proxy_ratio": 0.0,
+    "overlap": 1.0,
+    "A1_balance": true,
+    "A2_proxy_neutrality": true,
+    "A3_overlap": true,
+    "admissible": true,
+    "smd": {
+     "frac_altered": 0.0,
+     "mean_abs": 0.0,
+     "lab_dE": 0.0,
+     "support_rms": 0.0,
+     "lesion_cov": 0.0,
+     "hf_change": 0.0
+    }
+   },
+   "estimate": 0.6423622160704259,
+   "target": 1.1170197305757723,
+   "error": -0.47465751450534643,
+   "abs_error_frac_of_target": 0.4249320773059956,
+   "estimate_noise_free": 0.637360655576904,
+   "error_noise_free": -0.4796590749988683,
+   "abs_error_frac_of_target_noise_free": 0.42940967099267446
+  }
+ },
+ "identified_set": {
+  "B1_connected": {
+   "rows": [
+    {
+     "shift": -2.0,
+     "max_abs_deviation_from_observed": 2.0,
+     "implied_target": -0.8829802694242277
+    },
+    {
+     "shift": -1.0,
+     "max_abs_deviation_from_observed": 1.0000000000000018,
+     "implied_target": 0.11701973057577231
+    },
+    {
+     "shift": -0.5,
+     "max_abs_deviation_from_observed": 0.5,
+     "implied_target": 0.6170197305757723
+    },
+    {
+     "shift": 0.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 1.1170197305757723
+    },
+    {
+     "shift": 0.5,
+     "max_abs_deviation_from_observed": 0.49999999999999956,
+     "implied_target": 1.6170197305757723
+    },
+    {
+     "shift": 1.0,
+     "max_abs_deviation_from_observed": 0.9999999999999996,
+     "implied_target": 2.1170197305757723
+    },
+    {
+     "shift": 2.0,
+     "max_abs_deviation_from_observed": 1.9999999999999991,
+     "implied_target": 3.1170197305757723
+    }
+   ],
+   "n_admissible_shifts": 1,
+   "max_abs_deviation_over_shifts": 2.0,
+   "implied_target_range": [
+    1.1170197305757723,
+    1.1170197305757723
+   ],
+   "point_estimate": 1.1072844182746362
+  },
+  "B2_disconnected": {
+   "rows": [
+    {
+     "shift": -2.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": -0.8829802694242277
+    },
+    {
+     "shift": -1.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 0.11701973057577231
+    },
+    {
+     "shift": -0.5,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 0.6170197305757723
+    },
+    {
+     "shift": 0.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 1.1170197305757723
+    },
+    {
+     "shift": 0.5,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 1.6170197305757723
+    },
+    {
+     "shift": 1.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 2.1170197305757723
+    },
+    {
+     "shift": 2.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 3.1170197305757723
+    }
+   ],
+   "n_admissible_shifts": 7,
+   "max_abs_deviation_over_shifts": 0.0,
+   "implied_target_range": [
+    -0.8829802694242277,
+    3.1170197305757723
+   ]
+  },
+  "B3_repaired": {
+   "rows": [
+    {
+     "shift": -2.0,
+     "max_abs_deviation_from_observed": 2.0,
+     "implied_target": -0.8829802694242277
+    },
+    {
+     "shift": -1.0,
+     "max_abs_deviation_from_observed": 1.0000000000000018,
+     "implied_target": 0.11701973057577231
+    },
+    {
+     "shift": -0.5,
+     "max_abs_deviation_from_observed": 0.5,
+     "implied_target": 0.6170197305757723
+    },
+    {
+     "shift": 0.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 1.1170197305757723
+    },
+    {
+     "shift": 0.5,
+     "max_abs_deviation_from_observed": 0.49999999999999956,
+     "implied_target": 1.6170197305757723
+    },
+    {
+     "shift": 1.0,
+     "max_abs_deviation_from_observed": 0.9999999999999996,
+     "implied_target": 2.1170197305757723
+    },
+    {
+     "shift": 2.0,
+     "max_abs_deviation_from_observed": 1.9999999999999991,
+     "implied_target": 3.1170197305757723
+    }
+   ],
+   "n_admissible_shifts": 1,
+   "max_abs_deviation_over_shifts": 2.0,
+   "implied_target_range": [
+    1.1170197305757723,
+    1.1170197305757723
+   ],
+   "point_estimate": 1.1178004170131626,
+   "abs_error": 0.0007806864373902656
+  },
+  "B4_approximate_no_smoothness": {
+   "rows": [
+    {
+     "shift": -2.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": -0.8829802694242277
+    },
+    {
+     "shift": -1.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 0.11701973057577231
+    },
+    {
+     "shift": -0.5,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 0.6170197305757723
+    },
+    {
+     "shift": 0.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 1.1170197305757723
+    },
+    {
+     "shift": 0.5,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 1.6170197305757723
+    },
+    {
+     "shift": 1.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 2.1170197305757723
+    },
+    {
+     "shift": 2.0,
+     "max_abs_deviation_from_observed": 0.0,
+     "implied_target": 3.1170197305757723
+    }
+   ],
+   "n_admissible_shifts": 7,
+   "max_abs_deviation_over_shifts": 0.0,
+   "implied_target_range": [
+    -0.8829802694242277,
+    3.1170197305757723
+   ],
+   "footprint_distance_max_smd": 0.1183095286548796
+  },
+  "B5_approximate_with_lipschitz": {
+   "footprint_distance_max_smd": 0.1183095286548796,
+   "point_estimate_from_near_control": 1.0293488716370254,
+   "interval_at_L_0.5": [
+    0.9701941073095856,
+    1.088503635964465
+   ],
+   "covers_target_at_L_0.5": false,
+   "interval_at_L_1.0": [
+    0.9110393429821457,
+    1.147658400291905
+   ],
+   "covers_target_at_L_1.0": true,
+   "interval_at_L_2.0": [
+    0.7927298143272662,
+    1.2659679289467847
+   ],
+   "covers_target_at_L_2.0": true
+  },
+  "component_range_restriction": {
+   "bound_B_logits": 13.8155,
+   "mean_g_at_edit": 4.238362953913664,
+   "h_star": 1.1170197305757723,
+   "admissible_shift_range": [
+    -9.577137046086335,
+    12.698480269424227
+   ],
+   "width": 22.275617315510562,
+   "implied_target_range": [
+    -8.460117315510562,
+    13.8155
+   ],
+   "note": "An extra restriction on the components, not implied by a bounded output. The component holds one footprint vertex and one concept vertex, so the shift must satisfy |gbar - delta| <= B and |h* + delta| <= B."
+  }
+ },
+ "constructive_repair": {
+  "note": "A library with no footprint-matched neutral control, so the length-two placebo route does not exist, but with a bridging edit and a second footprint level that make a length-four route. The alternating sum along that route recovers the target.",
+  "library": {
+   "e1  concept edit      (A, c*)": {
+    "mean_response": 5.3544517634677735
+   },
+   "e1' bridge            (A, b )": {
+    "mean_response": 4.986208763701841
+   },
+   "e2  bridge            (B, b )": {
+    "mean_response": 6.26846454336423
+   },
+   "e2' neutral control   (B, 0 )": {
+    "mean_response": 5.5259057945810355
+   }
+  },
+  "nearest_neutral_control_footprint_distance_max_smd": 1.6490119508974703,
+  "placebo_route_exists": false,
+  "chained_route_estimate": 1.110801748549127,
+  "chained_route_noise_free": 1.1170197305757723,
+  "chained_route_noise_free_abs_error": 0.0,
+  "target": 1.1170197305757723,
+  "abs_error": 0.006217982026645252,
+  "bootstrap_ci95": [
+   1.085078872031731,
+   1.1509761443543087
+  ],
+  "covers_target": true,
+  "boot": 2000
+ },
+ "shared_footprint_controls": {
+  "note": "R4 alone: the additive form holds trivially on a two-edit library; Statement 1 identifies the library component, estimate_noise_free of R4. Library with the R1 and the R4 control: same footprint, zero concept change, different responses, so C1a fails on the library; the two placebo routes disagree. Unit bootstrap with its own generator (seed 42 + 54), percentile interval.",
+  "library_component_R4_alone_noise_free": 1.193890230522265,
+  "generating_concept_term": 1.1170197305757723,
+  "controls": [
+   "R1_valid",
+   "R4_model_state"
+  ],
+  "both_pass_screens": true,
+  "same_footprint_exactly": true,
+  "same_concept_change": 0.0,
+  "route_sum_R1_noise_free": 1.1170197305757723,
+  "route_sum_R4_noise_free": 1.193890230522265,
+  "route_sum_R4_minus_R1_noise_free": 0.07687049994649352,
+  "route_sum_R4_minus_R1_noisy": 0.06676110711957114,
+  "route_sum_R4_minus_R1_noisy_ci95": [
+   0.0399475598136431,
+   0.09399860708156446
+  ],
+  "n_boot": 20000,
+  "boot_seed": 96,
+  "excludes_zero": true,
+  "disagrees_at_margin_0p5": false
+ },
+ "runtime_sec": 0.8
+}

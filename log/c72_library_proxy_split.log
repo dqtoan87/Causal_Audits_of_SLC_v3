@@ -1,0 +1,14 @@
+   ... 20/183 images (51s)
+   ... 40/183 images (101s)
+   ... 60/183 images (195s)
+   ... 80/183 images (244s)
+   ... 100/183 images (293s)
+   ... 120/183 images (339s)
+   ... 140/183 images (386s)
+   ... 160/183 images (433s)
+   ... 180/183 images (479s)
+contrast@2   pass (A2): average 6, max 5; edit's own change contrast 0.800 color_var 0.675
+color_var@2  pass (A2): average 6, max 3; edit's own change contrast 0.315 color_var 0.642
+contrast@0   pass (A2): average 4, max 3; edit's own change contrast 0.265 color_var 0.224
+color_var@0  pass (A2): average 3, max 3; edit's own change contrast 0.090 color_var 0.210
+average vs c25, max |diff| 5.55e-16; saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c72_library_proxy_split.json (486s)

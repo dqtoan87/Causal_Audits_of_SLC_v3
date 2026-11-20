@@ -1,0 +1,23 @@
+##### C20 numerical reproducibility 15:59:38 #####
+eval 183 images, 18 edits/image  (22s)
+  [ERM  ] bf16_per_image   n= 82  E|dlogit| = 10.925   (28s)
+  [ERM  ] fp32_per_image   n= 82  E|dlogit| = 11.228   (33s)
+  [ERM  ] bf16_chunk32     n= 82  E|dlogit| = 10.953   (37s)
+  [Slim ] bf16_per_image   n= 83  E|dlogit| = 15.847   (41s)
+  [Slim ] fp32_per_image   n= 83  E|dlogit| = 15.569   (43s)
+  [Slim ] bf16_chunk32     n= 83  E|dlogit| = 15.804   (47s)
+  [Inv  ] bf16_per_image   n= 58  E|dlogit| = 10.000   (51s)
+  [Inv  ] fp32_per_image   n= 58  E|dlogit| = 9.717   (54s)
+  [Inv  ] bf16_chunk32     n= 58  E|dlogit| = 10.001   (58s)
+============================================================================================
+Held-out artifact aggregate E|dlogit|. Paper cites: bf16 9.36 / 15.39 / 10.92
+config                       ERM        Slim         Inv
+bf16_per_image             10.92       15.85       10.00
+fp32_per_image             11.23       15.57        9.72
+bf16_chunk32               10.95       15.80       10.00
+--------------------------------------------------------------------------------------------
+change relative to bf16_per_image (paper: fp32 →9.48/15.05/10.87; batch →9.43/15.19/11.00)
+fp32_per_image            +2.77%      -1.76%      -2.84%
+bf16_chunk32              +0.26%      -0.28%      +0.00%
+============================================================================================
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c20_numerical_repro.json   (58s)

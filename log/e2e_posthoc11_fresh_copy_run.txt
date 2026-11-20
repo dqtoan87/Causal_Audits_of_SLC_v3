@@ -1,0 +1,68 @@
+# Eleventh fresh-directory run: the first run of the route test, end to end (2026-11-20)
+# The directory was an export of commit 3677951776b64f844d7c62278efdfd593355c3a9 of this repository, with the
+# ERM, Slim and epoch-1 Inv EfficientNet-B3 checkpoints of release checkpoints-v1.0 (checked against its SHA256SUMS),
+# and the interpreter whose package versions requirements.txt pins. The seven committed outputs of the first run were
+# moved aside before the run, so every one was rewritten: c62_route_test.py --phase construct, --phase frontier and
+# --phase evaluate (the plan-locked first run), then c63_route_exploratory.py, c64_route_screens.py and
+# c65_route_robustness.py. The plan (c62_preregistration.json) and the script hashes were not changed; the evaluation
+# phase checks the script against the plan before it runs.
+# Results are compared with the committed files leaf by leaf at a relative tolerance of 1e-9, ignoring the timing
+# field runtime_sec; NPZ arrays must be identical.
+#
+# Outcome: every number equals the committed one. c63_route_scores.npz is byte-identical. c62_construction.json,
+# c62_frontier.json, c64_route_screens.json and c65_route_robustness.json differ only in runtime_sec.
+# c62_evaluation.json and c63_route_exploratory.json differ only in one field each, the SHA-256 of c62_construction.json
+# that they record; with its runtime_sec set back to the committed value, the rewritten c62_construction.json is
+# byte-identical to the committed file (SHA-256 f0ecf8d80d01e2c91eebb61fa40ab663cf3410d98f1811437ce81b2823d3b7e5).
+
+== run log
+=== started 2026-11-20T09:54:03+07:00 pid 2138137
+interpreter <venv>/bin/python: Pillow 12.1.1, NumPy 2.4.2, SciPy 1.17.0, torch 2.10.0+cu128
+commit 3677951776b64f844d7c62278efdfd593355c3a9
+dj_causal_b3.pt: OK
+dj_erm_b3.pt: OK
+dj_slim_b3.pt: OK
+-- route-test manifest before the run
+code/c62_route_test.py: OK
+code/run_c62.sh: OK
+code/c63_route_exploratory.py: OK
+code/c64_route_screens.py: OK
+code/c65_route_robustness.py: OK
+results/c62_preregistration.json: OK
+results/c62_construction.json: OK
+results/c62_evaluation.json: OK
+results/c62_frontier.json: OK
+results/c63_route_exploratory.json: OK
+results/c63_route_scores.npz: OK
+results/c64_route_screens.json: OK
+results/c65_route_robustness.json: OK
+results/c62_evaluation_inv_retrained.json: OK
+results/c63_route_exploratory_inv_retrained.json: OK
+results/c63_route_scores_inv_retrained.npz: OK
+results/c65_route_robustness_inv_retrained.json: OK
+-- removed 7 committed outputs (kept in _committed/)
+c62_construct            rc=0     71s
+c62_frontier             rc=0    608s
+c62_evaluate             rc=0     72s
+c63                      rc=0     71s
+c64                      rc=0     26s
+c65                      rc=0     23s
+-- comparison with the committed files
+c62_construction.json                EQUAL (byte-identical: False; manifest SHA-256 differs)
+c62_frontier.json                    EQUAL (byte-identical: False; manifest SHA-256 differs)
+c62_evaluation.json                  DIFFERENT (1 leaves) (byte-identical: False; manifest SHA-256 differs)
+       ('/construction_sha256', "'05a1dcb53f5216c83274bd4b3675dc27c3c899608e46df63421dcbfc0683406d' vs 'f0ecf8d80d01e2c91eebb61fa40ab663cf3410d98f1811437ce81b2823d3b7e5'")
+c63_route_exploratory.json           DIFFERENT (1 leaves) (byte-identical: False; manifest SHA-256 differs)
+       ('/registered_construction_sha256', "'05a1dcb53f5216c83274bd4b3675dc27c3c899608e46df63421dcbfc0683406d' vs 'f0ecf8d80d01e2c91eebb61fa40ab663cf3410d98f1811437ce81b2823d3b7e5'")
+c63_route_scores.npz                 IDENTICAL (byte-identical: True; manifest SHA-256 matches)
+c64_route_screens.json               EQUAL (byte-identical: False; manifest SHA-256 differs)
+c65_route_robustness.json            EQUAL (byte-identical: False; manifest SHA-256 differs)
+files compared: 7, differing: 2
+compare rc=1
+=== finished 2026-11-20T10:08:38+07:00
+
+== construction file with its runtime field restored
+SHA-256 f0ecf8d80d01e2c91eebb61fa40ab663cf3410d98f1811437ce81b2823d3b7e5, byte-identical to the committed file: True
+
+== summary
+files written: 7, differing: 0 (apart from runtime_sec and the construction hash that depends on it)

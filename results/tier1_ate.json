@@ -1,0 +1,880 @@
+{
+  "phase": "C1_tier1_disease_ate",
+  "data": "/mnt/data2/Toan/Causal_ML/data/data_ISIC2024/train-metadata.csv",
+  "n_rows": 401059,
+  "n_patients": 1042,
+  "n_pos": 393,
+  "pos_rate": 0.0009799056996601498,
+  "method": "AIPW doubly-robust, cross-fit GroupKFold(patient), cluster bootstrap CI, E-value sensitivity; concept dichotomized Q3-vs-Q1; backdoor adjust age/sex/anatom_site/attribution/ITA-stratum.",
+  "config": {
+    "n_folds": 5,
+    "n_boot": 1000,
+    "trim": 0.02,
+    "gbm": {
+      "max_depth": 4,
+      "max_iter": 200,
+      "learning_rate": 0.07,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 42
+    },
+    "refute": false
+  },
+  "concepts": [
+    {
+      "concept": "A_asymmetry",
+      "column": "tbp_lv_symm_2axis",
+      "dir_hint": "neg (high symmetry -> less malignant)",
+      "n": 267462,
+      "n_pos": 272,
+      "n_treat": 133691,
+      "n_ctrl": 133771,
+      "thresholds": {
+        "q1_3": 0.2340426,
+        "q2_3": 0.343065693430657
+      },
+      "ate": -4.084962712824988e-05,
+      "ate_ci95": [
+        -0.0004328603379919564,
+        0.00044434995526495207
+      ],
+      "ate_if_se": 0.00023264729968902143,
+      "significant": false,
+      "rr": 0.9619695620834645,
+      "rr_ci95": [
+        0.6426015695516103,
+        1.6096415086138072
+      ],
+      "p1_treated": 0.0010332801848371433,
+      "p0_control": 0.0010741298119653932,
+      "e_value": 1.2422575411731958,
+      "e_value_ci": 1.0,
+      "positivity_extreme_frac": 0.0009758395585167239,
+      "cate_by_ita": {
+        "ITA_Q4_light": {
+          "n": 67035,
+          "ate": 0.0004097353519226884,
+          "ci": [
+            -0.00019106883101452078,
+            0.0011912618771944038
+          ]
+        },
+        "ITA_Q3": {
+          "n": 67323,
+          "ate": 0.0007827796820934263,
+          "ci": [
+            -0.00010718445548543474,
+            0.00193739109430282
+          ]
+        },
+        "ITA_Q1_dark": {
+          "n": 66023,
+          "ate": -0.0009759474349273823,
+          "ci": [
+            -0.0017631031854332623,
+            -0.00031207496277052055
+          ]
+        },
+        "ITA_Q2": {
+          "n": 67081,
+          "ate": -0.0003973767732812354,
+          "ci": [
+            -0.0009455007851281605,
+            0.00018174181392585214
+          ]
+        }
+      },
+      "cate_by_site": {
+        "Memorial Sloan Kettering Cancer Center": {
+          "n": 85054,
+          "ate": 0.0011771990587747425,
+          "ci": [
+            0.0001221769389217876,
+            0.0024271759374742
+          ]
+        },
+        "ACEMID MIA": {
+          "n": 19233,
+          "ate": -0.000538088502134054,
+          "ci": [
+            -0.001786980359893322,
+            0.0007404038793661709
+          ]
+        },
+        "Department of Dermatology, Hospital Cl\u00ednic de Barcelona": {
+          "n": 70402,
+          "ate": -0.0009469162167378819,
+          "ci": [
+            -0.0014161698768460078,
+            -0.00038517742368951793
+          ]
+        },
+        "University Hospital of Basel": {
+          "n": 44446,
+          "ate": -0.00015322510558700105,
+          "ci": [
+            -0.0005022712671454532,
+            9.418609106220847e-05
+          ]
+        },
+        "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": {
+          "n": 5641,
+          "ate": 0.0005776934177030094,
+          "ci": [
+            -0.0006835123341814086,
+            0.0023522666019702735
+          ]
+        },
+        "Frazer Institute, The University of Queensland, Dermatology Research Centre": {
+          "n": 34460,
+          "ate": -0.0010304986162005866,
+          "ci": [
+            -0.002403821096969684,
+            8.203458435415447e-05
+          ]
+        },
+        "ViDIR Group, Department of Dermatology, Medical University of Vienna": {
+          "n": 8226,
+          "ate": 0.0006108797379347288,
+          "ci": [
+            -0.0012965614302757624,
+            0.0024311570504184257
+          ]
+        }
+      }
+    },
+    {
+      "concept": "B_border",
+      "column": "tbp_lv_norm_border",
+      "dir_hint": "pos",
+      "n": 267374,
+      "n_pos": 255,
+      "n_treat": 133687,
+      "n_ctrl": 133687,
+      "thresholds": {
+        "q1_3": 2.398852,
+        "q2_3": 3.813326
+      },
+      "ate": -6.861804905816722e-05,
+      "ate_ci95": [
+        -0.0007373090627937333,
+        0.0006193081248247978
+      ],
+      "ate_if_se": 0.0003404932225297627,
+      "significant": false,
+      "rr": 0.9245271436406094,
+      "rr_ci95": [
+        0.29941370268219675,
+        2.36744019047193
+      ],
+      "p1_treated": 0.0008405571480672471,
+      "p0_control": 0.0009091751971254141,
+      "e_value": 1.378784002933163,
+      "e_value_ci": 1.0,
+      "positivity_extreme_frac": 0.003171587364515622,
+      "cate_by_ita": {
+        "ITA_Q4_light": {
+          "n": 66925,
+          "ate": 0.0007319749397453113,
+          "ci": [
+            9.129435721833393e-05,
+            0.0013115216559274317
+          ]
+        },
+        "ITA_Q3": {
+          "n": 67873,
+          "ate": 0.0008555967709618794,
+          "ci": [
+            -0.0001950729413189923,
+            0.0023943659774126732
+          ]
+        },
+        "ITA_Q1_dark": {
+          "n": 65389,
+          "ate": -0.0009784060085436593,
+          "ci": [
+            -0.0018112094280235602,
+            -0.00020138922976876606
+          ]
+        },
+        "ITA_Q2": {
+          "n": 67187,
+          "ate": -0.0009142994066436611,
+          "ci": [
+            -0.0027154211989878327,
+            0.00028234939614424815
+          ]
+        }
+      },
+      "cate_by_site": {
+        "Memorial Sloan Kettering Cancer Center": {
+          "n": 84757,
+          "ate": 0.0013377510937952084,
+          "ci": [
+            0.00018352494334098344,
+            0.0029553380330327207
+          ]
+        },
+        "ACEMID MIA": {
+          "n": 19251,
+          "ate": -0.00037285219316276574,
+          "ci": [
+            -0.0018525871214698977,
+            0.0011088722553309338
+          ]
+        },
+        "Department of Dermatology, Hospital Cl\u00ednic de Barcelona": {
+          "n": 69929,
+          "ate": -0.0014441528261771755,
+          "ci": [
+            -0.003998482162352588,
+            -0.00012157190969703143
+          ]
+        },
+        "University Hospital of Basel": {
+          "n": 44772,
+          "ate": -2.3960506233150344e-06,
+          "ci": [
+            -0.0002522478365278773,
+            0.0002231797088582298
+          ]
+        },
+        "Frazer Institute, The University of Queensland, Dermatology Research Centre": {
+          "n": 34895,
+          "ate": -0.0011941907631179741,
+          "ci": [
+            -0.002501453644508099,
+            6.734913344677427e-05
+          ]
+        },
+        "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": {
+          "n": 5714,
+          "ate": 0.0013116663802405332,
+          "ci": [
+            0.0001481548501364162,
+            0.002946435952174899
+          ]
+        },
+        "ViDIR Group, Department of Dermatology, Medical University of Vienna": {
+          "n": 8056,
+          "ate": 0.001330584633497463,
+          "ci": [
+            -0.000743869584558307,
+            0.003491792755788763
+          ]
+        }
+      }
+    },
+    {
+      "concept": "C_color",
+      "column": "tbp_lv_norm_color",
+      "dir_hint": "pos",
+      "n": 267374,
+      "n_pos": 350,
+      "n_treat": 133687,
+      "n_ctrl": 133687,
+      "thresholds": {
+        "q1_3": 2.08349218025616,
+        "q2_3": 3.57903
+      },
+      "ate": 0.001117320174449575,
+      "ate_ci95": [
+        0.0007339289338905531,
+        0.001485265153773823
+      ],
+      "ate_if_se": 0.000191172534389083,
+      "significant": true,
+      "rr": 2.4707939816012634,
+      "rr_ci95": [
+        1.8169184706811998,
+        3.4708307418464828
+      ],
+      "p1_treated": 0.00187699160935247,
+      "p0_control": 0.0007596714349028953,
+      "e_value": 4.377106893459063,
+      "e_value_ci": 3.0352264196092653,
+      "positivity_extreme_frac": 0.0,
+      "cate_by_ita": {
+        "ITA_Q4_light": {
+          "n": 67473,
+          "ate": 0.0007321687015145814,
+          "ci": [
+            4.0279869118750586e-05,
+            0.0013390828100252655
+          ]
+        },
+        "ITA_Q3": {
+          "n": 68223,
+          "ate": 0.0009811366657529357,
+          "ci": [
+            0.000441438178692061,
+            0.001596284746171832
+          ]
+        },
+        "ITA_Q1_dark": {
+          "n": 65127,
+          "ate": 0.0015576924470957904,
+          "ci": [
+            0.0007403141309318428,
+            0.00235887571893205
+          ]
+        },
+        "ITA_Q2": {
+          "n": 66551,
+          "ate": 0.0012164629047845593,
+          "ci": [
+            0.0005289301192562797,
+            0.0019061736710078024
+          ]
+        }
+      },
+      "cate_by_site": {
+        "Memorial Sloan Kettering Cancer Center": {
+          "n": 84594,
+          "ate": 0.0005957163561100668,
+          "ci": [
+            -0.00020319008223903647,
+            0.0014246732162134105
+          ]
+        },
+        "ACEMID MIA": {
+          "n": 18818,
+          "ate": 0.0033600380826221896,
+          "ci": [
+            0.0014378475981006045,
+            0.0055466737797626444
+          ]
+        },
+        "Department of Dermatology, Hospital Cl\u00ednic de Barcelona": {
+          "n": 71145,
+          "ate": 0.0014943738272407585,
+          "ci": [
+            0.0008786053113841596,
+            0.0021757175214063124
+          ]
+        },
+        "Frazer Institute, The University of Queensland, Dermatology Research Centre": {
+          "n": 36011,
+          "ate": 0.0009065236656467776,
+          "ci": [
+            -0.00025479568856423546,
+            0.0019464043051541115
+          ]
+        },
+        "University Hospital of Basel": {
+          "n": 42888,
+          "ate": 0.000409427004487606,
+          "ci": [
+            8.850267312253773e-05,
+            0.0008227824974550395
+          ]
+        },
+        "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": {
+          "n": 5507,
+          "ate": 0.00130441934639789,
+          "ci": [
+            6.0302179139864285e-05,
+            0.0029401458830627964
+          ]
+        },
+        "ViDIR Group, Department of Dermatology, Medical University of Vienna": {
+          "n": 8411,
+          "ate": 0.0025459690743067113,
+          "ci": [
+            0.0006198788305680476,
+            0.004617098691017894
+          ]
+        }
+      }
+    },
+    {
+      "concept": "C_colorstd",
+      "column": "tbp_lv_color_std_mean",
+      "dir_hint": "pos",
+      "n": 267374,
+      "n_pos": 350,
+      "n_treat": 133687,
+      "n_ctrl": 133687,
+      "thresholds": {
+        "q1_3": 0.6937547,
+        "q2_3": 1.21984512062068
+      },
+      "ate": 0.0010710208705850162,
+      "ate_ci95": [
+        0.0006553425504575063,
+        0.0014590530054697049
+      ],
+      "ate_if_se": 0.000204071780649461,
+      "significant": true,
+      "rr": 2.3731963103606772,
+      "rr_ci95": [
+        1.7776440147621613,
+        3.2697990529698147
+      ],
+      "p1_treated": 0.0018509682550225022,
+      "p0_control": 0.0007799473844374859,
+      "e_value": 4.178428820911286,
+      "e_value_ci": 2.9533881316760304,
+      "positivity_extreme_frac": 7.480158878574581e-06,
+      "cate_by_ita": {
+        "ITA_Q4_light": {
+          "n": 67553,
+          "ate": 0.000897694177578775,
+          "ci": [
+            0.00023752089178978169,
+            0.0015236895056221472
+          ]
+        },
+        "ITA_Q3": {
+          "n": 68261,
+          "ate": 0.0009405559116640921,
+          "ci": [
+            0.0003299238078047658,
+            0.0015929585801021605
+          ]
+        },
+        "ITA_Q1_dark": {
+          "n": 65246,
+          "ate": 0.0014566895590437886,
+          "ci": [
+            0.000745006164911265,
+            0.0022572177655860236
+          ]
+        },
+        "ITA_Q2": {
+          "n": 66314,
+          "ate": 0.001002424004257706,
+          "ci": [
+            0.0002355970333711663,
+            0.0017294108053561071
+          ]
+        }
+      },
+      "cate_by_site": {
+        "Memorial Sloan Kettering Cancer Center": {
+          "n": 83925,
+          "ate": 0.0005567634107431413,
+          "ci": [
+            -0.0004590877165394808,
+            0.0015451182850422388
+          ]
+        },
+        "ACEMID MIA": {
+          "n": 18946,
+          "ate": 0.0026124360548690495,
+          "ci": [
+            0.0010925057464719473,
+            0.00434267443896231
+          ]
+        },
+        "Department of Dermatology, Hospital Cl\u00ednic de Barcelona": {
+          "n": 70974,
+          "ate": 0.001693236088830467,
+          "ci": [
+            0.0012000461071163837,
+            0.002295933236131593
+          ]
+        },
+        "University Hospital of Basel": {
+          "n": 43653,
+          "ate": 0.0003297860258756143,
+          "ci": [
+            1.0178668601316284e-05,
+            0.000747079787705054
+          ]
+        },
+        "Frazer Institute, The University of Queensland, Dermatology Research Centre": {
+          "n": 35831,
+          "ate": 0.0008158975628796126,
+          "ci": [
+            -0.0003624251216864996,
+            0.0018741551074669435
+          ]
+        },
+        "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": {
+          "n": 5642,
+          "ate": 0.001357822545241261,
+          "ci": [
+            0.00019409322309715894,
+            0.0030332243630804335
+          ]
+        },
+        "ViDIR Group, Department of Dermatology, Medical University of Vienna": {
+          "n": 8403,
+          "ate": 0.0022223495867712277,
+          "ci": [
+            0.0006291704738392684,
+            0.004258216517540838
+          ]
+        }
+      }
+    },
+    {
+      "concept": "D_size",
+      "column": "tbp_lv_areaMM2",
+      "dir_hint": "pos",
+      "n": 267600,
+      "n_pos": 363,
+      "n_treat": 133727,
+      "n_ctrl": 133873,
+      "thresholds": {
+        "q1_3": 4.57872,
+        "q2_3": 7.54362919872396
+      },
+      "ate": 0.0010970903535636315,
+      "ate_ci95": [
+        0.0007629260523503669,
+        0.0014348700568648934
+      ],
+      "ate_if_se": 0.00017311328364710076,
+      "significant": true,
+      "rr": 2.367501878574849,
+      "rr_ci95": [
+        1.8177192775486066,
+        3.1815190648392715
+      ],
+      "p1_treated": 0.001899349107830918,
+      "p0_control": 0.000802258754267286,
+      "e_value": 4.166824880840032,
+      "e_value_ci": 3.0368928067983285,
+      "positivity_extreme_frac": 0.0,
+      "cate_by_ita": {
+        "ITA_Q4_light": {
+          "n": 65906,
+          "ate": 0.001412291867820033,
+          "ci": [
+            0.0006618185848055147,
+            0.002215215236893112
+          ]
+        },
+        "ITA_Q3": {
+          "n": 67045,
+          "ate": 0.00114881948449612,
+          "ci": [
+            0.000592322139902253,
+            0.001795464660615732
+          ]
+        },
+        "ITA_Q2": {
+          "n": 67049,
+          "ate": 0.0009819391822618532,
+          "ci": [
+            0.00044655606915021103,
+            0.0015208453681691753
+          ]
+        },
+        "ITA_Q1_dark": {
+          "n": 67600,
+          "ate": 0.0008526956834846656,
+          "ci": [
+            0.0003778521807655891,
+            0.0014753195499205972
+          ]
+        }
+      },
+      "cate_by_site": {
+        "Memorial Sloan Kettering Cancer Center": {
+          "n": 85182,
+          "ate": 0.0010769770747495104,
+          "ci": [
+            0.0004339963022132706,
+            0.0018716143603664532
+          ]
+        },
+        "Department of Dermatology, Hospital Cl\u00ednic de Barcelona": {
+          "n": 70644,
+          "ate": 0.0011713432460486626,
+          "ci": [
+            0.0007700621900255432,
+            0.001675254722399827
+          ]
+        },
+        "University Hospital of Basel": {
+          "n": 42399,
+          "ate": 0.00035024833603857733,
+          "ci": [
+            1.2760608270313275e-05,
+            0.00073980822577032
+          ]
+        },
+        "Frazer Institute, The University of Queensland, Dermatology Research Centre": {
+          "n": 36292,
+          "ate": 0.0009925602549047206,
+          "ci": [
+            -0.00015588657697964287,
+            0.002158019677010317
+          ]
+        },
+        "ACEMID MIA": {
+          "n": 19194,
+          "ate": 0.0022020866493998783,
+          "ci": [
+            0.0008954510756041127,
+            0.003934249345937381
+          ]
+        },
+        "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": {
+          "n": 5402,
+          "ate": 0.0011362043158380645,
+          "ci": [
+            -0.0002501155107393594,
+            0.002987328206928675
+          ]
+        },
+        "ViDIR Group, Department of Dermatology, Medical University of Vienna": {
+          "n": 8487,
+          "ate": 0.002334999684813608,
+          "ci": [
+            0.0008375164133977116,
+            0.004503979063551321
+          ]
+        }
+      }
+    },
+    {
+      "concept": "contrast_LB",
+      "column": "tbp_lv_deltaLBnorm",
+      "dir_hint": "pos",
+      "n": 267374,
+      "n_pos": 300,
+      "n_treat": 133687,
+      "n_ctrl": 133687,
+      "thresholds": {
+        "q1_3": 6.121122,
+        "q2_3": 8.021324
+      },
+      "ate": 0.0008285942084077611,
+      "ate_ci95": [
+        0.00044493822433706225,
+        0.0011956754227628943
+      ],
+      "ate_if_se": 0.0001857356321773579,
+      "significant": true,
+      "rr": 2.0745617741834947,
+      "rr_ci95": [
+        1.5438127846950347,
+        2.8847837075384786
+      ],
+      "p1_treated": 0.00159969385880931,
+      "p0_control": 0.000771099650401549,
+      "e_value": 3.567627338959494,
+      "e_value_ci": 2.460079737876695,
+      "positivity_extreme_frac": 0.0005161309626216461,
+      "cate_by_ita": {
+        "ITA_Q4_light": {
+          "n": 66002,
+          "ate": 0.0006530175618928474,
+          "ci": [
+            -8.286034019324645e-05,
+            0.001373437409784129
+          ]
+        },
+        "ITA_Q3": {
+          "n": 67025,
+          "ate": 0.0004940754643193496,
+          "ci": [
+            -0.00015789900911915942,
+            0.0012319401563222654
+          ]
+        },
+        "ITA_Q2": {
+          "n": 67130,
+          "ate": 0.0007226024044589025,
+          "ci": [
+            0.00011903492514143667,
+            0.0013446416642601555
+          ]
+        },
+        "ITA_Q1_dark": {
+          "n": 67217,
+          "ate": 0.0014404150044101114,
+          "ci": [
+            0.0007849959867809421,
+            0.0021981488453610863
+          ]
+        }
+      },
+      "cate_by_site": {
+        "Memorial Sloan Kettering Cancer Center": {
+          "n": 82631,
+          "ate": 0.000560827807096346,
+          "ci": [
+            -0.00026332843922642613,
+            0.0013783252617173703
+          ]
+        },
+        "Department of Dermatology, Hospital Cl\u00ednic de Barcelona": {
+          "n": 70688,
+          "ate": 0.0012875102531481018,
+          "ci": [
+            0.0007640722001972319,
+            0.0018480727378301224
+          ]
+        },
+        "University Hospital of Basel": {
+          "n": 45824,
+          "ate": 0.0003969961393627395,
+          "ci": [
+            8.315049981508311e-05,
+            0.0008059495507097235
+          ]
+        },
+        "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": {
+          "n": 6179,
+          "ate": 0.0009738594510968303,
+          "ci": [
+            4.1438978181052324e-05,
+            0.002413818209157857
+          ]
+        },
+        "Frazer Institute, The University of Queensland, Dermatology Research Centre": {
+          "n": 34260,
+          "ate": 0.00034469850529424107,
+          "ci": [
+            -0.0006080960026082396,
+            0.001380600353669446
+          ]
+        },
+        "ACEMID MIA": {
+          "n": 19163,
+          "ate": 0.001994459838256427,
+          "ci": [
+            0.00045022960065617396,
+            0.0035721257030534833
+          ]
+        },
+        "ViDIR Group, Department of Dermatology, Medical University of Vienna": {
+          "n": 8629,
+          "ate": 0.0011533928920768848,
+          "ci": [
+            -0.0007751381872841455,
+            0.0025812793355256165
+          ]
+        }
+      }
+    },
+    {
+      "concept": "NEGCTRL_nevi",
+      "column": "tbp_lv_nevi_confidence",
+      "dir_hint": "neg (NEGATIVE CONTROL)",
+      "n": 267374,
+      "n_pos": 268,
+      "n_treat": 133687,
+      "n_ctrl": 133687,
+      "thresholds": {
+        "q1_3": 0.698786554858088,
+        "q2_3": 70.6409513950348
+      },
+      "ate": -0.0002984799326305233,
+      "ate_ci95": [
+        -0.0008203207313564427,
+        0.0002509044113729141
+      ],
+      "ate_if_se": 0.0002731845655620619,
+      "significant": false,
+      "rr": 0.6922227765660515,
+      "rr_ci95": [
+        0.35347772312281733,
+        1.4382811851845265
+      ],
+      "p1_treated": 0.0006713122089071354,
+      "p0_control": 0.0009697921415376588,
+      "e_value": 2.24606410767503,
+      "e_value_ci": 1.0,
+      "positivity_extreme_frac": 0.022851885374045346,
+      "cate_by_ita": {
+        "ITA_Q4_light": {
+          "n": 65872,
+          "ate": -0.0010608070118637498,
+          "ci": [
+            -0.0016184965294558482,
+            -0.0005356455579757845
+          ]
+        },
+        "ITA_Q3": {
+          "n": 68495,
+          "ate": -0.00027828875118386247,
+          "ci": [
+            -0.0010164602990292814,
+            0.0007488088340869344
+          ]
+        },
+        "ITA_Q2": {
+          "n": 68403,
+          "ate": -0.00011618601256447354,
+          "ci": [
+            -0.0009976444895958582,
+            0.0007171627846498375
+          ]
+        },
+        "ITA_Q1_dark": {
+          "n": 64604,
+          "ate": 0.00026438867265373236,
+          "ci": [
+            -0.0009862171472773775,
+            0.0015353085903307274
+          ]
+        }
+      },
+      "cate_by_site": {
+        "Memorial Sloan Kettering Cancer Center": {
+          "n": 80740,
+          "ate": -0.0014648714933258285,
+          "ci": [
+            -0.0023459814487376157,
+            -0.0004743160464529327
+          ]
+        },
+        "ACEMID MIA": {
+          "n": 19335,
+          "ate": 0.0020855864130657096,
+          "ci": [
+            -0.0002042963176497258,
+            0.005927010191033921
+          ]
+        },
+        "Department of Dermatology, Hospital Cl\u00ednic de Barcelona": {
+          "n": 70695,
+          "ate": 0.0009291527830693772,
+          "ci": [
+            -0.00016869467307389682,
+            0.0019517066834719371
+          ]
+        },
+        "University Hospital of Basel": {
+          "n": 46655,
+          "ate": -0.00012736504711771768,
+          "ci": [
+            -0.0004221598881590965,
+            0.00017513922372611795
+          ]
+        },
+        "Frazer Institute, The University of Queensland, Dermatology Research Centre": {
+          "n": 35963,
+          "ate": -0.0011358034347687738,
+          "ci": [
+            -0.002051821397078995,
+            -0.0002579518632386384
+          ]
+        },
+        "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": {
+          "n": 5996,
+          "ate": -0.0024468435792547997,
+          "ci": [
+            -0.004632713589166405,
+            -0.000590738847266691
+          ]
+        },
+        "ViDIR Group, Department of Dermatology, Medical University of Vienna": {
+          "n": 7990,
+          "ate": -0.0007613177888188855,
+          "ci": [
+            -0.0027052561447600703,
+            0.0013097071299367296
+          ]
+        }
+      }
+    }
+  ],
+  "runtime_sec": 124.3
+}

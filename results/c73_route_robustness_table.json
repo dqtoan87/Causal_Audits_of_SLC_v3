@@ -1,0 +1,925 @@
+{
+ "note": "compiled from c62, c65, c67 and c69; no new computation except minima",
+ "second_run": {
+  "rows": [
+   {
+    "variant": "pre-specified",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.015231045809659,
+      1.2028463345524925
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      6.61765566739169,
+      1.9933417086329506
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      4.902240406383168,
+      1.0163153915583427
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      6.157194054645041,
+      0.6235141505826727
+     ]
+    }
+   },
+   {
+    "variant": "floor per model",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.565966219515414,
+      1.8104564553599065
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      6.586635335286458,
+      2.049692080126646
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      5.0603827582465275,
+      1.3366362960467448
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.2676536158511515,
+      1.7785010547573337
+     ]
+    }
+   },
+   {
+    "variant": "floor on the first run's images",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.628513701974529,
+      1.9013188387137734
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      5.416812844472389,
+      1.9080462301364456
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      3.7202227866812927,
+      0.5175560457718467
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.2676536158511515,
+      1.8134186961852068
+     ]
+    }
+   },
+   {
+    "variant": "scored in full precision",
+    "disagree": 6,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.606825395063921,
+      0.7337697695215972
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      6.477452364834872,
+      1.8594494733164222
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      5.149307944557884,
+      1.2608919902243572
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.839771436608356,
+      0.5229965874913418
+     ]
+    }
+   },
+   {
+    "variant": "scored in mixed bf16 batches",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.0138116316361865,
+      1.20115385147596
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      6.621206110174006,
+      1.9964506587618223
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      4.90568056973544,
+      1.0173694820548707
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.384481015412704,
+      -0.3564993645468748
+     ]
+    }
+   },
+   {
+    "variant": "floor read in full precision",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.897390407986111,
+      1.154171070087564
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      6.4929924858940975,
+      1.9609722056625323
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      4.795211452907986,
+      0.988553798846405
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.993111468375997,
+      0.556134527685284
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 0.0001, bf16",
+    "disagree": 4,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2",
+     "slim|contrast@0"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      3.759248213334517,
+      1.1262498247936064
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      5.04768198186701,
+      1.513691720387195
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      3.855589433149858,
+      0.9881152639853714
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      4.50561059039572,
+      0.7453217884133791
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-05, bf16",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.387250726873225,
+      1.1718772241931097
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      5.832685297185725,
+      1.764950054666536
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      4.378924976695668,
+      1.0153387211284866
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.31623707646909,
+      0.6679748651993993
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-06, bf16",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.015230699018999,
+      1.203214495062999
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      6.6176605224609375,
+      1.9937896143930613
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      4.90224179354581,
+      1.016698893023472
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      6.15660692297894,
+      0.622514219697412
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-07, bf16",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.64320859042081,
+      1.236199771991635
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      7.402632973410866,
+      2.220812964454672
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      5.425556529651988,
+      1.0121789543216622
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      6.969668844471807,
+      0.5805601326535053
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-08, bf16",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      6.27118613503196,
+      1.2656492648797855
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      8.187605424360795,
+      2.4403566184145005
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      5.948871265758168,
+      0.9986610688226687
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      7.770568184230639,
+      0.5244092962363203
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 0.0001, fp32",
+    "disagree": 6,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      3.455508492209695,
+      0.7345313349782705
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      4.94601787220348,
+      1.4030093927510698
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      4.036531621759588,
+      1.21280549977782
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      4.391012772269871,
+      0.7139179261191657
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-05, fp32",
+    "disagree": 6,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.031177173961293,
+      0.7355068866766605
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      5.731020147150213,
+      1.643594908880214
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      4.612200650301847,
+      1.2656672604134447
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.093572865361753,
+      0.5569018812222044
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-06, fp32",
+    "disagree": 6,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.606825741854581,
+      0.7336912585735771
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      6.477452364834872,
+      1.8593583262924849
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      5.149306557395241,
+      1.2608016071606856
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.839164402173913,
+      0.521142287558126
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-07, fp32",
+    "disagree": 5,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.182471882213246,
+      0.7309319831739449
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      7.157761313698509,
+      2.0327532807961104
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      5.620289542458274,
+      1.1869118511509642
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      6.590007616126019,
+      0.4911402114792631
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-08, fp32",
+    "disagree": 5,
+    "disagreeing_cells": [
+     "causal|contrast@2",
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.7581187161532315,
+      0.7205656321887961
+     ],
+     "causal|contrast@2|D_rad4-rad16": [
+      7.838070956143466,
+      2.190905399488905
+     ],
+     "causal|contrast@2|D_rad4-hue4": [
+      6.091273221102628,
+      1.0954481984548439
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      7.340850830078125,
+      0.4458864467852184
+     ]
+    }
+   }
+  ],
+  "robust_cells": [
+   "causal|contrast@2",
+   "erm|contrast@2"
+  ],
+  "fragile_cells": [
+   "slim|color_var@2"
+  ],
+  "seeds": {
+   "erm|contrast@2|D_rad4-rad16": [
+    1.1899739253406163,
+    20,
+    20
+   ],
+   "causal|contrast@2|D_rad4-rad16": [
+    1.9342264999086627,
+    20,
+    20
+   ],
+   "causal|contrast@2|D_rad4-hue4": [
+    1.000311438539248,
+    20,
+    20
+   ],
+   "slim|color_var@2|D_rad4-rad16": [
+    0.5507726891068403,
+    20,
+    20
+   ]
+  },
+  "leave_one_patient_out": {
+   "erm|contrast@2|D_rad4-rad16": [
+    0.7856025488832818,
+    32,
+    32
+   ],
+   "causal|contrast@2|D_rad4-rad16": [
+    1.6054453565766176,
+    32,
+    32
+   ],
+   "causal|contrast@2|D_rad4-hue4": [
+    0.7356974331228034,
+    32,
+    32
+   ],
+   "slim|color_var@2|D_rad4-rad16": [
+    0.063550785394062,
+    17,
+    32
+   ]
+  },
+  "smallest_lower_bound": {
+   "erm|contrast@2|D_rad4-rad16": 0.7205656321887961,
+   "causal|contrast@2|D_rad4-rad16": 1.4030093927510698,
+   "causal|contrast@2|D_rad4-hue4": 0.5175560457718467,
+   "slim|color_var@2|D_rad4-rad16": -0.3564993645468748
+  },
+  "disagree_range": [
+   3,
+   6
+  ]
+ },
+ "first_run": {
+  "rows": [
+   {
+    "variant": "pre-specified",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2",
+     "slim|contrast@0"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.628513701974529,
+      1.9194015686313706
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.2676536158511515,
+      1.8363220823589286
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.9882271321614584,
+      0.5097901785337962
+     ]
+    }
+   },
+   {
+    "variant": "floor per model",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2",
+     "slim|contrast@0"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.565966219515414,
+      1.8763232379438262
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.2676536158511515,
+      1.861904589062764
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.9882271321614584,
+      0.5208127576428698
+     ]
+    }
+   },
+   {
+    "variant": "floor passed under both Inv checkpoints",
+    "disagree": 2,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.015231045809659,
+      1.2100314145541815
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      6.157194054645041,
+      0.6339433007933062
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      2.218547905815972,
+      0.28264875436159964
+     ]
+    }
+   },
+   {
+    "variant": "scored in full precision",
+    "disagree": 5,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": null
+   },
+   {
+    "variant": "scored in mixed bf16 batches",
+    "disagree": 4,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": null
+   },
+   {
+    "variant": "floor read in full precision",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2",
+     "slim|contrast@0"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.628513701974529,
+      1.9194015686313706
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.2676536158511515,
+      1.8363220823589286
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.9882271321614584,
+      0.5097901785337962
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 0.0001, bf16",
+    "disagree": 4,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      3.36679578807256,
+      1.5027536240749044
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      3.886469790810033,
+      1.530773212955998
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.6812153116861979,
+      0.6149241309899043
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-05, bf16",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2",
+     "slim|contrast@0"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      3.997666032346961,
+      1.717190451516681
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      4.5766954923930925,
+      1.6819084423031518
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.8347269694010417,
+      0.56885738839211
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-06, bf16",
+    "disagree": 3,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2",
+     "slim|contrast@0"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.628513701974529,
+      1.9193958981436192
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.267124376798931,
+      1.8352598240316502
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.9882332356770833,
+      0.5097883805952199
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-07, bf16",
+    "disagree": 2,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.25935928135702,
+      2.119773524951282
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.970127306486431,
+      2.020319023647701
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      2.1417390950520834,
+      0.445655693189722
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-08, bf16",
+    "disagree": 2,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.8902044426904965,
+      2.3156300826721266
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      6.666962473016036,
+      2.19270707172757
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      2.2952447509765626,
+      0.37631628576151277
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 0.0001, fp32",
+    "disagree": 6,
+    "disagreeing_cells": [
+     "erm|contrast@0",
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      3.189711897340539,
+      1.2785297884857343
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      4.18924954063014,
+      1.781772861958197
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.6472771199544272,
+      0.5796091372377767
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-05, fp32",
+    "disagree": 5,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      3.789039089255137,
+      1.46254332064348
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      4.947765551115337,
+      1.9770778562069986
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.8035211181640625,
+      0.5329912293995276
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-06, fp32",
+    "disagree": 5,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.388343706522902,
+      1.63673071347031
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      5.729083412571957,
+      2.2309290301013647
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      1.9570273844401043,
+      0.47177305641424705
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-07, fp32",
+    "disagree": 5,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      4.9876466515946065,
+      1.8063410114196996
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      6.486512836657073,
+      2.4825652855694686
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      2.1105330403645834,
+      0.404587565993068
+     ]
+    }
+   },
+   {
+    "variant": "clip eta = 1e-08, fp32",
+    "disagree": 5,
+    "disagreeing_cells": [
+     "erm|contrast@2",
+     "slim|color_var@0",
+     "slim|color_var@2",
+     "slim|contrast@0",
+     "slim|contrast@2"
+    ],
+    "entries": {
+     "erm|contrast@2|D_rad4-rad16": [
+      5.586950432764341,
+      1.9699683129326893
+     ],
+     "slim|color_var@2|D_rad4-rad16": [
+      7.2390490080180925,
+      2.720825589837178
+     ],
+     "slim|contrast@0|D_rad4-rad16": [
+      2.2640386962890626,
+      0.33183364765139545
+     ]
+    }
+   }
+  ],
+  "robust_cells": [
+   "erm|contrast@2",
+   "slim|color_var@2"
+  ],
+  "fragile_cells": [
+   "slim|contrast@0"
+  ],
+  "seeds": {
+   "erm|contrast@2|D_rad4-rad16": [
+    1.9186920260131877,
+    20,
+    20
+   ],
+   "slim|color_var@2|D_rad4-rad16": [
+    1.7891701117846757,
+    20,
+    20
+   ],
+   "slim|contrast@0|D_rad4-rad16": [
+    0.4906215860766252,
+    10,
+    20
+   ]
+  },
+  "leave_one_patient_out": {
+   "erm|contrast@2|D_rad4-rad16": [
+    1.5853210250978145,
+    52,
+    52
+   ],
+   "slim|color_var@2|D_rad4-rad16": [
+    1.4623181762538522,
+    54,
+    54
+   ],
+   "slim|contrast@0|D_rad4-rad16": [
+    0.3158076466814106,
+    31,
+    53
+   ]
+  },
+  "smallest_lower_bound": {
+   "erm|contrast@2|D_rad4-rad16": 1.2100314145541815,
+   "slim|color_var@2|D_rad4-rad16": 0.6339433007933062,
+   "slim|contrast@0|D_rad4-rad16": 0.28264875436159964
+  },
+  "disagree_range": [
+   2,
+   6
+  ]
+ }
+}

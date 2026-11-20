@@ -1,0 +1,26 @@
+{
+ "target_by_iddx_1": {
+  "Benign": {
+   "0": 400552,
+   "1": 0
+  },
+  "Indeterminate": {
+   "0": 114,
+   "1": 0
+  },
+  "Malignant": {
+   "0": 0,
+   "1": 393
+  }
+ },
+ "indeterminate_coded_as_target_0": true
+}
+cohort                 n=401059 pat= 1042 pos= 393 indet=114 histo= 1068 (mal  393, other  675)
+frame_train            n=  4872 pat=  553 pos= 232 indet=  2 histo=  243 (mal  232, other   11)
+frame_select           n=  3978 pat=  203 pos=  78 indet=  3 histo=   85 (mal   78, other    7)
+frame_audit            n=  4233 pat=  199 pos=  83 indet=  1 histo=   90 (mal   83, other    7)
+audit_183              n=   183 pat=  100 pos=  83 indet=  0 histo=   83 (mal   83, other    0)
+audit_183_malignant    n=    83 pat=   44 pos=  83 indet=  0 histo=   83 (mal   83, other    0)
+audit_183_benign       n=   100 pat=   75 pos=   0 indet=  0 histo=    0 (mal    0, other    0)
+route_test_78          n=    78 pat=   54 pos=  78 indet=  0 histo=   78 (mal   78, other    0)
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c84_label_provenance.json

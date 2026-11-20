@@ -1,0 +1,21 @@
+##### C25 screen on mal 12:41:10 #####
+83 images (83 malignant, 0 benign)
+   ... 20/83 images (49s)
+   ... 40/83 images (97s)
+   ... 60/83 images (145s)
+   ... 80/83 images (192s)
+============================================================================================
+VALIDITY SCREEN on 83 images
+scheme          |SMD|≤   proxy≤  ratio≤   ovl≥   pass balance   pass neutral   VALID
+strict            0.05     0.05    0.10   0.95         0 to 2         2 to 3       0
+main              0.10     0.10    0.15   0.95         1 to 2         3 to 7       0
+relaxed           0.20     0.20    0.30   0.90         1 to 3         7 to 9       0
+very relaxed      0.30     0.30    0.50   0.85         1 to 3       10 to 14       0
+--------------------------------------------------------------------------------------------
+TRADE-OFF between balance and neutrality (Spearman, per target)
+   contrast@2     n=19  rho = -0.74  95% CI [-0.90, -0.40]
+   color_var@2    n=19  rho = -0.79  95% CI [-0.92, -0.50]
+   contrast@0     n=19  rho = -0.45  95% CI [-0.76, +0.03]
+   color_var@0    n=19  rho = -0.58  95% CI [-0.83, -0.15]
+============================================================================================
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P2_clear/results/c25_screen_mal.json   (211s)

@@ -1,0 +1,173 @@
+{
+ "note": "exploratory; second run's checkpoints; clipped logit (5) at eta=1e-6, bound 13.8155",
+ "check_stack_bf16_vs_stored_max_abs_prob": {
+  "erm": 0.0,
+  "slim": 0.0,
+  "causal": 0.0
+ },
+ "eval_mode_or_batch_statistics_issues": {
+  "erm": [],
+  "slim": [],
+  "causal": []
+ },
+ "median_unedited_feature_norm": {
+  "erm": 11.455377578735352,
+  "slim": 19.14508819580078,
+  "causal": 8.34679126739502
+ },
+ "pairs": {
+  "stack_bf16_vs_single_bf16": {
+   "label": "batch context, bf16",
+   "share_large_moves_feature_norm_over_10x": 0.8596491228070176,
+   "median_feature_norm_ratio_large_moves": 523.5762329101562,
+   "share_all_scores_feature_norm_over_10x": 0.09683037269244166,
+   "share_above_0.5_among_feature_norm_at_most_10x": 0.0030852294639413806,
+   "max_change_among_feature_norm_at_most_10x": 4.859375,
+   "n_scores": 2871,
+   "share_above_0.5": 0.019853709508881923,
+   "n_above_0.5": 57,
+   "share_of_large_moves_with_logodds_beyond_bound_in_either": 0.7543859649122807,
+   "share_above_0.5_among_unsaturated": 0.005386687187379761,
+   "max_change_among_unsaturated": 15.7028169631958,
+   "median_change_among_unsaturated": 0.015624761581420898,
+   "share_scores_beyond_bound_in_either": 0.09474050853361198,
+   "median_relative_logodds_change_beyond_bound": 0.4561399817466736,
+   "q95_relative_logodds_change_beyond_bound": 1.317733883857727,
+   "max_change": 27.617828369140625
+  },
+  "stack_fp32_vs_single_fp32": {
+   "label": "batch context, fp32",
+   "share_large_moves_feature_norm_over_10x": 0.9024390243902439,
+   "median_feature_norm_ratio_large_moves": 675.2572631835938,
+   "share_all_scores_feature_norm_over_10x": 0.09787530477185649,
+   "share_above_0.5_among_feature_norm_at_most_10x": 0.0015444015444015444,
+   "max_change_among_feature_norm_at_most_10x": 2.5170536041259766,
+   "n_scores": 2871,
+   "share_above_0.5": 0.014280738418669453,
+   "n_above_0.5": 41,
+   "share_of_large_moves_with_logodds_beyond_bound_in_either": 0.8048780487804879,
+   "share_above_0.5_among_unsaturated": 0.0030828516377649326,
+   "max_change_among_unsaturated": 4.071622848510742,
+   "median_change_among_unsaturated": 0.0025436878204345703,
+   "share_scores_beyond_bound_in_either": 0.0961337513061651,
+   "median_relative_logodds_change_beyond_bound": 0.29038333892822266,
+   "q95_relative_logodds_change_beyond_bound": 1.3119091987609863,
+   "max_change": 27.617828369140625
+  },
+  "stack_bf16_vs_stack_fp32": {
+   "label": "precision, plan's batch",
+   "share_large_moves_feature_norm_over_10x": 0.41216216216216217,
+   "median_feature_norm_ratio_large_moves": 1.097785472869873,
+   "share_all_scores_feature_norm_over_10x": 0.09961685823754789,
+   "share_above_0.5_among_feature_norm_at_most_10x": 0.033655705996131526,
+   "max_change_among_feature_norm_at_most_10x": 5.635128498077393,
+   "n_scores": 2871,
+   "share_above_0.5": 0.051549982584465345,
+   "n_above_0.5": 148,
+   "share_of_large_moves_with_logodds_beyond_bound_in_either": 0.36486486486486486,
+   "share_above_0.5_among_unsaturated": 0.036265432098765434,
+   "max_change_among_unsaturated": 14.37628173828125,
+   "median_change_among_unsaturated": 0.08879208564758301,
+   "share_scores_beyond_bound_in_either": 0.09717868338557993,
+   "median_relative_logodds_change_beyond_bound": 0.6032760143280029,
+   "q95_relative_logodds_change_beyond_bound": 1.2451117038726807,
+   "max_change": 27.617828369140625
+  },
+  "stack_bf16_vs_single_fp32": {
+   "label": "both",
+   "share_large_moves_feature_norm_over_10x": 0.38513513513513514,
+   "median_feature_norm_ratio_large_moves": 1.0438553094863892,
+   "share_all_scores_feature_norm_over_10x": 0.09926854754440961,
+   "share_above_0.5_among_feature_norm_at_most_10x": 0.035189481825212685,
+   "max_change_among_feature_norm_at_most_10x": 8.833248138427734,
+   "n_scores": 2871,
+   "share_above_0.5": 0.051549982584465345,
+   "n_above_0.5": 148,
+   "share_of_large_moves_with_logodds_beyond_bound_in_either": 0.35135135135135137,
+   "share_above_0.5_among_unsaturated": 0.037051331532226936,
+   "max_change_among_unsaturated": 9.162593841552734,
+   "median_change_among_unsaturated": 0.08822965621948242,
+   "share_scores_beyond_bound_in_either": 0.09752699407871822,
+   "median_relative_logodds_change_beyond_bound": 0.5760108232498169,
+   "q95_relative_logodds_change_beyond_bound": 1.2906500101089478,
+   "max_change": 27.617828369140625
+  }
+ },
+ "cycle": {
+  "stack_bf16": {
+   "crit": 3.3748496275509634,
+   "summary": {
+    "routes disagree": 3,
+    "routes agree": 0,
+    "indeterminate": 9
+   },
+   "disagreeing_cells": [
+    "causal|contrast@2",
+    "erm|contrast@2",
+    "slim|color_var@2"
+   ]
+  },
+  "stack_fp32": {
+   "crit": 3.389950795208816,
+   "summary": {
+    "routes disagree": 6,
+    "routes agree": 0,
+    "indeterminate": 6
+   },
+   "disagreeing_cells": [
+    "causal|contrast@2",
+    "erm|contrast@2",
+    "slim|color_var@0",
+    "slim|color_var@2",
+    "slim|contrast@0",
+    "slim|contrast@2"
+   ]
+  },
+  "single_bf16": {
+   "crit": 3.3505762120551554,
+   "summary": {
+    "routes disagree": 3,
+    "routes agree": 0,
+    "indeterminate": 9
+   },
+   "disagreeing_cells": [
+    "causal|contrast@2",
+    "erm|contrast@2",
+    "slim|contrast@0"
+   ]
+  },
+  "single_fp32": {
+   "crit": 3.352454379026055,
+   "summary": {
+    "routes disagree": 4,
+    "routes agree": 0,
+    "indeterminate": 8
+   },
+   "disagreeing_cells": [
+    "causal|contrast@2",
+    "erm|contrast@2",
+    "slim|color_var@0",
+    "slim|contrast@2"
+   ]
+  }
+ },
+ "largest_change": {
+  "model": "slim",
+  "image": "ISIC_0467830",
+  "column": "contrast@0|hue4",
+  "change": 27.617828369140625,
+  "logodds": {
+   "stack_bf16": 21.125,
+   "stack_fp32": -1367.946533203125,
+   "single_bf16": -4248.0,
+   "single_fp32": -904.5732421875
+  },
+  "feature_norm_over_median_unedited": {
+   "stack_bf16": 524.457275390625,
+   "stack_fp32": 1983.341552734375,
+   "single_bf16": 2728.61865234375,
+   "single_fp32": 823.6243896484375
+  }
+ },
+ "runtime_sec": 205.7
+}

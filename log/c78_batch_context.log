@@ -1,0 +1,26 @@
+rebuilt (37s)
+  scored erm (94s)
+  scored slim (151s)
+  scored causal (206s)
+stack_bf16   score change median 0.0000 q95 0.000 max 0.00 share>0.5 0.000 | {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9} ['causal|contrast@2', 'erm|contrast@2', 'slim|color_var@2'] | max|dD| 0.00
+     erm|contrast@2|D_rad4-rad16      +5.02 [1.20, 8.83] exceeds
+     causal|contrast@2|D_rad4-rad16   +6.62 [1.99, 11.24] exceeds
+     causal|contrast@2|D_rad4-hue4    +4.90 [1.02, 8.79] exceeds
+     slim|color_var@2|D_rad4-rad16    +6.16 [0.62, 11.69] exceeds
+single_bf16  score change median 0.0156 q95 0.066 max 27.62 share>0.5 0.020 | {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9} ['causal|contrast@2', 'erm|contrast@2', 'slim|contrast@0'] | max|dD| 1.95
+     erm|contrast@2|D_rad4-rad16      +5.03 [1.26, 8.81] exceeds
+     causal|contrast@2|D_rad4-rad16   +6.51 [1.96, 11.05] exceeds
+     causal|contrast@2|D_rad4-hue4    +4.90 [1.04, 8.76] exceeds
+     slim|color_var@2|D_rad4-rad16    +4.68 [-0.18, 9.54] indeterminate
+single_fp32  score change median 0.0811 q95 0.507 max 27.62 share>0.5 0.052 | {'routes disagree': 4, 'routes agree': 0, 'indeterminate': 8} ['causal|contrast@2', 'erm|contrast@2', 'slim|color_var@0', 'slim|contrast@2'] | max|dD| 1.64
+     erm|contrast@2|D_rad4-rad16      +4.03 [0.77, 7.28] exceeds
+     causal|contrast@2|D_rad4-rad16   +6.33 [1.81, 10.84] exceeds
+     causal|contrast@2|D_rad4-hue4    +5.00 [1.16, 8.84] exceeds
+     slim|color_var@2|D_rad4-rad16    +4.80 [-0.88, 10.48] indeterminate
+flat32_bf16  score change median 0.0020 q95 0.031 max 27.62 share>0.5 0.008 | {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9} ['causal|contrast@2', 'erm|contrast@2', 'slim|contrast@2'] | max|dD| 1.86
+     erm|contrast@2|D_rad4-rad16      +5.01 [1.20, 8.83] exceeds
+     causal|contrast@2|D_rad4-rad16   +6.62 [2.00, 11.25] exceeds
+     causal|contrast@2|D_rad4-hue4    +4.91 [1.02, 8.79] exceeds
+     slim|color_var@2|D_rad4-rad16    +5.38 [-0.36, 11.13] indeterminate
+stack_bf16 vs stored: {'erm': 0.0, 'slim': 0.0, 'causal': 0.0}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c78_batch_context.json

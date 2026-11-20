@@ -1,0 +1,1787 @@
+{
+ "note": "exploratory; threshold from unedited images only",
+ "natural_nn_q95": 11.382936477661133,
+ "check_vs_c77_q95": 0.0,
+ "runs": {
+  "second_run": {
+   "all": {
+    "crit": 3.5698989127557743,
+    "components": {
+     "erm|contrast@0|D_rad4-hue4": {
+      "est": -1.4557882455679088,
+      "sim": [
+       -3.1958986687343947,
+       0.28432217759857714
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "erm|contrast@0|D_rad16-hue16": {
+      "est": -0.8523207444411057,
+      "sim": [
+       -1.555943936170408,
+       -0.14869755271180363
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "erm|contrast@0|D_rad4-rad16": {
+      "est": 0.47141460842556426,
+      "sim": [
+       -0.10287524614984245,
+       1.045704463000971
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     },
+     "erm|contrast@0|D_hue4-hue16": {
+      "est": 1.0148663771779913,
+      "sim": [
+       -0.8186086845534764,
+       2.848341438909459
+      ],
+      "decision": "indeterminate",
+      "n_images": 38,
+      "n_patients": 26
+     },
+     "slim|contrast@0|D_rad4-hue4": {
+      "est": -2.9322435427934694,
+      "sim": [
+       -6.776048214266311,
+       0.9115611286793723
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "slim|contrast@0|D_rad16-hue16": {
+      "est": -2.106102772248097,
+      "sim": [
+       -4.264276143487532,
+       0.052070598991337924
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 2.218547905815972,
+      "sim": [
+       0.1668968670380262,
+       4.270198944593918
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     },
+     "slim|contrast@0|D_hue4-hue16": {
+      "est": 2.391835463674445,
+      "sim": [
+       -2.475062745010365,
+       7.258733672359255
+      ],
+      "decision": "indeterminate",
+      "n_images": 38,
+      "n_patients": 26
+     },
+     "causal|contrast@0|D_rad4-hue4": {
+      "est": -0.6053860493195362,
+      "sim": [
+       -3.128170471941877,
+       1.9173983733028046
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "causal|contrast@0|D_rad16-hue16": {
+      "est": -0.25930311740973055,
+      "sim": [
+       -2.5138532792218022,
+       1.9952470444023414
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "causal|contrast@0|D_rad4-rad16": {
+      "est": 0.037674670749240455,
+      "sim": [
+       -1.548697700619658,
+       1.6240470421181388
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     },
+     "causal|contrast@0|D_hue4-hue16": {
+      "est": -0.22666281148007042,
+      "sim": [
+       -1.6827525502109264,
+       1.2294269272507856
+      ],
+      "decision": "indeterminate",
+      "n_images": 38,
+      "n_patients": 26
+     },
+     "erm|contrast@2|D_rad4-hue4": {
+      "est": -0.11162104606628417,
+      "sim": [
+       -1.1529244137358963,
+       0.929682321603328
+      ],
+      "decision": "indeterminate",
+      "n_images": 5,
+      "n_patients": 4
+     },
+     "erm|contrast@2|D_rad16-hue16": {
+      "est": -0.9086912018912179,
+      "sim": [
+       -2.8729117457536035,
+       1.0555293419711678
+      ],
+      "decision": "indeterminate",
+      "n_images": 7,
+      "n_patients": 6
+     },
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.060729503631592,
+      "sim": [
+       -1.156940520091239,
+       9.278399527354424
+      ],
+      "decision": "indeterminate",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "erm|contrast@2|D_hue4-hue16": {
+      "est": 0.5930667877197265,
+      "sim": [
+       -1.353119012539442,
+       2.539252587978895
+      ],
+      "decision": "indeterminate",
+      "n_images": 5,
+      "n_patients": 4
+     },
+     "slim|contrast@2|D_rad4-hue4": {
+      "est": 3.955913543701172,
+      "sim": [
+       -6.9606082639096485,
+       14.872435351311992
+      ],
+      "decision": "indeterminate",
+      "n_images": 5,
+      "n_patients": 4
+     },
+     "slim|contrast@2|D_rad16-hue16": {
+      "est": 2.387681416102818,
+      "sim": [
+       -8.595886596832122,
+       13.371249429037759
+      ],
+      "decision": "indeterminate",
+      "n_images": 7,
+      "n_patients": 6
+     },
+     "slim|contrast@2|D_rad4-rad16": {
+      "est": 9.572855949401855,
+      "sim": [
+       1.7522911171497748,
+       17.393420781653937
+      ],
+      "decision": "exceeds",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "slim|contrast@2|D_hue4-hue16": {
+      "est": 2.834499168395996,
+      "sim": [
+       -8.773467278723128,
+       14.442465615515118
+      ],
+      "decision": "indeterminate",
+      "n_images": 5,
+      "n_patients": 4
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.04479868412017822,
+      "sim": [
+       -1.783212649573586,
+       1.8728100178139424
+      ],
+      "decision": "indeterminate",
+      "n_images": 5,
+      "n_patients": 4
+     },
+     "causal|contrast@2|D_rad16-hue16": {
+      "est": 0.04464880057743618,
+      "sim": [
+       -1.651449138468043,
+       1.7407467396229153
+      ],
+      "decision": "indeterminate",
+      "n_images": 7,
+      "n_patients": 6
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 4.26669454574585,
+      "sim": [
+       -2.3395113002609733,
+       10.872900391752673
+      ],
+      "decision": "indeterminate",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "causal|contrast@2|D_hue4-hue16": {
+      "est": -0.8042746543884277,
+      "sim": [
+       -3.7815924227582385,
+       2.173043113981383
+      ],
+      "decision": "indeterminate",
+      "n_images": 5,
+      "n_patients": 4
+     },
+     "erm|color_var@0|D_rad4-hue4": {
+      "est": -0.9163412011188009,
+      "sim": [
+       -2.186350194015556,
+       0.35366779177795415
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "erm|color_var@0|D_rad16-hue16": {
+      "est": -0.4685946340146272,
+      "sim": [
+       -1.067642431545659,
+       0.13045316351640446
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": 0.098430816163408,
+      "sim": [
+       -0.3797324815771464,
+       0.5765941139039624
+      ],
+      "decision": "indeterminate",
+      "n_images": 47,
+      "n_patients": 33
+     },
+     "erm|color_var@0|D_hue4-hue16": {
+      "est": 0.5557050704956055,
+      "sim": [
+       -0.6790899149474598,
+       1.7905000559386708
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_rad4-hue4": {
+      "est": -2.88440638003142,
+      "sim": [
+       -6.376083639076002,
+       0.607270879013162
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_rad16-hue16": {
+      "est": -1.4333136185355808,
+      "sim": [
+       -3.0616586039036937,
+       0.19503136683253208
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.5080041682466547,
+      "sim": [
+       -0.4647858330598329,
+       1.4807941695531424
+      ],
+      "decision": "indeterminate",
+      "n_images": 47,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_hue4-hue16": {
+      "est": 2.028394616168478,
+      "sim": [
+       -0.9268728172038823,
+       4.983662049540838
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_rad4-hue4": {
+      "est": -0.6816902160644531,
+      "sim": [
+       -2.854852905195959,
+       1.4914724730670526
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_rad16-hue16": {
+      "est": -0.6537426243657651,
+      "sim": [
+       -1.8975243761877778,
+       0.5900391274562475
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": -0.08356890779860476,
+      "sim": [
+       -1.6913583365822937,
+       1.524220520985084
+      ],
+      "decision": "indeterminate",
+      "n_images": 47,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_hue4-hue16": {
+      "est": -0.10395220051641049,
+      "sim": [
+       -2.0193774428409292,
+       1.8114730418081082
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "erm|color_var@2|D_rad4-hue4": {
+      "est": 0.09488785266876221,
+      "sim": [
+       -1.7149414084240082,
+       1.9047171137615326
+      ],
+      "decision": "indeterminate",
+      "n_images": 9,
+      "n_patients": 7
+     },
+     "erm|color_var@2|D_rad16-hue16": {
+      "est": 0.0712900459766388,
+      "sim": [
+       -1.294639674246789,
+       1.4372197662000665
+      ],
+      "decision": "indeterminate",
+      "n_images": 8,
+      "n_patients": 7
+     },
+     "erm|color_var@2|D_rad4-rad16": {
+      "est": 0.8970843095045823,
+      "sim": [
+       -0.11456979934099276,
+       1.9087384183501572
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 11
+     },
+     "erm|color_var@2|D_hue4-hue16": {
+      "est": 1.1217652559280396,
+      "sim": [
+       -0.39459397207055114,
+       2.6381244839266302
+      ],
+      "decision": "indeterminate",
+      "n_images": 8,
+      "n_patients": 7
+     },
+     "slim|color_var@2|D_rad4-hue4": {
+      "est": -1.3687075508965387,
+      "sim": [
+       -8.072718404247695,
+       5.3353033024546175
+      ],
+      "decision": "indeterminate",
+      "n_images": 9,
+      "n_patients": 7
+     },
+     "slim|color_var@2|D_rad16-hue16": {
+      "est": 0.2433071732521057,
+      "sim": [
+       -2.8783511242905315,
+       3.364965470794743
+      ],
+      "decision": "indeterminate",
+      "n_images": 8,
+      "n_patients": 7
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 3.6456386859600363,
+      "sim": [
+       -3.5310392757094027,
+       10.822316647629474
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 11
+     },
+     "slim|color_var@2|D_hue4-hue16": {
+      "est": 2.9993791580200195,
+      "sim": [
+       -3.425253142223599,
+       9.424011458263639
+      ],
+      "decision": "indeterminate",
+      "n_images": 8,
+      "n_patients": 7
+     },
+     "causal|color_var@2|D_rad4-hue4": {
+      "est": 2.118201573689779,
+      "sim": [
+       -0.5501469175706517,
+       4.786550064950209
+      ],
+      "decision": "indeterminate",
+      "n_images": 9,
+      "n_patients": 7
+     },
+     "causal|color_var@2|D_rad16-hue16": {
+      "est": 3.052811861038208,
+      "sim": [
+       -0.6544028163666336,
+       6.76002653844305
+      ],
+      "decision": "indeterminate",
+      "n_images": 8,
+      "n_patients": 7
+     },
+     "causal|color_var@2|D_rad4-rad16": {
+      "est": -0.7471837997436523,
+      "sim": [
+       -3.4282682789279613,
+       1.9339006794406566
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 11
+     },
+     "causal|color_var@2|D_hue4-hue16": {
+      "est": -0.5913360118865967,
+      "sim": [
+       -3.6840659693334534,
+       2.50139394556026
+      ],
+      "decision": "indeterminate",
+      "n_images": 8,
+      "n_patients": 7
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "indeterminate",
+     "causal|contrast@0": "indeterminate",
+     "erm|contrast@2": "indeterminate",
+     "slim|contrast@2": "routes disagree",
+     "causal|contrast@2": "indeterminate",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "indeterminate",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "indeterminate",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [],
+    "n_analysed": 48,
+    "summary": {
+     "routes disagree": 1,
+     "routes agree": 0,
+     "indeterminate": 11
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.060729503631592,
+      "sim": [
+       -1.156940520091239,
+       9.278399527354424
+      ],
+      "decision": "indeterminate",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 4.26669454574585,
+      "sim": [
+       -2.3395113002609733,
+       10.872900391752673
+      ],
+      "decision": "indeterminate",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.04479868412017822,
+      "sim": [
+       -1.783212649573586,
+       1.8728100178139424
+      ],
+      "decision": "indeterminate",
+      "n_images": 5,
+      "n_patients": 4
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 3.6456386859600363,
+      "sim": [
+       -3.5310392757094027,
+       10.822316647629474
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 11
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 2.218547905815972,
+      "sim": [
+       0.1668968670380262,
+       4.270198944593918
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     }
+    }
+   },
+   "min30": {
+    "crit": 3.1404111134731014,
+    "components": {
+     "erm|contrast@0|D_rad4-hue4": {
+      "est": -1.4557882455679088,
+      "sim": [
+       -2.986549268535918,
+       0.07497277740010078
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "erm|contrast@0|D_rad16-hue16": {
+      "est": -0.8523207444411057,
+      "sim": [
+       -1.4712923582054767,
+       -0.2333491306767348
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "erm|contrast@0|D_rad4-rad16": {
+      "est": 0.47141460842556426,
+      "sim": [
+       -0.03378351783489242,
+       0.976612734686021
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     },
+     "erm|contrast@0|D_hue4-hue16": {
+      "est": 1.0148663771779913,
+      "sim": [
+       -0.59802676093401,
+       2.6277595152899926
+      ],
+      "decision": "indeterminate",
+      "n_images": 38,
+      "n_patients": 26
+     },
+     "slim|contrast@0|D_rad4-hue4": {
+      "est": -2.9322435427934694,
+      "sim": [
+       -6.31360733020527,
+       0.44912024461833155
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "slim|contrast@0|D_rad16-hue16": {
+      "est": -2.106102772248097,
+      "sim": [
+       -4.004630379185325,
+       -0.2075751653108695
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 2.218547905815972,
+      "sim": [
+       0.4137271306043804,
+       4.023368681027564
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     },
+     "slim|contrast@0|D_hue4-hue16": {
+      "est": 2.391835463674445,
+      "sim": [
+       -1.88953540878469,
+       6.67320633613358
+      ],
+      "decision": "indeterminate",
+      "n_images": 38,
+      "n_patients": 26
+     },
+     "causal|contrast@0|D_rad4-hue4": {
+      "est": -0.6053860493195362,
+      "sim": [
+       -2.8246590403253813,
+       1.6138869416863089
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "causal|contrast@0|D_rad16-hue16": {
+      "est": -0.25930311740973055,
+      "sim": [
+       -2.2426126051766144,
+       1.724006370357153
+      ],
+      "decision": "indeterminate",
+      "n_images": 39,
+      "n_patients": 27
+     },
+     "causal|contrast@0|D_rad4-rad16": {
+      "est": 0.037674670749240455,
+      "sim": [
+       -1.357844235221078,
+       1.4331935767195587
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     },
+     "causal|contrast@0|D_hue4-hue16": {
+      "est": -0.22666281148007042,
+      "sim": [
+       -1.5075731424100363,
+       1.0542475194498955
+      ],
+      "decision": "indeterminate",
+      "n_images": 38,
+      "n_patients": 26
+     },
+     "erm|color_var@0|D_rad4-hue4": {
+      "est": -0.9163412011188009,
+      "sim": [
+       -2.033557809480676,
+       0.20087540724307396
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "erm|color_var@0|D_rad16-hue16": {
+      "est": -0.4685946340146272,
+      "sim": [
+       -0.9955721218493752,
+       0.05838285382012076
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": 0.098430816163408,
+      "sim": [
+       -0.32220555785655147,
+       0.5190671901833674
+      ],
+      "decision": "indeterminate",
+      "n_images": 47,
+      "n_patients": 33
+     },
+     "erm|color_var@0|D_hue4-hue16": {
+      "est": 0.5557050704956055,
+      "sim": [
+       -0.530534061175725,
+       1.641944202166936
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_rad4-hue4": {
+      "est": -2.88440638003142,
+      "sim": [
+       -5.9560065392920265,
+       0.18719377922918623
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_rad16-hue16": {
+      "est": -1.4333136185355808,
+      "sim": [
+       -2.8657554925467217,
+       -0.0008717445244397215
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.5080041682466547,
+      "sim": [
+       -0.3477513043418219,
+       1.3637596408351313
+      ],
+      "decision": "indeterminate",
+      "n_images": 47,
+      "n_patients": 33
+     },
+     "slim|color_var@0|D_hue4-hue16": {
+      "est": 2.028394616168478,
+      "sim": [
+       -0.571330170963781,
+       4.628119403300737
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_rad4-hue4": {
+      "est": -0.6816902160644531,
+      "sim": [
+       -2.593403804353546,
+       1.2300233722246394
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_rad16-hue16": {
+      "est": -0.6537426243657651,
+      "sim": [
+       -1.7478873415173428,
+       0.44040209278581255
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": -0.08356890779860476,
+      "sim": [
+       -1.4979282254351962,
+       1.3307904098379866
+      ],
+      "decision": "indeterminate",
+      "n_images": 47,
+      "n_patients": 33
+     },
+     "causal|color_var@0|D_hue4-hue16": {
+      "est": -0.10395220051641049,
+      "sim": [
+       -1.7889362476919624,
+       1.5810318466591415
+      ],
+      "decision": "indeterminate",
+      "n_images": 46,
+      "n_patients": 33
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "indeterminate",
+     "causal|contrast@0": "indeterminate",
+     "erm|contrast@2": "indeterminate",
+     "slim|contrast@2": "indeterminate",
+     "causal|contrast@2": "indeterminate",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "indeterminate",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "indeterminate",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [
+     "erm|contrast@2|D_rad4-hue4",
+     "erm|contrast@2|D_rad16-hue16",
+     "erm|contrast@2|D_rad4-rad16",
+     "erm|contrast@2|D_hue4-hue16",
+     "slim|contrast@2|D_rad4-hue4",
+     "slim|contrast@2|D_rad16-hue16",
+     "slim|contrast@2|D_rad4-rad16",
+     "slim|contrast@2|D_hue4-hue16",
+     "causal|contrast@2|D_rad4-hue4",
+     "causal|contrast@2|D_rad16-hue16",
+     "causal|contrast@2|D_rad4-rad16",
+     "causal|contrast@2|D_hue4-hue16",
+     "erm|color_var@2|D_rad4-hue4",
+     "erm|color_var@2|D_rad16-hue16",
+     "erm|color_var@2|D_rad4-rad16",
+     "erm|color_var@2|D_hue4-hue16",
+     "slim|color_var@2|D_rad4-hue4",
+     "slim|color_var@2|D_rad16-hue16",
+     "slim|color_var@2|D_rad4-rad16",
+     "slim|color_var@2|D_hue4-hue16",
+     "causal|color_var@2|D_rad4-hue4",
+     "causal|color_var@2|D_rad16-hue16",
+     "causal|color_var@2|D_rad4-rad16",
+     "causal|color_var@2|D_hue4-hue16"
+    ],
+    "n_analysed": 24,
+    "summary": {
+     "routes disagree": 0,
+     "routes agree": 0,
+     "indeterminate": 12
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": null,
+     "causal|contrast@2|D_rad4-rad16": null,
+     "causal|contrast@2|D_rad4-hue4": null,
+     "slim|color_var@2|D_rad4-rad16": null,
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 2.218547905815972,
+      "sim": [
+       0.4137271306043804,
+       4.023368681027564
+      ],
+      "decision": "indeterminate",
+      "n_images": 45,
+      "n_patients": 32
+     }
+    }
+   }
+  },
+  "first_run": {
+   "all": {
+    "crit": 3.4536026677359524,
+    "components": {
+     "erm|contrast@0|D_rad4-hue4": {
+      "est": -1.4236907958984375,
+      "sim": [
+       -2.6552146244940533,
+       -0.19216696730282168
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "erm|contrast@0|D_rad16-hue16": {
+      "est": -0.6338190825089164,
+      "sim": [
+       -1.388438719873803,
+       0.1208005548559703
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "erm|contrast@0|D_rad4-rad16": {
+      "est": 0.2813063303629557,
+      "sim": [
+       -0.15244795337918038,
+       0.7150606141050918
+      ],
+      "decision": "indeterminate",
+      "n_images": 75,
+      "n_patients": 53
+     },
+     "erm|contrast@0|D_hue4-hue16": {
+      "est": 1.020811305326574,
+      "sim": [
+       -0.34714292324873575,
+       2.388765533901884
+      ],
+      "decision": "indeterminate",
+      "n_images": 68,
+      "n_patients": 47
+     },
+     "slim|contrast@0|D_rad4-hue4": {
+      "est": -2.837492127349411,
+      "sim": [
+       -5.639518035421508,
+       -0.03546621927731364
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "slim|contrast@0|D_rad16-hue16": {
+      "est": -1.5752728227256,
+      "sim": [
+       -3.253087644502808,
+       0.10254199905160766
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.9882271321614584,
+      "sim": [
+       0.4428930500170283,
+       3.5335612143058883
+      ],
+      "decision": "indeterminate",
+      "n_images": 75,
+      "n_patients": 53
+     },
+     "slim|contrast@0|D_hue4-hue16": {
+      "est": 2.868320016299977,
+      "sim": [
+       -0.4798321403588286,
+       6.216472172958783
+      ],
+      "decision": "indeterminate",
+      "n_images": 68,
+      "n_patients": 47
+     },
+     "causal|contrast@0|D_rad4-hue4": {
+      "est": -0.08166349106940671,
+      "sim": [
+       -0.3577177891013993,
+       0.19439080696258584
+      ],
+      "decision": "within",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "causal|contrast@0|D_rad16-hue16": {
+      "est": -0.07375097965848619,
+      "sim": [
+       -0.3201774393921791,
+       0.17267548007520667
+      ],
+      "decision": "within",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "causal|contrast@0|D_rad4-rad16": {
+      "est": 0.1352870559692383,
+      "sim": [
+       -0.025709938453229747,
+       0.29628405039170636
+      ],
+      "decision": "within",
+      "n_images": 75,
+      "n_patients": 53
+     },
+     "causal|contrast@0|D_hue4-hue16": {
+      "est": 0.13626799863927505,
+      "sim": [
+       -0.09060715033195563,
+       0.3631431476105057
+      ],
+      "decision": "within",
+      "n_images": 68,
+      "n_patients": 47
+     },
+     "erm|contrast@2|D_rad4-hue4": {
+      "est": 0.13364355380718523,
+      "sim": [
+       -0.5193517540963817,
+       0.7866388617107523
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 12
+     },
+     "erm|contrast@2|D_rad16-hue16": {
+      "est": -1.2941235133579798,
+      "sim": [
+       -3.471224189814647,
+       0.8829771630986876
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 18
+     },
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 2.958288377331149,
+      "sim": [
+       -0.06516148830170732,
+       5.981738242964005
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "erm|contrast@2|D_hue4-hue16": {
+      "est": 0.7883152008056641,
+      "sim": [
+       -1.728349618593965,
+       3.304980020205293
+      ],
+      "decision": "indeterminate",
+      "n_images": 15,
+      "n_patients": 12
+     },
+     "slim|contrast@2|D_rad4-hue4": {
+      "est": 1.6100531357985277,
+      "sim": [
+       -2.3703422948341073,
+       5.590448566431163
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 12
+     },
+     "slim|contrast@2|D_rad16-hue16": {
+      "est": 1.3192544664655412,
+      "sim": [
+       -2.628488853851719,
+       5.2669977867828015
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 18
+     },
+     "slim|contrast@2|D_rad4-rad16": {
+      "est": 8.61927253969254,
+      "sim": [
+       3.520952264984829,
+       13.717592814400252
+      ],
+      "decision": "exceeds",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "slim|contrast@2|D_hue4-hue16": {
+      "est": 1.8312459309895834,
+      "sim": [
+       -5.670581980892936,
+       9.333073842872103
+      ],
+      "decision": "indeterminate",
+      "n_images": 15,
+      "n_patients": 12
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.33213054216825044,
+      "sim": [
+       -0.43498510416715475,
+       1.0992461885036557
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 12
+     },
+     "causal|contrast@2|D_rad16-hue16": {
+      "est": 0.21315801711309523,
+      "sim": [
+       -0.4785175178364226,
+       0.9048335520626131
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 18
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.24467028340985697,
+      "sim": [
+       -0.12880347036200968,
+       0.6181440371817236
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_hue4-hue16": {
+      "est": -0.13612926801045735,
+      "sim": [
+       -0.7301784958281136,
+       0.4579199598071989
+      ],
+      "decision": "indeterminate",
+      "n_images": 15,
+      "n_patients": 12
+     },
+     "erm|color_var@0|D_rad4-hue4": {
+      "est": -0.8717816001490543,
+      "sim": [
+       -1.7973792427343425,
+       0.053816042436233946
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "erm|color_var@0|D_rad16-hue16": {
+      "est": -0.3551009077774851,
+      "sim": [
+       -0.7955376234712628,
+       0.08533580791629258
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": -0.09797201528177633,
+      "sim": [
+       -0.4981014885606283,
+       0.3021574579970756
+      ],
+      "decision": "within",
+      "n_images": 77,
+      "n_patients": 54
+     },
+     "erm|color_var@0|D_hue4-hue16": {
+      "est": 0.42189126265676397,
+      "sim": [
+       -0.5504758770845246,
+       1.3942584023980524
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_rad4-hue4": {
+      "est": -2.6579254551937708,
+      "sim": [
+       -5.158157390848896,
+       -0.15769351953864552
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_rad16-hue16": {
+      "est": -1.7214220950478,
+      "sim": [
+       -3.140264705762332,
+       -0.3025794843332683
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.5404919711026278,
+      "sim": [
+       -0.12808920720681782,
+       1.2090731494120734
+      ],
+      "decision": "indeterminate",
+      "n_images": 77,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_hue4-hue16": {
+      "est": 1.519365812602796,
+      "sim": [
+       -0.5233785645948237,
+       3.562110189800416
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_rad4-hue4": {
+      "est": 0.03336422380648161,
+      "sim": [
+       -0.21247731197291467,
+       0.2792057595858779
+      ],
+      "decision": "within",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_rad16-hue16": {
+      "est": -0.04620074598412765,
+      "sim": [
+       -0.22326781898302925,
+       0.13086632701477394
+      ],
+      "decision": "within",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": 0.1006865439476905,
+      "sim": [
+       -0.06947169340654863,
+       0.2708447813019296
+      ],
+      "decision": "within",
+      "n_images": 77,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_hue4-hue16": {
+      "est": 0.022754775850396407,
+      "sim": [
+       -0.16617625981083695,
+       0.21168581151162974
+      ],
+      "decision": "within",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "erm|color_var@2|D_rad4-hue4": {
+      "est": 0.1837796323439654,
+      "sim": [
+       -0.7885607062393218,
+       1.1561199709272527
+      ],
+      "decision": "indeterminate",
+      "n_images": 17,
+      "n_patients": 15
+     },
+     "erm|color_var@2|D_rad16-hue16": {
+      "est": -0.2126121785905626,
+      "sim": [
+       -1.3307163685382846,
+       0.9054920113571594
+      ],
+      "decision": "indeterminate",
+      "n_images": 18,
+      "n_patients": 17
+     },
+     "erm|color_var@2|D_rad4-rad16": {
+      "est": 0.5872085491816202,
+      "sim": [
+       -0.02389097438887222,
+       1.1983080727521127
+      ],
+      "decision": "indeterminate",
+      "n_images": 24,
+      "n_patients": 21
+     },
+     "erm|color_var@2|D_hue4-hue16": {
+      "est": 0.052085367116061126,
+      "sim": [
+       -0.9277690239633279,
+       1.0319397581954501
+      ],
+      "decision": "indeterminate",
+      "n_images": 22,
+      "n_patients": 19
+     },
+     "slim|color_var@2|D_rad4-hue4": {
+      "est": -0.9092237809125114,
+      "sim": [
+       -6.351571414276638,
+       4.533123852451615
+      ],
+      "decision": "indeterminate",
+      "n_images": 17,
+      "n_patients": 15
+     },
+     "slim|color_var@2|D_rad16-hue16": {
+      "est": -0.2292658487955729,
+      "sim": [
+       -1.5947689445711508,
+       1.1362372469800048
+      ],
+      "decision": "indeterminate",
+      "n_images": 18,
+      "n_patients": 17
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 4.608182589213054,
+      "sim": [
+       -0.24054954027881248,
+       9.456914718704919
+      ],
+      "decision": "indeterminate",
+      "n_images": 24,
+      "n_patients": 21
+     },
+     "slim|color_var@2|D_hue4-hue16": {
+      "est": 1.73193359375,
+      "sim": [
+       -2.975177389179885,
+       6.439044576679885
+      ],
+      "decision": "indeterminate",
+      "n_images": 22,
+      "n_patients": 19
+     },
+     "causal|color_var@2|D_rad4-hue4": {
+      "est": 0.14401430242201863,
+      "sim": [
+       -0.45843411056514005,
+       0.7464627154091773
+      ],
+      "decision": "indeterminate",
+      "n_images": 17,
+      "n_patients": 15
+     },
+     "causal|color_var@2|D_rad16-hue16": {
+      "est": 0.3071327209472656,
+      "sim": [
+       -0.3066793322049207,
+       0.920944774099452
+      ],
+      "decision": "indeterminate",
+      "n_images": 18,
+      "n_patients": 17
+     },
+     "causal|color_var@2|D_rad4-rad16": {
+      "est": -0.037435829639434814,
+      "sim": [
+       -0.497702787353302,
+       0.42283112807443235
+      ],
+      "decision": "within",
+      "n_images": 24,
+      "n_patients": 21
+     },
+     "causal|color_var@2|D_hue4-hue16": {
+      "est": -0.01030587608164007,
+      "sim": [
+       -0.34200536495002376,
+       0.3213936127867436
+      ],
+      "decision": "within",
+      "n_images": 22,
+      "n_patients": 19
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "indeterminate",
+     "causal|contrast@0": "routes agree",
+     "erm|contrast@2": "indeterminate",
+     "slim|contrast@2": "routes disagree",
+     "causal|contrast@2": "indeterminate",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "routes agree",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "indeterminate",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [],
+    "n_analysed": 48,
+    "summary": {
+     "routes disagree": 1,
+     "routes agree": 2,
+     "indeterminate": 9
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 2.958288377331149,
+      "sim": [
+       -0.06516148830170732,
+       5.981738242964005
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.24467028340985697,
+      "sim": [
+       -0.12880347036200968,
+       0.6181440371817236
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.33213054216825044,
+      "sim": [
+       -0.43498510416715475,
+       1.0992461885036557
+      ],
+      "decision": "indeterminate",
+      "n_images": 13,
+      "n_patients": 12
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 4.608182589213054,
+      "sim": [
+       -0.24054954027881248,
+       9.456914718704919
+      ],
+      "decision": "indeterminate",
+      "n_images": 24,
+      "n_patients": 21
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.9882271321614584,
+      "sim": [
+       0.4428930500170283,
+       3.5335612143058883
+      ],
+      "decision": "indeterminate",
+      "n_images": 75,
+      "n_patients": 53
+     }
+    }
+   },
+   "min30": {
+    "crit": 3.136817102906929,
+    "components": {
+     "erm|contrast@0|D_rad4-hue4": {
+      "est": -1.4236907958984375,
+      "sim": [
+       -2.5422517248279437,
+       -0.3051298669689311
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "erm|contrast@0|D_rad16-hue16": {
+      "est": -0.6338190825089164,
+      "sim": [
+       -1.3192203901895658,
+       0.051582225171733054
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "erm|contrast@0|D_rad4-rad16": {
+      "est": 0.2813063303629557,
+      "sim": [
+       -0.1126613568908415,
+       0.6752740176167529
+      ],
+      "decision": "indeterminate",
+      "n_images": 75,
+      "n_patients": 53
+     },
+     "erm|contrast@0|D_hue4-hue16": {
+      "est": 1.020811305326574,
+      "sim": [
+       -0.22166579265468078,
+       2.2632884033078287
+      ],
+      "decision": "indeterminate",
+      "n_images": 68,
+      "n_patients": 47
+     },
+     "slim|contrast@0|D_rad4-hue4": {
+      "est": -2.837492127349411,
+      "sim": [
+       -5.3824990771474,
+       -0.29248517755142256
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "slim|contrast@0|D_rad16-hue16": {
+      "est": -1.5752728227256,
+      "sim": [
+       -3.099188204662603,
+       -0.05135744078859705
+      ],
+      "decision": "indeterminate",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.9882271321614584,
+      "sim": [
+       0.5846405459391886,
+       3.3918137183837285
+      ],
+      "decision": "exceeds",
+      "n_images": 75,
+      "n_patients": 53
+     },
+     "slim|contrast@0|D_hue4-hue16": {
+      "est": 2.868320016299977,
+      "sim": [
+       -0.17271914152159118,
+       5.909359174121546
+      ],
+      "decision": "indeterminate",
+      "n_images": 68,
+      "n_patients": 47
+     },
+     "causal|contrast@0|D_rad4-hue4": {
+      "est": -0.08166349106940671,
+      "sim": [
+       -0.3323964000653892,
+       0.1690694179265758
+      ],
+      "decision": "within",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "causal|contrast@0|D_rad16-hue16": {
+      "est": -0.07375097965848619,
+      "sim": [
+       -0.297573696939452,
+       0.15007173762247966
+      ],
+      "decision": "within",
+      "n_images": 69,
+      "n_patients": 48
+     },
+     "causal|contrast@0|D_rad4-rad16": {
+      "est": 0.1352870559692383,
+      "sim": [
+       -0.010942309191658894,
+       0.2815164211301355
+      ],
+      "decision": "within",
+      "n_images": 75,
+      "n_patients": 53
+     },
+     "causal|contrast@0|D_hue4-hue16": {
+      "est": 0.13626799863927505,
+      "sim": [
+       -0.06979677371163762,
+       0.3423327709901877
+      ],
+      "decision": "within",
+      "n_images": 68,
+      "n_patients": 47
+     },
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 2.958288377331149,
+      "sim": [
+       0.21216782996773542,
+       5.704408924694563
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "slim|contrast@2|D_rad4-rad16": {
+      "est": 8.61927253969254,
+      "sim": [
+       3.988601390632894,
+       13.249943688752186
+      ],
+      "decision": "exceeds",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.24467028340985697,
+      "sim": [
+       -0.09454617286142702,
+       0.5838867396811409
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "erm|color_var@0|D_rad4-hue4": {
+      "est": -0.8717816001490543,
+      "sim": [
+       -1.7124777644172047,
+       -0.031085435880903844
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "erm|color_var@0|D_rad16-hue16": {
+      "est": -0.3551009077774851,
+      "sim": [
+       -0.7551380734431294,
+       0.04493625788815925
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": -0.09797201528177633,
+      "sim": [
+       -0.46139916539486686,
+       0.26545513483131417
+      ],
+      "decision": "within",
+      "n_images": 77,
+      "n_patients": 54
+     },
+     "erm|color_var@0|D_hue4-hue16": {
+      "est": 0.42189126265676397,
+      "sim": [
+       -0.4612844143659543,
+       1.3050669396794823
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_rad4-hue4": {
+      "est": -2.6579254551937708,
+      "sim": [
+       -4.928820822013286,
+       -0.38703008837425523
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_rad16-hue16": {
+      "est": -1.7214220950478,
+      "sim": [
+       -3.010119781438034,
+       -0.4327244086575661
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.5404919711026278,
+      "sim": [
+       -0.06676285134560422,
+       1.1477467935508598
+      ],
+      "decision": "indeterminate",
+      "n_images": 77,
+      "n_patients": 54
+     },
+     "slim|color_var@0|D_hue4-hue16": {
+      "est": 1.519365812602796,
+      "sim": [
+       -0.3360055533977713,
+       3.3747371786033633
+      ],
+      "decision": "indeterminate",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_rad4-hue4": {
+      "est": 0.03336422380648161,
+      "sim": [
+       -0.18992722232367162,
+       0.25665566993663486
+      ],
+      "decision": "within",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_rad16-hue16": {
+      "est": -0.04620074598412765,
+      "sim": [
+       -0.2070261438023256,
+       0.11462465183407028
+      ],
+      "decision": "within",
+      "n_images": 76,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": 0.1006865439476905,
+      "sim": [
+       -0.05386373889743573,
+       0.25523682679281673
+      ],
+      "decision": "within",
+      "n_images": 77,
+      "n_patients": 54
+     },
+     "causal|color_var@0|D_hue4-hue16": {
+      "est": 0.022754775850396407,
+      "sim": [
+       -0.14884634939444505,
+       0.19435590109523784
+      ],
+      "decision": "within",
+      "n_images": 76,
+      "n_patients": 54
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "routes disagree",
+     "causal|contrast@0": "routes agree",
+     "erm|contrast@2": "indeterminate",
+     "slim|contrast@2": "routes disagree",
+     "causal|contrast@2": "indeterminate",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "routes agree",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "indeterminate",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [
+     "erm|contrast@2|D_rad4-hue4",
+     "erm|contrast@2|D_rad16-hue16",
+     "erm|contrast@2|D_hue4-hue16",
+     "slim|contrast@2|D_rad4-hue4",
+     "slim|contrast@2|D_rad16-hue16",
+     "slim|contrast@2|D_hue4-hue16",
+     "causal|contrast@2|D_rad4-hue4",
+     "causal|contrast@2|D_rad16-hue16",
+     "causal|contrast@2|D_hue4-hue16",
+     "erm|color_var@2|D_rad4-hue4",
+     "erm|color_var@2|D_rad16-hue16",
+     "erm|color_var@2|D_rad4-rad16",
+     "erm|color_var@2|D_hue4-hue16",
+     "slim|color_var@2|D_rad4-hue4",
+     "slim|color_var@2|D_rad16-hue16",
+     "slim|color_var@2|D_rad4-rad16",
+     "slim|color_var@2|D_hue4-hue16",
+     "causal|color_var@2|D_rad4-hue4",
+     "causal|color_var@2|D_rad16-hue16",
+     "causal|color_var@2|D_rad4-rad16",
+     "causal|color_var@2|D_hue4-hue16"
+    ],
+    "n_analysed": 27,
+    "summary": {
+     "routes disagree": 2,
+     "routes agree": 2,
+     "indeterminate": 8
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 2.958288377331149,
+      "sim": [
+       0.21216782996773542,
+       5.704408924694563
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.24467028340985697,
+      "sim": [
+       -0.09454617286142702,
+       0.5838867396811409
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-hue4": null,
+     "slim|color_var@2|D_rad4-rad16": null,
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.9882271321614584,
+      "sim": [
+       0.5846405459391886,
+       3.3918137183837285
+      ],
+      "decision": "exceeds",
+      "n_images": 75,
+      "n_patients": 53
+     }
+    }
+   }
+  }
+ },
+ "runtime_sec": 38.4
+}

@@ -1,0 +1,40 @@
+model  subgroup    E|dp|   95% CI (patient)      verdict
+ERM    all        0.371  [0.303, 0.442]  exceedance
+ERM    malignant  0.550  [0.454, 0.626]  exceedance
+ERM    benign     0.222  [0.191, 0.255]  exceedance
+Slim   all        0.544  [0.482, 0.605]  exceedance
+Slim   malignant  0.762  [0.707, 0.808]  exceedance
+Slim   benign     0.363  [0.323, 0.406]  exceedance
+Inv    all        0.223  [0.168, 0.278]  exceedance
+Inv    malignant  0.383  [0.308, 0.445]  exceedance
+Inv    benign     0.091  [0.063, 0.124]  exceedance
+
+summary: {
+ "n_cells": 9,
+ "exceedance": 9,
+ "min_lower_bound": 0.0629637758300434,
+ "max_mean": 0.7615176548927849,
+ "by_margin": {
+  "0.01": {
+   "exceedance": 9,
+   "equivalence": 0,
+   "indeterminate": 0
+  },
+  "0.025": {
+   "exceedance": 9,
+   "equivalence": 0,
+   "indeterminate": 0
+  },
+  "0.05": {
+   "exceedance": 9,
+   "equivalence": 0,
+   "indeterminate": 0
+  },
+  "0.1": {
+   "exceedance": 8,
+   "equivalence": 0,
+   "indeterminate": 1
+  }
+ }
+}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c32_absdp_patient_ci.json

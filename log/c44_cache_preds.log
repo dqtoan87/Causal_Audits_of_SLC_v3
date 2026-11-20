@@ -1,0 +1,7 @@
+##### C44 prediction cache 15:48:22 #####
+  183 images / 100 patients / 83 malignant
+  18 edits per image (22s)
+  [erm] mean p0 0.464  (29s)
+  [slim] mean p0 0.581  (35s)
+  [causal] mean p0 0.257  (40s)
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c19_preds.npz  (40s)

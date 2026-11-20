@@ -1,0 +1,44 @@
+##### C40 simultaneous bands 16:13:06 #####
+
+--- primary_9 | simultaneous critical value z* = 2.681 (marginal 1.96) ---
+cell               E|dp|         95% marginal       95% simultaneous exceeds 0.05?
+ERM/all            0.371  [0.302, 0.442]      [0.274, 0.467]   marginal yes / simultaneous yes
+ERM/mal            0.550  [0.453, 0.626]      [0.429, 0.671]   marginal yes / simultaneous yes
+ERM/ben            0.222  [0.190, 0.255]      [0.177, 0.266]   marginal yes / simultaneous yes
+Slim/all           0.544  [0.481, 0.603]      [0.460, 0.628]   marginal yes / simultaneous yes
+Slim/mal           0.762  [0.705, 0.808]      [0.691, 0.832]   marginal yes / simultaneous yes
+Slim/ben           0.363  [0.322, 0.405]      [0.306, 0.420]   marginal yes / simultaneous yes
+Inv/all            0.223  [0.166, 0.278]      [0.147, 0.299]   marginal yes / simultaneous yes
+Inv/mal            0.383  [0.307, 0.446]      [0.289, 0.477]   marginal yes / simultaneous yes
+Inv/ben            0.091  [0.063, 0.123]      [0.049, 0.132]   marginal yes / simultaneous no
+  => exceeding threshold: 9/9 by marginal interval, 8/9 by simultaneous band
+  [b3 ERM] xong (24s)
+  [b3 Slim] xong (25s)
+  [b3 Inv] xong (26s)
+  [r50 ERM] xong (27s)
+  [r50 Slim] xong (29s)
+  [r50 Inv] xong (30s)
+
+--- disjoint_18 | simultaneous critical value z* = 2.957 (marginal 1.96) ---
+cell               E|dp|         95% marginal       95% simultaneous exceeds 0.05?
+b3-ERM/all         0.373  [0.304, 0.446]      [0.264, 0.482]   marginal yes / simultaneous yes
+b3-ERM/mal         0.553  [0.453, 0.632]      [0.414, 0.692]   marginal yes / simultaneous yes
+b3-ERM/ben         0.224  [0.193, 0.256]      [0.176, 0.272]   marginal yes / simultaneous yes
+b3-Slim/all        0.551  [0.490, 0.608]      [0.462, 0.640]   marginal yes / simultaneous yes
+b3-Slim/mal        0.769  [0.720, 0.814]      [0.698, 0.840]   marginal yes / simultaneous yes
+b3-Slim/ben        0.370  [0.327, 0.413]      [0.305, 0.435]   marginal yes / simultaneous yes
+b3-Inv/all         0.223  [0.166, 0.278]      [0.140, 0.307]   marginal yes / simultaneous yes
+b3-Inv/mal         0.383  [0.308, 0.446]      [0.279, 0.487]   marginal yes / simultaneous yes
+b3-Inv/ben         0.091  [0.063, 0.123]      [0.045, 0.137]   marginal yes / simultaneous no
+r50-ERM/all        0.215  [0.183, 0.248]      [0.166, 0.264]   marginal yes / simultaneous yes
+r50-ERM/mal        0.121  [0.091, 0.161]      [0.067, 0.175]   marginal yes / simultaneous yes
+r50-ERM/ben        0.293  [0.272, 0.314]      [0.262, 0.325]   marginal yes / simultaneous yes
+r50-Slim/all       0.143  [0.131, 0.157]      [0.124, 0.163]   marginal yes / simultaneous yes
+r50-Slim/mal       0.122  [0.104, 0.141]      [0.095, 0.150]   marginal yes / simultaneous yes
+r50-Slim/ben       0.160  [0.142, 0.180]      [0.132, 0.189]   marginal yes / simultaneous yes
+r50-Inv/all        0.106  [0.099, 0.114]      [0.095, 0.117]   marginal yes / simultaneous yes
+r50-Inv/mal        0.085  [0.077, 0.093]      [0.074, 0.097]   marginal yes / simultaneous yes
+r50-Inv/ben        0.123  [0.113, 0.132]      [0.108, 0.137]   marginal yes / simultaneous yes
+  => exceeding threshold: 18/18 by marginal interval, 17/18 by simultaneous band
+
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c40_simultaneous.json  (34s)

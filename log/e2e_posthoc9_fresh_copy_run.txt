@@ -1,0 +1,15 @@
+# Ninth fresh-directory run: c86 (2026-11-19)
+# The directory held a copy of this tree's code, the stored split and audit cohort, the route-test construction
+# (c62_construction.json), the plan (c62_preregistration.json), the stored first-run responses (c63_route_scores.npz)
+# and the released checkpoints, including the epoch-1 Inv checkpoint of the first run, without any c86 output (c86
+# rebuilt the route-test images and rescored them). Results are compared with the committed files at a relative
+# tolerance of 1e-9, ignoring timing fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-19T08:56:22+07:00 ===
+c86_batch_context_first_run        rc=0    212s
+=== finished 2026-11-19T08:59:54+07:00 ===
+
+== comparison
+c86_batch_context_first_run.json              equal
+files written: 1, differing: 0

@@ -1,0 +1,31 @@
+##### C38 shrinkage regression: CI and clipping-bound sensitivity 16:11:33 #####
+  183 images / 100 patients
+
+model edit              α    CI lo    CI hi | α no-clip    R² nc n drop chg
+ERM   flip         -0.202   -0.253   -0.142 |   -0.202     0.20      0   0.0%
+ERM   jitter       -0.147   -0.238   -0.035 |   -0.147     0.12      0   0.0%
+ERM   hue          -0.281   -0.391   -0.204 |   -0.281     0.29      0   0.0%
+ERM   noise        -0.960   -0.977   -0.936 |   -0.960     0.98      0   0.0%
+Slim  flip         -0.028   -0.094   +0.049 |   -0.052     0.01      3  84.5%
+Slim  jitter       -0.115   -0.290   +0.042 |   -0.042     0.01      3  63.4%
+Slim  hue          -0.268   -0.375   -0.188 |   -0.352     0.36      4  31.2%
+Slim  noise        -0.989   -1.170   -0.773 |   -1.061     0.94      4   7.3%
+Inv   flip         -0.305   -0.402   -0.199 |   -0.305     0.29      0   0.0%
+Inv   jitter       -0.130   -0.218   -0.034 |   -0.130     0.09      0   0.0%
+Inv   hue          -0.483   -0.581   -0.383 |   -0.483     0.47      0   0.0%
+Inv   noise        -0.816   -0.881   -0.736 |   -0.899     0.90      8  10.1%
+
+equation on the held-out half: R² -0.22 to 0.97 | calibration slope 0.32 to 2.21
+placebo-subtraction error prediction: same sign 23/24 | median |error| 0.12 logit
+
+patients split in two halves (50/100 patients): same sign in 12/12 cells, max |diff| 0.32
+
+functional form (out-of-sample R², folds by patient):
+  linear > constant in 10/12 cells; spline > linear in 3/12 cells
+  median improvement of spline over linear: -0.0081
+
+probability scale: slope -1.06 to -0.10, all negative=True
+concept edits (logit): slope -0.23 to +0.04, 10/18 intervals exclude 0
+
+summary: {"n_cells": 12, "slope_ci_excludes_zero": 10, "max_dropped": 8, "max_rel_change": 0.8445017808496433}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c38_shrinkage_sensitivity.json  (86s)

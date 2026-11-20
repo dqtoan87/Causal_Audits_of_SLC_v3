@@ -1,0 +1,8 @@
+b3_erm_s42 p0 rerun-cache mean 0.0331 max 0.2926 | rerun-rerun max 0.00e+00 | benign cache 0.0818 exceedance exceedance  rerun 0.0792 exceedance exceedance
+b3_slim_s42 p0 rerun-cache mean 0.0261 max 0.1870 | rerun-rerun max 0.00e+00 | benign cache 0.1976 exceedance exceedance  rerun 0.1994 exceedance exceedance
+b3_inv_s42 p0 rerun-cache mean 0.0167 max 0.3713 | rerun-rerun max 0.00e+00 | benign cache 0.1777 exceedance exceedance  rerun 0.1817 exceedance exceedance
+r50_erm_s42 p0 rerun-cache mean 0.0174 max 0.2006 | rerun-rerun max 0.00e+00 | benign cache 0.1100 exceedance exceedance  rerun 0.1111 exceedance exceedance
+r50_slim_s42 p0 rerun-cache mean 0.0280 max 0.3819 | rerun-rerun max 0.00e+00 | benign cache 0.1083 exceedance exceedance  rerun 0.1120 exceedance exceedance
+r50_inv_s42 p0 rerun-cache mean 0.0161 max 0.7221 | rerun-rerun max 0.00e+00 | benign cache 0.0382 equivalence equivalence  rerun 0.0407 indeterminate indeterminate
+pixel fractions match cache: {'hair_light': True, 'hair': True, 'hair_heavy': True, 'ruler': True}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c59_rebuild_generator.json

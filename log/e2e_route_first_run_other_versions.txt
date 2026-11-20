@@ -1,0 +1,48 @@
+# The same rerun under other package versions (2026-11-20): a record, not a reproduction
+# Identical to e2e_posthoc11_fresh_copy_run.txt (same commit, checkpoints, images, scripts and order) except the
+# interpreter: Pillow 12.0.0, NumPy 2.3.5, SciPy 1.18.0, torch 2.10.0+cu128, instead of the versions requirements.txt
+# pins (Pillow 12.1.1, NumPy 2.4.2, SciPy 1.17.0). The first difference appears in the decoded and resized images:
+# the same image identifiers and control parameters give slightly different footprints and proxies (for example
+# mean absolute change 0.04641 against 0.04633 on the first image), so none of the seven files reproduces.
+# Read with audit_cohort._read under both interpreters, the first three route-test images differ in 14.9% of their
+# tensor values, by at most 0.0235 (6/255).
+# The plan-locked verdicts under these versions, on the plan's nominal band (intervals below are rounded to the
+# nearest 0.01; the manuscript rounds them outward):
+
+cell                   committed        other versions
+erm|contrast@0         indeterminate    indeterminate
+slim|contrast@0        routes disagree  routes disagree
+causal|contrast@0      routes agree     indeterminate
+erm|contrast@2         routes disagree  routes disagree
+slim|contrast@2        indeterminate    routes disagree
+causal|contrast@2      indeterminate    indeterminate
+erm|color_var@0        indeterminate    indeterminate
+slim|color_var@0       indeterminate    indeterminate
+causal|color_var@0     routes agree     indeterminate
+erm|color_var@2        indeterminate    indeterminate
+slim|color_var@2       routes disagree  routes disagree
+causal|color_var@2     indeterminate    indeterminate
+summary committed:       {'routes disagree': 3, 'routes agree': 2, 'indeterminate': 7, 'direction_pair_exceeds': 0, 'scale_pair_exceeds': 3}
+summary other versions:  {'routes disagree': 4, 'routes agree': 0, 'indeterminate': 8, 'direction_pair_exceeds': 1, 'scale_pair_exceeds': 4}
+erm|contrast@2|D_rad4-rad16      committed +4.63 [+1.92, +7.34]   other versions +4.61 [+1.89, +7.33]
+slim|color_var@2|D_rad4-rad16    committed +5.27 [+1.84, +8.70]   other versions +5.46 [+2.24, +8.68]
+slim|contrast@0|D_rad4-rad16     committed +1.99 [+0.51, +3.47]   other versions +2.17 [+0.60, +3.74]
+
+== run log
+c62_construct            rc=0     53s
+c62_frontier             rc=0    615s
+c62_evaluate             rc=0     67s
+c63                      rc=0     66s
+c64                      rc=0     22s
+c65                      rc=0     21s
+-- comparison with the committed files
+c62_construction.json                DIFFERENT (24258 leaves) (byte-identical: False; manifest SHA-256 differs)
+c62_frontier.json                    DIFFERENT (2607 leaves) (byte-identical: False; manifest SHA-256 differs)
+c62_evaluation.json                  DIFFERENT (1917 leaves) (byte-identical: False; manifest SHA-256 differs)
+c63_route_exploratory.json           DIFFERENT (152 leaves) (byte-identical: False; manifest SHA-256 differs)
+c63_route_scores.npz                 DIFFERENT (byte-identical: False; manifest SHA-256 differs)
+c64_route_screens.json               DIFFERENT (386 leaves) (byte-identical: False; manifest SHA-256 differs)
+c65_route_robustness.json            DIFFERENT (105 leaves) (byte-identical: False; manifest SHA-256 differs)
+files compared: 7, differing: 7
+compare rc=1
+=== finished 2026-11-20T09:50:34+07:00

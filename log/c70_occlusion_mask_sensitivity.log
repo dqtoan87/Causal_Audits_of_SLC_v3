@@ -1,0 +1,25 @@
+region 0.5/3   median share 0.360; main hair altered inside 0.398; skin-only altered: heavy 0.0246
+region 0.3/3   median share 0.761; main hair altered inside 0.729; skin-only altered: heavy 0.0113
+region 0.7/3   median share 0.152; main hair altered inside 0.220; skin-only altered: heavy 0.0315
+region 0.5/0   median share 0.132; main hair altered inside 0.187; skin-only altered: heavy 0.0329
+region 0.5/7   median share 0.616; main hair altered inside 0.606; skin-only altered: heavy 0.0162
+region 0.5/15  median share 0.905; main hair altered inside 0.818; skin-only altered: heavy 0.0079
+  [b3-ERM] scored (133s)
+  [b3-Slim] scored (158s)
+  [b3-Inv] scored (183s)
+  [r50-ERM] scored (207s)
+  [r50-Slim] scored (230s)
+  [r50-Inv] scored (252s)
+skin-only 0.5/3   marginal {'exceedance': 16, 'equivalence': 0, 'indeterminate': 2}; band frontier 0.0269, 12/18 jointly
+   dose-matched: skin-only heavy 0.0246 vs full main 0.0236 altered; ratio 0.77 to 1.41 (median 0.99); {'exceedance': 18, 'equivalence': 0, 'indeterminate': 0}
+skin-only 0.3/3   marginal {'exceedance': 12, 'equivalence': 3, 'indeterminate': 3}; band frontier 0.0175, 12/18 jointly
+   dose-matched: skin-only heavy 0.0113 vs full main 0.0236 altered; ratio 0.46 to 1.12 (median 0.78); {'exceedance': 16, 'equivalence': 0, 'indeterminate': 2}
+skin-only 0.7/3   marginal {'exceedance': 17, 'equivalence': 0, 'indeterminate': 1}; band frontier 0.0438, 15/18 jointly
+   dose-matched: skin-only heavy 0.0315 vs full main 0.0236 altered; ratio 0.83 to 1.50 (median 1.03); {'exceedance': 17, 'equivalence': 0, 'indeterminate': 1}
+skin-only 0.5/0   marginal {'exceedance': 18, 'equivalence': 0, 'indeterminate': 0}; band frontier 0.0440, 16/18 jointly
+   dose-matched: skin-only heavy 0.0329 vs full main 0.0236 altered; ratio 0.99 to 1.54 (median 1.06); {'exceedance': 18, 'equivalence': 0, 'indeterminate': 0}
+skin-only 0.5/7   marginal {'exceedance': 13, 'equivalence': 3, 'indeterminate': 2}; band frontier 0.0175, 12/18 jointly
+   dose-matched: skin-only heavy 0.0162 vs full main 0.0236 altered; ratio 0.46 to 1.48 (median 0.87); {'exceedance': 17, 'equivalence': 0, 'indeterminate': 1}
+skin-only 0.5/15  marginal {'exceedance': 10, 'equivalence': 5, 'indeterminate': 3}; band frontier 0.0037, 7/18 jointly
+   dose-matched: skin-only heavy 0.0079 vs full main 0.0236 altered; ratio 0.16 to 0.90 (median 0.48); {'exceedance': 12, 'equivalence': 3, 'indeterminate': 3}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c70_occlusion_mask_sensitivity.json (347s)

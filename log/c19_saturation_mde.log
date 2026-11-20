@@ -1,0 +1,99 @@
+##### C19 saturation + MDE 15:58:51 #####
+clipping bound |l_eps| = 13.8155
+eval images 183  malignant 83  benign 100
+edits/image = 18: ['art:hair_light', 'art:hair', 'art:hair_heavy', 'art:ruler', 'art:patch', 'art:vignette', 'art:jitter', 'art:identity', 'cpt:contrast@0', 'cpt:contrast@1', 'cpt:contrast@2', 'cpt:color_var@0', 'cpt:color_var@1', 'cpt:color_var@2', 'pb:hue', 'pb:flip', 'pb:jitter', 'pb:noise']  (22s)
+[erm] p0(mal)=0.733  (28s)
+[slim] p0(mal)=0.860  (34s)
+[causal] p0(mal)=0.501  (40s)
+================================================================================================
+A) SATURATION OF THE CLIPPED-LOGIT BOUND
+set                                                n preds   saturated   fraction
+ERM: edited only (178x18)                             3294         505      15.3%
+ERM: baseline only (178)                               183           0       0.0%
+ERM: baseline + edited                                3477         505      14.5%
+Slim: edited only (178x18)                            3294         708      21.5%
+Slim: baseline only (178)                              183           2       1.1%
+Slim: baseline + edited                               3477         710      20.4%
+Inv: edited only (178x18)                             3294         397      12.1%
+Inv: baseline only (178)                               183           0       0.0%
+Inv: baseline + edited                                3477         397      11.4%
+ALL models, edited only                               9882        1610      16.3%
+ALL models, baseline only                              549           2       0.4%
+ALL models, baseline + edited                        10431        1612      15.5%
+------------------------------------------------------------------------------------------------
+   by edit (pooled over the three models):
+     art:hair_light              54.6%
+     art:hair                    87.1%
+     art:hair_heavy              88.7%
+     art:ruler                   55.2%
+     art:patch                    0.4%
+     art:vignette                 0.2%
+     art:jitter                   0.4%
+     art:identity                 0.4%
+     cpt:contrast@0               0.5%
+     cpt:contrast@1               0.5%
+     cpt:contrast@2               0.4%
+     cpt:color_var@0              0.4%
+     cpt:color_var@1              0.4%
+     cpt:color_var@2              0.5%
+     pb:hue                       0.7%
+     pb:flip                      0.5%
+     pb:jitter                    0.4%
+     pb:noise                     2.0%
+================================================================================================
+B) MDE = 2.8*SD/sqrt(n) ON THE PER-IMAGE CONCEPT-MINUS-PLACEBO DIFFERENCE (common set)
+   common set: 58 images (malignant, p_full >= 0.1 for all three models)
+model  contrast              placebo          mean       SD      MDE
+ERM    cpt:contrast@2        pb:flip         0.568    1.616    0.594
+ERM    cpt:contrast@2        pb:jitter       0.505    1.434    0.527
+ERM    cpt:contrast@2        pb:hue          1.056    1.480    0.544
+ERM    cpt:contrast@2        pb:noise        3.285    1.644    0.604
+ERM    cpt:color_var@2       pb:flip         0.707    1.492    0.549
+ERM    cpt:color_var@2       pb:jitter       0.644    1.302    0.479
+ERM    cpt:color_var@2       pb:hue          1.196    1.480    0.544
+ERM    cpt:color_var@2       pb:noise        3.424    1.676    0.616
+ERM    cpt:contrast@0        pb:flip         0.475    1.535    0.564
+ERM    cpt:contrast@0        pb:jitter       0.412    1.295    0.476
+ERM    cpt:contrast@0        pb:hue          0.963    1.406    0.517
+ERM    cpt:contrast@0        pb:noise        3.192    1.731    0.637
+ERM    cpt:color_var@0       pb:flip         0.524    1.598    0.588
+ERM    cpt:color_var@0       pb:jitter       0.460    1.302    0.479
+ERM    cpt:color_var@0       pb:hue          1.012    1.460    0.537
+ERM    cpt:color_var@0       pb:noise        3.240    1.787    0.657
+Slim   cpt:contrast@2        pb:flip        -0.127    2.272    0.835
+Slim   cpt:contrast@2        pb:jitter      -0.078    1.724    0.634
+Slim   cpt:contrast@2        pb:hue          2.145    2.226    0.819
+Slim   cpt:contrast@2        pb:noise        5.300    3.167    1.164
+Slim   cpt:color_var@2       pb:flip        -0.478    2.360    0.868
+Slim   cpt:color_var@2       pb:jitter      -0.429    1.797    0.661
+Slim   cpt:color_var@2       pb:hue          1.794    2.260    0.831
+Slim   cpt:color_var@2       pb:noise        4.949    3.101    1.140
+Slim   cpt:contrast@0        pb:flip        -0.108    2.390    0.879
+Slim   cpt:contrast@0        pb:jitter      -0.059    1.641    0.603
+Slim   cpt:contrast@0        pb:hue          2.163    2.102    0.773
+Slim   cpt:contrast@0        pb:noise        5.319    3.292    1.210
+Slim   cpt:color_var@0       pb:flip        -0.138    2.305    0.847
+Slim   cpt:color_var@0       pb:jitter      -0.089    1.619    0.595
+Slim   cpt:color_var@0       pb:hue          2.134    2.060    0.757
+Slim   cpt:color_var@0       pb:noise        5.289    3.300    1.213
+Inv    cpt:contrast@2        pb:flip         3.050    3.957    1.455
+Inv    cpt:contrast@2        pb:jitter       2.031    3.206    1.179
+Inv    cpt:contrast@2        pb:hue          4.287    4.860    1.787
+Inv    cpt:contrast@2        pb:noise        5.347    4.199    1.544
+Inv    cpt:color_var@2       pb:flip         2.922    3.917    1.440
+Inv    cpt:color_var@2       pb:jitter       1.903    3.202    1.177
+Inv    cpt:color_var@2       pb:hue          4.159    4.840    1.779
+Inv    cpt:color_var@2       pb:noise        5.219    4.220    1.551
+Inv    cpt:contrast@0        pb:flip         2.557    3.407    1.253
+Inv    cpt:contrast@0        pb:jitter       1.538    2.525    0.928
+Inv    cpt:contrast@0        pb:hue          3.793    4.621    1.699
+Inv    cpt:contrast@0        pb:noise        4.854    4.169    1.533
+Inv    cpt:color_var@0       pb:flip         2.459    3.331    1.225
+Inv    cpt:color_var@0       pb:jitter       1.440    2.444    0.898
+Inv    cpt:color_var@0       pb:hue          3.695    4.592    1.688
+Inv    cpt:color_var@0       pb:noise        4.756    4.122    1.515
+   ERM   MDE range over concept x placebo pairs: 0.48 to 0.66 logits
+   Slim  MDE range over concept x placebo pairs: 0.60 to 1.21 logits
+   Inv   MDE range over concept x placebo pairs: 0.90 to 1.79 logits
+================================================================================================
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c19_saturation_mde.json   (40s)

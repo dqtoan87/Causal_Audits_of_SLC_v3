@@ -1,0 +1,1409 @@
+{
+ "configs": [
+  [
+   0.5,
+   3
+  ],
+  [
+   0.3,
+   3
+  ],
+  [
+   0.7,
+   3
+  ],
+  [
+   0.5,
+   0
+  ],
+  [
+   0.5,
+   7
+  ],
+  [
+   0.5,
+   15
+  ]
+ ],
+ "altered_threshold": 0.02,
+ "margin_p": 0.05,
+ "altered_frac_full_mean": {
+  "hair_light": 0.010173696833739027,
+  "hair": 0.023561435319035432,
+  "hair_heavy": 0.040743250460898287,
+  "ruler": 0.010461753524351315
+ },
+ "regions": {
+  "0.5/3": {
+   "frame_share_median": 0.35953444242477417,
+   "frame_share_range": [
+    0.023517219349741936,
+    1.0
+   ],
+   "n_full_frame": 2,
+   "altered_in_region_mean": {
+    "hair_light": 0.41462142796191886,
+    "hair": 0.39802248820945035,
+    "hair_heavy": 0.39999902690369277,
+    "ruler": 0.33834070934363897
+   },
+   "altered_frac_skin_only_mean": {
+    "hair_light": 0.005957063931915807,
+    "hair": 0.014264542893175788,
+    "hair_heavy": 0.024569471685096236,
+    "ruler": 0.006936240139737969
+   }
+  },
+  "0.3/3": {
+   "frame_share_median": 0.7614397406578064,
+   "frame_share_range": [
+    0.1070033460855484,
+    1.0
+   ],
+   "n_full_frame": 4,
+   "altered_in_region_mean": {
+    "hair_light": 0.724602331671949,
+    "hair": 0.7285213252245424,
+    "hair_heavy": 0.7262941947576276,
+    "ruler": 0.6996405493569366
+   },
+   "altered_frac_skin_only_mean": {
+    "hair_light": 0.0028193654424151153,
+    "hair": 0.0064607554008720485,
+    "hair_heavy": 0.011298589640433131,
+    "ruler": 0.0031486980081706843
+   }
+  },
+  "0.7/3": {
+   "frame_share_median": 0.15230388939380646,
+   "frame_share_range": [
+    0.011439732275903225,
+    1.0
+   ],
+   "n_full_frame": 2,
+   "altered_in_region_mean": {
+    "hair_light": 0.24317688863808695,
+    "hair": 0.21991041568962466,
+    "hair_heavy": 0.22845314433570887,
+    "ruler": 0.17341935215774273
+   },
+   "altered_frac_skin_only_mean": {
+    "hair_light": 0.007705989674171382,
+    "hair": 0.018439137967191432,
+    "hair_heavy": 0.03149231658139027,
+    "ruler": 0.008665127073455337
+   }
+  },
+  "0.5/0": {
+   "frame_share_median": 0.1319754421710968,
+   "frame_share_range": [
+    0.014349489472806454,
+    0.9976682066917419
+   ],
+   "n_full_frame": 0,
+   "altered_in_region_mean": {
+    "hair_light": 0.20336841225105762,
+    "hair": 0.1868604203495104,
+    "hair_heavy": 0.19216197043627717,
+    "ruler": 0.13786987935236897
+   },
+   "altered_frac_skin_only_mean": {
+    "hair_light": 0.008100774903479381,
+    "hair": 0.019218797878810086,
+    "hair_heavy": 0.03294458162702148,
+    "ruler": 0.009037695445835684
+   }
+  },
+  "0.5/7": {
+   "frame_share_median": 0.6159518361091614,
+   "frame_share_range": [
+    0.037747129797935486,
+    1.0
+   ],
+   "n_full_frame": 5,
+   "altered_in_region_mean": {
+    "hair_light": 0.6112582606407498,
+    "hair": 0.6064010834765658,
+    "hair_heavy": 0.6058413885459705,
+    "ruler": 0.5551954123293649
+   },
+   "altered_frac_skin_only_mean": {
+    "hair_light": 0.003951772821107272,
+    "hair": 0.009345355726792582,
+    "hair_heavy": 0.016244785490279915,
+    "ruler": 0.004662930757044929
+   }
+  },
+  "0.5/15": {
+   "frame_share_median": 0.9054926633834839,
+   "frame_share_range": [
+    0.07378029078245163,
+    1.0
+   ],
+   "n_full_frame": 23,
+   "altered_in_region_mean": {
+    "hair_light": 0.809129519268475,
+    "hair": 0.8177602233282942,
+    "hair_heavy": 0.8109823912088353,
+    "ruler": 0.7696918697666686
+   },
+   "altered_frac_skin_only_mean": {
+    "hair_light": 0.0019483331295200737,
+    "hair": 0.004362349470269334,
+    "hair_heavy": 0.007861398898887791,
+    "ruler": 0.002414343033502479
+   }
+  }
+ },
+ "skin_only": {
+  "0.5/3": {
+   "marginal_joint_counts": {
+    "exceedance": 16,
+    "equivalence": 0,
+    "indeterminate": 2
+   },
+   "smallest_marginal_lower": 0.040597476065158844,
+   "crit_36": 3.1447427470753793,
+   "frontier_36": 0.02686840185778301,
+   "magnitude_exceed_36": 12,
+   "check_vs_c66": {
+    "frontier_abs_diff": 0.0,
+    "counts_equal": true
+   }
+  },
+  "0.3/3": {
+   "marginal_joint_counts": {
+    "exceedance": 12,
+    "equivalence": 3,
+    "indeterminate": 3
+   },
+   "smallest_marginal_lower": 0.02238689363002777,
+   "crit_36": 3.185679375794386,
+   "frontier_36": 0.017549176385626253,
+   "magnitude_exceed_36": 12
+  },
+  "0.7/3": {
+   "marginal_joint_counts": {
+    "exceedance": 17,
+    "equivalence": 0,
+    "indeterminate": 1
+   },
+   "smallest_marginal_lower": 0.04834732040762901,
+   "crit_36": 3.1286792118041924,
+   "frontier_36": 0.043846659301255565,
+   "magnitude_exceed_36": 15
+  },
+  "0.5/0": {
+   "marginal_joint_counts": {
+    "exceedance": 18,
+    "equivalence": 0,
+    "indeterminate": 0
+   },
+   "smallest_marginal_lower": 0.05396755039691925,
+   "crit_36": 3.1286607172514747,
+   "frontier_36": 0.04399218965412139,
+   "magnitude_exceed_36": 16
+  },
+  "0.5/7": {
+   "marginal_joint_counts": {
+    "exceedance": 13,
+    "equivalence": 3,
+    "indeterminate": 2
+   },
+   "smallest_marginal_lower": 0.021679699420928955,
+   "crit_36": 3.181700809823563,
+   "frontier_36": 0.01745737878736759,
+   "magnitude_exceed_36": 12
+  },
+  "0.5/15": {
+   "marginal_joint_counts": {
+    "exceedance": 10,
+    "equivalence": 5,
+    "indeterminate": 3
+   },
+   "smallest_marginal_lower": 0.00725796353071928,
+   "crit_36": 3.183163551139829,
+   "frontier_36": 0.0037222516691059037,
+   "magnitude_exceed_36": 7
+  }
+ },
+ "dose_matched": {
+  "0.5/3": {
+   "altered_frac_skin_heavy": 0.024569471685096236,
+   "altered_frac_full_main": 0.023561435319035432,
+   "ratio_range": [
+    0.7700789570808411,
+    1.4077003002166748
+   ],
+   "ratio_median": 0.9910235106945038,
+   "skin_heavy_verdicts": {
+    "exceedance": 18,
+    "equivalence": 0,
+    "indeterminate": 0
+   },
+   "cells": {
+    "b3-ERM/all": {
+     "skin_heavy": 0.40311798453330994,
+     "skin_heavy_ci": [
+      0.3244600296020508,
+      0.4820527732372284
+     ],
+     "full_main": 0.4417150914669037,
+     "ratio": 0.9126198887825012,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/malignant": {
+     "skin_heavy": 0.6140430569648743,
+     "skin_heavy_ci": [
+      0.5050234198570251,
+      0.6956941485404968
+     ],
+     "full_main": 0.6773378252983093,
+     "ratio": 0.9065536260604858,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/benign": {
+     "skin_heavy": 0.22805017232894897,
+     "skin_heavy_ci": [
+      0.18754002451896667,
+      0.2700008153915405
+     ],
+     "full_main": 0.2461482286453247,
+     "ratio": 0.9264749884605408,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/all": {
+     "skin_heavy": 0.5648037195205688,
+     "skin_heavy_ci": [
+      0.5055287480354309,
+      0.6200391054153442
+     ],
+     "full_main": 0.5318563580513,
+     "ratio": 1.0619478225708008,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/malignant": {
+     "skin_heavy": 0.7551853060722351,
+     "skin_heavy_ci": [
+      0.6730934977531433,
+      0.8362370133399963
+     ],
+     "full_main": 0.7246034145355225,
+     "ratio": 1.0422049760818481,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/benign": {
+     "skin_heavy": 0.40678703784942627,
+     "skin_heavy_ci": [
+      0.35464394092559814,
+      0.4599889814853668
+     ],
+     "full_main": 0.3718762993812561,
+     "ratio": 1.0938773155212402,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/all": {
+     "skin_heavy": 0.2535383105278015,
+     "skin_heavy_ci": [
+      0.18512116372585297,
+      0.3209422826766968
+     ],
+     "full_main": 0.2694942355155945,
+     "ratio": 0.9407930970191956,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/malignant": {
+     "skin_heavy": 0.43349331617355347,
+     "skin_heavy_ci": [
+      0.33516925573349,
+      0.528752326965332
+     ],
+     "full_main": 0.48508477210998535,
+     "ratio": 0.8936444520950317,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/benign": {
+     "skin_heavy": 0.1041756421327591,
+     "skin_heavy_ci": [
+      0.058894358575344086,
+      0.15604053437709808
+     ],
+     "full_main": 0.09055411070585251,
+     "ratio": 1.1504242420196533,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/all": {
+     "skin_heavy": 0.37183746695518494,
+     "skin_heavy_ci": [
+      0.3052804172039032,
+      0.44080060720443726
+     ],
+     "full_main": 0.2817569077014923,
+     "ratio": 1.3197102546691895,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/malignant": {
+     "skin_heavy": 0.17801804840564728,
+     "skin_heavy_ci": [
+      0.11943267285823822,
+      0.2544108033180237
+     ],
+     "full_main": 0.1652904599905014,
+     "ratio": 1.0770013332366943,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/benign": {
+     "skin_heavy": 0.5327076315879822,
+     "skin_heavy_ci": [
+      0.477055162191391,
+      0.588324248790741
+     ],
+     "full_main": 0.3784240484237671,
+     "ratio": 1.4077003002166748,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/all": {
+     "skin_heavy": 0.2055779993534088,
+     "skin_heavy_ci": [
+      0.18206334114074707,
+      0.23270317912101746
+     ],
+     "full_main": 0.19743309915065765,
+     "ratio": 1.041253924369812,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/malignant": {
+     "skin_heavy": 0.1370842307806015,
+     "skin_heavy_ci": [
+      0.10910788178443909,
+      0.1701638549566269
+     ],
+     "full_main": 0.17801322042942047,
+     "ratio": 0.7700789570808411,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/benign": {
+     "skin_heavy": 0.26242783665657043,
+     "skin_heavy_ci": [
+      0.22915318608283997,
+      0.2974642217159271
+     ],
+     "full_main": 0.2135516107082367,
+     "ratio": 1.2288731336593628,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/all": {
+     "skin_heavy": 0.11697463691234589,
+     "skin_heavy_ci": [
+      0.10336246341466904,
+      0.13266457617282867
+     ],
+     "full_main": 0.13245360553264618,
+     "ratio": 0.8831366896629333,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/malignant": {
+     "skin_heavy": 0.08390360325574875,
+     "skin_heavy_ci": [
+      0.07245528697967529,
+      0.09618641436100006
+     ],
+     "full_main": 0.10106679797172546,
+     "ratio": 0.8301796913146973,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/benign": {
+     "skin_heavy": 0.14442360401153564,
+     "skin_heavy_ci": [
+      0.12301605939865112,
+      0.16598939895629883
+     ],
+     "full_main": 0.1585046648979187,
+     "ratio": 0.9111630916595459,
+     "verdict_skin_heavy": "exceedance"
+    }
+   }
+  },
+  "0.3/3": {
+   "altered_frac_skin_heavy": 0.011298589640433131,
+   "altered_frac_full_main": 0.023561435319035432,
+   "ratio_range": [
+    0.46210968494415283,
+    1.12307870388031
+   ],
+   "ratio_median": 0.7825615704059601,
+   "skin_heavy_verdicts": {
+    "exceedance": 16,
+    "equivalence": 0,
+    "indeterminate": 2
+   },
+   "cells": {
+    "b3-ERM/all": {
+     "skin_heavy": 0.320891797542572,
+     "skin_heavy_ci": [
+      0.2699379622936249,
+      0.37210702896118164
+     ],
+     "full_main": 0.4417150914669037,
+     "ratio": 0.7264677882194519,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/malignant": {
+     "skin_heavy": 0.47469183802604675,
+     "skin_heavy_ci": [
+      0.38755661249160767,
+      0.5698405504226685
+     ],
+     "full_main": 0.6773378252983093,
+     "ratio": 0.7008199095726013,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/benign": {
+     "skin_heavy": 0.193237766623497,
+     "skin_heavy_ci": [
+      0.15980537235736847,
+      0.22710087895393372
+     ],
+     "full_main": 0.2461482286453247,
+     "ratio": 0.7850463390350342,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/all": {
+     "skin_heavy": 0.5060566663742065,
+     "skin_heavy_ci": [
+      0.4478752911090851,
+      0.5633713006973267
+     ],
+     "full_main": 0.5318563580513,
+     "ratio": 0.9514912366867065,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/malignant": {
+     "skin_heavy": 0.6870495080947876,
+     "skin_heavy_ci": [
+      0.6044921278953552,
+      0.7720562815666199
+     ],
+     "full_main": 0.7246034145355225,
+     "ratio": 0.9481731653213501,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/benign": {
+     "skin_heavy": 0.3558325469493866,
+     "skin_heavy_ci": [
+      0.30728405714035034,
+      0.40776005387306213
+     ],
+     "full_main": 0.3718762993812561,
+     "ratio": 0.9568572640419006,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/all": {
+     "skin_heavy": 0.21022620797157288,
+     "skin_heavy_ci": [
+      0.15467311441898346,
+      0.26485711336135864
+     ],
+     "full_main": 0.2694942355155945,
+     "ratio": 0.780076801776886,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/malignant": {
+     "skin_heavy": 0.35917550325393677,
+     "skin_heavy_ci": [
+      0.2695370316505432,
+      0.4592267870903015
+     ],
+     "full_main": 0.48508477210998535,
+     "ratio": 0.7404386401176453,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/benign": {
+     "skin_heavy": 0.08659835159778595,
+     "skin_heavy_ci": [
+      0.04725492000579834,
+      0.1282835155725479
+     ],
+     "full_main": 0.09055411070585251,
+     "ratio": 0.9563160538673401,
+     "verdict_skin_heavy": "indeterminate"
+    },
+    "r50-ERM/all": {
+     "skin_heavy": 0.25221025943756104,
+     "skin_heavy_ci": [
+      0.20885993540287018,
+      0.2996307909488678
+     ],
+     "full_main": 0.2817569077014923,
+     "ratio": 0.8951342701911926,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/malignant": {
+     "skin_heavy": 0.1253279447555542,
+     "skin_heavy_ci": [
+      0.08470955491065979,
+      0.17976687848567963
+     ],
+     "full_main": 0.1652904599905014,
+     "ratio": 0.7582285404205322,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/benign": {
+     "skin_heavy": 0.35752254724502563,
+     "skin_heavy_ci": [
+      0.30619552731513977,
+      0.40678486227989197
+     ],
+     "full_main": 0.3784240484237671,
+     "ratio": 0.9447669982910156,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/all": {
+     "skin_heavy": 0.17065957188606262,
+     "skin_heavy_ci": [
+      0.1417275220155716,
+      0.2028738558292389
+     ],
+     "full_main": 0.19743309915065765,
+     "ratio": 0.8643919229507446,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/malignant": {
+     "skin_heavy": 0.08731532096862793,
+     "skin_heavy_ci": [
+      0.05907783657312393,
+      0.1289229840040207
+     ],
+     "full_main": 0.17801322042942047,
+     "ratio": 0.4904990792274475,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/benign": {
+     "skin_heavy": 0.23983527719974518,
+     "skin_heavy_ci": [
+      0.2051496058702469,
+      0.2750081717967987
+     ],
+     "full_main": 0.2135516107082367,
+     "ratio": 1.12307870388031,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/all": {
+     "skin_heavy": 0.0627545639872551,
+     "skin_heavy_ci": [
+      0.05379527434706688,
+      0.07277679443359375
+     ],
+     "full_main": 0.13245360553264618,
+     "ratio": 0.47378525137901306,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/malignant": {
+     "skin_heavy": 0.046703945845365524,
+     "skin_heavy_ci": [
+      0.03674868494272232,
+      0.05906552076339722
+     ],
+     "full_main": 0.10106679797172546,
+     "ratio": 0.46210968494415283,
+     "verdict_skin_heavy": "indeterminate"
+    },
+    "r50-Inv/benign": {
+     "skin_heavy": 0.07607657462358475,
+     "skin_heavy_ci": [
+      0.06263257563114166,
+      0.08975442498922348
+     ],
+     "full_main": 0.1585046648979187,
+     "ratio": 0.4799642562866211,
+     "verdict_skin_heavy": "exceedance"
+    }
+   }
+  },
+  "0.7/3": {
+   "altered_frac_skin_heavy": 0.03149231658139027,
+   "altered_frac_full_main": 0.023561435319035432,
+   "ratio_range": [
+    0.8269861340522766,
+    1.495578408241272
+   ],
+   "ratio_median": 1.0333665609359741,
+   "skin_heavy_verdicts": {
+    "exceedance": 17,
+    "equivalence": 0,
+    "indeterminate": 1
+   },
+   "cells": {
+    "b3-ERM/all": {
+     "skin_heavy": 0.4274473488330841,
+     "skin_heavy_ci": [
+      0.34487587213516235,
+      0.5095841288566589
+     ],
+     "full_main": 0.4417150914669037,
+     "ratio": 0.9676992297172546,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/malignant": {
+     "skin_heavy": 0.6596933603286743,
+     "skin_heavy_ci": [
+      0.5540478825569153,
+      0.7431995868682861
+     ],
+     "full_main": 0.6773378252983093,
+     "ratio": 0.9739502668380737,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/benign": {
+     "skin_heavy": 0.23468317091464996,
+     "skin_heavy_ci": [
+      0.19305439293384552,
+      0.28038275241851807
+     ],
+     "full_main": 0.2461482286453247,
+     "ratio": 0.9534221291542053,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/all": {
+     "skin_heavy": 0.5526007413864136,
+     "skin_heavy_ci": [
+      0.4853117763996124,
+      0.6151878833770752
+     ],
+     "full_main": 0.5318563580513,
+     "ratio": 1.0390037298202515,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/malignant": {
+     "skin_heavy": 0.7585271596908569,
+     "skin_heavy_ci": [
+      0.6790697574615479,
+      0.8235949277877808
+     ],
+     "full_main": 0.7246034145355225,
+     "ratio": 1.0468169450759888,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/benign": {
+     "skin_heavy": 0.3816818594932556,
+     "skin_heavy_ci": [
+      0.33168771862983704,
+      0.431997150182724
+     ],
+     "full_main": 0.3718762993812561,
+     "ratio": 1.0263677835464478,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/all": {
+     "skin_heavy": 0.26703375577926636,
+     "skin_heavy_ci": [
+      0.19372910261154175,
+      0.3350537419319153
+     ],
+     "full_main": 0.2694942355155945,
+     "ratio": 0.9908699989318848,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/malignant": {
+     "skin_heavy": 0.4985359013080597,
+     "skin_heavy_ci": [
+      0.3927346169948578,
+      0.6022871732711792
+     ],
+     "full_main": 0.48508477210998535,
+     "ratio": 1.0277293920516968,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/benign": {
+     "skin_heavy": 0.0748869925737381,
+     "skin_heavy_ci": [
+      0.04162922501564026,
+      0.11325487494468689
+     ],
+     "full_main": 0.09055411070585251,
+     "ratio": 0.8269861340522766,
+     "verdict_skin_heavy": "indeterminate"
+    },
+    "r50-ERM/all": {
+     "skin_heavy": 0.39376014471054077,
+     "skin_heavy_ci": [
+      0.32646289467811584,
+      0.46579113602638245
+     ],
+     "full_main": 0.2817569077014923,
+     "ratio": 1.3975173234939575,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/malignant": {
+     "skin_heavy": 0.1862870156764984,
+     "skin_heavy_ci": [
+      0.12529920041561127,
+      0.26621463894844055
+     ],
+     "full_main": 0.1652904599905014,
+     "ratio": 1.127028226852417,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/benign": {
+     "skin_heavy": 0.5659628510475159,
+     "skin_heavy_ci": [
+      0.5155057311058044,
+      0.6146940588951111
+     ],
+     "full_main": 0.3784240484237671,
+     "ratio": 1.495578408241272,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/all": {
+     "skin_heavy": 0.22251355648040771,
+     "skin_heavy_ci": [
+      0.20079992711544037,
+      0.24829387664794922
+     ],
+     "full_main": 0.19743309915065765,
+     "ratio": 1.1270326375961304,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/malignant": {
+     "skin_heavy": 0.16304711997509003,
+     "skin_heavy_ci": [
+      0.1321304887533188,
+      0.1945458948612213
+     ],
+     "full_main": 0.17801322042942047,
+     "ratio": 0.9159270524978638,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/benign": {
+     "skin_heavy": 0.2718707323074341,
+     "skin_heavy_ci": [
+      0.23855464160442352,
+      0.30717867612838745
+     ],
+     "full_main": 0.2135516107082367,
+     "ratio": 1.273091435432434,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/all": {
+     "skin_heavy": 0.14272257685661316,
+     "skin_heavy_ci": [
+      0.1280813217163086,
+      0.15906015038490295
+     ],
+     "full_main": 0.13245360553264618,
+     "ratio": 1.0775288343429565,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/malignant": {
+     "skin_heavy": 0.09758038073778152,
+     "skin_heavy_ci": [
+      0.08479625731706619,
+      0.10969443619251251
+     ],
+     "full_main": 0.10106679797172546,
+     "ratio": 0.9655038118362427,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/benign": {
+     "skin_heavy": 0.18019060790538788,
+     "skin_heavy_ci": [
+      0.15709295868873596,
+      0.20323342084884644
+     ],
+     "full_main": 0.1585046648979187,
+     "ratio": 1.1368157863616943,
+     "verdict_skin_heavy": "exceedance"
+    }
+   }
+  },
+  "0.5/0": {
+   "altered_frac_skin_heavy": 0.03294458162702148,
+   "altered_frac_full_main": 0.023561435319035432,
+   "ratio_range": [
+    0.9853948950767517,
+    1.5376793146133423
+   ],
+   "ratio_median": 1.057504653930664,
+   "skin_heavy_verdicts": {
+    "exceedance": 18,
+    "equivalence": 0,
+    "indeterminate": 0
+   },
+   "cells": {
+    "b3-ERM/all": {
+     "skin_heavy": 0.44498932361602783,
+     "skin_heavy_ci": [
+      0.368798166513443,
+      0.5175685286521912
+     ],
+     "full_main": 0.4417150914669037,
+     "ratio": 1.0074125528335571,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/malignant": {
+     "skin_heavy": 0.6674452424049377,
+     "skin_heavy_ci": [
+      0.5665053129196167,
+      0.745055615901947
+     ],
+     "full_main": 0.6773378252983093,
+     "ratio": 0.9853948950767517,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/benign": {
+     "skin_heavy": 0.26035094261169434,
+     "skin_heavy_ci": [
+      0.21453796327114105,
+      0.30667421221733093
+     ],
+     "full_main": 0.2461482286453247,
+     "ratio": 1.0576997995376587,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/all": {
+     "skin_heavy": 0.562336802482605,
+     "skin_heavy_ci": [
+      0.5017550587654114,
+      0.6176394820213318
+     ],
+     "full_main": 0.5318563580513,
+     "ratio": 1.0573095083236694,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/malignant": {
+     "skin_heavy": 0.7333256602287292,
+     "skin_heavy_ci": [
+      0.6594915986061096,
+      0.8029163479804993
+     ],
+     "full_main": 0.7246034145355225,
+     "ratio": 1.0120372772216797,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/benign": {
+     "skin_heavy": 0.4204160273075104,
+     "skin_heavy_ci": [
+      0.3648211658000946,
+      0.47725918889045715
+     ],
+     "full_main": 0.3718762993812561,
+     "ratio": 1.1305265426635742,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/all": {
+     "skin_heavy": 0.277311772108078,
+     "skin_heavy_ci": [
+      0.2063901424407959,
+      0.3440703749656677
+     ],
+     "full_main": 0.2694942355155945,
+     "ratio": 1.029008150100708,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/malignant": {
+     "skin_heavy": 0.4971081018447876,
+     "skin_heavy_ci": [
+      0.3925887644290924,
+      0.6067270040512085
+     ],
+     "full_main": 0.48508477210998535,
+     "ratio": 1.0247859954833984,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/benign": {
+     "skin_heavy": 0.09488087892532349,
+     "skin_heavy_ci": [
+      0.05607327073812485,
+      0.13743112981319427
+     ],
+     "full_main": 0.09055411070585251,
+     "ratio": 1.047780990600586,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/all": {
+     "skin_heavy": 0.4062172770500183,
+     "skin_heavy_ci": [
+      0.33695703744888306,
+      0.48068273067474365
+     ],
+     "full_main": 0.2817569077014923,
+     "ratio": 1.4417296648025513,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/malignant": {
+     "skin_heavy": 0.1945575624704361,
+     "skin_heavy_ci": [
+      0.1305476725101471,
+      0.278402179479599
+     ],
+     "full_main": 0.1652904599905014,
+     "ratio": 1.1770646572113037,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/benign": {
+     "skin_heavy": 0.5818948149681091,
+     "skin_heavy_ci": [
+      0.5317615270614624,
+      0.6314268112182617
+     ],
+     "full_main": 0.3784240484237671,
+     "ratio": 1.5376793146133423,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/all": {
+     "skin_heavy": 0.22968490421772003,
+     "skin_heavy_ci": [
+      0.2078685164451599,
+      0.2549680471420288
+     ],
+     "full_main": 0.19743309915065765,
+     "ratio": 1.1633555889129639,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/malignant": {
+     "skin_heavy": 0.17580430209636688,
+     "skin_heavy_ci": [
+      0.14478550851345062,
+      0.2065211832523346
+     ],
+     "full_main": 0.17801322042942047,
+     "ratio": 0.9875912666320801,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/benign": {
+     "skin_heavy": 0.2744057774543762,
+     "skin_heavy_ci": [
+      0.2406543791294098,
+      0.30962735414505005
+     ],
+     "full_main": 0.2135516107082367,
+     "ratio": 1.2849622964859009,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/all": {
+     "skin_heavy": 0.15857993066310883,
+     "skin_heavy_ci": [
+      0.1426391899585724,
+      0.1770484298467636
+     ],
+     "full_main": 0.13245360553264618,
+     "ratio": 1.197248935699463,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/malignant": {
+     "skin_heavy": 0.10613784193992615,
+     "skin_heavy_ci": [
+      0.09290529042482376,
+      0.11932863295078278
+     ],
+     "full_main": 0.10106679797172546,
+     "ratio": 1.0501751899719238,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/benign": {
+     "skin_heavy": 0.20210687816143036,
+     "skin_heavy_ci": [
+      0.17867402732372284,
+      0.225045308470726
+     ],
+     "full_main": 0.1585046648979187,
+     "ratio": 1.2750847339630127,
+     "verdict_skin_heavy": "exceedance"
+    }
+   }
+  },
+  "0.5/7": {
+   "altered_frac_skin_heavy": 0.016244785490279915,
+   "altered_frac_full_main": 0.023561435319035432,
+   "ratio_range": [
+    0.45572733879089355,
+    1.4847873449325562
+   ],
+   "ratio_median": 0.8712694346904755,
+   "skin_heavy_verdicts": {
+    "exceedance": 17,
+    "equivalence": 0,
+    "indeterminate": 1
+   },
+   "cells": {
+    "b3-ERM/all": {
+     "skin_heavy": 0.3532463312149048,
+     "skin_heavy_ci": [
+      0.28967732191085815,
+      0.4148239493370056
+     ],
+     "full_main": 0.4417150914669037,
+     "ratio": 0.7997153401374817,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/malignant": {
+     "skin_heavy": 0.5185859799385071,
+     "skin_heavy_ci": [
+      0.42782145738601685,
+      0.5992938876152039
+     ],
+     "full_main": 0.6773378252983093,
+     "ratio": 0.7656238079071045,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/benign": {
+     "skin_heavy": 0.21601444482803345,
+     "skin_heavy_ci": [
+      0.17754369974136353,
+      0.2563442289829254
+     ],
+     "full_main": 0.2461482286453247,
+     "ratio": 0.8775787353515625,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/all": {
+     "skin_heavy": 0.5137181878089905,
+     "skin_heavy_ci": [
+      0.4575214982032776,
+      0.5674207806587219
+     ],
+     "full_main": 0.5318563580513,
+     "ratio": 0.965896487236023,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/malignant": {
+     "skin_heavy": 0.6900169253349304,
+     "skin_heavy_ci": [
+      0.6174548864364624,
+      0.7773604989051819
+     ],
+     "full_main": 0.7246034145355225,
+     "ratio": 0.9522683620452881,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/benign": {
+     "skin_heavy": 0.3673902451992035,
+     "skin_heavy_ci": [
+      0.31641286611557007,
+      0.4231647253036499
+     ],
+     "full_main": 0.3718762993812561,
+     "ratio": 0.9879366755485535,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/all": {
+     "skin_heavy": 0.26377275586128235,
+     "skin_heavy_ci": [
+      0.20235811173915863,
+      0.3253785967826843
+     ],
+     "full_main": 0.2694942355155945,
+     "ratio": 0.9787695407867432,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/malignant": {
+     "skin_heavy": 0.41957899928092957,
+     "skin_heavy_ci": [
+      0.3245686888694763,
+      0.5392772555351257
+     ],
+     "full_main": 0.48508477210998535,
+     "ratio": 0.8649601340293884,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/benign": {
+     "skin_heavy": 0.13445359468460083,
+     "skin_heavy_ci": [
+      0.08435247093439102,
+      0.19031064212322235
+     ],
+     "full_main": 0.09055411070585251,
+     "ratio": 1.4847873449325562,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/all": {
+     "skin_heavy": 0.2517841160297394,
+     "skin_heavy_ci": [
+      0.20655114948749542,
+      0.3005962073802948
+     ],
+     "full_main": 0.2817569077014923,
+     "ratio": 0.8936218023300171,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/malignant": {
+     "skin_heavy": 0.1193329468369484,
+     "skin_heavy_ci": [
+      0.07897147536277771,
+      0.17388221621513367
+     ],
+     "full_main": 0.1652904599905014,
+     "ratio": 0.7219590544700623,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/benign": {
+     "skin_heavy": 0.36171862483024597,
+     "skin_heavy_ci": [
+      0.30955228209495544,
+      0.41291338205337524
+     ],
+     "full_main": 0.3784240484237671,
+     "ratio": 0.9558553099632263,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/all": {
+     "skin_heavy": 0.16594728827476501,
+     "skin_heavy_ci": [
+      0.13876360654830933,
+      0.19748474657535553
+     ],
+     "full_main": 0.19743309915065765,
+     "ratio": 0.8405241370201111,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/malignant": {
+     "skin_heavy": 0.08856550604104996,
+     "skin_heavy_ci": [
+      0.06244603544473648,
+      0.12696388363838196
+     ],
+     "full_main": 0.17801322042942047,
+     "ratio": 0.4975220561027527,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/benign": {
+     "skin_heavy": 0.23017415404319763,
+     "skin_heavy_ci": [
+      0.19686812162399292,
+      0.26586514711380005
+     ],
+     "full_main": 0.2135516107082367,
+     "ratio": 1.0778385400772095,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/all": {
+     "skin_heavy": 0.0630372017621994,
+     "skin_heavy_ci": [
+      0.05425943061709404,
+      0.07309284061193466
+     ],
+     "full_main": 0.13245360553264618,
+     "ratio": 0.47591909766197205,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/malignant": {
+     "skin_heavy": 0.04605890437960625,
+     "skin_heavy_ci": [
+      0.036051250994205475,
+      0.056793101131916046
+     ],
+     "full_main": 0.10106679797172546,
+     "ratio": 0.45572733879089355,
+     "verdict_skin_heavy": "indeterminate"
+    },
+    "r50-Inv/benign": {
+     "skin_heavy": 0.07712920010089874,
+     "skin_heavy_ci": [
+      0.06297040730714798,
+      0.09201093018054962
+     ],
+     "full_main": 0.1585046648979187,
+     "ratio": 0.4866052269935608,
+     "verdict_skin_heavy": "exceedance"
+    }
+   }
+  },
+  "0.5/15": {
+   "altered_frac_skin_heavy": 0.007861398898887791,
+   "altered_frac_full_main": 0.023561435319035432,
+   "ratio_range": [
+    0.1624273657798767,
+    0.9008910655975342
+   ],
+   "ratio_median": 0.48474013805389404,
+   "skin_heavy_verdicts": {
+    "exceedance": 12,
+    "equivalence": 3,
+    "indeterminate": 3
+   },
+   "cells": {
+    "b3-ERM/all": {
+     "skin_heavy": 0.22692182660102844,
+     "skin_heavy_ci": [
+      0.18566900491714478,
+      0.2686692178249359
+     ],
+     "full_main": 0.4417150914669037,
+     "ratio": 0.51372891664505,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/malignant": {
+     "skin_heavy": 0.2878425419330597,
+     "skin_heavy_ci": [
+      0.2168957144021988,
+      0.37019413709640503
+     ],
+     "full_main": 0.6773378252983093,
+     "ratio": 0.42496156692504883,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-ERM/benign": {
+     "skin_heavy": 0.1763576716184616,
+     "skin_heavy_ci": [
+      0.14171239733695984,
+      0.21421925723552704
+     ],
+     "full_main": 0.2461482286453247,
+     "ratio": 0.716469407081604,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/all": {
+     "skin_heavy": 0.36314666271209717,
+     "skin_heavy_ci": [
+      0.30992230772972107,
+      0.42044296860694885
+     ],
+     "full_main": 0.5318563580513,
+     "ratio": 0.6827908754348755,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/malignant": {
+     "skin_heavy": 0.4362705647945404,
+     "skin_heavy_ci": [
+      0.34548088908195496,
+      0.5409842133522034
+     ],
+     "full_main": 0.7246034145355225,
+     "ratio": 0.602081835269928,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Slim/benign": {
+     "skin_heavy": 0.3024538457393646,
+     "skin_heavy_ci": [
+      0.24898149073123932,
+      0.3575820326805115
+     ],
+     "full_main": 0.3718762993812561,
+     "ratio": 0.8133184313774109,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/all": {
+     "skin_heavy": 0.1448492407798767,
+     "skin_heavy_ci": [
+      0.09442193061113358,
+      0.19511738419532776
+     ],
+     "full_main": 0.2694942355155945,
+     "ratio": 0.5374854803085327,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/malignant": {
+     "skin_heavy": 0.2210780382156372,
+     "skin_heavy_ci": [
+      0.1381818950176239,
+      0.2995379567146301
+     ],
+     "full_main": 0.48508477210998535,
+     "ratio": 0.45575135946273804,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "b3-Inv/benign": {
+     "skin_heavy": 0.08157938718795776,
+     "skin_heavy_ci": [
+      0.04314640909433365,
+      0.1280495971441269
+     ],
+     "full_main": 0.09055411070585251,
+     "ratio": 0.9008910655975342,
+     "verdict_skin_heavy": "indeterminate"
+    },
+    "r50-ERM/all": {
+     "skin_heavy": 0.10546322911977768,
+     "skin_heavy_ci": [
+      0.0797274261713028,
+      0.13481579720973969
+     ],
+     "full_main": 0.2817569077014923,
+     "ratio": 0.37430575489997864,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-ERM/malignant": {
+     "skin_heavy": 0.04875032603740692,
+     "skin_heavy_ci": [
+      0.02832912653684616,
+      0.07482625544071198
+     ],
+     "full_main": 0.1652904599905014,
+     "ratio": 0.2949373126029968,
+     "verdict_skin_heavy": "indeterminate"
+    },
+    "r50-ERM/benign": {
+     "skin_heavy": 0.15253494679927826,
+     "skin_heavy_ci": [
+      0.11699200421571732,
+      0.19121518731117249
+     ],
+     "full_main": 0.3784240484237671,
+     "ratio": 0.40307942032814026,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/all": {
+     "skin_heavy": 0.1054975613951683,
+     "skin_heavy_ci": [
+      0.08153925091028214,
+      0.13339391350746155
+     ],
+     "full_main": 0.19743309915065765,
+     "ratio": 0.5343458652496338,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Slim/malignant": {
+     "skin_heavy": 0.046065554022789,
+     "skin_heavy_ci": [
+      0.025793932378292084,
+      0.07493196427822113
+     ],
+     "full_main": 0.17801322042942047,
+     "ratio": 0.2587760388851166,
+     "verdict_skin_heavy": "indeterminate"
+    },
+    "r50-Slim/benign": {
+     "skin_heavy": 0.1548261195421219,
+     "skin_heavy_ci": [
+      0.12241203337907791,
+      0.1913299560546875
+     ],
+     "full_main": 0.2135516107082367,
+     "ratio": 0.7250056266784668,
+     "verdict_skin_heavy": "exceedance"
+    },
+    "r50-Inv/all": {
+     "skin_heavy": 0.023401815444231033,
+     "skin_heavy_ci": [
+      0.017909260466694832,
+      0.029642051085829735
+     ],
+     "full_main": 0.13245360553264618,
+     "ratio": 0.1766793429851532,
+     "verdict_skin_heavy": "equivalence"
+    },
+    "r50-Inv/malignant": {
+     "skin_heavy": 0.02057809941470623,
+     "skin_heavy_ci": [
+      0.01303068920969963,
+      0.030665788799524307
+     ],
+     "full_main": 0.10106679797172546,
+     "ratio": 0.203608900308609,
+     "verdict_skin_heavy": "equivalence"
+    },
+    "r50-Inv/benign": {
+     "skin_heavy": 0.025745494291186333,
+     "skin_heavy_ci": [
+      0.01864258572459221,
+      0.03394034877419472
+     ],
+     "full_main": 0.1585046648979187,
+     "ratio": 0.1624273657798767,
+     "verdict_skin_heavy": "equivalence"
+    }
+   }
+  }
+ },
+ "runtime_sec": 346.9
+}

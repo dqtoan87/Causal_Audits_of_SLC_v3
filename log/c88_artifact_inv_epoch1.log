@@ -1,0 +1,4 @@
+all        0.159 [0.144, 0.174] exceedance | -0.038 [-0.067, -0.010] indeterminate
+malignant  0.181 [0.156, 0.202] exceedance | -0.113 [-0.142, -0.075] exceedance
+benign     0.140 [0.128, 0.153] exceedance | +0.023 [+0.002, +0.045] equivalence
+AUROC 0.884; saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c88_artifact_inv_epoch1.json

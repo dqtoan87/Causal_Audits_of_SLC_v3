@@ -1,0 +1,137 @@
+{
+ "unit_test_smd_rule": true,
+ "smd_zero_denominators_library": {
+  "all_183": {
+   "n_images": 183,
+   "pair_components": 22968,
+   "zero_denominators": 0,
+   "zero_denominators_with_different_means": 0,
+   "smallest_pooled_sd": 9.185093024467946e-05
+  },
+  "malignant_83": {
+   "n_images": 83,
+   "pair_components": 22968,
+   "zero_denominators": 0,
+   "zero_denominators_with_different_means": 0,
+   "smallest_pooled_sd": 7.766820559587227e-05
+  }
+ },
+ "smd_zero_denominators_route_controls": {
+  "control_components": 96,
+  "zero_denominators": 0,
+  "smallest_pooled_sd": 0.001220978741532195
+ },
+ "score_floor_57_vs_58": {
+  "n58": 58,
+  "n57": 57,
+  "dropped": [
+   "ISIC_3039686"
+  ],
+  "mde": {
+   "erm": {
+    "58": [
+     0.4767942034691591,
+     0.6568672934006042
+    ],
+    "57": [
+     0.4717405047865274,
+     0.6386188473312321
+    ]
+   },
+   "slim": {
+    "58": [
+     0.5976750986254667,
+     1.287841104605467
+    ],
+    "57": [
+     0.6056225433592224,
+     1.3082292425838766
+    ]
+   },
+   "causal": {
+    "58": [
+     0.8973022143163725,
+     1.7837754472452378
+    ],
+    "57": [
+     0.9014143558990476,
+     1.803141320170592
+    ]
+   }
+  },
+  "lofo_all_negative_57": true,
+  "lofo_all_negative_58": true
+ },
+ "tcav_multiplicity": {
+  "n_cells": 12,
+  "nominal": 7,
+  "holm": 3,
+  "benjamini_hochberg": 6,
+  "sorted_p": [
+   [
+    1.3906755564078427e-05,
+    "dj_slim_r50",
+    "contrast"
+   ],
+   [
+    0.001410014997120407,
+    "dj_slim_r50",
+    "color_var"
+   ],
+   [
+    0.00266143434997192,
+    "dj_slim_b3",
+    "contrast"
+   ],
+   [
+    0.007381607219067096,
+    "dj_erm_b3",
+    "color_var"
+   ],
+   [
+    0.009519501636807946,
+    "dj_slim_b3",
+    "color_var"
+   ],
+   [
+    0.022160594278112202,
+    "dj_erm_b3",
+    "contrast"
+   ],
+   [
+    0.029731434699798026,
+    "dj_causal_r50",
+    "color_var"
+   ],
+   [
+    0.0548058292407654,
+    "dj_erm_r50",
+    "contrast"
+   ],
+   [
+    0.059679052117811625,
+    "dj_causal_r50",
+    "contrast"
+   ],
+   [
+    0.08093954402771388,
+    "dj_erm_r50",
+    "color_var"
+   ],
+   [
+    0.6223265840598404,
+    "dj_causal_b3",
+    "color_var"
+   ],
+   [
+    0.7731649103946356,
+    "dj_causal_b3",
+    "contrast"
+   ]
+  ]
+ }
+}
+erm {'58': {'globrot': -1631.92, 'warp2': -1.46, 'pixperm': -3.23}, '57': {'globrot': -1659.3, 'warp2': -1.48, 'pixperm': -3.17}} matches c12: True
+slim {'58': {'globrot': -66.12, 'warp2': -2.35, 'pixperm': -1.36}, '57': {'globrot': -68.49, 'warp2': -2.42, 'pixperm': -1.45}} matches c12: True
+causal {'58': {'globrot': -204.38, 'warp2': -4.39, 'pixperm': -6.62}, '57': {'globrot': -209.21, 'warp2': -4.34, 'pixperm': -6.89}} matches c12: True
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c71_rule_checks.json

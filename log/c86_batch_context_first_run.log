@@ -1,0 +1,22 @@
+rebuilt 78 images x 25 (36s)
+  scored erm (93s)
+  scored slim (149s)
+  scored causal (204s)
+plan protocol vs stored first-run scores, max |dp|: {'erm': 0.0, 'slim': 0.0, 'causal': 0.0}
+  cycle stack_bf16   crit 3.304 {'routes disagree': 3, 'routes agree': 2, 'indeterminate': 7} ['erm|contrast@2', 'slim|color_var@2', 'slim|contrast@0']
+      erm|contrast@2|D_rad4-rad16      +4.629 [LB 1.919] exceeds
+      slim|color_var@2|D_rad4-rad16    +5.268 [LB 1.836] exceeds
+      slim|contrast@0|D_rad4-rad16     +1.988 [LB 0.510] exceeds
+  cycle stack_fp32   crit 3.311 {'routes disagree': 5, 'routes agree': 2, 'indeterminate': 5} ['erm|contrast@2', 'slim|color_var@0', 'slim|color_var@2', 'slim|contrast@0', 'slim|contrast@2']
+      erm|contrast@2|D_rad4-rad16      +4.388 [LB 1.637] exceeds
+      slim|color_var@2|D_rad4-rad16    +5.729 [LB 2.232] exceeds
+      slim|contrast@0|D_rad4-rad16     +1.957 [LB 0.472] indeterminate
+  cycle single_bf16  crit 3.297 {'routes disagree': 4, 'routes agree': 2, 'indeterminate': 6} ['erm|contrast@2', 'slim|color_var@2', 'slim|contrast@0', 'slim|contrast@2']
+      erm|contrast@2|D_rad4-rad16      +4.640 [LB 1.941] exceeds
+      slim|color_var@2|D_rad4-rad16    +4.856 [LB 1.557] exceeds
+      slim|contrast@0|D_rad4-rad16     +2.164 [LB 0.619] exceeds
+  cycle single_fp32  crit 3.305 {'routes disagree': 5, 'routes agree': 2, 'indeterminate': 5} ['erm|contrast@2', 'slim|color_var@0', 'slim|color_var@2', 'slim|contrast@0', 'slim|contrast@2']
+      erm|contrast@2|D_rad4-rad16      +4.040 [LB 1.542] exceeds
+      slim|color_var@2|D_rad4-rad16    +5.098 [LB 1.541] exceeds
+      slim|contrast@0|D_rad4-rad16     +1.963 [LB 0.482] indeterminate
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c86_batch_context_first_run.json

@@ -1,0 +1,101 @@
+##### C13 full-population Tier-2 15:57:31 #####
+eval images 183  malignant 83  benign 100
+edits/image = 18  (22s)
+[erm] p0(all)=0.464  p0(mal)=0.733  p0(ben)=0.240  (29s)
+[slim] p0(all)=0.581  p0(mal)=0.860  p0(ben)=0.349  (34s)
+[causal] p0(all)=0.257  p0(mal)=0.501  p0(ben)=0.055  (40s)
+======================================================================================================================
+A) SUBGROUP SIZES (p_full-based subgroups are model-dependent)
+subgroup                         ERM          Slim           Inv
+all                              183           183           183
+malignant                         83            83            83
+benign                           100           100           100
+malignant_p010                    82            83            58
+malignant_p070                    53            68            35
+----------------------------------------------------------------------------------------------------------------------
+B) HELD-OUT ARTIFACT PENALTY  E|Δlogit|  (paper's P(f)), by subgroup
+subgroup                         ERM          Slim           Inv
+all                            10.05         13.93          7.39
+malignant                      10.84         15.85          8.89
+benign                          9.40         12.33          6.15
+malignant_p010                 10.92         15.85         10.00
+malignant_p070                 11.61         16.51         11.49
+----------------------------------------------------------------------------------------------------------------------
+C) HELD-OUT ARTIFACT  E|Δp|  (probability scale: the readable one off-threshold)
+subgroup                         ERM          Slim           Inv
+all                            0.371         0.544         0.223
+malignant                      0.550         0.762         0.383
+benign                         0.222         0.363         0.091
+malignant_p010                 0.555         0.762         0.509
+malignant_p070                 0.686         0.835         0.662
+----------------------------------------------------------------------------------------------------------------------
+D) HAIR (2.4% px) SIGNED Δp and Δlogit, by subgroup
+  all
+    ERM   Δp=-0.402[-0.459,-0.345]  Δlogit=-11.65[-12.42,-10.80]  sig=True
+    Slim  Δp=-0.435[-0.502,-0.366]  Δlogit=-10.81[-12.15,-9.46]  sig=True
+    Inv   Δp=-0.215[-0.273,-0.157]  Δlogit=-10.28[-11.12,-9.40]  sig=True
+  malignant
+    ERM   Δp=-0.662[-0.739,-0.584]  Δlogit=-13.34[-14.52,-12.16]  sig=True
+    Slim  Δp=-0.690[-0.783,-0.592]  Δlogit=-12.49[-14.47,-10.36]  sig=True
+    Inv   Δp=-0.455[-0.551,-0.358]  Δlogit=-13.30[-14.58,-11.99]  sig=True
+  benign
+    ERM   Δp=-0.187[-0.239,-0.131]  Δlogit=-10.25[-11.25,-9.16]  sig=True
+    Slim  Δp=-0.223[-0.296,-0.144]  Δlogit=-9.41[-11.05,-7.66]  sig=True
+    Inv   Δp=-0.017[-0.062,+0.029]  Δlogit=-7.76[-8.69,-6.77]  sig=False
+  malignant_p010
+    ERM   Δp=-0.669[-0.744,-0.593]  Δlogit=-13.36[-14.53,-12.17]  sig=True
+    Slim  Δp=-0.690[-0.783,-0.592]  Δlogit=-12.49[-14.47,-10.36]  sig=True
+    Inv   Δp=-0.653[-0.747,-0.558]  Δlogit=-15.23[-16.59,-13.78]  sig=True
+----------------------------------------------------------------------------------------------------------------------
+E) IDENTITY EDIT (must be exactly 0 on every subgroup)
+  ERM   +0.0e+00  +0.0e+00  +0.0e+00
+  Slim  +0.0e+00  +0.0e+00  +0.0e+00
+  Inv   +0.0e+00  +0.0e+00  +0.0e+00
+----------------------------------------------------------------------------------------------------------------------
+F) CONCEPT SCORE A_raw and A_corr (top dose), by subgroup
+  all
+    ERM   A_raw=+0.43[Y]  flip=+0.51[Y] jitter=+0.59[Y] hue=+0.61[Y] noise=+1.05[Y]
+    Slim  A_raw=+0.14[.]  flip=+0.03[.] jitter=+0.03[.] hue=+1.31[Y] noise=+1.80[Y]
+    Inv   A_raw=+0.96[Y]  flip=+1.49[Y] jitter=+1.33[Y] hue=+2.12[Y] noise=+1.46[Y]
+  malignant
+    ERM   A_raw=+0.26[Y]  flip=+0.54[Y] jitter=+0.62[Y] hue=+1.03[Y] noise=+2.60[Y]
+    Slim  A_raw=-0.09[.]  flip=-0.40[.] jitter=-0.29[.] hue=+1.70[Y] noise=+4.12[Y]
+    Inv   A_raw=+1.36[Y]  flip=+2.60[Y] jitter=+2.01[Y] hue=+3.61[Y] noise=+3.89[Y]
+  benign
+    ERM   A_raw=+0.58[Y]  flip=+0.49[Y] jitter=+0.56[Y] hue=+0.25[Y] noise=-0.24[.]
+    Slim  A_raw=+0.33[Y]  flip=+0.40[Y] jitter=+0.29[.] hue=+0.99[Y] noise=-0.12[.]
+    Inv   A_raw=+0.63[Y]  flip=+0.56[Y] jitter=+0.76[Y] hue=+0.88[Y] noise=-0.55[.]
+  malignant_p010
+    ERM   A_raw=+0.27[Y]  flip=+0.56[Y] jitter=+0.63[Y] hue=+1.03[Y] noise=+2.66[Y]
+    Slim  A_raw=-0.09[.]  flip=-0.40[.] jitter=-0.29[.] hue=+1.70[Y] noise=+4.12[Y]
+    Inv   A_raw=+1.07[Y]  flip=+2.99[Y] jitter=+1.97[Y] hue=+4.22[Y] noise=+5.28[Y]
+  malignant_p070
+    ERM   A_raw=+0.04[.]  flip=+0.73[Y] jitter=+0.69[Y] hue=+1.00[Y] noise=+3.75[Y]
+    Slim  A_raw=-0.30[.]  flip=-0.53[.] jitter=-0.42[Y] hue=+1.81[Y] noise=+4.89[Y]
+    Inv   A_raw=+0.74[Y]  flip=+3.35[Y] jitter=+2.07[Y] hue=+5.70[Y] noise=+7.46[Y]
+----------------------------------------------------------------------------------------------------------------------
+G) SIGN DISSOCIATION (concept > 0 and every neutral <= 0)
+  all                    ERM=YES Slim=no  Inv=YES
+  malignant              ERM=YES Slim=no  Inv=YES
+  benign                 ERM=no  Slim=no  Inv=no 
+  malignant_p010         ERM=YES Slim=no  Inv=YES
+----------------------------------------------------------------------------------------------------------------------
+H) IS GENERIC EDIT-SENSITIVITY A FUNCTION OF BASELINE CONFIDENCE?
+   (if yes, g cannot be a function of the edit footprint M -> explains why test (T) fails)
+  ERM
+    flip    r(p0,Δlogit)=-0.42  slope=-0.20 R2=0.20   by p0 quintile: 0.08->+0.34  0.18->+0.34  0.33->+0.08  0.76->-0.16  0.98->-0.98
+    jitter  r(p0,Δlogit)=-0.33  slope=-0.15 R2=0.12   by p0 quintile: 0.08->+0.18  0.18->+0.17  0.33->-0.20  0.76->-0.19  0.98->-0.73
+    hue     r(p0,Δlogit)=-0.55  slope=-0.28 R2=0.29   by p0 quintile: 0.08->+0.76  0.18->+0.39  0.33->-0.06  0.76->-0.83  0.98->-1.14
+    noise   r(p0,Δlogit)=-0.96  slope=-0.96 R2=0.98   by p0 quintile: 0.08->+1.86  0.18->+0.98  0.33->+0.17  0.76->-1.72  0.98->-4.37
+  Slim
+    flip    r(p0,Δlogit)=-0.06  slope=-0.03 R2=0.00   by p0 quintile: 0.14->+0.29  0.27->+0.24  0.55->-0.11  0.94->+0.32  1.00->-0.20
+    jitter  r(p0,Δlogit)=-0.09  slope=-0.11 R2=0.05   by p0 quintile: 0.14->+0.50  0.27->+0.25  0.55->-0.30  0.94->+0.28  1.00->-0.17
+    hue     r(p0,Δlogit)=-0.45  slope=-0.27 R2=0.18   by p0 quintile: 0.14->+0.02  0.27->-0.31  0.55->-1.00  0.94->-1.82  1.00->-2.75
+    noise   r(p0,Δlogit)=-0.81  slope=-0.99 R2=0.76   by p0 quintile: 0.14->+1.99  0.27->+0.97  0.55->-0.77  0.94->-3.18  1.00->-7.29
+  Inv
+    flip    r(p0,Δlogit)=-0.53  slope=-0.31 R2=0.29   by p0 quintile: 0.00->+1.02  0.01->+0.16  0.03->-0.33  0.28->-0.42  0.96->-3.03
+    jitter  r(p0,Δlogit)=-0.27  slope=-0.13 R2=0.09   by p0 quintile: 0.00->+0.45  0.01->-0.10  0.03->-0.44  0.28->-0.40  0.96->-1.34
+    hue     r(p0,Δlogit)=-0.66  slope=-0.48 R2=0.47   by p0 quintile: 0.00->+0.51  0.01->-0.00  0.03->-0.42  0.28->-0.55  0.96->-5.27
+    noise   r(p0,Δlogit)=-0.75  slope=-0.82 R2=0.63   by p0 quintile: 0.00->+2.95  0.01->+0.88  0.03->+0.71  0.28->-0.30  0.96->-6.70
+======================================================================================================================
+Saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c13_fullpop.json   (71s)

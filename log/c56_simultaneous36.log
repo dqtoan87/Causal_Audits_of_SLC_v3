@@ -1,0 +1,10 @@
+  [b3 ERM] done (44s)
+  [b3 Slim] done (47s)
+  [b3 Inv] done (49s)
+  [r50 ERM] done (53s)
+  [r50 Slim] done (56s)
+  [r50 Inv] done (59s)
+crit 36 = 3.118  crit 18 (magnitude) = 2.957
+frontier 36 = 0.0422  frontier 18 = 0.0447
+magnitude exceed (36 band): 17/18; signed decisions: {'exceeds': 11, 'within': 1, 'indet.': 6}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c56_simultaneous36.json (66s)

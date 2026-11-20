@@ -1,0 +1,11 @@
+  [b3 ERM] done (44s)
+  [b3 Slim] done (46s)
+  [b3 Inv] done (49s)
+  [r50 ERM] done (52s)
+  [r50 Slim] done (54s)
+  [r50 Inv] done (57s)
+design ratio: {'malignant_share_observed': 0.453551912568306, 'n_patients_with_both_labels': 19, 'n_images_of_patients_with_both_labels': 57, 'malignant_share_plain_2.5_97.5': [0.33532934131736525, 0.5671641791044776], 'malignant_share_stratified_2.5_97.5': [0.3626373626373626, 0.5463414634146342]}
+crit 36 = 3.119  crit 18 (magnitude) = 2.940
+frontier 36 = 0.0417  frontier 18 = 0.0445
+magnitude exceed (36 band): 17/18; signed decisions: {'exceeds': 11, 'within': 1, 'indet.': 6}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c57_stratified_band.json (66s)

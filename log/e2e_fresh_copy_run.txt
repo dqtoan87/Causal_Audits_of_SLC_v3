@@ -1,0 +1,186 @@
+# End-to-end run in a fresh directory with the released checkpoints (release checkpoints-v1.1)
+# The directory held the repository's code, cached results and logs, and twelve of the fourteen released
+# checkpoints; the two PAD-UFES-20 checkpoints were added in the second pass. c35_selection_isolation.py retrains
+# the six selection checkpoints, and the retrained files are identical to the released ones (SHA256SUMS check below).
+# Its analysis scripts and modules are those of the repository. Its runner differs from the repository's in
+# comments, the interpreter path and one extra call to a verifier of another manuscript; its figure guard checks
+# the tree by name rather than by its frozen manifest.
+# Results are compared with the committed files at a relative tolerance of 1e-9, ignoring timing and path
+# fields. Only files written by the run are compared.
+#
+# First pass: code/run_all.sh (31 analyses, 2 figure scripts). c46_padufes_artifact.py stopped when it loaded
+# its first checkpoint, because the two PAD-UFES-20 checkpoints had not been copied into the directory.
+# Second pass, same directory: the two checkpoints copied and checked against the release SHA256SUMS;
+# c44_cache_preds.py (the runner does not call it); the second run of the route test under its unchanged plan
+# (c62_route_test.py --phase evaluate, c63, c65), renamed *_inv_retrained with the registered first-run files
+# restored; c46 run again with the released weights; the verifier on the manuscript text of 2026-11-15.
+#
+# Time: 3.16 hours in all. The analyses of run_all.sh with c46 completing took 3.11 hours
+# (first pass 3.09 hours, less the 140 s of the stopped c46, plus its 188 s in the second pass);
+# the prediction cache took 49 s and the evaluation phase of the route test 149 s.
+#
+# Outcome: 37 result files written (34 JSON, 3 NPZ), all equal to the committed files. A strict leaf-by-leaf
+# comparison finds no difference in the 34 JSON files other than their runtime fields. For this reason the three
+# JSON files of the route test's second run differ from the SHA-256 in results/c62_manifest.sha256, while
+# c63_route_scores_inv_retrained.npz matches it. The verifier passed 295 of 295 checks on the manuscript text of 2026-11-15.
+
+== first pass: runner log
+=== run started 2026-11-15T17:47:49+07:00 ===
+tree      : <fresh directory>
+python    : <venv>/bin/python
+scripts   : 33
+torch     : 2.10.0+cu128 | cuda True
+
+c54_synthetic_scm          start 17:47:52
+c54_synthetic_scm            ok      0s
+c2_cace_artifact           start 17:47:52
+c2_cace_artifact             ok     90s
+c3_cace_concept            start 17:49:22
+c3_cace_concept              ok     55s
+c7_extra_controls          start 17:50:17
+c7_extra_controls            ok     45s
+c10_multiplacebo           start 17:51:02
+c10_multiplacebo             ok     36s
+c12_matched_control        start 17:51:38
+c12_matched_control          ok    288s
+c13_fullpop                start 17:56:26
+c13_fullpop                  ok     77s
+c19_saturation_mde         start 17:57:43
+c19_saturation_mde           ok     47s
+c20_numerical_repro        start 17:58:30
+c20_numerical_repro          ok     66s
+c21_patient_cluster        start 17:59:36
+c21_patient_cluster          ok     42s
+c25_screen_full_sample     start 18:00:18
+c25_screen_full_sample       ok    470s
+c26_hair_dose_prob         start 18:08:08
+c26_hair_dose_prob           ok     13s
+c30_disjoint_audit         start 18:08:21
+c30_disjoint_audit           ok     95s
+c32_absdp_patient_ci       start 18:09:56
+c32_absdp_patient_ci         ok     14s
+c34_ctrl_vs_ctrl           start 18:10:10
+c34_ctrl_vs_ctrl             ok     46s
+c35_selection_isolation    start 18:10:56
+c35_selection_isolation      ok   6524s
+c38_shrinkage_sensitivity  start 19:59:40
+c38_shrinkage_sensitivity    ok     92s
+c40_simultaneous           start 20:01:12
+c40_simultaneous             ok     43s
+c56_simultaneous36         start 20:01:55
+c56_simultaneous36           ok     73s
+c57_stratified_band        start 20:03:08
+c57_stratified_band          ok     73s
+c60_design_coverage        start 20:04:21
+c60_design_coverage          ok   1104s
+c42_positive_control       start 20:22:45
+c42_positive_control         ok    115s
+c45_partial_id             start 20:24:40
+c45_partial_id               ok     10s
+c46_padufes_artifact       start 20:24:50
+c46_padufes_artifact       FAIL rc=1   140s  (see log/c46_padufes_artifact.log)
+c49_tcav                   start 20:27:10
+c49_tcav                     ok     80s
+c50_overlay_seed           start 20:28:30
+c50_overlay_seed             ok    396s
+c51_independent_rebuild    start 20:35:06
+c51_independent_rebuild      ok    578s
+c58_rebuild_trace          start 20:44:44
+c58_rebuild_trace            ok    129s
+c59_rebuild_generator      start 20:46:53
+c59_rebuild_generator        ok     30s
+c52_overlay_perceptual     start 20:47:23
+c52_overlay_perceptual       ok     34s
+c55_identification_graph   start 20:47:58
+c55_identification_graph     ok    325s
+make_figures_split         start 20:53:22
+make_figures_split           ok      4s
+make_fig_shrinkage         start 20:53:26
+make_fig_shrinkage           ok      2s
+
+=== run finished 2026-11-15T20:53:28+07:00 ===
+ok=32 fail=1
+failed: c46_padufes_artifact
+verification (paper3): see log/verify_paper3.log
+=== all done 2026-11-15T20:53:31+07:00 ===
+
+== second pass
+== part 2 started 2026-11-15T20:59:26+07:00
+pad_erm.pt: OK
+pad_slim.pt: OK
+-- all checkpoints of the copy against the release SHA256SUMS
+dj_causal_b3.pt: OK
+dj_causal_r50.pt: OK
+dj_erm_b3.pt: OK
+dj_erm_r50.pt: OK
+dj_slim_b3.pt: OK
+dj_slim_r50.pt: OK
+pad_erm.pt: OK
+pad_slim.pt: OK
+sel_blind_causal.pt: OK
+sel_blind_erm.pt: OK
+sel_blind_slim.pt: OK
+sel_leaky_causal.pt: OK
+sel_leaky_erm.pt: OK
+sel_leaky_slim.pt: OK
+c44_cache_preds rc=0 49s
+route test rc c62=0 c63=0 c65=0 149s
+-- route-test manifest as copied into the directory, before the second run's files were added (13 entries)
+code/c62_route_test.py: OK
+code/run_c62.sh: OK
+code/c63_route_exploratory.py: OK
+code/c64_route_screens.py: OK
+code/c65_route_robustness.py: OK
+results/c62_preregistration.json: OK
+results/c62_construction.json: OK
+results/c62_evaluation.json: OK
+results/c62_frontier.json: OK
+results/c63_route_exploratory.json: OK
+results/c63_route_scores.npz: OK
+results/c64_route_screens.json: OK
+results/c65_route_robustness.json: OK
+-- the current manifest (17 entries, with the second run's four files): 14 OK. The three JSON files of the
+   second run differ only in their runtime field; c63_route_scores_inv_retrained.npz matches.
+c46_padufes_artifact rc=0 188s
+verifier rc=0: 295 checks, 295 ok, 0 not ok
+-- files written by the two passes
+c10_multiplacebo.json c12_matched_control.json c12_preds.npz c13_fullpop.json c19_preds.npz c19_saturation_mde.json c20_numerical_repro.json c21_patient_cluster.json c25_screen_full.json c26_hair_dose_prob.json c30_disjoint_audit.json c32_absdp_patient_ci.json c34_ctrl_vs_ctrl.json c35_selection_isolation.json c38_shrinkage_sensitivity.json c40_simultaneous.json c42_positive_control.json c45_bracketing.json c46_padufes_artifact.json c49_tcav.json c50_overlay_seed.json c51_independent_rebuild.json c52_overlay_perceptual.json c54_synthetic_scm.json c55_identification_graph.json c56_simultaneous36.json c57_stratified_band.json c58_rebuild_trace.json c59_rebuild_generator.json c60_design_coverage.json c62_evaluation_inv_retrained.json c63_route_exploratory_inv_retrained.json c63_route_scores_inv_retrained.npz c65_route_robustness_inv_retrained.json c7_controls.json tier2_cace_artifact.json tier2_cace_concept.json 
+json written: 34
+c10_multiplacebo.json IDENTICAL
+c12_matched_control.json IDENTICAL
+c13_fullpop.json IDENTICAL
+c19_saturation_mde.json IDENTICAL
+c20_numerical_repro.json IDENTICAL
+c21_patient_cluster.json IDENTICAL
+c25_screen_full.json IDENTICAL
+c26_hair_dose_prob.json IDENTICAL
+c30_disjoint_audit.json IDENTICAL
+c32_absdp_patient_ci.json IDENTICAL
+c34_ctrl_vs_ctrl.json IDENTICAL
+c35_selection_isolation.json IDENTICAL
+c38_shrinkage_sensitivity.json IDENTICAL
+c40_simultaneous.json IDENTICAL
+c42_positive_control.json IDENTICAL
+c45_bracketing.json IDENTICAL
+c46_padufes_artifact.json IDENTICAL
+c49_tcav.json IDENTICAL
+c50_overlay_seed.json IDENTICAL
+c51_independent_rebuild.json IDENTICAL
+c52_overlay_perceptual.json IDENTICAL
+c54_synthetic_scm.json IDENTICAL
+c55_identification_graph.json IDENTICAL
+c56_simultaneous36.json IDENTICAL
+c57_stratified_band.json IDENTICAL
+c58_rebuild_trace.json IDENTICAL
+c59_rebuild_generator.json IDENTICAL
+c60_design_coverage.json IDENTICAL
+c62_evaluation_inv_retrained.json IDENTICAL
+c63_route_exploratory_inv_retrained.json IDENTICAL
+c65_route_robustness_inv_retrained.json IDENTICAL
+c7_controls.json IDENTICAL
+tier2_cace_artifact.json IDENTICAL
+tier2_cace_concept.json IDENTICAL
+c12_preds.npz IDENTICAL
+c19_preds.npz IDENTICAL
+c63_route_scores_inv_retrained.npz IDENTICAL
+== part 2 finished 2026-11-15T21:05:57+07:00

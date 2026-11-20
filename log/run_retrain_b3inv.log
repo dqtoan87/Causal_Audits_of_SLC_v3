@@ -1,0 +1,71 @@
+=== retrain B3 Inv started 2026-11-15T15:21:52+07:00 ===
+[15:21:52] old checkpoint 39de9dbc3938d4d0
+[15:21:52] step 1: c29 dj_causal_b3 (selection after warm-up)
+      |       [dj_causal_b3] ep01/15 auc=0.8720 focal=1.024 vrex=12.1534 cf=0.0000 pen=off (310s) [warm-up, not eligible for selection]
+      |       [dj_causal_b3] ep02/15 auc=0.8028 focal=0.694 vrex=5.5611 cf=0.0000 pen=off (131s) [warm-up, not eligible for selection]
+      |       [dj_causal_b3] ep03/15 auc=0.8219 focal=0.641 vrex=5.9231 cf=0.0000 pen=off (129s) [warm-up, not eligible for selection]
+      |       [dj_causal_b3] ep04/15 auc=0.8384 focal=0.390 vrex=2.7770 cf=0.0200 pen=on (135s)
+      |       [dj_causal_b3] ep05/15 auc=0.8593 focal=0.355 vrex=4.1722 cf=0.0163 pen=on (122s)
+      |       [dj_causal_b3] ep06/15 auc=0.8553 focal=0.207 vrex=2.1485 cf=0.0121 pen=on (125s)
+      |       [dj_causal_b3] ep07/15 auc=0.8741 focal=0.160 vrex=1.0350 cf=0.0137 pen=on (125s)
+      |       [dj_causal_b3] ep08/15 auc=0.8433 focal=0.085 vrex=0.9654 cf=0.0097 pen=on (124s)
+      |       [dj_causal_b3] ep09/15 auc=0.8433 focal=0.104 vrex=3.2540 cf=0.0063 pen=on (126s)
+      |       [dj_causal_b3] ep10/15 auc=0.8504 focal=0.053 vrex=0.6180 cf=0.0081 pen=on (119s)
+      |       [dj_causal_b3] ep11/15 auc=0.8667 focal=0.036 vrex=0.3112 cf=0.0045 pen=on (120s)
+      |       [dj_causal_b3] early stop @ ep11
+      | [dj_causal_b3] saved, select-AUC=0.8741  (1576s)
+[15:48:16] new checkpoint ebfbb47c46892c70
+[15:48:16] step 2: c44 prediction cache
+[15:49:04] step 3: 32 analyses
+[15:49:05] c54_synthetic_scm          ok       1s
+[15:50:30] c2_cace_artifact           ok      85s
+[15:51:23] c3_cace_concept            ok      53s
+[15:52:08] c7_extra_controls          ok      45s
+[15:52:46] c10_multiplacebo           ok      38s
+[15:57:25] c12_matched_control        ok     279s
+[15:58:44] c13_fullpop                ok      79s
+[15:59:32] c19_saturation_mde         ok      48s
+[16:00:37] c20_numerical_repro        ok      65s
+[16:01:14] c21_patient_cluster        ok      37s
+[16:09:02] c25_screen_full_sample     ok     468s
+[16:09:11] c26_hair_dose_prob         ok       9s
+[16:10:30] c30_disjoint_audit         ok      79s
+[16:10:43] c32_absdp_patient_ci       ok      13s
+[16:11:27] c34_ctrl_vs_ctrl           ok      44s
+[16:13:00] c38_shrinkage_sensitivity  ok      93s
+[16:13:42] c40_simultaneous           ok      42s
+[16:14:56] c56_simultaneous36         ok      74s
+[16:16:10] c57_stratified_band        ok      74s
+[16:34:24] c60_design_coverage        ok    1094s
+[16:36:20] c42_positive_control       ok     116s
+[16:36:29] c45_partial_id             ok       9s
+[16:39:34] c46_padufes_artifact       ok     185s
+[16:40:45] c49_tcav                   ok      71s
+[16:47:46] c50_overlay_seed           ok     421s
+[16:57:45] c51_independent_rebuild    ok     599s
+[16:59:54] c58_rebuild_trace          ok     129s
+[17:00:23] c59_rebuild_generator      ok      29s
+[17:00:56] c52_overlay_perceptual     ok      33s
+[17:06:11] c55_identification_graph   ok     315s
+[17:06:15] make_figures_split         ok       4s
+[17:06:17] make_fig_shrinkage         ok       2s
+[17:06:17] analyses ok=32 fail=0 
+[17:06:17] step 4: route test with the retrained Inv model (registered files restored afterwards)
+[17:08:41] c62 rc=0  c63 rc=0  c65 rc=0
+code/c62_route_test.py: OK
+code/run_c62.sh: OK
+code/c63_route_exploratory.py: OK
+code/c64_route_screens.py: OK
+code/c65_route_robustness.py: OK
+results/c62_preregistration.json: OK
+results/c62_construction.json: OK
+results/c62_evaluation.json: OK
+results/c62_frontier.json: OK
+results/c63_route_exploratory.json: OK
+results/c63_route_scores.npz: OK
+results/c64_route_screens.json: OK
+results/c65_route_robustness.json: OK
+[17:08:41] registered route-test files intact
+[17:08:44] verifier: 285 checks, 196 ok, 89 not ok
+diff written: /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/log/b3inv_retrain_diff.txt files changed: 24
+=== finished 2026-11-15T17:08:44+07:00 ===

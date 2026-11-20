@@ -1,0 +1,16 @@
+overlays built (278s)
+  [b3 ERM] scored (299s)
+  [b3 Slim] scored (317s)
+  [b3 Inv] scored (334s)
+  [r50 ERM] scored (353s)
+  [r50 Slim] scored (370s)
+  [r50 Inv] scored (387s)
+seed  42: crit 3.118 frontier 0.0422 (b3-Inv/ben) exceed@0.05 17/18 order True (395s)
+seed   1: crit 3.088 frontier 0.0473 (b3-Inv/ben) exceed@0.05 17/18 order True (402s)
+seed   2: crit 3.116 frontier 0.0456 (b3-Inv/ben) exceed@0.05 17/18 order True (410s)
+seed   3: crit 3.084 frontier 0.0420 (b3-Inv/ben) exceed@0.05 17/18 order True (417s)
+seed   7: crit 3.088 frontier 0.0411 (b3-Inv/ben) exceed@0.05 17/18 order True (425s)
+seed  11: crit 3.085 frontier 0.0412 (b3-Inv/ben) exceed@0.05 17/18 order True (432s)
+seed  99: crit 3.079 frontier 0.0558 (r50-ERM/mal) exceed@0.05 18/18 order True (440s)
+check vs c56: {'frontier_abs_diff': 0.0, 'crit_abs_diff': 0.0} frontier range [0.041102666000659635, 0.05582854484072827]
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c75_seed_band.json

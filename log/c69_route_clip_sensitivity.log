@@ -1,0 +1,39 @@
+  scored erm
+  scored slim
+  scored causal
+  scored causal_ep1
+bf16 probabilities vs stored, max |diff|: {'second_run': {'erm': 0.0, 'slim': 0.0, 'causal': 0.0}, 'first_run_inv_ep1': 0.0}
+[second_run]
+  numerics bf16
+   eta 0.0001 bound  9.21 crit 3.360 {'routes disagree': 4, 'routes agree': 0, 'indeterminate': 8}  {'slim|contrast@0': 'routes disagree', 'erm|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-05  bound 11.51 crit 3.365 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}  {'erm|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-06  bound 13.82 crit 3.375 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}  {'erm|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-07  bound 16.12 crit 3.378 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}  {'erm|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-08  bound 18.42 crit 3.381 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}  {'erm|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+  numerics fp32
+   eta 0.0001 bound  9.21 crit 3.370 {'routes disagree': 6, 'routes agree': 0, 'indeterminate': 6}  {'slim|contrast@0': 'routes disagree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-05  bound 11.51 crit 3.384 {'routes disagree': 6, 'routes agree': 0, 'indeterminate': 6}  {'slim|contrast@0': 'routes disagree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-06  bound 13.82 crit 3.390 {'routes disagree': 6, 'routes agree': 0, 'indeterminate': 6}  {'slim|contrast@0': 'routes disagree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-07  bound 16.12 crit 3.391 {'routes disagree': 5, 'routes agree': 0, 'indeterminate': 7}  {'slim|contrast@0': 'routes disagree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree'}
+   eta 1e-08  bound 18.42 crit 3.395 {'routes disagree': 5, 'routes agree': 0, 'indeterminate': 7}  {'slim|contrast@0': 'routes disagree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'causal|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree'}
+  floor in fp32: 1 images change; {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}
+  probability scale: 12 of 48 simultaneous intervals exclude zero
+[first_run]
+  numerics bf16
+   eta 0.0001 bound  9.21 crit 3.300 {'routes disagree': 4, 'routes agree': 2, 'indeterminate': 6}  {'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-05  bound 11.51 crit 3.299 {'routes disagree': 3, 'routes agree': 2, 'indeterminate': 7}  {'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-06  bound 13.82 crit 3.304 {'routes disagree': 3, 'routes agree': 2, 'indeterminate': 7}  {'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-07  bound 16.12 crit 3.305 {'routes disagree': 2, 'routes agree': 2, 'indeterminate': 8}  {'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-08  bound 18.42 crit 3.308 {'routes disagree': 2, 'routes agree': 2, 'indeterminate': 8}  {'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+  numerics fp32
+   eta 0.0001 bound  9.21 crit 3.299 {'routes disagree': 6, 'routes agree': 2, 'indeterminate': 4}  {'erm|contrast@0': 'routes disagree', 'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-05  bound 11.51 crit 3.304 {'routes disagree': 5, 'routes agree': 2, 'indeterminate': 5}  {'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-06  bound 13.82 crit 3.311 {'routes disagree': 5, 'routes agree': 2, 'indeterminate': 5}  {'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-07  bound 16.12 crit 3.315 {'routes disagree': 5, 'routes agree': 2, 'indeterminate': 5}  {'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+   eta 1e-08  bound 18.42 crit 3.321 {'routes disagree': 5, 'routes agree': 2, 'indeterminate': 5}  {'slim|contrast@0': 'routes disagree', 'causal|contrast@0': 'routes agree', 'erm|contrast@2': 'routes disagree', 'slim|contrast@2': 'routes disagree', 'slim|color_var@0': 'routes disagree', 'causal|color_var@0': 'routes agree', 'slim|color_var@2': 'routes disagree'}
+  floor in fp32: 0 images change; {'routes disagree': 3, 'routes agree': 2, 'indeterminate': 7}
+  probability scale: 18 of 48 simultaneous intervals exclude zero
+[B] erm max |z| bf16 25984 fp32 8901; unedited feature norm median 13.2; top columns ['contrast@2|hue16', 'contrast@2|hue4', 'contrast@2|rad16', 'contrast@2|rad4']
+[B] slim max |z| bf16 41344 fp32 71120; unedited feature norm median 21.8; top columns ['color_var@0|hue4', 'color_var@2|rad16', 'color_var@2|rad4', 'contrast@0|hue4', 'contrast@2|hue4', 'contrast@2|rad4']
+[B] causal max |z| bf16 2488 fp32 4215; unedited feature norm median 6.7; top columns ['color_var@2|rad4', 'contrast@0|hue16', 'contrast@0|hue4', 'contrast@2|hue16', 'contrast@2|hue4', 'contrast@2|rad4']
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c69_route_clip_sensitivity.json (57s)

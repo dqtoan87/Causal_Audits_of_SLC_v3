@@ -1,0 +1,143 @@
+{
+ "note": "exploratory; first run's configuration (ERM, Slim, epoch-1 Inv); clipped logit (5); first run's analysed images; c62_route_test.py imported unchanged",
+ "c62_script_sha256": "496e677822abea698379234e25aca9b772c21fb897a8854f8fdc447fa446fed5",
+ "check_stack_bf16_vs_stored_first_run_max_abs_prob": {
+  "erm": 0.0,
+  "slim": 0.0,
+  "causal": 0.0
+ },
+ "n_per_target": {
+  "contrast@0": 75,
+  "contrast@2": 73,
+  "color_var@0": 77,
+  "color_var@2": 76
+ },
+ "cycle": {
+  "stack_bf16": {
+   "crit": 3.3040970662101126,
+   "summary": {
+    "routes disagree": 3,
+    "routes agree": 2,
+    "indeterminate": 7
+   },
+   "disagreeing_cells": [
+    "erm|contrast@2",
+    "slim|color_var@2",
+    "slim|contrast@0"
+   ],
+   "decisive": {
+    "erm|contrast@2|D_rad4-rad16": {
+     "est": 4.628513701974529,
+     "sim_lower": 1.9194015686313706,
+     "decision": "exceeds"
+    },
+    "slim|color_var@2|D_rad4-rad16": {
+     "est": 5.2676536158511515,
+     "sim_lower": 1.8363220823589286,
+     "decision": "exceeds"
+    },
+    "slim|contrast@0|D_rad4-rad16": {
+     "est": 1.9882271321614584,
+     "sim_lower": 0.5097901785337962,
+     "decision": "exceeds"
+    }
+   }
+  },
+  "stack_fp32": {
+   "crit": 3.310556207014697,
+   "summary": {
+    "routes disagree": 5,
+    "routes agree": 2,
+    "indeterminate": 5
+   },
+   "disagreeing_cells": [
+    "erm|contrast@2",
+    "slim|color_var@0",
+    "slim|color_var@2",
+    "slim|contrast@0",
+    "slim|contrast@2"
+   ],
+   "decisive": {
+    "erm|contrast@2|D_rad4-rad16": {
+     "est": 4.388343706522902,
+     "sim_lower": 1.6367113446667618,
+     "decision": "exceeds"
+    },
+    "slim|color_var@2|D_rad4-rad16": {
+     "est": 5.729450828150699,
+     "sim_lower": 2.2318423139513723,
+     "decision": "exceeds"
+    },
+    "slim|contrast@0|D_rad4-rad16": {
+     "est": 1.9570294189453126,
+     "sim_lower": 0.47175958460981815,
+     "decision": "indeterminate"
+    }
+   }
+  },
+  "single_bf16": {
+   "crit": 3.296936691302875,
+   "summary": {
+    "routes disagree": 4,
+    "routes agree": 2,
+    "indeterminate": 6
+   },
+   "disagreeing_cells": [
+    "erm|contrast@2",
+    "slim|color_var@2",
+    "slim|contrast@0",
+    "slim|contrast@2"
+   ],
+   "decisive": {
+    "erm|contrast@2|D_rad4-rad16": {
+     "est": 4.639633387735445,
+     "sim_lower": 1.9410287316743071,
+     "decision": "exceeds"
+    },
+    "slim|color_var@2|D_rad4-rad16": {
+     "est": 4.856054205643503,
+     "sim_lower": 1.5571532082195803,
+     "decision": "exceeds"
+    },
+    "slim|contrast@0|D_rad4-rad16": {
+     "est": 2.1641800944010416,
+     "sim_lower": 0.6194027312484114,
+     "decision": "exceeds"
+    }
+   }
+  },
+  "single_fp32": {
+   "crit": 3.3054216205833384,
+   "summary": {
+    "routes disagree": 5,
+    "routes agree": 2,
+    "indeterminate": 5
+   },
+   "disagreeing_cells": [
+    "erm|contrast@2",
+    "slim|color_var@0",
+    "slim|color_var@2",
+    "slim|contrast@0",
+    "slim|contrast@2"
+   ],
+   "decisive": {
+    "erm|contrast@2|D_rad4-rad16": {
+     "est": 4.03996255953018,
+     "sim_lower": 1.5421322626463487,
+     "decision": "exceeds"
+    },
+    "slim|color_var@2|D_rad4-rad16": {
+     "est": 5.0984545255962175,
+     "sim_lower": 1.5408406350007509,
+     "decision": "exceeds"
+    },
+    "slim|contrast@0|D_rad4-rad16": {
+     "est": 1.9632747395833334,
+     "sim_lower": 0.48198790700683425,
+     "decision": "indeterminate"
+    }
+   }
+  }
+ },
+ "runtime_sec": 204.5
+}

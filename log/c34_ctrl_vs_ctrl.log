@@ -1,0 +1,14 @@
+##### C34 control-vs-control 16:10:50 #####
+   ... 20/83 images (4s)
+   ... 40/83 images (9s)
+   ... 60/83 images (13s)
+   ... 80/83 images (17s)
+edits xong (17s)
+[erm] p_full=0.733 (21s)
+[slim] p_full=0.859 (23s)
+[causal] p_full=0.501 (26s)
+common set n=57 / 29 patients
+
+21 comparisons | excluding 0: 21 (image) 21 (patient) | max |diff| 14.43
+exceptions (patient): []
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c34_ctrl_vs_ctrl.json (36s)

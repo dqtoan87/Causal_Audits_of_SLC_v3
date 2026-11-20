@@ -1,0 +1,23 @@
+##### C54 synthetic response model #####
+  R1_valid                   admissible=True  maxSMD= 0.000 ratio=+0.000 est=+1.126 target=+1.117 err=+0.009
+  R2_footprint_mismatch      admissible=False maxSMD= 1.760 ratio=+0.000 est=-0.401 target=+1.117 err=-1.518
+  R3_concept_contamination   admissible=False maxSMD= 0.000 ratio=+0.400 est=+0.566 target=+1.117 err=-0.551
+  R4_model_state             admissible=True  maxSMD= 0.000 ratio=+0.000 est=+1.192 target=+1.117 err=+0.075
+  R5_proxy_blind             admissible=True  maxSMD= 0.000 ratio=+0.000 est=+0.642 target=+1.117 err=-0.475
+  bias formula on R4: predicted +0.077 against observed +0.075
+
+  identified set for the concept component
+    B1 connected, exact match              shifts reproducing the data: 1/7, implied target +1.117 to +1.117
+    B2 disconnected                        shifts reproducing the data: 7/7, implied target -0.883 to +3.117
+    B3 repaired by one exact match         shifts reproducing the data: 1/7, implied target +1.117 to +1.117
+    B4 near match, g unrestricted          shifts reproducing the data: 7/7, implied target -0.883 to +3.117
+    B5 near match, Lipschitz g             distance 0.118 SMD, estimate +1.029, outer interval at L=1 [+0.911, +1.148]
+
+  constructive repair by a designed route
+    no neutral control within 1.65 SMD of the concept edit's footprint, so no length-two route exists
+    length-four route returns +1.111 against target +1.117, error 0.006, 95% CI [+1.085, +1.151], covers target True
+    component-range restriction            delta in [-9.58, +12.70], implied target -8.46 to +13.82, width 22.3 logits
+
+  Part D: R1 and R4 controls in one library, S_R4 - S_R1 on R0 +0.077, noisy +0.067 [+0.040, +0.094]
+
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c54_synthetic_scm.json  (0.8s)

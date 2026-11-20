@@ -1,0 +1,21 @@
+{
+ "cache": "c19_preds.npz",
+ "cache_sha256": "762bf6426a8c1bed8bd5554fd65e594c9ab60a1e448d4594c87b1e31b70cda73",
+ "checkpoints": {
+  "erm": {
+   "file": "dj_erm_b3.pt",
+   "sha256": "48553cf3cade24fc5faa50f97de9a867933e7d80f39f2d18ad9ae5bd23507c37"
+  },
+  "slim": {
+   "file": "dj_slim_b3.pt",
+   "sha256": "9345474229e73239163c3df1925afa4282aae64871be9cd4338017b363ee8185"
+  },
+  "causal": {
+   "file": "dj_causal_b3.pt",
+   "sha256": "ebfbb47c46892c70fa93c5c16336ab3dca3593e10e3ef055daded36cb376ced3"
+  }
+ },
+ "audit_cohort_sha256": "0c2ce289d27bca29a684d9f9126a0a276ee76eb90305082154e6b45f13e38f9d",
+ "n_images": 183,
+ "n_edits": 18
+}

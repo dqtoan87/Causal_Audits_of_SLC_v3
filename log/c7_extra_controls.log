@@ -1,0 +1,29 @@
+##### C7 extra controls 15:51:28 #####
+malignant 78
+manipulation-check (fixed-ref):
+   size0     intended=  -7.8%  leak= 20.4%
+   size1     intended=  -7.1%  leak= 28.3%
+   size2     intended=  -5.0%  leak= 34.8%
+   placebo   intended= +11.8%  leak=  1.7%
+[erm] done p_full=0.823
+[slim] done p_full=0.905
+[causal] done p_full=0.775
+
+==========================================================================================
+COMMON n=66  | gain=1.0
+model            size_top[CI]  mono         placebo[CI]  pl≈0 corr(c,col)      A3
+erm        -0.48[-0.76,-0.21]     ·  -1.12[-1.44,-0.79]    no        0.88  -0.128
+slim       -0.77[-1.19,-0.34]     ↑  -2.35[-2.91,-1.84]    no        0.76  -0.622
+causal     -3.13[-3.86,-2.43]     ·  -3.78[-4.78,-2.78]    no        0.91  -0.987
+==========================================================================================
+
+★ Placebo-corrected (concept-edit − neutral-edit; removes the common edit-sensitivity):
+  erm     contrast=+1.09[+0.76,+1.41] color=+1.25[+0.92,+1.59]  A_corr=+1.167 ✓ALIGNED
+  slim    contrast=+1.85[+1.27,+2.48] color=+1.75[+1.18,+2.36]  A_corr=+1.800 ✓ALIGNED
+  causal  contrast=+3.87[+2.87,+4.89] color=+3.86[+2.87,+4.86]  A_corr=+3.863 ✓ALIGNED
+size: expected sign + (ATE+ in C1). placebo: ≈0 = the model does not respond to the edit artifact (good). high corr = the 2 concepts measure almost the same thing. A3 = alignment of 3 concepts (contrast+color+size).
+jackknife SE / max-influence (contrast | color):
+  erm     SE 0.127/0.125  maxInfl 0.043/0.054
+  slim    SE 0.144/0.143  maxInfl 0.046/0.048
+  causal  SE 0.210/0.228  maxInfl 0.096/0.105
+Saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c7_controls.json

@@ -1,0 +1,15 @@
+# Seventh fresh-directory run: c54 (with Part D) and c84 (2026-11-18)
+# The directory held a copy of this tree's code and the two stored split files (frozen_split.json, audit_cohort.json),
+# without any c54 or c84 output. Neither script reads a model. Results are compared with the committed files at a
+# relative tolerance of 1e-9, ignoring timing fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-18T19:34:07+07:00 ===
+c54_synthetic_scm                  rc=0      1s
+c84_label_provenance               rc=0     10s
+=== finished 2026-11-18T19:34:18+07:00 ===
+
+== comparison
+c54_synthetic_scm.json                       equal
+c84_label_provenance.json                    equal
+files written: 2, differing: 0

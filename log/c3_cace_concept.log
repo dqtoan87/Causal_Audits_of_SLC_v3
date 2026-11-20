@@ -1,0 +1,27 @@
+##### PHASE C3: CaCE concept 15:50:36 (dev=cuda) #####
+eval: 178 images (truly malignant=78)
+manipulation-check (intended Δ% target concept / leak Δ% other concepts):
+   contrast@0     intended= +28.8%  leak= 23.5%
+   contrast@1     intended= +57.9%  leak= 46.4%
+   contrast@2     intended= +93.1%  leak= 75.0%
+   color_var@0    intended= +20.8%  leak= 15.2%
+   color_var@1    intended= +41.3%  leak= 29.4%
+   color_var@2    intended= +67.5%  leak= 47.0%
+[erm] done (10s, n_kept=77, p_mal=0.823)
+[slim] done (9s, n_kept=77, p_mal=0.905)
+[causal] done (9s, n_kept=67, p_mal=0.775)
+
+================================================================================================
+CaCE CONCEPT: expect CaCE > 0 and monotonic (concepts with positive C1 ATE). aligned = CI(top)>0.
+================================================================================================
+concept     C1-map                                   erm                slim              causal
+                                     top CaCE_logit mono top CaCE_logit mono top CaCE_logit mono
+------------------------------------------------------------------------------------------------
+contrast    contrast_LB (ATE+)        +0.09[-0.1,+0.4]·✗  -0.28[-0.6,-0.0]·✗  -0.12[-0.8,+0.4]·✗
+color_var   C_color/C_colorstd (ATE+)  +0.15[-0.1,+0.4]↑✗  -0.46[-0.7,-0.2]·✗  -0.12[-0.8,+0.4]·✗
+------------------------------------------------------------------------------------------------
+pred_mal_prob                                      0.823               0.905               0.775
+================================================================================================
+Reading: top CaCE_logit at the highest dose; ↑=monotonic in dose; ✓=positive and CI excludes 0 (model responds correctly to the C1 causal concept). ✗=not consistent (model ignores or reverses the disease concept).
+
+Saved: /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/tier2_cace_concept.json

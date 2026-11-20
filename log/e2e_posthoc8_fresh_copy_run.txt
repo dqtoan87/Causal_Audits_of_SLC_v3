@@ -1,0 +1,15 @@
+# Eighth fresh-directory run: c85 (2026-11-18)
+# The directory held a copy of this tree's code, the stored split and audit cohort, c56_simultaneous36.json for the
+# reproduction check and the released checkpoints, without any c85 output (c85 recomputed the per-image shifts from
+# the images). Results are compared with the committed files at a relative tolerance of 1e-9, ignoring timing fields;
+# the NPZ arrays must be identical.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-18T23:18:48+07:00 ===
+c85_artifact_band_calibration      rc=0    472s
+=== finished 2026-11-18T23:26:40+07:00 ===
+
+== comparison
+c85_artifact_band_calibration.json           equal
+c85_artifact_vectors.npz                     equal
+files written: 2, differing: 0

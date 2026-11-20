@@ -1,0 +1,22 @@
+[03:41:07] Load /mnt/data2/Toan/Causal_ML/data/data_ISIC2024/train-metadata.csv
+[03:41:14]   tiles=401,059 patients=1042 cases=393
+[03:41:14]   discordant patients=258 carrying 392 cases (99.7% of all)
+[03:41:14] PASS 1/2 — điểm ước lượng + sandwich cụm (không bootstrap)
+[03:41:15]   A_asymmetry     rows= 76,929 strata= 198 cases= 271 cols=20
+[03:42:00]   B_border        rows= 75,488 strata= 182 cases= 254 cols=19
+[03:42:46]   C_color         rows= 99,984 strata= 239 cases= 349 cols=20
+[03:43:52]   C_colorstd      rows= 99,424 strata= 238 cases= 349 cols=20
+[03:45:15]   D_size          rows=101,815 strata= 248 cases= 362 cols=20
+[03:46:18]   contrast_LB     rows= 89,619 strata= 219 cases= 299 cols=20
+[03:47:06]   NEGCTRL_nevi    rows= 77,976 strata= 191 cases= 267 cols=20
+[03:47:54] PASS 1/2 xong — điểm ước lượng và CI cụm đã nằm trong file .partial
+[03:47:54] saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P2_clear/results/c41_within_patient.json  (407.7s)
+
+concept               OR       95% CI (cluster)          p  OR strat-only
+A_asymmetry        0.891 [   0.639,   1.243]   4.98e-01          0.983
+B_border           1.176 [   0.808,   1.710]   3.97e-01          1.287
+C_color            2.715 [   1.985,   3.714]   4.14e-10          2.504
+C_colorstd         2.783 [   2.052,   3.774]   4.65e-11          2.494
+D_size             2.425 [   1.845,   3.187]   2.16e-10          2.459
+contrast_LB        2.679 [   1.974,   3.637]   2.61e-10          2.445
+NEGCTRL_nevi       0.419 [   0.267,   0.656]   1.47e-04          0.354

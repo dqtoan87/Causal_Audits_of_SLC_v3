@@ -1,0 +1,358 @@
+{
+ "n_images": 183,
+ "n_patients": 100,
+ "n_malignant": 83,
+ "margin_p": 0.05,
+ "boot": 4000,
+ "change_frac": {
+  "hair_light": 0.010173696833739027,
+  "hair": 0.023561435319035432,
+  "hair_heavy": 0.040743250460898287,
+  "ruler": 0.010461753524351315,
+  "patch": 0.027283960953354836,
+  "vignette": 0.6759278393182598,
+  "jitter": 0.9560451039362475,
+  "identity": 0.0
+ },
+ "note": "Tier-2 artifact criterion measured on a patient-disjoint audit fold that was never used for training, checkpoint selection or calibration. Unlike the primary audit, these numbers are not post-selection.",
+ "models": {
+  "b3": {
+   "ERM": {
+    "all": {
+     "mean": 0.37295398116111755,
+     "ci": [
+      0.30535823106765747,
+      0.4452119469642639
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.3131842017173767,
+     "signed_ci": [
+      -0.395187646150589,
+      -0.23386485874652863
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.5528875589370728,
+     "ci": [
+      0.45771491527557373,
+      0.6310604810714722
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.523139476776123,
+     "signed_ci": [
+      -0.6143267750740051,
+      -0.41200581192970276
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.22360914945602417,
+     "ci": [
+      0.19327619671821594,
+      0.2560510039329529
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.13892130553722382,
+     "signed_ci": [
+      -0.1793951839208603,
+      -0.09916414320468903
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "identity_max_abs_dlogit": 0.0,
+    "hair_dose_dp": [
+     -0.26989972591400146,
+     -0.6634544730186462,
+     -0.673332929611206
+    ],
+    "p0_mean_malignant": 0.732994794845581,
+    "audit_auroc": 0.8909638554216867
+   },
+   "Slim": {
+    "all": {
+     "mean": 0.5508406758308411,
+     "ci": [
+      0.490998774766922,
+      0.6071892380714417
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.4580543339252472,
+     "signed_ci": [
+      -0.5248374938964844,
+      -0.38648200035095215
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.7692175507545471,
+     "ci": [
+      0.7219072580337524,
+      0.8116104006767273
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.7174127697944641,
+     "signed_ci": [
+      -0.7772992849349976,
+      -0.6466423869132996
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.36958780884742737,
+     "ci": [
+      0.328025758266449,
+      0.41414183378219604
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.24278688430786133,
+     "signed_ci": [
+      -0.30086803436279297,
+      -0.18822264671325684
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "identity_max_abs_dlogit": 0.0,
+    "hair_dose_dp": [
+     -0.678119957447052,
+     -0.6890960335731506,
+     -0.7511405348777771
+    ],
+    "p0_mean_malignant": 0.8594855666160583,
+    "audit_auroc": 0.8934939759036143
+   },
+   "Inv": {
+    "all": {
+     "mean": 0.22322462499141693,
+     "ci": [
+      0.16668550670146942,
+      0.27699947357177734
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.1349310725927353,
+     "signed_ci": [
+      -0.1935768723487854,
+      -0.07229350507259369
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.38294997811317444,
+     "ci": [
+      0.30679643154144287,
+      0.4448864459991455
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.3070470988750458,
+     "signed_ci": [
+      -0.3841320276260376,
+      -0.2127877175807953
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.09065257757902145,
+     "ci": [
+      0.06270590424537659,
+      0.12411167472600937
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.007925191894173622,
+     "signed_ci": [
+      -0.02340930700302124,
+      0.035784393548965454
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "identity_max_abs_dlogit": 0.0,
+    "hair_dose_dp": [
+     -0.13353987038135529,
+     -0.4550692141056061,
+     -0.4674946069717407
+    ],
+    "p0_mean_malignant": 0.5013743042945862,
+    "audit_auroc": 0.8556024096385542
+   }
+  },
+  "r50": {
+   "ERM": {
+    "all": {
+     "mean": 0.21528621017932892,
+     "ci": [
+      0.18413762748241425,
+      0.24675682187080383
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.17134596407413483,
+     "signed_ci": [
+      0.1363326460123062,
+      0.2089480757713318
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.12127657979726791,
+     "ci": [
+      0.09109587967395782,
+      0.16075511276721954
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.05270756781101227,
+     "signed_ci": [
+      0.017111212015151978,
+      0.0967656597495079
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.29331421852111816,
+     "ci": [
+      0.2724405527114868,
+      0.31466057896614075
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.2698158323764801,
+     "signed_ci": [
+      0.24119088053703308,
+      0.2962064743041992
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "identity_max_abs_dlogit": 0.0,
+    "hair_dose_dp": [
+     0.0011681182077154517,
+     0.05802781879901886,
+     0.1292138695716858
+    ],
+    "p0_mean_malignant": 0.7508026361465454,
+    "audit_auroc": 0.88
+   },
+   "Slim": {
+    "all": {
+     "mean": 0.14311166107654572,
+     "ci": [
+      0.13089975714683533,
+      0.1569255292415619
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.03767209127545357,
+     "signed_ci": [
+      0.0047149863094091415,
+      0.07247834652662277
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.1224656030535698,
+     "ci": [
+      0.10450326651334763,
+      0.13983026146888733
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.06781668961048126,
+     "signed_ci": [
+      -0.09889515489339828,
+      -0.022545484825968742
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.16024789214134216,
+     "ci": [
+      0.14215117692947388,
+      0.1797027289867401
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.12522777915000916,
+     "signed_ci": [
+      0.09938377887010574,
+      0.15099667012691498
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "identity_max_abs_dlogit": 0.0,
+    "hair_dose_dp": [
+     -0.0359097458422184,
+     -0.1055607944726944,
+     -0.13036879897117615
+    ],
+    "p0_mean_malignant": 0.7778804898262024,
+    "audit_auroc": 0.8854216867469878
+   },
+   "Inv": {
+    "all": {
+     "mean": 0.10587162524461746,
+     "ci": [
+      0.0987526923418045,
+      0.11364415287971497
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.060562197118997574,
+     "signed_ci": [
+      0.04099883511662483,
+      0.08099246770143509
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.0854320377111435,
+     "ci": [
+      0.07723648846149445,
+      0.09264262765645981
+     ],
+     "verdict": "exceedance",
+     "signed_mean": -0.005721427034586668,
+     "signed_ci": [
+      -0.024388298392295837,
+      0.018008161336183548
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.12283650040626526,
+     "ci": [
+      0.11282900720834732,
+      0.13222257792949677
+     ],
+     "verdict": "exceedance",
+     "signed_mean": 0.11557760834693909,
+     "signed_ci": [
+      0.10404263436794281,
+      0.12632624804973602
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "identity_max_abs_dlogit": 0.0,
+    "hair_dose_dp": [
+     0.010672032833099365,
+     -0.0201877448707819,
+     -0.0034931653644889593
+    ],
+    "p0_mean_malignant": 0.5677785873413086,
+    "audit_auroc": 0.8636144578313253
+   }
+  }
+ },
+ "summary": {
+  "cells": 18,
+  "exceedance": 18
+ }
+}

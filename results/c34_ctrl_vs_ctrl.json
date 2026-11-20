@@ -1,0 +1,397 @@
+{
+ "n_common": 57,
+ "n_patients_common": 29,
+ "boot": 20000,
+ "neutral_sets": {
+  "contrast@2": [
+   "globrot_m"
+  ],
+  "color_var@2": [
+   "globrot_m",
+   "pixperm_m"
+  ],
+  "contrast@0": [
+   "globrot_m",
+   "pixperm_m",
+   "noise_m"
+  ],
+  "color_var@0": [
+   "globrot_m",
+   "pixperm_m",
+   "noise_m"
+  ]
+ },
+ "note": "Control-versus-control test of (T). For each model and each top-dose concept target, every pair of controls the (A2) screen classifies as concept-neutral. Two valid controls should give the same CaCE, so a non-zero difference falsifies the footprint-only model that placebo subtraction assumes.",
+ "pairs": [
+  {
+   "model": "ERM",
+   "target": "color_var@2",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 9.252910772436543,
+   "ci_image": [
+    7.5446025868518305,
+    10.97284831067449
+   ],
+   "ci_patient": [
+    7.34729524520376,
+    11.597772023703028
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "ERM",
+   "target": "contrast@0",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 9.472598335722036,
+   "ci_image": [
+    7.7202902692974655,
+    11.20440275450809
+   ],
+   "ci_patient": [
+    8.031903265393899,
+    11.244865989846112
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "ERM",
+   "target": "contrast@0",
+   "a": "globrot_m",
+   "b": "noise_m",
+   "diff": 2.3738035831535074,
+   "ci_image": [
+    1.8610706893237015,
+    2.8623025443993115
+   ],
+   "ci_patient": [
+    1.9000884298892582,
+    2.8723362318707837
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "ERM",
+   "target": "contrast@0",
+   "a": "pixperm_m",
+   "b": "noise_m",
+   "diff": -7.098794752568529,
+   "ci_image": [
+    -8.8491987912932,
+    -5.310082806973605
+   ],
+   "ci_patient": [
+    -8.821553292166609,
+    -5.727887801929508
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "ERM",
+   "target": "color_var@0",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 10.055285035126042,
+   "ci_image": [
+    8.26033783796848,
+    11.820025902649942
+   ],
+   "ci_patient": [
+    8.43792839071291,
+    11.889249573708238
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "ERM",
+   "target": "color_var@0",
+   "a": "globrot_m",
+   "b": "noise_m",
+   "diff": 2.2571934635440507,
+   "ci_image": [
+    1.7187686099556456,
+    2.7738457143568156
+   ],
+   "ci_patient": [
+    1.7340396464867303,
+    2.8060054752795685
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "ERM",
+   "target": "color_var@0",
+   "a": "pixperm_m",
+   "b": "noise_m",
+   "diff": -7.798091571581991,
+   "ci_image": [
+    -9.560635319221438,
+    -5.980474247822639
+   ],
+   "ci_patient": [
+    -9.534104963814832,
+    -6.277782233078885
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Slim",
+   "target": "color_var@2",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 10.221987953311519,
+   "ci_image": [
+    7.821204248305999,
+    12.49571253492644
+   ],
+   "ci_patient": [
+    8.251875296781181,
+    12.7884384920001
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Slim",
+   "target": "contrast@0",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 13.662032501739368,
+   "ci_image": [
+    11.3669794776722,
+    15.670305568881723
+   ],
+   "ci_patient": [
+    11.335825067425299,
+    16.182054972390112
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Slim",
+   "target": "contrast@0",
+   "a": "globrot_m",
+   "b": "noise_m",
+   "diff": 4.190086272724888,
+   "ci_image": [
+    3.104452098474691,
+    5.408724959717502
+   ],
+   "ci_patient": [
+    3.30572274991645,
+    5.155267561987041
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Slim",
+   "target": "contrast@0",
+   "a": "pixperm_m",
+   "b": "noise_m",
+   "diff": -9.471946229014481,
+   "ci_image": [
+    -11.481615971839219,
+    -7.209757024311187
+   ],
+   "ci_patient": [
+    -11.896805507782847,
+    -7.193706390005993
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Slim",
+   "target": "color_var@0",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 12.695711291150042,
+   "ci_image": [
+    10.116288623906541,
+    15.041244135535598
+   ],
+   "ci_patient": [
+    10.538426286755946,
+    14.844837665758831
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Slim",
+   "target": "color_var@0",
+   "a": "globrot_m",
+   "b": "noise_m",
+   "diff": 3.437543067492937,
+   "ci_image": [
+    2.5956984298793895,
+    4.376641827638735
+   ],
+   "ci_patient": [
+    2.6626531178739086,
+    4.071534498694077
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Slim",
+   "target": "color_var@0",
+   "a": "pixperm_m",
+   "b": "noise_m",
+   "diff": -9.258168223657107,
+   "ci_image": [
+    -11.575121984983745,
+    -6.6692442542366885
+   ],
+   "ci_patient": [
+    -11.464304739200282,
+    -7.146878742746857
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Inv",
+   "target": "color_var@2",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 14.046332357222575,
+   "ci_image": [
+    12.26099788073385,
+    15.704440198551143
+   ],
+   "ci_patient": [
+    12.243122204921573,
+    16.066068837309583
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Inv",
+   "target": "contrast@0",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 13.395713272847628,
+   "ci_image": [
+    11.327622046047136,
+    15.321978948539808
+   ],
+   "ci_patient": [
+    10.982870520530843,
+    16.21584542686891
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Inv",
+   "target": "contrast@0",
+   "a": "globrot_m",
+   "b": "noise_m",
+   "diff": 3.157699511762251,
+   "ci_image": [
+    1.8576224746672731,
+    4.43622760858975
+   ],
+   "ci_patient": [
+    1.508678030673854,
+    5.095197901513142
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Inv",
+   "target": "contrast@0",
+   "a": "pixperm_m",
+   "b": "noise_m",
+   "diff": -10.238013761085377,
+   "ci_image": [
+    -11.707941244333458,
+    -8.662317417117588
+   ],
+   "ci_patient": [
+    -11.64307582823248,
+    -8.860561419873179
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Inv",
+   "target": "color_var@0",
+   "a": "globrot_m",
+   "b": "pixperm_m",
+   "diff": 14.433257660322022,
+   "ci_image": [
+    12.65723114594033,
+    16.1166186606152
+   ],
+   "ci_patient": [
+    12.372100269679287,
+    16.737816342926862
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Inv",
+   "target": "color_var@0",
+   "a": "globrot_m",
+   "b": "noise_m",
+   "diff": 3.037053813014114,
+   "ci_image": [
+    1.7184883228519507,
+    4.362956001596492
+   ],
+   "ci_patient": [
+    1.408216626987387,
+    5.005864054144121
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  },
+  {
+   "model": "Inv",
+   "target": "color_var@0",
+   "a": "pixperm_m",
+   "b": "noise_m",
+   "diff": -11.396203847307907,
+   "ci_image": [
+    -12.753477769227404,
+    -9.988957256967563
+   ],
+   "ci_patient": [
+    -12.501953019536964,
+    -10.046070154567067
+   ],
+   "excludes_zero_image": true,
+   "excludes_zero_patient": true
+  }
+ ],
+ "summary": {
+  "n_pairs_per_model": {
+   "contrast@2": 0,
+   "color_var@2": 1,
+   "contrast@0": 3,
+   "color_var@0": 3
+  },
+  "n_comparisons": 21,
+  "excluding_zero_image": 21,
+  "excluding_zero_patient": 21,
+  "max_abs_diff": 14.433257660322022,
+  "exceptions_patient": []
+ }
+}

@@ -1,0 +1,20 @@
+all_183                183 images: 4 shared footprint pairs
+malignant_83            83 images: 7 shared footprint pairs
+library_floor_58        58 images: 7 shared footprint pairs
+diagnostic_T_floor_57   57 images: 7 shared footprint pairs
+read the library rebuild from /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c82_library83_cache.npz
+  c12 construction, malignant_83       7 shared pairs; same-strength checks {'color_var@2|hue_m=contrast@2|hue_m': True, 'color_var@2|texswap_m=contrast@0|texswap_m': True, 'color_var@2|texswap_m=contrast@2|texswap_m': True, 'contrast@0|texswap_m=contrast@2|texswap_m': True}
+  c12 construction, library_floor_58   7 shared pairs; same-strength checks {'color_var@2|hue_m=contrast@2|hue_m': True, 'color_var@2|texswap_m=contrast@0|texswap_m': True, 'color_var@2|texswap_m=contrast@2|texswap_m': True, 'contrast@0|texswap_m=contrast@2|texswap_m': True}
+  largest footprint difference against the 183-order build on the same images: 0.0391
+  contrast@2     58 images: bottleneck 2.02, length-two 12.25, total 6.52 = 0.72 + 5.80 | 183: 2.13, 12.71, 6.39
+  color_var@2    58 images: bottleneck 2.44, length-two 12.53, total 6.39 = 0.68 + 5.70 | 183: 1.17, 11.94, 6.07
+  contrast@0     58 images: bottleneck 1.67, length-two 12.44, total 5.65 = 0.81 + 4.84 | 183: 1.29, 13.27, 5.43
+  color_var@0    58 images: bottleneck 1.81, length-two 13.26, total 6.69 = 0.46 + 6.22 | 183: 1.46, 9.65, 6.98
+  L_g floor, library protocol on 58 images: 1.092 (Inv color_var@0 pixperm_m-noise_m: 11.03 logits at 10.10 units)
+  L_g floor, c34 responses with distances on its 57 images: 1.104 (Inv color_var@0 pixperm_m-noise_m: 11.40 at 10.32; 183: 8.58)
+  contrast@2     half-width 0.79, break-even 0.152
+  color_var@2    half-width 0.75, break-even 0.161
+  contrast@0     half-width 0.89, break-even 0.161
+  color_var@0    half-width 0.51, break-even 0.186
+  component range on 83 images: responses -0.32 to 1.45, interval covers at least 0.9474 of the cap range
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c82_image_set_checks.json

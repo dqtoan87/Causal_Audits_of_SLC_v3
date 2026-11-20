@@ -1,0 +1,21 @@
+audit fold: 4233 images, 83 malignant, 4150 benign in the frame
+  scored 128/4233 (35s)
+  scored 768/4233 (191s)
+  scored 1408/4233 (341s)
+  scored 2048/4233 (496s)
+  scored 2688/4233 (645s)
+  scored 3328/4233 (793s)
+  scored 3968/4233 (940s)
+  draw 0: crit 2.995 frontier 0.0535 exceed 18 covered True (1014s)
+  draw 50: crit 3.032 frontier 0.0490 exceed 17 covered True (1022s)
+  draw 100: crit 3.058 frontier 0.0457 exceed 17 covered True (1029s)
+  draw 150: crit 3.064 frontier 0.0484 exceed 17 covered True (1036s)
+  draw 200: crit 3.082 frontier 0.0284 exceed 17 covered True (1043s)
+  draw 250: crit 3.106 frontier 0.0593 exceed 18 covered True (1050s)
+  draw 300: crit 3.083 frontier 0.0455 exceed 17 covered True (1058s)
+  draw 350: crit 3.087 frontier 0.0519 exceed 18 covered True (1065s)
+  draw 400: crit 3.152 frontier 0.0465 exceed 17 covered True (1072s)
+  draw 450: crit 3.072 frontier 0.0437 exceed 17 covered True (1079s)
+joint coverage 0.954 (MC se 0.009); component coverage min 0.988 median 1.000
+frontier median 0.0470, 95% range [0.03263946613951531, 0.0661805173704362], min 0.0280; all 18 exceed in 38.2% of draws
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c60_design_coverage.json

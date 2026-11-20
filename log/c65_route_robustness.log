@@ -1,0 +1,21 @@
+reproduction: max abs difference 0.00e+00, crit 3.3041
+seeds done (4s)
+leave-one-patient-out done (13s)
+slim|contrast@0|D_rad4-rad16 est +1.988 lower 0.5098 | seeds exceed 10/20 lower 0.491..0.521 | LOPO exceed 32/54 min lower 0.316 | in cell 31/53 min 0.316
+erm|contrast@2|D_rad4-rad16  est +4.629 lower 1.9194 | seeds exceed 20/20 lower 1.919..1.965 | LOPO exceed 54/54 min lower 1.585 | in cell 52/52 min 1.585
+slim|color_var@2|D_rad4-rad16 est +5.268 lower 1.8363 | seeds exceed 20/20 lower 1.789..1.875 | LOPO exceed 54/54 min lower 1.462 | in cell 54/54 min 1.462
+seed crit range [3.286878956214227, 3.328188897265825]
+  erm|contrast@0         indeterminate    disagree below 0.39, agree above 2.58
+  slim|contrast@0        routes disagree  disagree below 0.51, agree above 5.62
+  causal|contrast@0      routes agree     disagree below 0.00, agree above 0.34
+  erm|contrast@2         routes disagree  disagree below 1.92, agree above 7.34
+  slim|contrast@2        indeterminate    disagree below 0.00, agree above 9.19
+  causal|contrast@2      indeterminate    disagree below 0.15, agree above 0.62
+  erm|color_var@0        indeterminate    disagree below 0.00, agree above 1.74
+  slim|color_var@0       indeterminate    disagree below 0.37, agree above 5.01
+  causal|color_var@0     routes agree     disagree below 0.00, agree above 0.27
+  erm|color_var@2        indeterminate    disagree below 0.11, agree above 3.79
+  slim|color_var@2       routes disagree  disagree below 1.84, agree above 8.70
+  causal|color_var@2     indeterminate    disagree below 0.18, agree above 0.66
+Inv cross pairs: {'causal|contrast@0|D_rad4-hue16': (0.07, [-0.066, 0.214]), 'causal|contrast@0|D_rad16-hue4': (-0.203, [-0.375, -0.048]), 'causal|contrast@2|D_rad4-hue16': (0.46, [0.326, 0.607]), 'causal|contrast@2|D_rad16-hue4': (0.217, [0.075, 0.346]), 'causal|color_var@0|D_rad4-hue16': (0.054, [-0.076, 0.19]), 'causal|color_var@0|D_rad16-hue4': (-0.059, [-0.181, 0.058]), 'causal|color_var@2|D_rad4-hue16': (0.493, [0.338, 0.65]), 'causal|color_var@2|D_rad16-hue4': (0.336, [0.203, 0.46])}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c65_route_robustness.json (13s)

@@ -1,0 +1,39 @@
+##### C21 patient-clustered Tier-2 inference 16:00:44 #####
+183 images from 100 patients (max 14 per patient)
+edits/image = 12  (7s)
+[ERM] done (13s)
+[Slim] done (18s)
+[Inv] done (23s)
+============================================================================================================
+A) Concept scores: image-level vs patient-clustered (frozen 183-image audit cohort)
+model quantity            mean              CI image            CI patient             sig
+ERM   A_raw             +0.433        [+0.30, +0.56]        [+0.28, +0.60]   img Y / pat Y
+ERM   A_corr_flip       +0.511        [+0.34, +0.67]        [+0.36, +0.66]   img Y / pat Y
+ERM   A_corr_jitter     +0.587        [+0.40, +0.76]        [+0.37, +0.82]   img Y / pat Y
+Slim  A_raw             +0.288        [+0.08, +0.52]        [+0.05, +0.55]   img Y / pat Y
+Slim  A_corr_flip       +0.180        [-0.14, +0.56]        [-0.11, +0.52]   img n / pat n
+Slim  A_corr_jitter     +0.180        [-0.16, +0.54]        [-0.18, +0.53]   img n / pat n
+Inv   A_raw             +0.963        [+0.68, +1.25]        [+0.70, +1.24]   img Y / pat Y
+Inv   A_corr_flip       +1.493        [+1.09, +1.92]        [+1.05, +1.94]   img Y / pat Y
+Inv   A_corr_jitter     +1.338        [+0.99, +1.70]        [+0.93, +1.73]   img Y / pat Y
+------------------------------------------------------------------------------------------------------------
+B) SYMMETRY TEST AND RESIDUAL BOUND (all 183 images)
+model target           a+ - a-  reject img  reject pat  resid up img  resid up pat
+ERM   contrast@0        +0.032          no          no          0.87          0.89
+ERM   contrast@2        +0.228         yes         yes          8.12          8.07
+ERM   color_var@0       +0.048          no          no          1.04          1.02
+ERM   color_var@2       +0.308         yes         yes         12.01         12.27
+Slim  contrast@0        -0.118          no          no          1.44          1.53
+Slim  contrast@2        +0.521         yes         yes          1.94          2.01
+Slim  color_var@0       +0.058          no          no          2.19          2.35
+Slim  color_var@2       +0.235          no          no          1.62          1.59
+Inv   contrast@0        +0.162         yes         yes          1.61          1.49
+Inv   contrast@2        +0.447         yes         yes          5.45          5.57
+Inv   color_var@0       +0.131         yes         yes          1.49          1.41
+Inv   color_var@2       +0.405         yes         yes          9.27          9.48
+------------------------------------------------------------------------------------------------------------
+  symmetry rejected : image 7/12   patient 7/12
+  residual <= 0.2   : image 0/12   patient 0/12
+  residual <= 0.6   : image 0/12   patient 0/12
+============================================================================================================
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c21_patient_cluster.json   (29s)

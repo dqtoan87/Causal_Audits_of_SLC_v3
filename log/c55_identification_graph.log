@@ -1,0 +1,70 @@
+##### C55 identification graph #####
+library holds 88 distinct performed edits over 183 images
+  contrast@2     bottleneck   2.13x, total mismatch   6.39 tolerance units, length-two  12.71x
+  color_var@2    bottleneck   1.17x, total mismatch   6.07 tolerance units, length-two  11.94x
+  contrast@0     bottleneck   1.29x, total mismatch   5.43 tolerance units, length-two  13.27x
+  color_var@0    bottleneck   1.46x, total mismatch   6.98 tolerance units, length-two   9.65x
+   ... bootstrap 100/5000 (7s)
+   ... bootstrap 200/5000 (13s)
+   ... bootstrap 300/5000 (19s)
+   ... bootstrap 400/5000 (25s)
+   ... bootstrap 500/5000 (31s)
+   ... bootstrap 600/5000 (37s)
+   ... bootstrap 700/5000 (43s)
+   ... bootstrap 800/5000 (49s)
+   ... bootstrap 900/5000 (55s)
+   ... bootstrap 1000/5000 (61s)
+   ... bootstrap 1100/5000 (67s)
+   ... bootstrap 1200/5000 (73s)
+   ... bootstrap 1300/5000 (79s)
+   ... bootstrap 1400/5000 (85s)
+   ... bootstrap 1500/5000 (91s)
+   ... bootstrap 1600/5000 (97s)
+   ... bootstrap 1700/5000 (103s)
+   ... bootstrap 1800/5000 (109s)
+   ... bootstrap 1900/5000 (115s)
+   ... bootstrap 2000/5000 (121s)
+   ... bootstrap 2100/5000 (127s)
+   ... bootstrap 2200/5000 (133s)
+   ... bootstrap 2300/5000 (139s)
+   ... bootstrap 2400/5000 (145s)
+   ... bootstrap 2500/5000 (151s)
+   ... bootstrap 2600/5000 (157s)
+   ... bootstrap 2700/5000 (163s)
+   ... bootstrap 2800/5000 (169s)
+   ... bootstrap 2900/5000 (175s)
+   ... bootstrap 3000/5000 (181s)
+   ... bootstrap 3100/5000 (187s)
+   ... bootstrap 3200/5000 (193s)
+   ... bootstrap 3300/5000 (199s)
+   ... bootstrap 3400/5000 (205s)
+   ... bootstrap 3500/5000 (211s)
+   ... bootstrap 3600/5000 (217s)
+   ... bootstrap 3700/5000 (223s)
+   ... bootstrap 3800/5000 (229s)
+   ... bootstrap 3900/5000 (235s)
+   ... bootstrap 4000/5000 (241s)
+   ... bootstrap 4100/5000 (247s)
+   ... bootstrap 4200/5000 (253s)
+   ... bootstrap 4300/5000 (259s)
+   ... bootstrap 4400/5000 (266s)
+   ... bootstrap 4500/5000 (272s)
+   ... bootstrap 4600/5000 (278s)
+   ... bootstrap 4700/5000 (284s)
+   ... bootstrap 4800/5000 (290s)
+   ... bootstrap 4900/5000 (296s)
+   ... bootstrap 5000/5000 (302s)
+  contrast@2     bottleneck 95% CI [1.10, 2.34], P(<=1) = 0.015
+  color_var@2    bottleneck 95% CI [0.90, 1.95], P(<=1) = 0.101
+  contrast@0     bottleneck 95% CI [1.09, 1.95], P(<=1) = 0.004
+  color_var@0    bottleneck 95% CI [1.24, 2.10], P(<=1) = 0.000
+  corrected-score range over 12 target cells: 0.959 to 4.290, span 3.331
+
+  binding pair Inv/contrast@0 pixperm_m-noise_m: 10.24 logits over 7.24 scored units -> L_g >= 1.41
+  second largest floor 1.33, median 0.71, conservative floor 0.96
+  contrast@2     route total  6.39 =  0.71 footprint +  5.69 concept; footprint-only half-width  1.00 logits; break-even kappa*L_h 0.117
+  color_var@2    route total  6.07 =  3.41 footprint +  2.66 concept; footprint-only half-width  4.82 logits; break-even kappa*L_h 0.000
+  contrast@0     route total  5.43 =  0.72 footprint +  4.72 concept; footprint-only half-width  1.01 logits; break-even kappa*L_h 0.138
+  color_var@0    route total  6.98 =  0.47 footprint +  6.52 concept; footprint-only half-width  0.66 logits; break-even kappa*L_h 0.154
+
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c55_identification_graph.json  (307.6s)

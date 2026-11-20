@@ -1,0 +1,19 @@
+rebuilt 78 images x 25 (35s)
+  scored erm (92s); eval-mode issues: none
+  scored slim (150s); eval-mode issues: none
+  scored causal (205s); eval-mode issues: none
+plan protocol vs stored scores, max |dp|: {'erm': 0.0, 'slim': 0.0, 'causal': 0.0}
+   feature norm: large moves >10x median 0.860 (median ratio 523.6); all scores >10x 0.0968; share>0.5 at <=10x 0.00309, max 4.859
+batch context, bf16        >0.5: 0.0199 (n=57); of those beyond bound: 0.7543859649122807; unsaturated: share>0.5 0.005386687187379761, max 15.703; rel. log-odds change median 0.4561
+   feature norm: large moves >10x median 0.902 (median ratio 675.3); all scores >10x 0.0979; share>0.5 at <=10x 0.00154, max 2.517
+batch context, fp32        >0.5: 0.0143 (n=41); of those beyond bound: 0.8048780487804879; unsaturated: share>0.5 0.0030828516377649326, max 4.072; rel. log-odds change median 0.2904
+   feature norm: large moves >10x median 0.412 (median ratio 1.1); all scores >10x 0.0996; share>0.5 at <=10x 0.03366, max 5.635
+precision, plan's batch    >0.5: 0.0515 (n=148); of those beyond bound: 0.36486486486486486; unsaturated: share>0.5 0.036265432098765434, max 14.376; rel. log-odds change median 0.6033
+   feature norm: large moves >10x median 0.385 (median ratio 1.0); all scores >10x 0.0993; share>0.5 at <=10x 0.03519, max 8.833
+both                       >0.5: 0.0515 (n=148); of those beyond bound: 0.35135135135135137; unsaturated: share>0.5 0.037051331532226936, max 9.163; rel. log-odds change median 0.5760
+largest change: {'model': 'slim', 'image': 'ISIC_0467830', 'column': 'contrast@0|hue4', 'change': 27.617828369140625, 'logodds': {'stack_bf16': 21.125, 'stack_fp32': -1367.946533203125, 'single_bf16': -4248.0, 'single_fp32': -904.5732421875}, 'feature_norm_over_median_unedited': {'stack_bf16': 524.457275390625, 'stack_fp32': 1983.341552734375, 'single_bf16': 2728.61865234375, 'single_fp32': 823.6243896484375}}
+  cycle stack_bf16   {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9} ['causal|contrast@2', 'erm|contrast@2', 'slim|color_var@2']
+  cycle stack_fp32   {'routes disagree': 6, 'routes agree': 0, 'indeterminate': 6} ['causal|contrast@2', 'erm|contrast@2', 'slim|color_var@0', 'slim|color_var@2', 'slim|contrast@0', 'slim|contrast@2']
+  cycle single_bf16  {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9} ['causal|contrast@2', 'erm|contrast@2', 'slim|contrast@0']
+  cycle single_fp32  {'routes disagree': 4, 'routes agree': 0, 'indeterminate': 8} ['causal|contrast@2', 'erm|contrast@2', 'slim|color_var@0', 'slim|contrast@2']
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c83_batch_extremes.json

@@ -1,0 +1,37 @@
+[A] per_model              crit 3.360 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}
+      erm|contrast@2     routes disagree  n=[74, 52]
+      causal|contrast@2  routes disagree  n=[45, 32]
+      slim|color_var@2   routes disagree  n=[76, 54]
+[A] run1_set               crit 3.326 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}
+      erm|contrast@2     routes disagree  n=[73, 52]
+      causal|contrast@2  routes disagree  n=[73, 52]
+      slim|color_var@2   routes disagree  n=[76, 54]
+[A] common_set_second_run  crit 3.375 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}
+      erm|contrast@2     routes disagree  n=[44, 32]
+      causal|contrast@2  routes disagree  n=[44, 32]
+      slim|color_var@2   routes disagree  n=[46, 32]
+[A] common_set_first_run   crit 3.368 {'routes disagree': 2, 'routes agree': 2, 'indeterminate': 8}
+      causal|contrast@0  routes agree  n=[45, 32]
+      erm|contrast@2     routes disagree  n=[44, 32]
+      causal|color_var@0 routes agree  n=[47, 33]
+      slim|color_var@2   routes disagree  n=[46, 32]
+[A] per_model_first_run    crit 3.279 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}
+      slim|contrast@0    routes disagree  n=[75, 53]
+      erm|contrast@2     routes disagree  n=[74, 52]
+      slim|color_var@2   routes disagree  n=[76, 54]
+[B] erm scored (42s)
+[B] slim scored (47s)
+[B] causal scored (51s)
+[B] bf16_stack vs stored second-run probabilities, max |diff|: {'erm': 0.0, 'slim': 0.0, 'causal': 0.0}
+[B] bf16_stack   crit 3.375 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}  max|dD| 0.000  max|d bound| 0.000  changed []  floor crossings {'erm': 0, 'slim': 0, 'causal': 0}
+[B] fp32_stack   crit 3.390 {'routes disagree': 6, 'routes agree': 0, 'indeterminate': 6}  max|dD| 2.190  max|d bound| 3.780  changed ['slim|contrast@0', 'slim|contrast@2', 'slim|color_var@0']  floor crossings {'erm': 0, 'slim': 0, 'causal': 1}
+[B] bf16_flat32  crit 3.375 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9}  max|dD| 1.857  max|d bound| 2.522  changed ['slim|contrast@2', 'slim|color_var@2']  floor crossings {'erm': 0, 'slim': 0, 'causal': 0}
+[B] raw_logodds  crit 3.439 {'routes disagree': 0, 'routes agree': 0, 'indeterminate': 12}  max|dD| 1896.912  max|d bound| 5716.942  changed ['erm|contrast@2', 'causal|contrast@2', 'slim|color_var@2']  floor crossings None
+[B] largest share of predictions at the clipping bound, any model, target and column: 0.886
+[B] unclipped log-odds on the primary set: {'erm': {'max_abs_logodds': 25984.0, 'q99_abs_logodds': 1673.199951171875, 'share_beyond_clip': 0.046153846153846156, 'share_beyond_100': 0.03736263736263736}, 'slim': {'max_abs_logodds': 41344.0, 'q99_abs_logodds': 10697.759765625, 'share_beyond_clip': 0.2153846153846154, 'share_beyond_100': 0.1813186813186813}, 'causal': {'max_abs_logodds': 2488.0, 'q99_abs_logodds': 836.9400024414062, 'share_beyond_clip': 0.031868131868131866, 'share_beyond_100': 0.02967032967032967}}
+[C] epoch-1 Inv, bf16_stack vs stored first-run probabilities, max |diff|: 0.00e+00
+[C] bf16_stack   crit 3.304 {'routes disagree': 3, 'routes agree': 2, 'indeterminate': 7}  max|dD| 0.000  changed []
+[C] fp32_stack   crit 3.311 {'routes disagree': 5, 'routes agree': 2, 'indeterminate': 5}  max|dD| 1.434  changed ['slim|contrast@2', 'slim|color_var@0']
+[C] bf16_flat32  crit 3.307 {'routes disagree': 4, 'routes agree': 2, 'indeterminate': 6}  max|dD| 1.559  changed ['slim|contrast@2']
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c67_route_sensitivity.json (93s)
+rc=0

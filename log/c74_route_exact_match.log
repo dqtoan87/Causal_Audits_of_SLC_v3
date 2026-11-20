@@ -1,0 +1,26 @@
+[second_run, min30] 9 differences analysed, crit 2.818 {'routes disagree': 4, 'routes agree': 0, 'indeterminate': 8} disagree: ['causal|contrast@2', 'erm|contrast@2', 'slim|color_var@2', 'slim|contrast@2']
+   erm|contrast@2|D_rad4-rad16      n=35 (27 pts)  +4.83 [1.47, 8.20]  exceeds
+   causal|contrast@2|D_rad4-rad16   n=35 (27 pts)  +6.46 [2.42, 10.51]  exceeds
+   causal|contrast@2|D_rad4-hue4    not analysed
+   slim|color_var@2|D_rad4-rad16    n=41 (28 pts)  +6.24 [1.21, 11.27]  exceeds
+   slim|contrast@0|D_rad4-rad16     not analysed
+[second_run, all] 48 differences analysed, crit 3.825 {'routes disagree': 1, 'routes agree': 0, 'indeterminate': 11} disagree: ['causal|contrast@2']
+   erm|contrast@2|D_rad4-rad16      n=35 (27 pts)  +4.83 [0.26, 9.41]  indeterminate
+   causal|contrast@2|D_rad4-rad16   n=35 (27 pts)  +6.46 [0.97, 11.96]  exceeds
+   causal|contrast@2|D_rad4-hue4    n=18 (15 pts)  +5.10 [-2.40, 12.60]  indeterminate
+   slim|color_var@2|D_rad4-rad16    n=41 (28 pts)  +6.24 [-0.59, 13.06]  indeterminate
+   slim|contrast@0|D_rad4-rad16     n=21 (16 pts)  +1.99 [-1.15, 5.13]  indeterminate
+[first_run, min30] 21 differences analysed, crit 3.109 {'routes disagree': 3, 'routes agree': 0, 'indeterminate': 9} disagree: ['erm|contrast@2', 'slim|color_var@2', 'slim|contrast@2']
+   erm|contrast@2|D_rad4-rad16      n=55 (42 pts)  +4.38 [1.41, 7.36]  exceeds
+   causal|contrast@2|D_rad4-rad16   n=55 (42 pts)  +0.18 [-0.07, 0.43]  within
+   causal|contrast@2|D_rad4-hue4    n=30 (24 pts)  +0.29 [-0.11, 0.69]  indeterminate
+   slim|color_var@2|D_rad4-rad16    n=64 (46 pts)  +5.58 [1.86, 9.30]  exceeds
+   slim|contrast@0|D_rad4-rad16     n=41 (33 pts)  +1.40 [0.04, 2.76]  indeterminate
+[first_run, all] 48 differences analysed, crit 3.518 {'routes disagree': 2, 'routes agree': 1, 'indeterminate': 9} disagree: ['erm|contrast@2', 'slim|color_var@2']
+   erm|contrast@2|D_rad4-rad16      n=55 (42 pts)  +4.38 [1.02, 7.75]  exceeds
+   causal|contrast@2|D_rad4-rad16   n=55 (42 pts)  +0.18 [-0.10, 0.47]  within
+   causal|contrast@2|D_rad4-hue4    n=30 (24 pts)  +0.29 [-0.16, 0.75]  indeterminate
+   slim|color_var@2|D_rad4-rad16    n=64 (46 pts)  +5.58 [1.37, 9.79]  exceeds
+   slim|contrast@0|D_rad4-rad16     n=41 (33 pts)  +1.40 [-0.14, 2.94]  indeterminate
+largest relative mismatch 6.32e-07, largest pixel mismatch 1
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c74_route_exact_match.json

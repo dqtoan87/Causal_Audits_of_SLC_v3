@@ -1,0 +1,19 @@
+# Fifth fresh-directory run: c54, c80 and c81 (2026-11-17)
+# The directory held a copy of this tree's code and cached results (no checkpoints are read). Results are compared
+# with the committed files at a relative tolerance of 1e-9, ignoring timing fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-17T21:00:58+07:00 ===
+c54_synthetic_scm                  rc=0      0s
+c80_route_null_calibration         rc=0   1213s
+c81_protocol_checks                rc=0      0s
+=== finished 2026-11-17T21:21:11+07:00 ===
+
+
+== comparison
+c54_synthetic_scm.json                       equal
+c80_route_null_calibration.json              equal
+c81_protocol_checks.json                     equal
+c80_route_null_draws_first.npz               equal
+c80_route_null_draws_second.npz              equal
+files written: 5, differing: 0

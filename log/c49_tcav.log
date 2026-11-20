@@ -1,0 +1,16 @@
+[21:21:59] audit set: 183 images, 100 patients
+[21:22:00]   built 183 edited images for concept contrast
+[21:22:02]   built 183 edited images for concept color_var
+[21:22:07]   EfficientNet-B3 ERM    contrast   CAV acc=0.864  TCAV=0.800±0.410 [0.00,1.00]  null=0.450±0.510  p=2.22e-02  significant=True
+[21:22:10]   EfficientNet-B3 ERM    color_var  CAV acc=0.856  TCAV=0.850±0.366 [0.00,1.00]  null=0.450±0.510  p=7.38e-03  significant=True
+[21:22:17]   EfficientNet-B3 Slim   contrast   CAV acc=0.855  TCAV=0.874±0.144 [0.48,1.00]  null=0.519±0.449  p=2.66e-03  significant=True
+[21:22:22]   EfficientNet-B3 Slim   color_var  CAV acc=0.863  TCAV=0.839±0.210 [0.47,1.00]  null=0.531±0.446  p=9.52e-03  significant=True
+[21:22:26]   EfficientNet-B3 Inv    contrast   CAV acc=0.861  TCAV=0.497±0.356 [0.10,1.00]  null=0.461±0.421  p=7.73e-01  significant=False
+[21:22:29]   EfficientNet-B3 Inv    color_var  CAV acc=0.842  TCAV=0.525±0.326 [0.17,1.00]  null=0.471±0.366  p=6.22e-01  significant=False
+[21:22:35]   ResNet-50 ERM          contrast   CAV acc=0.937  TCAV=0.250±0.444 [0.00,1.00]  null=0.550±0.510  p=5.48e-02  significant=False
+[21:22:40]   ResNet-50 ERM          color_var  CAV acc=0.926  TCAV=0.150±0.366 [0.00,1.00]  null=0.400±0.503  p=8.09e-02  significant=False
+[21:22:50]   ResNet-50 Slim         contrast   CAV acc=0.935  TCAV=0.999±0.003 [0.99,1.00]  null=0.485±0.397  p=1.39e-05  significant=True
+[21:22:57]   ResNet-50 Slim         color_var  CAV acc=0.929  TCAV=0.958±0.115 [0.60,1.00]  null=0.593±0.431  p=1.41e-03  significant=True
+[21:23:04]   ResNet-50 Inv          contrast   CAV acc=0.867  TCAV=0.695±0.360 [0.00,1.00]  null=0.484±0.326  p=5.97e-02  significant=False
+[21:23:10]   ResNet-50 Inv          color_var  CAV acc=0.851  TCAV=0.846±0.225 [0.00,1.00]  null=0.621±0.378  p=2.97e-02  significant=True
+[21:23:10] saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c49_tcav.json  (7/12 cells significant)

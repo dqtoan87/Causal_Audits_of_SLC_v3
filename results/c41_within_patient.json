@@ -1,0 +1,175 @@
+{
+ "phase": "C41_tier1_within_patient",
+ "data": "/mnt/data2/Toan/Causal_ML/data/data_ISIC2024/train-metadata.csv",
+ "design": "Conditional logistic regression stratified by patient_id. Strata absorb every patient-level confounder, measured or not, including acquisition site, sex and (for 942 of 1042 patients) age, all of which are constant within patient. Anatomical site and ITA stratum vary within patient and are adjusted for. Standard errors are the cluster sandwich with the patient as the cluster, which here coincides with the stratum.",
+ "estimand": "Within-patient conditional odds ratio for the top-versus-bottom tertile of the proxy. This is NOT the estimand of Table I, which is a tile-level standardized risk difference over the whole cohort. With a rare outcome the odds ratio approximates a risk ratio, so the two are comparable in direction and rough magnitude only.",
+ "n_rows_total": 401059,
+ "n_patients_total": 1042,
+ "n_cases_total": 393,
+ "n_discordant_patients": 258,
+ "n_cases_in_discordant": 392,
+ "within_patient_confounders": [
+  "anatom_site_general",
+  "ITA_stratum",
+  "age_band"
+ ],
+ "boot": 0,
+ "seed": 42,
+ "concepts": [
+  {
+   "concept": "A_asymmetry",
+   "column": "tbp_lv_symm_2axis",
+   "n_rows": 76929,
+   "n_strata": 198,
+   "n_cases": 271,
+   "n_covariate_cols": 20,
+   "log_or": -0.11494230295543145,
+   "or": 0.891417574582648,
+   "se_cluster": 0.16947225051687387,
+   "ci_cluster": [
+    0.6394748962773724,
+    1.2426215585641094
+   ],
+   "z": -0.6782367178394612,
+   "p": 0.4976216151990085,
+   "or_stratum_only": 0.9827549272904327,
+   "boot_n": 0,
+   "boot_ci": null,
+   "converged": true,
+   "marginal_rr_table1": 0.9619695620834645
+  },
+  {
+   "concept": "B_border",
+   "column": "tbp_lv_norm_border",
+   "n_rows": 75488,
+   "n_strata": 182,
+   "n_cases": 254,
+   "n_covariate_cols": 19,
+   "log_or": 0.1618455972910789,
+   "or": 1.1756786993300754,
+   "se_cluster": 0.19125848386366545,
+   "ci_cluster": [
+    0.808139140997461,
+    1.7103742832607096
+   ],
+   "z": 0.8462139509923496,
+   "p": 0.3974334006247851,
+   "or_stratum_only": 1.2866532894120029,
+   "boot_n": 0,
+   "boot_ci": null,
+   "converged": true,
+   "marginal_rr_table1": 0.9245271436406094
+  },
+  {
+   "concept": "C_color",
+   "column": "tbp_lv_norm_color",
+   "n_rows": 99984,
+   "n_strata": 239,
+   "n_cases": 349,
+   "n_covariate_cols": 20,
+   "log_or": 0.998735701314873,
+   "or": 2.7148472799226155,
+   "se_cluster": 0.15982761266520132,
+   "ci_cluster": [
+    1.9847115336710102,
+    3.7135853892432498
+   ],
+   "z": 6.24883075371321,
+   "p": 4.135367228601229e-10,
+   "or_stratum_only": 2.5044038565364306,
+   "boot_n": 0,
+   "boot_ci": null,
+   "converged": true,
+   "marginal_rr_table1": 2.4707939816012634
+  },
+  {
+   "concept": "C_colorstd",
+   "column": "tbp_lv_color_std_mean",
+   "n_rows": 99424,
+   "n_strata": 238,
+   "n_cases": 349,
+   "n_covariate_cols": 20,
+   "log_or": 1.0234502354587487,
+   "or": 2.78277946410096,
+   "se_cluster": 0.155496358344172,
+   "ci_cluster": [
+    2.05171775818489,
+    3.774330808869565
+   ],
+   "z": 6.581827679806288,
+   "p": 4.646999969329346e-11,
+   "or_stratum_only": 2.493605560328221,
+   "boot_n": 0,
+   "boot_ci": null,
+   "converged": true,
+   "marginal_rr_table1": 2.3731963103606772
+  },
+  {
+   "concept": "D_size",
+   "column": "tbp_lv_areaMM2",
+   "n_rows": 101815,
+   "n_strata": 248,
+   "n_cases": 362,
+   "n_covariate_cols": 20,
+   "log_or": 0.8857120111898752,
+   "or": 2.4247101978089782,
+   "se_cluster": 0.13949932768460674,
+   "ci_cluster": [
+    1.8446569567937843,
+    3.187161451187965
+   ],
+   "z": 6.349220644219709,
+   "p": 2.1640845905750066e-10,
+   "or_stratum_only": 2.4593156699498215,
+   "boot_n": 0,
+   "boot_ci": null,
+   "converged": true,
+   "marginal_rr_table1": 2.367501878574849
+  },
+  {
+   "concept": "contrast_LB",
+   "column": "tbp_lv_deltaLBnorm",
+   "n_rows": 89619,
+   "n_strata": 219,
+   "n_cases": 299,
+   "n_covariate_cols": 20,
+   "log_or": 0.9855574011187147,
+   "or": 2.679304915831166,
+   "se_cluster": 0.15594055570987153,
+   "ci_cluster": [
+    1.973707812215014,
+    3.637151754463955
+   ],
+   "z": 6.3200839360374665,
+   "p": 2.6142126895943366e-10,
+   "or_stratum_only": 2.444723094429493,
+   "boot_n": 0,
+   "boot_ci": null,
+   "converged": true,
+   "marginal_rr_table1": 2.0745617741834947
+  },
+  {
+   "concept": "NEGCTRL_nevi",
+   "column": "tbp_lv_nevi_confidence",
+   "n_rows": 77976,
+   "n_strata": 191,
+   "n_cases": 267,
+   "n_covariate_cols": 20,
+   "log_or": -0.8701823475003375,
+   "or": 0.41887516144464526,
+   "se_cluster": 0.22919357313967198,
+   "ci_cluster": [
+    0.26729516324576186,
+    0.6564144249552172
+   ],
+   "z": -3.796713562164516,
+   "p": 0.00014662704749444637,
+   "or_stratum_only": 0.3543233369377077,
+   "boot_n": 0,
+   "boot_ci": null,
+   "converged": true,
+   "marginal_rr_table1": 0.6922227765660515
+  }
+ ],
+ "runtime_sec": 407.7
+}

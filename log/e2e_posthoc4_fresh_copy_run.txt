@@ -1,0 +1,14 @@
+# Fourth fresh-directory run: c78 and c79 (2026-11-17)
+# The directory held a copy of this tree's code, cached results and the released checkpoints. Results are compared
+# with the committed files at a relative tolerance of 1e-9, ignoring timing and path fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-17T15:10:00+07:00 ===
+c78_batch_context                  rc=0    206s
+c79_route_near_natural             rc=0     46s
+=== finished 2026-11-17T15:14:12+07:00 ===
+
+== comparison
+c78_batch_context.json                        equal
+c79_route_near_natural.json                   equal
+files written: 2, differing: 0

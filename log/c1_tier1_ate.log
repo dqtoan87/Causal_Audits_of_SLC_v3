@@ -1,0 +1,24 @@
+[15:25:03] Load /mnt/data2/Toan/Causal_ML/data/data_ISIC2024/train-metadata.csv
+[15:25:08]   shape=(401059, 55) patients=1042 pos_rate=0.00098 n_pos=393
+[15:25:09]   Z dims=22 (confounders one-hot)
+[15:25:09]   [A_asymmetry] n=267,462 (T1=133,691/T0=133,771) pos=272 | thresh Q1=0.234 Q3=0.343
+[15:25:25]   [B_border] n=267,374 (T1=133,687/T0=133,687) pos=255 | thresh Q1=2.4 Q3=3.81
+[15:25:42]   [C_color] n=267,374 (T1=133,687/T0=133,687) pos=350 | thresh Q1=2.08 Q3=3.58
+[15:25:59]   [C_colorstd] n=267,374 (T1=133,687/T0=133,687) pos=350 | thresh Q1=0.694 Q3=1.22
+[15:26:16]   [D_size] n=267,600 (T1=133,727/T0=133,873) pos=363 | thresh Q1=4.58 Q3=7.54
+[15:26:34]   [contrast_LB] n=267,374 (T1=133,687/T0=133,687) pos=300 | thresh Q1=6.12 Q3=8.02
+[15:26:50]   [NEGCTRL_nevi] n=267,374 (T1=133,687/T0=133,687) pos=268 | thresh Q1=0.699 Q3=70.6
+[15:27:08] Saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P2_clear/results/tier1_ate.json  (124.3s)
+
+============================================================================================
+concept              ATE                 CI95     RR  E-val   E-CI  pos%  sig
+--------------------------------------------------------------------------------------------
+A_asymmetry    -4.08e-05 [-4.33e-04,+4.44e-04]   0.96   1.24   1.00   0.1   no
+B_border       -6.86e-05 [-7.37e-04,+6.19e-04]   0.92   1.38   1.00   0.3   no
+C_color        +1.12e-03 [+7.34e-04,+1.49e-03]   2.47   4.38   3.04   0.0  YES
+C_colorstd     +1.07e-03 [+6.55e-04,+1.46e-03]   2.37   4.18   2.95   0.0  YES
+D_size         +1.10e-03 [+7.63e-04,+1.43e-03]   2.37   4.17   3.04   0.0  YES
+contrast_LB    +8.29e-04 [+4.45e-04,+1.20e-03]   2.07   3.57   2.46   0.1  YES
+NEGCTRL_nevi   -2.98e-04 [-8.20e-04,+2.51e-04]   0.69   2.25   1.00   2.3   no
+============================================================================================
+Đọc: ATE = thay đổi P(ác) khi concept ở tertile cao vs thấp (đã adjust confounder). sig=CI không chứa 0. E-val=confounder ẩn cần mạnh cỡ nào mới lật (cao=robust). NEGCTRL kỳ vọng dấu âm & |ATE| nhỏ.

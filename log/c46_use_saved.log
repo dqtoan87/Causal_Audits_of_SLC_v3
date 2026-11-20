@@ -1,0 +1,16 @@
+[05:22:07] ##### C46 PAD-UFES-20 artifact criterion #####
+[05:22:07]   train   n= 1367  bệnh nhân=  814  ác tính= 658
+[05:22:07]   select  n=  475  bệnh nhân=  281  ác tính= 214
+[05:22:07]   audit   n=  456  bệnh nhân=  278  ác tính= 217
+[05:22:07] nạp ảnh audit ...
+[05:22:34]   audit: 456 ảnh / 278 bệnh nhân / 217 ác tính
+[05:24:24] pixel bị đổi: hair_x1=0.17%  hair_x2=0.35%  hair_x3=0.52%  hair_light=1.02%  hair=2.37%  hair_heavy=4.02%  ruler=1.05%  identity=0.00%
+[05:24:24] [ERM] audit các trọng số đã lưu: /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P2_clear/checkpoints/pad_erm.pt
+[05:24:48]   ERM all        E|Δp|=0.0856 [0.0796,0.0916] exceedance
+[05:24:48]   ERM malignant  E|Δp|=0.0964 [0.0876,0.1050] exceedance
+[05:24:48]   ERM benign     E|Δp|=0.0757 [0.0684,0.0833] exceedance
+[05:24:49] [Slim] audit các trọng số đã lưu: /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P2_clear/checkpoints/pad_slim.pt
+[05:25:11]   Slim all        E|Δp|=0.0750 [0.0704,0.0797] exceedance
+[05:25:11]   Slim malignant  E|Δp|=0.0821 [0.0758,0.0883] exceedance
+[05:25:11]   Slim benign     E|Δp|=0.0686 [0.0630,0.0745] exceedance
+[05:25:11] tổng kết: {'n_cells': 6, 'exceedance': 6, 'equivalence': 0, 'indeterminate': 0}  -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P2_clear/results/c46_padufes_artifact.json  (184s)

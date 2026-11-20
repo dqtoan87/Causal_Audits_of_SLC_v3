@@ -1,0 +1,17 @@
+# Sixth fresh-directory run: c82 and c83 (2026-11-18)
+# The directory held a copy of this tree's code, cached results and the released checkpoints, without any c82 or c83 output
+# (c82 rebuilt the library from the images). Results are compared with the committed files at a relative tolerance of 1e-9,
+# ignoring timing fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-18T15:34:49+07:00 ===
+c82_image_set_checks               rc=0    218s
+c83_batch_extremes                 rc=0    210s
+=== finished 2026-11-18T15:41:48+07:00 ===
+
+== comparison
+c82_image_set_checks.json                    equal
+c82_library83_cache.npz                      equal
+c83_batch_extremes.json                      equal
+c83_batch_extremes_scores.npz                equal
+files written: 4, differing: 0

@@ -1,0 +1,239 @@
+{
+ "note": "exploratory; stored plan-protocol responses and c83 feature norms; marginal 95% patient-clustered percentile intervals, 20000 resamples, seed 87; threshold 10 x median unedited norm",
+ "median_unedited_feature_norm": {
+  "erm": 11.455377578735352,
+  "slim": 19.14508819580078,
+  "causal": 8.34679126739502
+ },
+ "runs": {
+  "first_run": {
+   "erm|contrast@2|rad4-rad16": {
+    "n_all": 73,
+    "all": {
+     "est": 4.628513813018799,
+     "ci95": [
+      3.018201492771958,
+      6.231516777886284
+     ]
+    },
+    "within": {
+     "n_images": 49,
+     "n_patients": 38,
+     "est": 0.9799060225486755,
+     "ci95": [
+      0.5623013095342227,
+      1.372520678027782
+     ],
+     "lower_above_margin": true
+    },
+    "beyond": {
+     "n_images": 24,
+     "n_patients": 20,
+     "est": 12.077754974365234,
+     "ci95": [
+      8.565096852136037,
+      14.51956113760812
+     ],
+     "lower_above_margin": true
+    },
+    "share_beyond": 0.3287671232876712,
+    "share_of_sum_beyond": 0.8578928112983704
+   },
+   "slim|color_var@2|rad4-rad16": {
+    "n_all": 76,
+    "all": {
+     "est": 5.267653465270996,
+     "ci95": [
+      3.165556345893631,
+      7.261189238224253
+     ]
+    },
+    "within": {
+     "n_images": 33,
+     "n_patients": 28,
+     "est": 1.4967552423477173,
+     "ci95": [
+      0.7637413937379333,
+      2.4174610937795307
+     ],
+     "lower_above_margin": true
+    },
+    "beyond": {
+     "n_images": 43,
+     "n_patients": 32,
+     "est": 8.161598205566406,
+     "ci95": [
+      4.795794816047394,
+      11.276107321324451
+     ],
+     "lower_above_margin": true
+    },
+    "share_beyond": 0.5657894736842105,
+    "share_of_sum_beyond": 0.8766230344772339
+   },
+   "slim|contrast@0|rad4-rad16": {
+    "n_all": 75,
+    "all": {
+     "est": 1.988227128982544,
+     "ci95": [
+      1.1537696257354926,
+      2.9064577124526667
+     ]
+    },
+    "within": {
+     "n_images": 70,
+     "n_patients": 51,
+     "est": 1.0705903768539429,
+     "ci95": [
+      0.6967921615488156,
+      1.4850845530775727
+     ],
+     "lower_above_margin": true
+    },
+    "beyond": {
+     "n_images": 5,
+     "n_patients": 4,
+     "est": 14.835138320922852,
+     "ci95": [
+      14.000324249267578,
+      15.215086619059244
+     ],
+     "lower_above_margin": true
+    },
+    "share_beyond": 0.06666666666666667,
+    "share_of_sum_beyond": 0.4974327087402344
+   }
+  },
+  "second_run": {
+   "erm|contrast@2|rad4-rad16": {
+    "n_all": 44,
+    "all": {
+     "est": 5.015230655670166,
+     "ci95": [
+      2.8420645933884843,
+      7.215262606024797
+     ]
+    },
+    "within": {
+     "n_images": 29,
+     "n_patients": 21,
+     "est": 1.2702556848526,
+     "ci95": [
+      0.7260864289601644,
+      1.7382086322056831
+     ],
+     "lower_above_margin": true
+    },
+    "beyond": {
+     "n_images": 15,
+     "n_patients": 14,
+     "est": 12.255515098571777,
+     "ci95": [
+      7.195544421786353,
+      15.61904639516558
+     ],
+     "lower_above_margin": true
+    },
+    "share_beyond": 0.3409090909090909,
+    "share_of_sum_beyond": 0.8330656886100769
+   },
+   "causal|contrast@2|rad4-rad16": {
+    "n_all": 44,
+    "all": {
+     "est": 6.6176557540893555,
+     "ci95": [
+      4.10418896719826,
+      9.466072981191235
+     ]
+    },
+    "within": {
+     "n_images": 29,
+     "n_patients": 21,
+     "est": 0.8214234113693237,
+     "ci95": [
+      -0.3796770103595875,
+      1.8749471465746539
+     ],
+     "lower_above_margin": false
+    },
+    "beyond": {
+     "n_images": 15,
+     "n_patients": 14,
+     "est": 17.82370376586914,
+     "ci95": [
+      16.235555785042898,
+      19.250526173909503
+     ],
+     "lower_above_margin": true
+    },
+    "share_beyond": 0.3409090909090909,
+    "share_of_sum_beyond": 0.9181896448135376
+   },
+   "causal|contrast@2|rad4-hue4": {
+    "n_all": 44,
+    "all": {
+     "est": 4.90224027633667,
+     "ci95": [
+      2.915444647566791,
+      7.369394230342409
+     ]
+    },
+    "within": {
+     "n_images": 29,
+     "n_patients": 21,
+     "est": 1.8900846242904663,
+     "ci95": [
+      0.8313163744630637,
+      3.0350286841392515
+     ],
+     "lower_above_margin": true
+    },
+    "beyond": {
+     "n_images": 15,
+     "n_patients": 14,
+     "est": 10.72574234008789,
+     "ci95": [
+      6.187529078892299,
+      14.619264231409344
+     ],
+     "lower_above_margin": true
+    },
+    "share_beyond": 0.3409090909090909,
+    "share_of_sum_beyond": 0.745884120464325
+   },
+   "slim|color_var@2|rad4-rad16": {
+    "n_all": 46,
+    "all": {
+     "est": 6.1571946144104,
+     "ci95": [
+      2.8163061851678894,
+      9.22514829328541
+     ]
+    },
+    "within": {
+     "n_images": 17,
+     "n_patients": 14,
+     "est": 1.5309470891952515,
+     "ci95": [
+      0.8015193934601862,
+      2.4690504448754447
+     ],
+     "lower_above_margin": true
+    },
+    "beyond": {
+     "n_images": 29,
+     "n_patients": 22,
+     "est": 8.869131088256836,
+     "ci95": [
+      3.783835141881933,
+      12.806837654113767
+     ],
+     "lower_above_margin": true
+    },
+    "share_beyond": 0.6304347826086957,
+    "share_of_sum_beyond": 0.9081097841262817
+   }
+  }
+ },
+ "runtime_sec": 0.3
+}

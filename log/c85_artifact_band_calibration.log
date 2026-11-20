@@ -1,0 +1,40 @@
+  [b3 ERM] done
+  [b3 Slim] done
+  [b3 Inv] done
+  [r50 ERM] done
+  [r50 Slim] done
+  [r50 Inv] done
+  outer 200/2000  joint so far 0.875  (114s)
+  outer 400/2000  joint so far 0.860  (154s)
+  outer 600/2000  joint so far 0.858  (195s)
+  outer 800/2000  joint so far 0.845  (235s)
+  outer 1000/2000  joint so far 0.833  (276s)
+  outer 1200/2000  joint so far 0.838  (317s)
+  outer 1400/2000  joint so far 0.840  (357s)
+  outer 1600/2000  joint so far 0.842  (398s)
+  outer 1800/2000  joint so far 0.846  (439s)
+  outer 2000/2000  joint so far 0.850  (480s)
+{
+ "outer": 2000,
+ "inner": 20000,
+ "seed_outer": 85,
+ "seed_inner": 41,
+ "level": 95,
+ "original_crit": 3.11822688954532,
+ "c56_crit": 3.118227187654512,
+ "max_abs_est_diff_vs_c56": 5.4277479621944735e-08,
+ "original_frontier": 0.042227545585981865,
+ "c56_frontier": 0.0422275400273533,
+ "joint_coverage_two_sided": 0.8495,
+ "joint_coverage_mag_lower": 0.973,
+ "min_marginal_coverage": 0.976,
+ "median_crit_outer": 3.1064607480528332,
+ "kappa_two_sided_95": 1.2385347379446894,
+ "kappa_mag_lower_95": 0.8955158103263173,
+ "frontier_kappa_two_sided": 0.03067649289523152,
+ "exceed_at_0p05_kappa_two_sided": 17,
+ "frontier_kappa_mag_lower": 0.04728719597766156,
+ "exceed_at_0p05_kappa_mag_lower": 17,
+ "runtime_sec": 479.5
+}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c85_artifact_band_calibration.json

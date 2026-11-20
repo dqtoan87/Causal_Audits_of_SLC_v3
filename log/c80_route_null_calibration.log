@@ -1,0 +1,21 @@
+[first] reproduction of the plan's band: max abs difference 4.53e-07, crit 3.3041
+  [first] outer 250/2000 (85s)
+  [first] outer 500/2000 (170s)
+  [first] outer 750/2000 (253s)
+  [first] outer 1000/2000 (334s)
+  [first] outer 1250/2000 (428s)
+  [first] outer 1500/2000 (523s)
+  [first] outer 1750/2000 (612s)
+  [first] outer 2000/2000 (702s)
+[first] joint coverage 0.777, FWER all-zero 0.017, FWER at margin 0.035, worst sign 0.216, kappa 1.419, calibrated {'routes disagree': 1, 'routes agree': 2, 'indeterminate': 9}, median v80 2.0 (702s)
+[second] reproduction of the plan's band: max abs difference 4.79e-07, crit 3.3748
+  [second] outer 250/2000 (82s)
+  [second] outer 500/2000 (167s)
+  [second] outer 750/2000 (259s)
+  [second] outer 1000/2000 (335s)
+  [second] outer 1250/2000 (411s)
+  [second] outer 1500/2000 (486s)
+  [second] outer 1750/2000 (562s)
+  [second] outer 2000/2000 (638s)
+[second] joint coverage 0.733, FWER all-zero 0.048, FWER at margin 0.034, worst sign 0.266, kappa 1.471, calibrated {'routes disagree': 0, 'routes agree': 0, 'indeterminate': 12}, median v80 4.0 (638s)
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c80_route_null_calibration.json

@@ -1,0 +1,1763 @@
+{
+ "note": "exploratory, not pre-specified; reads stored responses only",
+ "residual_mismatch": {
+  "contrast@0|rad4": {
+   "n_g1": 77,
+   "n_exact": 50,
+   "max_rel": 1.9647892734032436e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "contrast@0|rad16": {
+   "n_g1": 77,
+   "n_exact": 61,
+   "max_rel": 1.4530885615338687e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "contrast@0|hue4": {
+   "n_g1": 77,
+   "n_exact": 17,
+   "max_rel": 6.320164357980851e-07,
+   "median_rel": 1.059407212931633e-07,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "contrast@0|hue16": {
+   "n_g1": 78,
+   "n_exact": 26,
+   "max_rel": 3.562897975703886e-07,
+   "median_rel": 9.979451457810851e-08,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "contrast@2|rad4": {
+   "n_g1": 76,
+   "n_exact": 61,
+   "max_rel": 1.9578983331922015e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "contrast@2|rad16": {
+   "n_g1": 77,
+   "n_exact": 65,
+   "max_rel": 1.987395540006173e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "contrast@2|hue4": {
+   "n_g1": 77,
+   "n_exact": 34,
+   "max_rel": 2.4787396435159267e-07,
+   "median_rel": 7.189680967253664e-08,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "contrast@2|hue16": {
+   "n_g1": 75,
+   "n_exact": 31,
+   "max_rel": 2.6626414628126175e-07,
+   "median_rel": 7.508994085390629e-08,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "color_var@0|rad4": {
+   "n_g1": 78,
+   "n_exact": 65,
+   "max_rel": 1.660946091503181e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "color_var@0|rad16": {
+   "n_g1": 78,
+   "n_exact": 63,
+   "max_rel": 1.660946091503181e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "color_var@0|hue4": {
+   "n_g1": 78,
+   "n_exact": 26,
+   "max_rel": 2.3097565193262718e-07,
+   "median_rel": 8.794648295109327e-08,
+   "max_pixels": 1.000396728515625,
+   "images_pixels_differ": 1
+  },
+  "color_var@0|hue16": {
+   "n_g1": 78,
+   "n_exact": 22,
+   "max_rel": 4.5303986920738976e-07,
+   "median_rel": 9.841589124998187e-08,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "color_var@2|rad4": {
+   "n_g1": 77,
+   "n_exact": 67,
+   "max_rel": 2.1685360169978527e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "color_var@2|rad16": {
+   "n_g1": 77,
+   "n_exact": 67,
+   "max_rel": 2.1685360169978527e-07,
+   "median_rel": 0.0,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "color_var@2|hue4": {
+   "n_g1": 77,
+   "n_exact": 34,
+   "max_rel": 2.8695724786573156e-07,
+   "median_rel": 7.548242516276087e-08,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  },
+  "color_var@2|hue16": {
+   "n_g1": 77,
+   "n_exact": 38,
+   "max_rel": 2.8695724786573156e-07,
+   "median_rel": 6.636032528504248e-08,
+   "max_pixels": 0.0,
+   "images_pixels_differ": 0
+  }
+ },
+ "runs": {
+  "second_run": {
+   "min30": {
+    "crit": 2.817860949924993,
+    "components": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.834612165178571,
+      "sim": [
+       1.4661388780695503,
+       8.203085452287592
+      ],
+      "decision": "exceeds",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "slim|contrast@2|D_rad4-rad16": {
+      "est": 5.975177001953125,
+      "sim": [
+       1.0536349884870688,
+       10.896719015419182
+      ],
+      "decision": "exceeds",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 6.463948713030134,
+      "sim": [
+       2.416181416577329,
+       10.511716009482939
+      ],
+      "decision": "exceeds",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": 0.08858774730137416,
+      "sim": [
+       -0.35807276211416866,
+       0.535248256716917
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 28
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.9416146414620535,
+      "sim": [
+       0.019027654573325448,
+       1.8642016283507816
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 28
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": -0.3441237313406808,
+      "sim": [
+       -1.7911011403707915,
+       1.1028536776894298
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 28
+     },
+     "erm|color_var@2|D_rad4-rad16": {
+      "est": 2.1684613111542492,
+      "sim": [
+       0.33952956896373654,
+       3.997393053344762
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 28
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 6.2380590671446265,
+      "sim": [
+       1.209533483635119,
+       11.266584650654135
+      ],
+      "decision": "exceeds",
+      "n_images": 41,
+      "n_patients": 28
+     },
+     "causal|color_var@2|D_rad4-rad16": {
+      "est": 1.4885662357981613,
+      "sim": [
+       -1.066777649109328,
+       4.04391012070565
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 28
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "indeterminate",
+     "causal|contrast@0": "indeterminate",
+     "erm|contrast@2": "routes disagree",
+     "slim|contrast@2": "routes disagree",
+     "causal|contrast@2": "routes disagree",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "indeterminate",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "routes disagree",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [
+     "erm|contrast@0|D_rad4-hue4",
+     "erm|contrast@0|D_rad16-hue16",
+     "erm|contrast@0|D_rad4-rad16",
+     "erm|contrast@0|D_hue4-hue16",
+     "slim|contrast@0|D_rad4-hue4",
+     "slim|contrast@0|D_rad16-hue16",
+     "slim|contrast@0|D_rad4-rad16",
+     "slim|contrast@0|D_hue4-hue16",
+     "causal|contrast@0|D_rad4-hue4",
+     "causal|contrast@0|D_rad16-hue16",
+     "causal|contrast@0|D_rad4-rad16",
+     "causal|contrast@0|D_hue4-hue16",
+     "erm|contrast@2|D_rad4-hue4",
+     "erm|contrast@2|D_rad16-hue16",
+     "erm|contrast@2|D_hue4-hue16",
+     "slim|contrast@2|D_rad4-hue4",
+     "slim|contrast@2|D_rad16-hue16",
+     "slim|contrast@2|D_hue4-hue16",
+     "causal|contrast@2|D_rad4-hue4",
+     "causal|contrast@2|D_rad16-hue16",
+     "causal|contrast@2|D_hue4-hue16",
+     "erm|color_var@0|D_rad4-hue4",
+     "erm|color_var@0|D_rad16-hue16",
+     "erm|color_var@0|D_hue4-hue16",
+     "slim|color_var@0|D_rad4-hue4",
+     "slim|color_var@0|D_rad16-hue16",
+     "slim|color_var@0|D_hue4-hue16",
+     "causal|color_var@0|D_rad4-hue4",
+     "causal|color_var@0|D_rad16-hue16",
+     "causal|color_var@0|D_hue4-hue16",
+     "erm|color_var@2|D_rad4-hue4",
+     "erm|color_var@2|D_rad16-hue16",
+     "erm|color_var@2|D_hue4-hue16",
+     "slim|color_var@2|D_rad4-hue4",
+     "slim|color_var@2|D_rad16-hue16",
+     "slim|color_var@2|D_hue4-hue16",
+     "causal|color_var@2|D_rad4-hue4",
+     "causal|color_var@2|D_rad16-hue16",
+     "causal|color_var@2|D_hue4-hue16"
+    ],
+    "n_analysed": 9,
+    "summary": {
+     "routes disagree": 4,
+     "routes agree": 0,
+     "indeterminate": 8
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.834612165178571,
+      "sim": [
+       1.4661388780695503,
+       8.203085452287592
+      ],
+      "decision": "exceeds",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 6.463948713030134,
+      "sim": [
+       2.416181416577329,
+       10.511716009482939
+      ],
+      "decision": "exceeds",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-hue4": null,
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 6.2380590671446265,
+      "sim": [
+       1.209533483635119,
+       11.266584650654135
+      ],
+      "decision": "exceeds",
+      "n_images": 41,
+      "n_patients": 28
+     },
+     "slim|contrast@0|D_rad4-rad16": null
+    }
+   },
+   "all": {
+    "crit": 3.8246239198851093,
+    "components": {
+     "erm|contrast@0|D_rad4-hue4": {
+      "est": -0.9955083847045898,
+      "sim": [
+       -2.5742893618435505,
+       0.5832725924343709
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 9
+     },
+     "erm|contrast@0|D_rad16-hue16": {
+      "est": -0.7879418690999349,
+      "sim": [
+       -2.098390758433504,
+       0.5225070202336344
+      ],
+      "decision": "indeterminate",
+      "n_images": 15,
+      "n_patients": 15
+     },
+     "erm|contrast@0|D_rad4-rad16": {
+      "est": 0.4802477700369699,
+      "sim": [
+       -0.1587000377791528,
+       1.1191955778530926
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 16
+     },
+     "erm|contrast@0|D_hue4-hue16": {
+      "est": 3.007773929172092,
+      "sim": [
+       -3.36434725528471,
+       9.379895113628894
+      ],
+      "decision": "indeterminate",
+      "n_images": 9,
+      "n_patients": 9
+     },
+     "slim|contrast@0|D_rad4-hue4": {
+      "est": -3.2288944244384767,
+      "sim": [
+       -8.66951144956406,
+       2.211722600687107
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 9
+     },
+     "slim|contrast@0|D_rad16-hue16": {
+      "est": -1.3987513224283854,
+      "sim": [
+       -3.3830544373609808,
+       0.5855517925042097
+      ],
+      "decision": "indeterminate",
+      "n_images": 15,
+      "n_patients": 15
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.9898153032575334,
+      "sim": [
+       -1.150225828800095,
+       5.129856435315162
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 16
+     },
+     "slim|contrast@0|D_hue4-hue16": {
+      "est": 2.8092015584309897,
+      "sim": [
+       -3.663895456716696,
+       9.282298573578675
+      ],
+      "decision": "indeterminate",
+      "n_images": 9,
+      "n_patients": 9
+     },
+     "causal|contrast@0|D_rad4-hue4": {
+      "est": 0.949790096282959,
+      "sim": [
+       -0.8810465487395761,
+       2.780626741305494
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 9
+     },
+     "causal|contrast@0|D_rad16-hue16": {
+      "est": 0.9647589365641276,
+      "sim": [
+       -3.74351757761667,
+       5.6730354507449245
+      ],
+      "decision": "indeterminate",
+      "n_images": 15,
+      "n_patients": 15
+     },
+     "causal|contrast@0|D_rad4-rad16": {
+      "est": -0.01214675676254999,
+      "sim": [
+       -2.0503143575924194,
+       2.0260208440673195
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 16
+     },
+     "causal|contrast@0|D_hue4-hue16": {
+      "est": 1.7139423158433702,
+      "sim": [
+       -3.888674273150082,
+       7.316558904836823
+      ],
+      "decision": "indeterminate",
+      "n_images": 9,
+      "n_patients": 9
+     },
+     "erm|contrast@2|D_rad4-hue4": {
+      "est": 1.726630104912652,
+      "sim": [
+       -4.172800923461951,
+       7.626061133287255
+      ],
+      "decision": "indeterminate",
+      "n_images": 18,
+      "n_patients": 15
+     },
+     "erm|contrast@2|D_rad16-hue16": {
+      "est": -0.08008819818496704,
+      "sim": [
+       -3.709123792746661,
+       3.548947396376727
+      ],
+      "decision": "indeterminate",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.834612165178571,
+      "sim": [
+       0.2626535993330448,
+       9.406570731024097
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "erm|contrast@2|D_hue4-hue16": {
+      "est": 2.780232810974121,
+      "sim": [
+       -2.8108782518913578,
+       8.3713438738396
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 8
+     },
+     "slim|contrast@2|D_rad4-hue4": {
+      "est": 2.5900645785861545,
+      "sim": [
+       -5.767700773472775,
+       10.947829930645085
+      ],
+      "decision": "indeterminate",
+      "n_images": 18,
+      "n_patients": 15
+     },
+     "slim|contrast@2|D_rad16-hue16": {
+      "est": 4.6634907722473145,
+      "sim": [
+       -8.421274861792998,
+       17.748256406287627
+      ],
+      "decision": "indeterminate",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "slim|contrast@2|D_rad4-rad16": {
+      "est": 5.975177001953125,
+      "sim": [
+       -0.7047293674235622,
+       12.655083371329813
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "slim|contrast@2|D_hue4-hue16": {
+      "est": 8.351407623291015,
+      "sim": [
+       -4.193826970583711,
+       20.89664221716574
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 8
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 5.1005359225802955,
+      "sim": [
+       -2.39693108314244,
+       12.598002928303032
+      ],
+      "decision": "indeterminate",
+      "n_images": 18,
+      "n_patients": 15
+     },
+     "causal|contrast@2|D_rad16-hue16": {
+      "est": 1.3119769096374512,
+      "sim": [
+       -2.2288985378619395,
+       4.852852357136841
+      ],
+      "decision": "indeterminate",
+      "n_images": 16,
+      "n_patients": 13
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 6.463948713030134,
+      "sim": [
+       0.9699985503884445,
+       11.957898875671823
+      ],
+      "decision": "exceeds",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_hue4-hue16": {
+      "est": 1.2005348205566406,
+      "sim": [
+       -0.011917841502415705,
+       2.412987482615697
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 8
+     },
+     "erm|color_var@0|D_rad4-hue4": {
+      "est": -2.587977409362793,
+      "sim": [
+       -8.916127225608761,
+       3.7401724068831754
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "erm|color_var@0|D_rad16-hue16": {
+      "est": -0.7012531757354736,
+      "sim": [
+       -1.631259768559059,
+       0.22875341708811192
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": 0.08858774730137416,
+      "sim": [
+       -0.5176552500417791,
+       0.6948307446445275
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 28
+     },
+     "erm|color_var@0|D_hue4-hue16": {
+      "est": 3.237565040588379,
+      "sim": [
+       -4.556477661200111,
+       11.031607742376869
+      ],
+      "decision": "indeterminate",
+      "n_images": 6,
+      "n_patients": 5
+     },
+     "slim|color_var@0|D_rad4-hue4": {
+      "est": -0.9576574166615804,
+      "sim": [
+       -8.329762433670407,
+       6.414447600347247
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "slim|color_var@0|D_rad16-hue16": {
+      "est": -0.2557707031567891,
+      "sim": [
+       -3.30277034386711,
+       2.7912289375535315
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.9416146414620535,
+      "sim": [
+       -0.31059344152489576,
+       2.193822724449003
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 28
+     },
+     "slim|color_var@0|D_hue4-hue16": {
+      "est": 0.7066144943237305,
+      "sim": [
+       -17.02245338022017,
+       18.43568236886763
+      ],
+      "decision": "indeterminate",
+      "n_images": 6,
+      "n_patients": 5
+     },
+     "causal|color_var@0|D_rad4-hue4": {
+      "est": -0.967937151590983,
+      "sim": [
+       -3.995533196580262,
+       2.059658893398296
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "causal|color_var@0|D_rad16-hue16": {
+      "est": 0.26038479804992676,
+      "sim": [
+       -1.4277092422527558,
+       1.9484788383526093
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": -0.3441237313406808,
+      "sim": [
+       -2.3080760016815045,
+       1.619828539000143
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 28
+     },
+     "causal|color_var@0|D_hue4-hue16": {
+      "est": -0.31617414951324463,
+      "sim": [
+       -3.332290724363075,
+       2.6999424253365856
+      ],
+      "decision": "indeterminate",
+      "n_images": 6,
+      "n_patients": 5
+     },
+     "erm|color_var@2|D_rad4-hue4": {
+      "est": 0.9135726747058687,
+      "sim": [
+       -5.5001275427651,
+       7.327272892176837
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 17
+     },
+     "erm|color_var@2|D_rad16-hue16": {
+      "est": -1.4874087246981533,
+      "sim": [
+       -4.9794747232231655,
+       2.004657273826859
+      ],
+      "decision": "indeterminate",
+      "n_images": 22,
+      "n_patients": 16
+     },
+     "erm|color_var@2|D_rad4-rad16": {
+      "est": 2.1684613111542492,
+      "sim": [
+       -0.313909612508672,
+       4.6508322348171705
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 28
+     },
+     "erm|color_var@2|D_hue4-hue16": {
+      "est": 0.6828313555036273,
+      "sim": [
+       -4.859550637981965,
+       6.22521334898922
+      ],
+      "decision": "indeterminate",
+      "n_images": 14,
+      "n_patients": 11
+     },
+     "slim|color_var@2|D_rad4-hue4": {
+      "est": 0.9764428819928851,
+      "sim": [
+       -5.137224997518549,
+       7.09011076150432
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 17
+     },
+     "slim|color_var@2|D_rad16-hue16": {
+      "est": -0.7766026583584872,
+      "sim": [
+       -4.2848204263080625,
+       2.7316151095910883
+      ],
+      "decision": "indeterminate",
+      "n_images": 22,
+      "n_patients": 16
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 6.2380590671446265,
+      "sim": [
+       -0.5870538714326372,
+       13.06317200572189
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 28
+     },
+     "slim|color_var@2|D_hue4-hue16": {
+      "est": 6.330165318080357,
+      "sim": [
+       -4.156946734936409,
+       16.817277371097124
+      ],
+      "decision": "indeterminate",
+      "n_images": 14,
+      "n_patients": 11
+     },
+     "causal|color_var@2|D_rad4-hue4": {
+      "est": 2.4631881713867188,
+      "sim": [
+       -3.2941559731249423,
+       8.22053231589838
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 17
+     },
+     "causal|color_var@2|D_rad16-hue16": {
+      "est": 1.7944639379327947,
+      "sim": [
+       -0.9700235837059401,
+       4.55895145957153
+      ],
+      "decision": "indeterminate",
+      "n_images": 22,
+      "n_patients": 16
+     },
+     "causal|color_var@2|D_rad4-rad16": {
+      "est": 1.4885662357981613,
+      "sim": [
+       -1.9797487447580913,
+       4.956881216354414
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 28
+     },
+     "causal|color_var@2|D_hue4-hue16": {
+      "est": 2.0685678209577287,
+      "sim": [
+       -2.5994357119906923,
+       6.73657135390615
+      ],
+      "decision": "indeterminate",
+      "n_images": 14,
+      "n_patients": 11
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "indeterminate",
+     "causal|contrast@0": "indeterminate",
+     "erm|contrast@2": "indeterminate",
+     "slim|contrast@2": "indeterminate",
+     "causal|contrast@2": "routes disagree",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "indeterminate",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "indeterminate",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [],
+    "n_analysed": 48,
+    "summary": {
+     "routes disagree": 1,
+     "routes agree": 0,
+     "indeterminate": 11
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.834612165178571,
+      "sim": [
+       0.2626535993330448,
+       9.406570731024097
+      ],
+      "decision": "indeterminate",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 6.463948713030134,
+      "sim": [
+       0.9699985503884445,
+       11.957898875671823
+      ],
+      "decision": "exceeds",
+      "n_images": 35,
+      "n_patients": 27
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 5.1005359225802955,
+      "sim": [
+       -2.39693108314244,
+       12.598002928303032
+      ],
+      "decision": "indeterminate",
+      "n_images": 18,
+      "n_patients": 15
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 6.2380590671446265,
+      "sim": [
+       -0.5870538714326372,
+       13.06317200572189
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 28
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.9898153032575334,
+      "sim": [
+       -1.150225828800095,
+       5.129856435315162
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 16
+     }
+    }
+   }
+  },
+  "first_run": {
+   "min30": {
+    "crit": 3.109074020230128,
+    "components": {
+     "erm|contrast@0|D_rad4-rad16": {
+      "est": 0.167707547908876,
+      "sim": [
+       -0.3054341761211849,
+       0.6408492719389369
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 33
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.4000467439977133,
+      "sim": [
+       0.0418391427064706,
+       2.758254345288956
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 33
+     },
+     "causal|contrast@0|D_rad4-rad16": {
+      "est": 0.14384681422535966,
+      "sim": [
+       -0.03348139861026192,
+       0.3211750270609812
+      ],
+      "decision": "within",
+      "n_images": 41,
+      "n_patients": 33
+     },
+     "erm|contrast@2|D_rad4-hue4": {
+      "est": 0.09819809595743816,
+      "sim": [
+       -3.175649828231467,
+       3.372046020146343
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.383134599165483,
+      "sim": [
+       1.4079616408405378,
+       7.358307557490427
+      ],
+      "decision": "exceeds",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "slim|contrast@2|D_rad4-hue4": {
+      "est": 1.8792340596516928,
+      "sim": [
+       -4.2238629968223504,
+       7.982331116125736
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "slim|contrast@2|D_rad4-rad16": {
+      "est": 5.376935369318182,
+      "sim": [
+       1.0665585337889274,
+       9.687312204847437
+      ],
+      "decision": "exceeds",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.29221903483072914,
+      "sim": [
+       -0.11006027327759166,
+       0.6944983429390499
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.18138235265558417,
+      "sim": [
+       -0.0696849713348277,
+       0.43244967664599604
+      ],
+      "decision": "within",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": -0.07631106454817975,
+      "sim": [
+       -0.4360645691890381,
+       0.28344244009267855
+      ],
+      "decision": "within",
+      "n_images": 61,
+      "n_patients": 47
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.8316463407922964,
+      "sim": [
+       0.1400867171806306,
+       1.5232059644039622
+      ],
+      "decision": "indeterminate",
+      "n_images": 61,
+      "n_patients": 47
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": 0.13229110592701396,
+      "sim": [
+       -0.027616237996489906,
+       0.2921984498505178
+      ],
+      "decision": "within",
+      "n_images": 61,
+      "n_patients": 47
+     },
+     "erm|color_var@2|D_rad4-hue4": {
+      "est": 0.7400443784652218,
+      "sim": [
+       -3.2028577993456704,
+       4.682946556276114
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 25
+     },
+     "erm|color_var@2|D_rad16-hue16": {
+      "est": -1.3166207706227022,
+      "sim": [
+       -3.1739233925452304,
+       0.5406818512998259
+      ],
+      "decision": "indeterminate",
+      "n_images": 34,
+      "n_patients": 26
+     },
+     "erm|color_var@2|D_rad4-rad16": {
+      "est": 1.7815592288970947,
+      "sim": [
+       0.3300085032434983,
+       3.233109954550691
+      ],
+      "decision": "indeterminate",
+      "n_images": 64,
+      "n_patients": 46
+     },
+     "slim|color_var@2|D_rad4-hue4": {
+      "est": 1.0675875756048387,
+      "sim": [
+       -2.736112542647038,
+       4.871287693856715
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 25
+     },
+     "slim|color_var@2|D_rad16-hue16": {
+      "est": -0.7063829758588005,
+      "sim": [
+       -3.3321166381645098,
+       1.9193506864469088
+      ],
+      "decision": "indeterminate",
+      "n_images": 34,
+      "n_patients": 26
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 5.581264495849609,
+      "sim": [
+       1.8629931013477519,
+       9.299535890351468
+      ],
+      "decision": "exceeds",
+      "n_images": 64,
+      "n_patients": 46
+     },
+     "causal|color_var@2|D_rad4-hue4": {
+      "est": 0.5198147681451613,
+      "sim": [
+       0.1765683326645071,
+       0.8630612036258154
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 25
+     },
+     "causal|color_var@2|D_rad16-hue16": {
+      "est": 0.44687675027286305,
+      "sim": [
+       0.07326070995264472,
+       0.8204927905930814
+      ],
+      "decision": "indeterminate",
+      "n_images": 34,
+      "n_patients": 26
+     },
+     "causal|color_var@2|D_rad4-rad16": {
+      "est": 0.08192957937717438,
+      "sim": [
+       -0.14855532322005538,
+       0.31241448197440413
+      ],
+      "decision": "within",
+      "n_images": 64,
+      "n_patients": 46
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "indeterminate",
+     "causal|contrast@0": "indeterminate",
+     "erm|contrast@2": "routes disagree",
+     "slim|contrast@2": "routes disagree",
+     "causal|contrast@2": "indeterminate",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "indeterminate",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "routes disagree",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [
+     "erm|contrast@0|D_rad4-hue4",
+     "erm|contrast@0|D_rad16-hue16",
+     "erm|contrast@0|D_hue4-hue16",
+     "slim|contrast@0|D_rad4-hue4",
+     "slim|contrast@0|D_rad16-hue16",
+     "slim|contrast@0|D_hue4-hue16",
+     "causal|contrast@0|D_rad4-hue4",
+     "causal|contrast@0|D_rad16-hue16",
+     "causal|contrast@0|D_hue4-hue16",
+     "erm|contrast@2|D_rad16-hue16",
+     "erm|contrast@2|D_hue4-hue16",
+     "slim|contrast@2|D_rad16-hue16",
+     "slim|contrast@2|D_hue4-hue16",
+     "causal|contrast@2|D_rad16-hue16",
+     "causal|contrast@2|D_hue4-hue16",
+     "erm|color_var@0|D_rad4-hue4",
+     "erm|color_var@0|D_rad16-hue16",
+     "erm|color_var@0|D_hue4-hue16",
+     "slim|color_var@0|D_rad4-hue4",
+     "slim|color_var@0|D_rad16-hue16",
+     "slim|color_var@0|D_hue4-hue16",
+     "causal|color_var@0|D_rad4-hue4",
+     "causal|color_var@0|D_rad16-hue16",
+     "causal|color_var@0|D_hue4-hue16",
+     "erm|color_var@2|D_hue4-hue16",
+     "slim|color_var@2|D_hue4-hue16",
+     "causal|color_var@2|D_hue4-hue16"
+    ],
+    "n_analysed": 21,
+    "summary": {
+     "routes disagree": 3,
+     "routes agree": 0,
+     "indeterminate": 9
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.383134599165483,
+      "sim": [
+       1.4079616408405378,
+       7.358307557490427
+      ],
+      "decision": "exceeds",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.18138235265558417,
+      "sim": [
+       -0.0696849713348277,
+       0.43244967664599604
+      ],
+      "decision": "within",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.29221903483072914,
+      "sim": [
+       -0.11006027327759166,
+       0.6944983429390499
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 5.581264495849609,
+      "sim": [
+       1.8629931013477519,
+       9.299535890351468
+      ],
+      "decision": "exceeds",
+      "n_images": 64,
+      "n_patients": 46
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.4000467439977133,
+      "sim": [
+       0.0418391427064706,
+       2.758254345288956
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 33
+     }
+    }
+   },
+   "all": {
+    "crit": 3.51830054469956,
+    "components": {
+     "erm|contrast@0|D_rad4-hue4": {
+      "est": -2.4794178009033203,
+      "sim": [
+       -6.611552821985144,
+       1.652717220178503
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "erm|contrast@0|D_rad16-hue16": {
+      "est": -0.6136013113934061,
+      "sim": [
+       -1.4912200377777787,
+       0.2640174149909664
+      ],
+      "decision": "indeterminate",
+      "n_images": 23,
+      "n_patients": 22
+     },
+     "erm|contrast@0|D_rad4-rad16": {
+      "est": 0.167707547908876,
+      "sim": [
+       -0.36771064237655104,
+       0.703125738194303
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 33
+     },
+     "erm|contrast@0|D_hue4-hue16": {
+      "est": 4.104148101806641,
+      "sim": [
+       -2.40607478937652,
+       10.614370992989802
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 10
+     },
+     "slim|contrast@0|D_rad4-hue4": {
+      "est": -4.990969975789388,
+      "sim": [
+       -10.968963795790641,
+       0.9870238442118655
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "slim|contrast@0|D_rad16-hue16": {
+      "est": -1.918937351392663,
+      "sim": [
+       -4.525542275057047,
+       0.6876675722717214
+      ],
+      "decision": "indeterminate",
+      "n_images": 23,
+      "n_patients": 22
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.4000467439977133,
+      "sim": [
+       -0.1369325985154508,
+       2.9370260865108775
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 33
+     },
+     "slim|contrast@0|D_hue4-hue16": {
+      "est": 2.528281402587891,
+      "sim": [
+       -2.845315798790203,
+       7.901878603965985
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 10
+     },
+     "causal|contrast@0|D_rad4-hue4": {
+      "est": -0.017089873552322388,
+      "sim": [
+       -0.6203001521661928,
+       0.586120405061548
+      ],
+      "decision": "indeterminate",
+      "n_images": 12,
+      "n_patients": 11
+     },
+     "causal|contrast@0|D_rad16-hue16": {
+      "est": 0.1628604038901951,
+      "sim": [
+       -0.24803211200640932,
+       0.5737529197867995
+      ],
+      "decision": "indeterminate",
+      "n_images": 23,
+      "n_patients": 22
+     },
+     "causal|contrast@0|D_rad4-rad16": {
+      "est": 0.14384681422535966,
+      "sim": [
+       -0.0568219198577187,
+       0.344515548308438
+      ],
+      "decision": "within",
+      "n_images": 41,
+      "n_patients": 33
+     },
+     "causal|contrast@0|D_hue4-hue16": {
+      "est": 0.2837189197540283,
+      "sim": [
+       -0.381818040790031,
+       0.9492558802980876
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 10
+     },
+     "erm|contrast@2|D_rad4-hue4": {
+      "est": 0.09819809595743816,
+      "sim": [
+       -3.6065644346190386,
+       3.8029606265339146
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "erm|contrast@2|D_rad16-hue16": {
+      "est": -1.841594554759838,
+      "sim": [
+       -5.204487450108665,
+       1.521298340588989
+      ],
+      "decision": "indeterminate",
+      "n_images": 27,
+      "n_patients": 22
+     },
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.383134599165483,
+      "sim": [
+       1.016359613513881,
+       7.749909584817084
+      ],
+      "decision": "exceeds",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "erm|contrast@2|D_hue4-hue16": {
+      "est": 2.0975147247314454,
+      "sim": [
+       -2.91459755452413,
+       7.10962700398702
+      ],
+      "decision": "indeterminate",
+      "n_images": 20,
+      "n_patients": 16
+     },
+     "slim|contrast@2|D_rad4-hue4": {
+      "est": 1.8792340596516928,
+      "sim": [
+       -5.027172657727635,
+       8.78564077703102
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "slim|contrast@2|D_rad16-hue16": {
+      "est": 2.47211343270761,
+      "sim": [
+       -5.007012827074819,
+       9.95123969249004
+      ],
+      "decision": "indeterminate",
+      "n_images": 27,
+      "n_patients": 22
+     },
+     "slim|contrast@2|D_rad4-rad16": {
+      "est": 5.376935369318182,
+      "sim": [
+       0.4992125908876952,
+       10.254658147748668
+      ],
+      "decision": "indeterminate",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "slim|contrast@2|D_hue4-hue16": {
+      "est": 3.531845474243164,
+      "sim": [
+       -4.253377392950711,
+       11.317068341437038
+      ],
+      "decision": "indeterminate",
+      "n_images": 20,
+      "n_patients": 16
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.29221903483072914,
+      "sim": [
+       -0.16300959582570873,
+       0.747447665487167
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "causal|contrast@2|D_rad16-hue16": {
+      "est": 0.3735436686763057,
+      "sim": [
+       -0.13963311968557152,
+       0.8867204570381828
+      ],
+      "decision": "indeterminate",
+      "n_images": 27,
+      "n_patients": 22
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.18138235265558417,
+      "sim": [
+       -0.1027312763555207,
+       0.46549598166668904
+      ],
+      "decision": "within",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "causal|contrast@2|D_hue4-hue16": {
+      "est": 0.08598173856735229,
+      "sim": [
+       -0.44812457128165945,
+       0.620088048416364
+      ],
+      "decision": "indeterminate",
+      "n_images": 20,
+      "n_patients": 16
+     },
+     "erm|color_var@0|D_rad4-hue4": {
+      "est": -1.7753237769717263,
+      "sim": [
+       -4.614934373673099,
+       1.064286819729647
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 19
+     },
+     "erm|color_var@0|D_rad16-hue16": {
+      "est": -0.5545814413773386,
+      "sim": [
+       -1.1564183067679799,
+       0.04725542401330285
+      ],
+      "decision": "indeterminate",
+      "n_images": 19,
+      "n_patients": 16
+     },
+     "erm|color_var@0|D_rad4-rad16": {
+      "est": -0.07631106454817975,
+      "sim": [
+       -0.4834165059431779,
+       0.3307943768468184
+      ],
+      "decision": "within",
+      "n_images": 61,
+      "n_patients": 47
+     },
+     "erm|color_var@0|D_hue4-hue16": {
+      "est": 1.5927343368530273,
+      "sim": [
+       -3.6815605728065863,
+       6.867029246512641
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 9
+     },
+     "slim|color_var@0|D_rad4-hue4": {
+      "est": -2.1588301885695684,
+      "sim": [
+       -7.019042603296903,
+       2.7013822261577656
+      ],
+      "decision": "indeterminate",
+      "n_images": 21,
+      "n_patients": 19
+     },
+     "slim|color_var@0|D_rad16-hue16": {
+      "est": -0.9361335352847451,
+      "sim": [
+       -3.2814263300708415,
+       1.4091592595013511
+      ],
+      "decision": "indeterminate",
+      "n_images": 19,
+      "n_patients": 16
+     },
+     "slim|color_var@0|D_rad4-rad16": {
+      "est": 0.8316463407922964,
+      "sim": [
+       0.04906137027909774,
+       1.614231311305495
+      ],
+      "decision": "indeterminate",
+      "n_images": 61,
+      "n_patients": 47
+     },
+     "slim|color_var@0|D_hue4-hue16": {
+      "est": 1.7188495635986327,
+      "sim": [
+       -8.377391750918397,
+       11.815090878115663
+      ],
+      "decision": "indeterminate",
+      "n_images": 10,
+      "n_patients": 9
+     },
+     "causal|color_var@0|D_rad4-hue4": {
+      "est": 0.0894600890931629,
+      "sim": [
+       -0.23985803812856477,
+       0.41877821631489054
+      ],
+      "decision": "within",
+      "n_images": 21,
+      "n_patients": 19
+     },
+     "causal|color_var@0|D_rad16-hue16": {
+      "est": 0.008186726193679007,
+      "sim": [
+       -0.2868484059214314,
+       0.3032218583087894
+      ],
+      "decision": "within",
+      "n_images": 19,
+      "n_patients": 16
+     },
+     "causal|color_var@0|D_rad4-rad16": {
+      "est": 0.13229110592701396,
+      "sim": [
+       -0.04866376731395211,
+       0.31324597916798
+      ],
+      "decision": "within",
+      "n_images": 61,
+      "n_patients": 47
+     },
+     "causal|color_var@0|D_hue4-hue16": {
+      "est": -0.04248045980930328,
+      "sim": [
+       -0.39980373174807915,
+       0.3148428121294726
+      ],
+      "decision": "within",
+      "n_images": 10,
+      "n_patients": 9
+     },
+     "erm|color_var@2|D_rad4-hue4": {
+      "est": 0.7400443784652218,
+      "sim": [
+       -3.7218355219889787,
+       5.201924278919423
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 25
+     },
+     "erm|color_var@2|D_rad16-hue16": {
+      "est": -1.3166207706227022,
+      "sim": [
+       -3.418387658082743,
+       0.7851461168373388
+      ],
+      "decision": "indeterminate",
+      "n_images": 34,
+      "n_patients": 26
+     },
+     "erm|color_var@2|D_rad4-rad16": {
+      "est": 1.7815592288970947,
+      "sim": [
+       0.13895063370254213,
+       3.424167824091647
+      ],
+      "decision": "indeterminate",
+      "n_images": 64,
+      "n_patients": 46
+     },
+     "erm|color_var@2|D_hue4-hue16": {
+      "est": 0.8414256447239926,
+      "sim": [
+       -3.5218977058315737,
+       5.204748995279559
+      ],
+      "decision": "indeterminate",
+      "n_images": 19,
+      "n_patients": 16
+     },
+     "slim|color_var@2|D_rad4-hue4": {
+      "est": 1.0675875756048387,
+      "sim": [
+       -3.236768033442,
+       5.371943184651678
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 25
+     },
+     "slim|color_var@2|D_rad16-hue16": {
+      "est": -0.7063829758588005,
+      "sim": [
+       -3.677724318720222,
+       2.264958367002621
+      ],
+      "decision": "indeterminate",
+      "n_images": 34,
+      "n_patients": 26
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 5.581264495849609,
+      "sim": [
+       1.3735820194933943,
+       9.788946972205824
+      ],
+      "decision": "exceeds",
+      "n_images": 64,
+      "n_patients": 46
+     },
+     "slim|color_var@2|D_hue4-hue16": {
+      "est": 4.843660053453948,
+      "sim": [
+       -2.475004970914074,
+       12.162325077821968
+      ],
+      "decision": "indeterminate",
+      "n_images": 19,
+      "n_patients": 16
+     },
+     "causal|color_var@2|D_rad4-hue4": {
+      "est": 0.5198147681451613,
+      "sim": [
+       0.13138911051852797,
+       0.9082404257717945
+      ],
+      "decision": "indeterminate",
+      "n_images": 31,
+      "n_patients": 25
+     },
+     "causal|color_var@2|D_rad16-hue16": {
+      "est": 0.44687675027286305,
+      "sim": [
+       0.024084140764704554,
+       0.8696693597810216
+      ],
+      "decision": "indeterminate",
+      "n_images": 34,
+      "n_patients": 26
+     },
+     "causal|color_var@2|D_rad4-rad16": {
+      "est": 0.08192957937717438,
+      "sim": [
+       -0.17889250239906979,
+       0.34275166115341854
+      ],
+      "decision": "within",
+      "n_images": 64,
+      "n_patients": 46
+     },
+     "causal|color_var@2|D_hue4-hue16": {
+      "est": 0.06918822464190032,
+      "sim": [
+       -0.3069259923763924,
+       0.44530244166019306
+      ],
+      "decision": "within",
+      "n_images": 19,
+      "n_patients": 16
+     }
+    },
+    "cells": {
+     "erm|contrast@0": "indeterminate",
+     "slim|contrast@0": "indeterminate",
+     "causal|contrast@0": "indeterminate",
+     "erm|contrast@2": "routes disagree",
+     "slim|contrast@2": "indeterminate",
+     "causal|contrast@2": "indeterminate",
+     "erm|color_var@0": "indeterminate",
+     "slim|color_var@0": "indeterminate",
+     "causal|color_var@0": "routes agree",
+     "erm|color_var@2": "indeterminate",
+     "slim|color_var@2": "routes disagree",
+     "causal|color_var@2": "indeterminate"
+    },
+    "not_analysed": [],
+    "n_analysed": 48,
+    "summary": {
+     "routes disagree": 2,
+     "routes agree": 1,
+     "indeterminate": 9
+    },
+    "key": {
+     "erm|contrast@2|D_rad4-rad16": {
+      "est": 4.383134599165483,
+      "sim": [
+       1.016359613513881,
+       7.749909584817084
+      ],
+      "decision": "exceeds",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "causal|contrast@2|D_rad4-rad16": {
+      "est": 0.18138235265558417,
+      "sim": [
+       -0.1027312763555207,
+       0.46549598166668904
+      ],
+      "decision": "within",
+      "n_images": 55,
+      "n_patients": 42
+     },
+     "causal|contrast@2|D_rad4-hue4": {
+      "est": 0.29221903483072914,
+      "sim": [
+       -0.16300959582570873,
+       0.747447665487167
+      ],
+      "decision": "indeterminate",
+      "n_images": 30,
+      "n_patients": 24
+     },
+     "slim|color_var@2|D_rad4-rad16": {
+      "est": 5.581264495849609,
+      "sim": [
+       1.3735820194933943,
+       9.788946972205824
+      ],
+      "decision": "exceeds",
+      "n_images": 64,
+      "n_patients": 46
+     },
+     "slim|contrast@0|D_rad4-rad16": {
+      "est": 1.4000467439977133,
+      "sim": [
+       -0.1369325985154508,
+       2.9370260865108775
+      ],
+      "decision": "indeterminate",
+      "n_images": 41,
+      "n_patients": 33
+     }
+    }
+   }
+  }
+ },
+ "largest_relative_mismatch": 6.320164357980851e-07,
+ "largest_pixel_mismatch": 1.000396728515625
+}

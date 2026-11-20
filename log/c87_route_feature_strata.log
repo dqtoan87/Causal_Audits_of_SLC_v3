@@ -1,0 +1,8 @@
+first_run  erm|contrast@2|rad4-rad16      all +4.63 | within n=49 +0.98 [+0.56, +1.37] | beyond n=24 +12.08 [+8.57, +14.52]
+first_run  slim|color_var@2|rad4-rad16    all +5.27 | within n=33 +1.50 [+0.76, +2.42] | beyond n=43 +8.16 [+4.80, +11.28]
+first_run  slim|contrast@0|rad4-rad16     all +1.99 | within n=70 +1.07 [+0.70, +1.49] | beyond n=5 +14.84 [+14.00, +15.22]
+second_run erm|contrast@2|rad4-rad16      all +5.02 | within n=29 +1.27 [+0.73, +1.74] | beyond n=15 +12.26 [+7.20, +15.62]
+second_run causal|contrast@2|rad4-rad16   all +6.62 | within n=29 +0.82 [-0.38, +1.87] | beyond n=15 +17.82 [+16.24, +19.25]
+second_run causal|contrast@2|rad4-hue4    all +4.90 | within n=29 +1.89 [+0.83, +3.04] | beyond n=15 +10.73 [+6.19, +14.62]
+second_run slim|color_var@2|rad4-rad16    all +6.16 | within n=17 +1.53 [+0.80, +2.47] | beyond n=29 +8.87 [+3.78, +12.81]
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c87_route_feature_strata.json

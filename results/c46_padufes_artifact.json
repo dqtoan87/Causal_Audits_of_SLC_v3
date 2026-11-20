@@ -1,0 +1,523 @@
+{
+ "cohort": "PAD-UFES-20",
+ "margin_p": 0.05,
+ "boot": 4000,
+ "seed": 42,
+ "weights": "saved",
+ "split_counts": {
+  "train": {
+   "n": 1367,
+   "n_patients": 814,
+   "n_pos": 658
+  },
+  "select": {
+   "n": 475,
+   "n_patients": 281,
+   "n_pos": 214
+  },
+  "audit": {
+   "n": 456,
+   "n_patients": 278,
+   "n_pos": 217
+  }
+ },
+ "change_frac": {
+  "hair_x1": 0.0016722714963977698,
+  "hair_x2": 0.003460844138317043,
+  "hair_x3": 0.005226777181393884,
+  "hair_light": 0.010177770754110003,
+  "hair": 0.02367770705747892,
+  "hair_heavy": 0.040240590011276174,
+  "ruler": 0.010483099147677422,
+  "identity": 0.0
+ },
+ "n_audit": 456,
+ "n_patients": 278,
+ "n_malignant": 217,
+ "note": "Artifact criterion transported to a second cohort of clinical smartphone images. Same overlay family, same dose ladder, same three-way interval rule and same tolerance as the primary cohort.",
+ "models": {
+  "ERM": {
+   "select_auc": NaN,
+   "p0_mean_malignant": 0.7493093609809875,
+   "hair_x1": {
+    "all": {
+     "mean": 0.02072875387966633,
+     "ci": [
+      0.017944300547242165,
+      0.023821959272027016
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.02242308109998703,
+     "ci": [
+      0.018114540725946426,
+      0.027151552960276604
+     ],
+     "verdict": "equivalence"
+    },
+    "benign": {
+     "mean": 0.019190389662981033,
+     "ci": [
+      0.015590201131999493,
+      0.023262234404683113
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "hair_x2": {
+    "all": {
+     "mean": 0.03662346303462982,
+     "ci": [
+      0.03236796334385872,
+      0.04117495194077492
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.03697332367300987,
+     "ci": [
+      0.03110404871404171,
+      0.04353998601436615
+     ],
+     "verdict": "equivalence"
+    },
+    "benign": {
+     "mean": 0.03630580008029938,
+     "ci": [
+      0.030783042311668396,
+      0.04248848930001259
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "hair_x3": {
+    "all": {
+     "mean": 0.04996119812130928,
+     "ci": [
+      0.04383630305528641,
+      0.05687664449214935
+     ],
+     "verdict": "indeterminate"
+    },
+    "malignant": {
+     "mean": 0.05340508371591568,
+     "ci": [
+      0.044966377317905426,
+      0.0636441558599472
+     ],
+     "verdict": "indeterminate"
+    },
+    "benign": {
+     "mean": 0.046834323555231094,
+     "ci": [
+      0.03836013749241829,
+      0.055881161242723465
+     ],
+     "verdict": "indeterminate"
+    }
+   },
+   "hair_light": {
+    "all": {
+     "mean": 0.06946985423564911,
+     "ci": [
+      0.062088385224342346,
+      0.07741756737232208
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.07857116311788559,
+     "ci": [
+      0.06703078001737595,
+      0.09065345674753189
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.06120631843805313,
+     "ci": [
+      0.05188095197081566,
+      0.07098567485809326
+     ],
+     "verdict": "exceedance"
+    }
+   },
+   "hair": {
+    "all": {
+     "mean": 0.09438905119895935,
+     "ci": [
+      0.08445678651332855,
+      0.10420439392328262
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.10667822510004044,
+     "ci": [
+      0.09165553748607635,
+      0.12160762399435043
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.08323110640048981,
+     "ci": [
+      0.0717025175690651,
+      0.09526769816875458
+     ],
+     "verdict": "exceedance"
+    }
+   },
+   "hair_heavy": {
+    "all": {
+     "mean": 0.1262129247188568,
+     "ci": [
+      0.11421113461256027,
+      0.13791300356388092
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.14248499274253845,
+     "ci": [
+      0.12395317852497101,
+      0.16094030439853668
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.11143870651721954,
+     "ci": [
+      0.09583724290132523,
+      0.1273023933172226
+     ],
+     "verdict": "exceedance"
+    }
+   },
+   "ruler": {
+    "all": {
+     "mean": 0.05213507264852524,
+     "ci": [
+      0.04638656973838806,
+      0.05811364948749542
+     ],
+     "verdict": "indeterminate"
+    },
+    "malignant": {
+     "mean": 0.0579909011721611,
+     "ci": [
+      0.049597155302762985,
+      0.06653328984975815
+     ],
+     "verdict": "indeterminate"
+    },
+    "benign": {
+     "mean": 0.04681828245520592,
+     "ci": [
+      0.039791375398635864,
+      0.05449524521827698
+     ],
+     "verdict": "indeterminate"
+    }
+   },
+   "identity": {
+    "all": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "verdict": "equivalence"
+    },
+    "benign": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "_heldout_aggregate": {
+    "all": {
+     "mean": 0.08555173128843307,
+     "ci": [
+      0.07959461212158203,
+      0.09158115088939667
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.09643132984638214,
+     "ci": [
+      0.08761478960514069,
+      0.10497239977121353
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.07567360252141953,
+     "ci": [
+      0.06844034045934677,
+      0.08331501483917236
+     ],
+     "verdict": "exceedance"
+    }
+   }
+  },
+  "Slim": {
+   "select_auc": NaN,
+   "p0_mean_malignant": 0.5867909789085388,
+   "hair_x1": {
+    "all": {
+     "mean": 0.01772661879658699,
+     "ci": [
+      0.015448673628270626,
+      0.02016826905310154
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.01990821212530136,
+     "ci": [
+      0.01645239070057869,
+      0.023833418264985085
+     ],
+     "verdict": "equivalence"
+    },
+    "benign": {
+     "mean": 0.015745840966701508,
+     "ci": [
+      0.012933630496263504,
+      0.018941083922982216
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "hair_x2": {
+    "all": {
+     "mean": 0.03542625531554222,
+     "ci": [
+      0.03163236007094383,
+      0.03954240307211876
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.03885440155863762,
+     "ci": [
+      0.03309249505400658,
+      0.045013073831796646
+     ],
+     "verdict": "equivalence"
+    },
+    "benign": {
+     "mean": 0.03231367841362953,
+     "ci": [
+      0.02770247682929039,
+      0.03739618882536888
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "hair_x3": {
+    "all": {
+     "mean": 0.04331719130277634,
+     "ci": [
+      0.03926962614059448,
+      0.04767991229891777
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.05162068083882332,
+     "ci": [
+      0.045260973274707794,
+      0.05870848894119263
+     ],
+     "verdict": "indeterminate"
+    },
+    "benign": {
+     "mean": 0.03577803820371628,
+     "ci": [
+      0.031095372512936592,
+      0.040839020162820816
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "hair_light": {
+    "all": {
+     "mean": 0.059459321200847626,
+     "ci": [
+      0.05304810032248497,
+      0.06645521521568298
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.06698961555957794,
+     "ci": [
+      0.056996915489435196,
+      0.07723420113325119
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.05262219160795212,
+     "ci": [
+      0.045853689312934875,
+      0.059876035898923874
+     ],
+     "verdict": "indeterminate"
+    }
+   },
+   "hair": {
+    "all": {
+     "mean": 0.08781038969755173,
+     "ci": [
+      0.08102082461118698,
+      0.09507642686367035
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.09125783294439316,
+     "ci": [
+      0.08145668357610703,
+      0.10144183784723282
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.08468028903007507,
+     "ci": [
+      0.07510099560022354,
+      0.09505946189165115
+     ],
+     "verdict": "exceedance"
+    }
+   },
+   "hair_heavy": {
+    "all": {
+     "mean": 0.107789546251297,
+     "ci": [
+      0.09909891337156296,
+      0.11695487797260284
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.11734620481729507,
+     "ci": [
+      0.10469841212034225,
+      0.13047434389591217
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.09911258518695831,
+     "ci": [
+      0.08749091625213623,
+      0.11113722622394562
+     ],
+     "verdict": "exceedance"
+    }
+   },
+   "ruler": {
+    "all": {
+     "mean": 0.044951096177101135,
+     "ci": [
+      0.04042961448431015,
+      0.04956810548901558
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.05268925800919533,
+     "ci": [
+      0.045768965035676956,
+      0.06036511808633804
+     ],
+     "verdict": "indeterminate"
+    },
+    "benign": {
+     "mean": 0.03792522847652435,
+     "ci": [
+      0.032650966197252274,
+      0.043207984417676926
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "identity": {
+    "all": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "verdict": "equivalence"
+    },
+    "malignant": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "verdict": "equivalence"
+    },
+    "benign": {
+     "mean": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "verdict": "equivalence"
+    }
+   },
+   "_heldout_aggregate": {
+    "all": {
+     "mean": 0.07500258833169937,
+     "ci": [
+      0.07042758166790009,
+      0.07974462956190109
+     ],
+     "verdict": "exceedance"
+    },
+    "malignant": {
+     "mean": 0.0820707231760025,
+     "ci": [
+      0.0757891833782196,
+      0.08832487463951111
+     ],
+     "verdict": "exceedance"
+    },
+    "benign": {
+     "mean": 0.06858508288860321,
+     "ci": [
+      0.06295876950025558,
+      0.07447763532400131
+     ],
+     "verdict": "exceedance"
+    }
+   }
+  }
+ },
+ "summary": {
+  "n_cells": 6,
+  "exceedance": 6,
+  "equivalence": 0,
+  "indeterminate": 0
+ },
+ "runtime_sec": 178.1
+}

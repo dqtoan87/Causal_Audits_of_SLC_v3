@@ -1,0 +1,16 @@
+# Third fresh-directory run: the scripts added last, c75, c76 and c77 (2026-11-17)
+# The directory held a copy of this tree's code, cached results and the released checkpoints. Results are compared
+# with the committed files at a relative tolerance of 1e-9, ignoring timing and path fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-17T12:55:07+07:00 ===
+c75_seed_band                      rc=0    425s
+c76_route_exact_detail             rc=0     35s
+c77_route_feature_shift            rc=0     49s
+=== finished 2026-11-17T13:03:36+07:00 ===
+
+== comparison
+c75_seed_band.json                            equal
+c76_route_exact_detail.json                   equal
+c77_route_feature_shift.json                  equal
+files written: 3, differing: 0

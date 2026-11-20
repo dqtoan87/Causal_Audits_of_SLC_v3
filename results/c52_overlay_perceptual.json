@@ -1,0 +1,106 @@
+{
+ "n_images": 183,
+ "seed": 42,
+ "n_pairs": 2000,
+ "feature_extractor": "torchvision resnet50 IMAGENET1K_V2, pooled, independent of the audited checkpoints",
+ "note": "How far the synthetic overlay moves an image, measured on two scales the cohort itself supplies: a global photometric edit that alters most pixels, and the distance between two different lesions. This bounds the size of the intervention as an image change. It does not establish that the overlay resembles a real artifact, which needs paired images this cohort lacks.",
+ "pixel_change_frac": {
+  "hair_light": 0.010173696833739027,
+  "hair": 0.023561435319035432,
+  "hair_heavy": 0.040743250460898287,
+  "ruler": 0.010461753524351315,
+  "vignette": 0.6759278393182598,
+  "jitter": 0.9560451039362475
+ },
+ "edits": {
+  "hair_light": {
+   "feature_distance_median": 1.055464267730713,
+   "feature_distance_iqr": [
+    0.9295102953910828,
+    1.1252284049987793
+   ],
+   "lab_de_median": 0.21564368903636932,
+   "pixel_change_frac": 0.010173696833739027,
+   "feature_ratio_to_between_lesion": 1.111127551109728,
+   "lab_ratio_to_between_lesion": 0.012278880250251123
+  },
+  "hair": {
+   "feature_distance_median": 1.1678390502929688,
+   "feature_distance_iqr": [
+    1.069899320602417,
+    1.2499678134918213
+   ],
+   "lab_de_median": 0.7582494616508484,
+   "pixel_change_frac": 0.023561435319035432,
+   "feature_ratio_to_between_lesion": 1.2294287771885104,
+   "lab_ratio_to_between_lesion": 0.04317517651934575
+  },
+  "hair_heavy": {
+   "feature_distance_median": 1.2603132724761963,
+   "feature_distance_iqr": [
+    1.1848232746124268,
+    1.3555810451507568
+   ],
+   "lab_de_median": 1.6783051490783691,
+   "pixel_change_frac": 0.040743250460898287,
+   "feature_ratio_to_between_lesion": 1.3267799231975974,
+   "lab_ratio_to_between_lesion": 0.0955636960256118
+  },
+  "ruler": {
+   "feature_distance_median": 0.27771103382110596,
+   "feature_distance_iqr": [
+    0.19914937019348145,
+    0.3577505946159363
+   ],
+   "lab_de_median": 0.48195040225982666,
+   "pixel_change_frac": 0.010461753524351315,
+   "feature_ratio_to_between_lesion": 0.29235701326889857,
+   "lab_ratio_to_between_lesion": 0.02744254331000015
+  },
+  "vignette": {
+   "feature_distance_median": 0.870162844657898,
+   "feature_distance_iqr": [
+    0.7536581754684448,
+    0.9622440338134766
+   ],
+   "lab_de_median": 9.645934104919434,
+   "pixel_change_frac": 0.6759278393182598,
+   "feature_ratio_to_between_lesion": 0.9160536649243406,
+   "lab_ratio_to_between_lesion": 0.5492452401708974
+  },
+  "jitter": {
+   "feature_distance_median": 0.1520530730485916,
+   "feature_distance_iqr": [
+    0.10303491353988647,
+    0.1944494992494583
+   ],
+   "lab_de_median": 8.623147964477539,
+   "pixel_change_frac": 0.9560451039362475,
+   "feature_ratio_to_between_lesion": 0.16007207809928015,
+   "lab_ratio_to_between_lesion": 0.4910071874079228
+  }
+ },
+ "between_lesion": {
+  "n_pairs": 1991,
+  "feature_distance_median": 0.9499037861824036,
+  "feature_distance_iqr": [
+   0.8292244076728821,
+   1.070922613143921
+  ],
+  "lab_de_median": 17.562162399291992
+ },
+ "summary": {
+  "hair_feature_ratio": 1.2294287771885104,
+  "hair_lab_ratio": 0.04317517651934575,
+  "held_out_feature_ratio_range": [
+   0.29235701326889857,
+   1.3267799231975974
+  ],
+  "global_feature_ratio_range": [
+   0.16007207809928015,
+   0.9160536649243406
+  ],
+  "hair_vs_global_feature": 1.3420925260858516
+ },
+ "runtime_sec": 25.6
+}

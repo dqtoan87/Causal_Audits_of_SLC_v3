@@ -1,0 +1,17 @@
+# Tenth fresh-directory run: c87 and c88 (2026-11-19)
+# The directory held a copy of this tree's code, the stored split and audit cohort, the route-test construction and
+# plan, the stored responses of both runs (c63_route_scores*.npz), the feature norms of c83
+# (c83_batch_extremes_scores.npz) and the released checkpoints, including the epoch-1 Inv checkpoint, without any
+# c87 or c88 output (c88 rescored the audit cohort from the images). Results are compared with the committed files
+# at a relative tolerance of 1e-9, ignoring timing fields.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-19T10:59:04+07:00 ===
+c87_route_feature_strata           rc=0      0s
+c88_artifact_inv_epoch1            rc=0     56s
+=== finished 2026-11-19T11:00:00+07:00 ===
+
+== comparison (the two result files written by the run)
+c87_route_feature_strata.json                 equal
+c88_artifact_inv_epoch1.json                  equal
+files written: 2, differing: 0

@@ -1,0 +1,1762 @@
+{
+ "note": "exploratory robustness of the registered decisions; no rescoring",
+ "reproduction_max_abs_difference": 0.0,
+ "crit_registered": 3.3040970662101126,
+ "decisive": {
+  "slim|contrast@0|D_rad4-rad16": {
+   "est": 1.9882271321614584,
+   "sim_lower_unrounded": 0.5097901785337962,
+   "sim_upper_unrounded": 3.4666640857891204,
+   "seeds": [
+    {
+     "seed": 63,
+     "lower": 0.5017686033368691,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 64,
+     "lower": 0.49238508248162605,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 65,
+     "lower": 0.5020331566031035,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 66,
+     "lower": 0.5118677686935043,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 67,
+     "lower": 0.5212487098031235,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 68,
+     "lower": 0.4986882084599191,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 69,
+     "lower": 0.4906215860766252,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 70,
+     "lower": 0.5088486838652155,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 71,
+     "lower": 0.49323661554372844,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 72,
+     "lower": 0.4952381646648487,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 73,
+     "lower": 0.5065475441752276,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 74,
+     "lower": 0.5077137101602816,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 75,
+     "lower": 0.4976969950453123,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 76,
+     "lower": 0.5055745023028444,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 77,
+     "lower": 0.49689466400805804,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 78,
+     "lower": 0.4955429011062644,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 79,
+     "lower": 0.4967412874509036,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 80,
+     "lower": 0.5006942554709419,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 81,
+     "lower": 0.4972316179742131,
+     "decision": "indeterminate"
+    },
+    {
+     "seed": 82,
+     "lower": 0.5018083600812786,
+     "decision": "exceeds"
+    }
+   ],
+   "leave_one_patient_out": [
+    {
+     "patient": "IP_0076153",
+     "in_cell": true,
+     "est": 2.0018978634396114,
+     "lower": 0.5108868226147643,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0294957",
+     "in_cell": true,
+     "est": 1.9742373904666386,
+     "lower": 0.4747544445323495,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_0321326",
+     "in_cell": true,
+     "est": 2.0330660049229454,
+     "lower": 0.5254472576186708,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0786235",
+     "in_cell": true,
+     "est": 2.015516951277449,
+     "lower": 0.5208016621258309,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0973797",
+     "in_cell": true,
+     "est": 1.9594701818517737,
+     "lower": 0.46284257817279695,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_1039004",
+     "in_cell": true,
+     "est": 2.011505126953125,
+     "lower": 0.5184638809559188,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_1712091",
+     "in_cell": true,
+     "est": 1.8312095435889992,
+     "lower": 0.4272151815731695,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_1885773",
+     "in_cell": true,
+     "est": 2.0373476629387843,
+     "lower": 0.5375863775586052,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2068150",
+     "in_cell": true,
+     "est": 1.958296286093222,
+     "lower": 0.46285471491344876,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_2084621",
+     "in_cell": true,
+     "est": 2.0245967555690454,
+     "lower": 0.5372039588820081,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2506030",
+     "in_cell": true,
+     "est": 1.9671111235747467,
+     "lower": 0.473837743186164,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_2586665",
+     "in_cell": true,
+     "est": 2.006595920872044,
+     "lower": 0.5146072867305871,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3154471",
+     "in_cell": true,
+     "est": 2.057146673333155,
+     "lower": 0.5651768441422182,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3201881",
+     "in_cell": true,
+     "est": 2.0055220320418075,
+     "lower": 0.5160159103240733,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3220951",
+     "in_cell": true,
+     "est": 1.974580320593429,
+     "lower": 0.45730205077915387,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_3346083",
+     "in_cell": true,
+     "est": 1.9869063093855575,
+     "lower": 0.4953798537861298,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_3396756",
+     "in_cell": true,
+     "est": 1.9778269174936656,
+     "lower": 0.48300831954997014,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_3647018",
+     "in_cell": true,
+     "est": 1.8099759076092694,
+     "lower": 0.418660034197214,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_3823237",
+     "in_cell": true,
+     "est": 2.0224320695206925,
+     "lower": 0.5303422281854246,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3987348",
+     "in_cell": true,
+     "est": 1.954442617055532,
+     "lower": 0.4607949056251608,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_4076839",
+     "in_cell": true,
+     "est": 1.9793577451963682,
+     "lower": 0.48172820026243657,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_4177511",
+     "in_cell": true,
+     "est": 2.0833284619828345,
+     "lower": 0.5684984565728946,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4304202",
+     "in_cell": true,
+     "est": 2.012772018845017,
+     "lower": 0.5202340571333377,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4414342",
+     "in_cell": true,
+     "est": 2.01992467931799,
+     "lower": 0.5305371052652019,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4513696",
+     "in_cell": true,
+     "est": 2.017681224926098,
+     "lower": 0.5268365229968779,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4540594",
+     "in_cell": true,
+     "est": 2.0326922691031677,
+     "lower": 0.5267637625183077,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4849578",
+     "in_cell": true,
+     "est": 1.9657377478194564,
+     "lower": 0.4538731066611559,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_5147120",
+     "in_cell": true,
+     "est": 2.00749227162954,
+     "lower": 0.5160807532760885,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5230038",
+     "in_cell": true,
+     "est": 2.0102019438872465,
+     "lower": 0.5184711655770136,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5611762",
+     "in_cell": true,
+     "est": 2.0084434715477197,
+     "lower": 0.5159728959587069,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5714646",
+     "in_cell": true,
+     "est": 1.9511828035921663,
+     "lower": 0.4585767076083844,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_5811816",
+     "in_cell": true,
+     "est": 2.031986545872044,
+     "lower": 0.5520461630262681,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5961877",
+     "in_cell": true,
+     "est": 1.9943097088788007,
+     "lower": 0.5070139221640921,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6032376",
+     "in_cell": true,
+     "est": 2.0382105161065924,
+     "lower": 0.5426991331389235,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6141958",
+     "in_cell": true,
+     "est": 2.000789333034206,
+     "lower": 0.5119900092400986,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6423094",
+     "in_cell": true,
+     "est": 2.055166584171661,
+     "lower": 0.5641626725799154,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6611217",
+     "in_cell": true,
+     "est": 2.009063720703125,
+     "lower": 0.5185371667616421,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6723298",
+     "in_cell": true,
+     "est": 1.9962183286065924,
+     "lower": 0.4812049677183112,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_7272992",
+     "in_cell": false,
+     "est": 1.9882267252604167,
+     "lower": 0.5147170982651705,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7312348",
+     "in_cell": true,
+     "est": 2.0026368837098816,
+     "lower": 0.5076363732557565,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7346729",
+     "in_cell": true,
+     "est": 2.0452361235747465,
+     "lower": 0.5673269276950281,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7541961",
+     "in_cell": true,
+     "est": 2.0030872241870776,
+     "lower": 0.5075071039342176,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8030518",
+     "in_cell": true,
+     "est": 2.002953606682855,
+     "lower": 0.5145275910564058,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8352314",
+     "in_cell": true,
+     "est": 1.9760323601800043,
+     "lower": 0.47782718571677796,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_8494850",
+     "in_cell": true,
+     "est": 1.9836345363307644,
+     "lower": 0.48632844887133064,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_8672132",
+     "in_cell": true,
+     "est": 2.0140389107369088,
+     "lower": 0.5251159228462374,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8685501",
+     "in_cell": true,
+     "est": 1.9729704985747467,
+     "lower": 0.47617850193146616,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_8781267",
+     "in_cell": true,
+     "est": 2.0158367418263055,
+     "lower": 0.4995162615091633,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_8977835",
+     "in_cell": true,
+     "est": 1.6732673107738225,
+     "lower": 0.4936109271553393,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_9301252",
+     "in_cell": true,
+     "est": 2.012137954299514,
+     "lower": 0.5185165387421762,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9324599",
+     "in_cell": true,
+     "est": 1.8908422133501839,
+     "lower": 0.3158076466814106,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_9526638",
+     "in_cell": true,
+     "est": 1.937141212257179,
+     "lower": 0.4475685359458066,
+     "decision": "indeterminate"
+    },
+    {
+     "patient": "IP_9807499",
+     "in_cell": true,
+     "est": 2.010160291517103,
+     "lower": 0.5132681008984994,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9978624",
+     "in_cell": true,
+     "est": 1.9993640796558276,
+     "lower": 0.49628502139464414,
+     "decision": "indeterminate"
+    }
+   ],
+   "seed_exceeds": 10,
+   "seed_lower_range": [
+    0.4906215860766252,
+    0.5212487098031235
+   ],
+   "lopo_exceeds": 32,
+   "lopo_n": 54,
+   "lopo_lower_min": 0.3158076466814106,
+   "lopo_in_cell_n": 53,
+   "lopo_in_cell_exceeds": 31,
+   "lopo_in_cell_lower_min": 0.3158076466814106
+  },
+  "erm|contrast@2|D_rad4-rad16": {
+   "est": 4.628513701974529,
+   "sim_lower_unrounded": 1.9194015686313706,
+   "sim_upper_unrounded": 7.337625835317688,
+   "seeds": [
+    {
+     "seed": 63,
+     "lower": 1.9224735946746523,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 64,
+     "lower": 1.9437587479231628,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 65,
+     "lower": 1.9406962587490932,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 66,
+     "lower": 1.9444139201898585,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 67,
+     "lower": 1.9652526150856486,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 68,
+     "lower": 1.927278024029997,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 69,
+     "lower": 1.9186920260131877,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 70,
+     "lower": 1.9338892191952977,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 71,
+     "lower": 1.9551699378237015,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 72,
+     "lower": 1.937726892275109,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 73,
+     "lower": 1.9391681782441728,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 74,
+     "lower": 1.920265708775449,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 75,
+     "lower": 1.9428649410326742,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 76,
+     "lower": 1.928934767622799,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 77,
+     "lower": 1.9238549809913272,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 78,
+     "lower": 1.9331127537471016,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 79,
+     "lower": 1.925366345987865,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 80,
+     "lower": 1.9306913072527672,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 81,
+     "lower": 1.9377329615612493,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 82,
+     "lower": 1.9349253044352017,
+     "decision": "exceeds"
+    }
+   ],
+   "leave_one_patient_out": [
+    {
+     "patient": "IP_0076153",
+     "in_cell": true,
+     "est": 4.6951925489637585,
+     "lower": 1.9876021173600975,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0294957",
+     "in_cell": true,
+     "est": 4.6777161492241754,
+     "lower": 1.9546306962999376,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0321326",
+     "in_cell": true,
+     "est": 4.744919897804798,
+     "lower": 2.0106351187828753,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0786235",
+     "in_cell": false,
+     "est": 4.628513701974529,
+     "lower": 1.9348867711885238,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0973797",
+     "in_cell": true,
+     "est": 4.68832270304362,
+     "lower": 1.9719084859023153,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_1039004",
+     "in_cell": true,
+     "est": 4.6896485222710504,
+     "lower": 1.9731030484699104,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_1712091",
+     "in_cell": true,
+     "est": 4.692798614501953,
+     "lower": 1.9942506031845508,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_1885773",
+     "in_cell": true,
+     "est": 4.499180263943142,
+     "lower": 1.7962119666991478,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2068150",
+     "in_cell": true,
+     "est": 4.656882815890842,
+     "lower": 1.926314229100225,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2084621",
+     "in_cell": true,
+     "est": 4.674460940890842,
+     "lower": 1.9486265156688725,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2506030",
+     "in_cell": true,
+     "est": 4.513611687554254,
+     "lower": 1.7992728860351836,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2586665",
+     "in_cell": true,
+     "est": 4.678170522054036,
+     "lower": 1.9524528939776258,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3154471",
+     "in_cell": true,
+     "est": 4.691222714706206,
+     "lower": 1.9286543620001524,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3201881",
+     "in_cell": true,
+     "est": 4.705012427435981,
+     "lower": 1.989065859816102,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3220951",
+     "in_cell": true,
+     "est": 4.284997644558759,
+     "lower": 1.7347693119741723,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3346083",
+     "in_cell": true,
+     "est": 4.6435364617241754,
+     "lower": 1.916083950217475,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3396756",
+     "in_cell": true,
+     "est": 4.504971822102864,
+     "lower": 1.7890376589220063,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3647018",
+     "in_cell": true,
+     "est": 4.497179667154948,
+     "lower": 1.7851763861345442,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3823237",
+     "in_cell": true,
+     "est": 4.6716940138075085,
+     "lower": 1.940697863445095,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3987348",
+     "in_cell": true,
+     "est": 4.900549994574653,
+     "lower": 2.357824894621791,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4076839",
+     "in_cell": true,
+     "est": 4.6825989617241754,
+     "lower": 1.961958092610149,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4177511",
+     "in_cell": true,
+     "est": 4.7343334253283516,
+     "lower": 1.9226039356855753,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4304202",
+     "in_cell": true,
+     "est": 4.67294184366862,
+     "lower": 1.9475469379292956,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4414342",
+     "in_cell": true,
+     "est": 4.7071554395887585,
+     "lower": 1.994892340607953,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4513696",
+     "in_cell": true,
+     "est": 4.706470489501953,
+     "lower": 1.9925200039973587,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4540594",
+     "in_cell": true,
+     "est": 4.756531197684152,
+     "lower": 1.987609367289235,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4849578",
+     "in_cell": true,
+     "est": 4.545245963083187,
+     "lower": 1.776265939135648,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5147120",
+     "in_cell": true,
+     "est": 4.457079569498698,
+     "lower": 1.7661616353351879,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5230038",
+     "in_cell": true,
+     "est": 4.696793026394314,
+     "lower": 1.968215475324977,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5611762",
+     "in_cell": true,
+     "est": 4.685718536376953,
+     "lower": 1.952697860578089,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5714646",
+     "in_cell": true,
+     "est": 4.455234951443142,
+     "lower": 1.758582303378628,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5811816",
+     "in_cell": true,
+     "est": 4.516405741373698,
+     "lower": 1.7964915742323302,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5961877",
+     "in_cell": true,
+     "est": 4.671056535508898,
+     "lower": 1.9435425297949807,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6032376",
+     "in_cell": true,
+     "est": 4.557611169949384,
+     "lower": 1.7870509165173334,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6141958",
+     "in_cell": true,
+     "est": 4.6782858106825085,
+     "lower": 1.9547398773659972,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6423094",
+     "in_cell": true,
+     "est": 4.715492355991417,
+     "lower": 1.966133007513208,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6611217",
+     "in_cell": true,
+     "est": 4.531406826443142,
+     "lower": 1.8013058889992926,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6723298",
+     "in_cell": true,
+     "est": 4.575987050231074,
+     "lower": 1.794102591381813,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7272992",
+     "in_cell": false,
+     "est": 4.628513701974529,
+     "lower": 1.9234310959688279,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7312348",
+     "in_cell": true,
+     "est": 4.699851565890842,
+     "lower": 1.967299592750384,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7346729",
+     "in_cell": true,
+     "est": 4.669266170925564,
+     "lower": 1.9299876850610813,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7541961",
+     "in_cell": true,
+     "est": 4.512607998318142,
+     "lower": 1.7799162905007435,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8030518",
+     "in_cell": true,
+     "est": 4.6891907585991754,
+     "lower": 1.9613253789853928,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8352314",
+     "in_cell": true,
+     "est": 4.664939456515842,
+     "lower": 1.9183906256827137,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8494850",
+     "in_cell": true,
+     "est": 4.686912112765842,
+     "lower": 1.947315872882664,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8672132",
+     "in_cell": true,
+     "est": 4.67465082804362,
+     "lower": 1.9383756861161792,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8685501",
+     "in_cell": true,
+     "est": 4.681602054172092,
+     "lower": 1.9447761812061595,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8781267",
+     "in_cell": true,
+     "est": 4.718786535128741,
+     "lower": 1.9505785840110939,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8977835",
+     "in_cell": true,
+     "est": 4.27651756397192,
+     "lower": 1.6337605503064672,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9301252",
+     "in_cell": true,
+     "est": 4.6586731804741754,
+     "lower": 1.91764923575859,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9324599",
+     "in_cell": true,
+     "est": 4.443803474084655,
+     "lower": 1.5853210250978145,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9526638",
+     "in_cell": true,
+     "est": 4.471131218804254,
+     "lower": 1.7646345314122862,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9807499",
+     "in_cell": true,
+     "est": 4.692798614501953,
+     "lower": 1.9430389370777297,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9978624",
+     "in_cell": true,
+     "est": 4.663338979085286,
+     "lower": 1.8979454717105728,
+     "decision": "exceeds"
+    }
+   ],
+   "seed_exceeds": 20,
+   "seed_lower_range": [
+    1.9186920260131877,
+    1.9652526150856486
+   ],
+   "lopo_exceeds": 54,
+   "lopo_n": 54,
+   "lopo_lower_min": 1.5853210250978145,
+   "lopo_in_cell_n": 52,
+   "lopo_in_cell_exceeds": 52,
+   "lopo_in_cell_lower_min": 1.5853210250978145
+  },
+  "slim|color_var@2|D_rad4-rad16": {
+   "est": 5.2676536158511515,
+   "sim_lower_unrounded": 1.8363220823589286,
+   "sim_upper_unrounded": 8.698985149343375,
+   "seeds": [
+    {
+     "seed": 63,
+     "lower": 1.8576937623228336,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 64,
+     "lower": 1.825444940623521,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 65,
+     "lower": 1.8279058607835688,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 66,
+     "lower": 1.8075605619405946,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 67,
+     "lower": 1.8747828621493525,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 68,
+     "lower": 1.8066711532282813,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 69,
+     "lower": 1.8110188310016335,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 70,
+     "lower": 1.8158505620829954,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 71,
+     "lower": 1.8409407857862328,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 72,
+     "lower": 1.7891701117846757,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 73,
+     "lower": 1.8509060516401061,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 74,
+     "lower": 1.8447548021451143,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 75,
+     "lower": 1.8362777178462117,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 76,
+     "lower": 1.8613512791620903,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 77,
+     "lower": 1.8211060935738295,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 78,
+     "lower": 1.8159449415511904,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 79,
+     "lower": 1.8452412163899803,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 80,
+     "lower": 1.8599910301532905,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 81,
+     "lower": 1.8342325786088338,
+     "decision": "exceeds"
+    },
+    {
+     "seed": 82,
+     "lower": 1.8429000859804745,
+     "decision": "exceeds"
+    }
+   ],
+   "leave_one_patient_out": [
+    {
+     "patient": "IP_0076153",
+     "in_cell": true,
+     "est": 5.158603922526042,
+     "lower": 1.680656809328699,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0294957",
+     "in_cell": true,
+     "est": 5.152505289713542,
+     "lower": 1.663749577069412,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0321326",
+     "in_cell": true,
+     "est": 5.409482388883023,
+     "lower": 1.8768904498587053,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0786235",
+     "in_cell": true,
+     "est": 5.338201497395834,
+     "lower": 1.826890723723484,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_0973797",
+     "in_cell": true,
+     "est": 5.1852587890625,
+     "lower": 1.6874707720094677,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_1039004",
+     "in_cell": true,
+     "est": 5.306300455729167,
+     "lower": 1.7966051539314423,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_1712091",
+     "in_cell": true,
+     "est": 5.706126708984375,
+     "lower": 2.5634642875789457,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_1885773",
+     "in_cell": true,
+     "est": 5.285245740735853,
+     "lower": 1.7512959149428537,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2068150",
+     "in_cell": true,
+     "est": 5.298370768229167,
+     "lower": 1.8012169373253952,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2084621",
+     "in_cell": true,
+     "est": 5.2737255859375,
+     "lower": 1.7763230329618285,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2506030",
+     "in_cell": true,
+     "est": 5.158421630859375,
+     "lower": 1.6842896834527674,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_2586665",
+     "in_cell": true,
+     "est": 5.3508154296875,
+     "lower": 1.8603814915948425,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3154471",
+     "in_cell": true,
+     "est": 4.986746710699958,
+     "lower": 1.5642026138691607,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3201881",
+     "in_cell": true,
+     "est": 5.3330859375,
+     "lower": 1.8393675187932645,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3220951",
+     "in_cell": true,
+     "est": 4.974394514754012,
+     "lower": 1.554836018499333,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3346083",
+     "in_cell": true,
+     "est": 5.297107747395834,
+     "lower": 1.79126683861758,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3396756",
+     "in_cell": true,
+     "est": 5.337888997395833,
+     "lower": 1.8320140203878172,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3647018",
+     "in_cell": true,
+     "est": 5.337888997395833,
+     "lower": 1.8329422731432712,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3823237",
+     "in_cell": true,
+     "est": 5.3300244140625,
+     "lower": 1.8178953815924799,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_3987348",
+     "in_cell": true,
+     "est": 5.165765380859375,
+     "lower": 1.6675018910896156,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4076839",
+     "in_cell": true,
+     "est": 5.3482861328125,
+     "lower": 1.835906128168531,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4177511",
+     "in_cell": true,
+     "est": 5.055334726969401,
+     "lower": 1.4623181762538522,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4304202",
+     "in_cell": true,
+     "est": 5.300388997395833,
+     "lower": 1.7687100361766013,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4414342",
+     "in_cell": true,
+     "est": 5.246697591145833,
+     "lower": 1.715479336871467,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4513696",
+     "in_cell": true,
+     "est": 5.333709309895833,
+     "lower": 1.8088280772158827,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4540594",
+     "in_cell": true,
+     "est": 5.294905571088399,
+     "lower": 1.6677367148398683,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_4849578",
+     "in_cell": true,
+     "est": 5.0285933211043075,
+     "lower": 1.536129315854423,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5147120",
+     "in_cell": true,
+     "est": 5.337888997395833,
+     "lower": 1.8155577258287483,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5230038",
+     "in_cell": true,
+     "est": 5.3586181640625,
+     "lower": 1.8399325313435715,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5611762",
+     "in_cell": true,
+     "est": 5.345662434895833,
+     "lower": 1.822917753570049,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5714646",
+     "in_cell": true,
+     "est": 5.337888997395833,
+     "lower": 1.8090332347016274,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5811816",
+     "in_cell": true,
+     "est": 5.105036214192708,
+     "lower": 1.631471013268376,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_5961877",
+     "in_cell": true,
+     "est": 5.133057047526042,
+     "lower": 1.6537320302956635,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6032376",
+     "in_cell": true,
+     "est": 5.290192887589738,
+     "lower": 1.7435095082160568,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6141958",
+     "in_cell": true,
+     "est": 5.329724934895833,
+     "lower": 1.836396575412564,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6423094",
+     "in_cell": true,
+     "est": 5.314035776499155,
+     "lower": 1.771794450626515,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6611217",
+     "in_cell": true,
+     "est": 5.337888997395833,
+     "lower": 1.8461142521531446,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_6723298",
+     "in_cell": true,
+     "est": 5.306144205729167,
+     "lower": 1.8066186747663817,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7272992",
+     "in_cell": true,
+     "est": 5.323806966145833,
+     "lower": 1.8290046497476364,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7312348",
+     "in_cell": true,
+     "est": 5.124411214192708,
+     "lower": 1.654614809338204,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7346729",
+     "in_cell": true,
+     "est": 5.155203857421875,
+     "lower": 1.6748026423768367,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_7541961",
+     "in_cell": true,
+     "est": 5.154656982421875,
+     "lower": 1.6701271424083641,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8030518",
+     "in_cell": true,
+     "est": 5.706127115885416,
+     "lower": 2.5779575879452015,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8352314",
+     "in_cell": true,
+     "est": 5.3292313639322915,
+     "lower": 1.8697169560090217,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8494850",
+     "in_cell": true,
+     "est": 5.3273681640625,
+     "lower": 1.8681700300756883,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8672132",
+     "in_cell": true,
+     "est": 5.145166422526041,
+     "lower": 1.7130662663848133,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8685501",
+     "in_cell": true,
+     "est": 5.281925455729167,
+     "lower": 1.8202872497082208,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8781267",
+     "in_cell": true,
+     "est": 5.001830229888091,
+     "lower": 1.5955984415362825,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_8977835",
+     "in_cell": true,
+     "est": 5.300724453396267,
+     "lower": 1.667865105128218,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9301252",
+     "in_cell": true,
+     "est": 5.094932047526042,
+     "lower": 1.6605299826628954,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9324599",
+     "in_cell": true,
+     "est": 5.5101734106091484,
+     "lower": 1.8606739112214545,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9526638",
+     "in_cell": true,
+     "est": 5.157666422526042,
+     "lower": 1.7018645502198941,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9807499",
+     "in_cell": true,
+     "est": 5.337888997395833,
+     "lower": 1.8725921135077397,
+     "decision": "exceeds"
+    },
+    {
+     "patient": "IP_9978624",
+     "in_cell": true,
+     "est": 5.3137809244791665,
+     "lower": 1.8361591152022503,
+     "decision": "exceeds"
+    }
+   ],
+   "seed_exceeds": 20,
+   "seed_lower_range": [
+    1.7891701117846757,
+    1.8747828621493525
+   ],
+   "lopo_exceeds": 54,
+   "lopo_n": 54,
+   "lopo_lower_min": 1.4623181762538522,
+   "lopo_in_cell_n": 54,
+   "lopo_in_cell_exceeds": 54,
+   "lopo_in_cell_lower_min": 1.4623181762538522
+  }
+ },
+ "cells": {
+  "erm|contrast@0": {
+   "registered_class": "indeterminate",
+   "disagrees_below_margin": 0.3923401448454358,
+   "agrees_above_margin": 2.575636743175398
+  },
+  "slim|contrast@0": {
+   "registered_class": "routes disagree",
+   "disagrees_below_margin": 0.5097901785337962,
+   "agrees_above_margin": 5.622481000921715
+  },
+  "causal|contrast@0": {
+   "registered_class": "routes agree",
+   "disagrees_below_margin": 0.0,
+   "agrees_above_margin": 0.34056206752655577
+  },
+  "erm|contrast@2": {
+   "registered_class": "routes disagree",
+   "disagrees_below_margin": 1.9194015686313706,
+   "agrees_above_margin": 7.337625835317688
+  },
+  "slim|contrast@2": {
+   "registered_class": "indeterminate",
+   "disagrees_below_margin": 0.0,
+   "agrees_above_margin": 9.193400023306772
+  },
+  "causal|contrast@2": {
+   "registered_class": "indeterminate",
+   "disagrees_below_margin": 0.14899847270376182,
+   "agrees_above_margin": 0.6238841194844071
+  },
+  "erm|color_var@0": {
+   "registered_class": "indeterminate",
+   "disagrees_below_margin": 0.0,
+   "agrees_above_margin": 1.73962469099831
+  },
+  "slim|color_var@0": {
+   "registered_class": "indeterminate",
+   "disagrees_below_margin": 0.3735528179526153,
+   "agrees_above_margin": 5.00707632999652
+  },
+  "causal|color_var@0": {
+   "registered_class": "routes agree",
+   "disagrees_below_margin": 0.0,
+   "agrees_above_margin": 0.27499858362781937
+  },
+  "erm|color_var@2": {
+   "registered_class": "indeterminate",
+   "disagrees_below_margin": 0.11363284672116514,
+   "agrees_above_margin": 3.7888502401158
+  },
+  "slim|color_var@2": {
+   "registered_class": "routes disagree",
+   "disagrees_below_margin": 1.8363220823589286,
+   "agrees_above_margin": 8.698985149343375
+  },
+  "causal|color_var@2": {
+   "registered_class": "indeterminate",
+   "disagrees_below_margin": 0.18239855819151274,
+   "agrees_above_margin": 0.6607489204140589
+  }
+ },
+ "seed_crit_range": [
+  3.286878956214227,
+  3.328188897265825
+ ],
+ "cross_pairs": {
+  "erm|contrast@0|D_rad4-hue16": {
+   "est": -0.5564285786946614,
+   "ci": [
+    -1.1265166418395232,
+    -0.11821123235788676
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "erm|contrast@0|D_rad16-hue4": {
+   "est": -1.7652947998046875,
+   "ci": [
+    -2.4782440784947672,
+    -1.0843070434669082
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "slim|contrast@0|D_rad4-hue16": {
+   "est": -0.14587069193522134,
+   "ci": [
+    -1.4634998092191243,
+    1.0703064629759318
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "slim|contrast@0|D_rad16-hue4": {
+   "est": -4.754278971354167,
+   "ci": [
+    -6.3497433926517886,
+    -3.185576651934851
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "causal|contrast@0|D_rad4-hue16": {
+   "est": 0.06971652984619141,
+   "ci": [
+    -0.0658955978263639,
+    0.21362299364197446
+   ],
+   "marginal_decision": "within"
+  },
+  "causal|contrast@0|D_rad16-hue4": {
+   "est": -0.20272216796875,
+   "ci": [
+    -0.37524503369667483,
+    -0.04777576128412024
+   ],
+   "marginal_decision": "within"
+  },
+  "erm|contrast@2|D_rad4-hue16": {
+   "est": 3.210432287764876,
+   "ci": [
+    1.4308304147514699,
+    4.961640229556141
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "erm|contrast@2|D_rad16-hue4": {
+   "est": -3.7349088485926796,
+   "ci": [
+    -5.112873115072565,
+    -2.346348527355775
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "slim|contrast@2|D_rad4-hue16": {
+   "est": 5.347703907587757,
+   "ci": [
+    2.261138886343902,
+    8.120283971687357
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "slim|contrast@2|D_rad16-hue4": {
+   "est": -1.90534450583262,
+   "ci": [
+    -3.919897525778113,
+    0.22601882825924585
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "causal|contrast@2|D_rad4-hue16": {
+   "est": 0.45961223236502036,
+   "ci": [
+    0.3257624665213668,
+    0.6069060246966276
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "causal|contrast@2|D_rad16-hue4": {
+   "est": 0.2171721785035852,
+   "ci": [
+    0.07538084213311474,
+    0.3457723268284267
+   ],
+   "marginal_decision": "within"
+  },
+  "erm|color_var@0|D_rad4-hue16": {
+   "est": -0.44962806206244926,
+   "ci": [
+    -0.6739460493754136,
+    -0.22091422865433355
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "erm|color_var@0|D_rad16-hue4": {
+   "est": -0.7652272311123934,
+   "ci": [
+    -1.3414716980281822,
+    -0.23683778584624382
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "slim|color_var@0|D_rad4-hue16": {
+   "est": -1.1635456828327921,
+   "ci": [
+    -2.0566054405012855,
+    -0.44635256296396275
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "slim|color_var@0|D_rad16-hue4": {
+   "est": -3.189771181577212,
+   "ci": [
+    -4.744129612969273,
+    -1.8591381279326844
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "causal|color_var@0|D_rad4-hue16": {
+   "est": 0.05398240646758637,
+   "ci": [
+    -0.07560104747415668,
+    0.189510805516185
+   ],
+   "marginal_decision": "within"
+  },
+  "causal|color_var@0|D_rad16-hue4": {
+   "est": -0.05859875369381595,
+   "ci": [
+    -0.18077285276872918,
+    0.05789440713793676
+   ],
+   "marginal_decision": "within"
+  },
+  "erm|color_var@2|D_rad4-hue16": {
+   "est": 1.1219323810778166,
+   "ci": [
+    -0.3451899480598513,
+    2.4507908819944038
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "erm|color_var@2|D_rad16-hue4": {
+   "est": -1.378601676539371,
+   "ci": [
+    -2.2440022401282027,
+    -0.49025479641070346
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "slim|color_var@2|D_rad4-hue16": {
+   "est": 4.347766273900082,
+   "ci": [
+    2.252339106416623,
+    6.278906105744934
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "slim|color_var@2|D_rad16-hue4": {
+   "est": -3.7959807546515214,
+   "ci": [
+    -5.844308891128118,
+    -1.728160855404096
+   ],
+   "marginal_decision": "exceeds"
+  },
+  "causal|color_var@2|D_rad4-hue16": {
+   "est": 0.4927474574038857,
+   "ci": [
+    0.3381912554661487,
+    0.6498912507330055
+   ],
+   "marginal_decision": "indeterminate"
+  },
+  "causal|color_var@2|D_rad16-hue4": {
+   "est": 0.33631701218454463,
+   "ci": [
+    0.20250822964962173,
+    0.45960163266253873
+   ],
+   "marginal_decision": "within"
+  }
+ },
+ "runtime_sec": 12.7
+}

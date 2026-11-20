@@ -1,0 +1,10 @@
+[erm] scored (25s)
+[slim] scored (37s)
+[causal] scored (49s)
+c10_batch    keeps 57 images
+c19_cache    keeps 58 images
+single_bf16  keeps 57 images
+single_fp32  keeps 57 images
+ISIC_3039686 {'c10_batch': 0.0995, 'c19_cache': 0.1023, 'single_bf16': 0.0988, 'single_fp32': 0.0963}
+saved -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/results/c68_floor_sets.json (49s)
+rc=0

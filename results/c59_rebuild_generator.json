@@ -1,0 +1,637 @@
+{
+ "n_images": 185,
+ "margin_p": 0.05,
+ "edit_seeds": {
+  "hair_light": 39595,
+  "hair": 47514,
+  "hair_heavy": 55433,
+  "ruler": 63352
+ },
+ "pixel_fraction_matches_cache": {
+  "hair_light": true,
+  "hair": true,
+  "hair_heavy": true,
+  "ruler": true
+ },
+ "models": {
+  "b3_erm_s42": {
+   "unedited_rerun_vs_cache": {
+    "mean_abs": 0.03313179450845849,
+    "max_abs": 0.2925778925418854,
+    "share_over_0.05": 0.23783783783783785
+   },
+   "edited_rerun_vs_cache_mean_abs": 0.026282968783553438,
+   "unedited_rerun_vs_rerun_max_abs": 0.0,
+   "cache": {
+    "all": {
+     "magnitude": 0.21812200001045745,
+     "ci": [
+      0.17783193459933924,
+      0.2567840916740331
+     ],
+     "verdict": "exceedance",
+     "signed": -0.14045510528626134,
+     "signed_ci": [
+      -0.18736977967176688,
+      -0.09302129267643533
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.37845784456596554,
+     "ci": [
+      0.31164399283223,
+      0.44249893008027746
+     ],
+     "verdict": "exceedance",
+     "signed": -0.30673741139653743,
+     "signed_ci": [
+      -0.38313879255230204,
+      -0.22499023055609468
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.08183653213827564,
+     "ci": [
+      0.06331238096619579,
+      0.1032459159786183
+     ],
+     "verdict": "exceedance",
+     "signed": 0.0008848549074733608,
+     "signed_ci": [
+      -0.0211457460096457,
+      0.021341226983733672
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    }
+   },
+   "rerun": {
+    "all": {
+     "magnitude": 0.2214331328868866,
+     "ci": [
+      0.18230299651622772,
+      0.25958266854286194
+     ],
+     "verdict": "exceedance",
+     "signed": -0.1522636115550995,
+     "signed_ci": [
+      -0.19735535979270935,
+      -0.10586901754140854
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.38877737522125244,
+     "ci": [
+      0.3253011405467987,
+      0.4516071081161499
+     ],
+     "verdict": "exceedance",
+     "signed": -0.3257838189601898,
+     "signed_ci": [
+      -0.3998461961746216,
+      -0.25067606568336487
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.07919050008058548,
+     "ci": [
+      0.06048049032688141,
+      0.10037968307733536
+     ],
+     "verdict": "exceedance",
+     "signed": -0.004771428182721138,
+     "signed_ci": [
+      -0.026722799986600876,
+      0.015343389473855495
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    }
+   }
+  },
+  "b3_slim_s42": {
+   "unedited_rerun_vs_cache": {
+    "mean_abs": 0.026145434137937185,
+    "max_abs": 0.18695068359375,
+    "share_over_0.05": 0.15135135135135136
+   },
+   "edited_rerun_vs_cache_mean_abs": 0.019163577809087177,
+   "unedited_rerun_vs_rerun_max_abs": 0.0,
+   "cache": {
+    "all": {
+     "magnitude": 0.2997275071997728,
+     "ci": [
+      0.27112192498521964,
+      0.32740666193247664
+     ],
+     "verdict": "exceedance",
+     "signed": -0.2677990423891823,
+     "signed_ci": [
+      -0.2996018073796043,
+      -0.23508349254065053
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.41985689598907255,
+     "ci": [
+      0.3750900112021725,
+      0.4600188252969093
+     ],
+     "verdict": "exceedance",
+     "signed": -0.4044264154843354,
+     "signed_ci": [
+      -0.4501266107677289,
+      -0.3511753495911788
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.19761752672886804,
+     "ci": [
+      0.18099422776799623,
+      0.2157451393405185
+     ],
+     "verdict": "exceedance",
+     "signed": -0.15166577525830224,
+     "signed_ci": [
+      -0.17462241519086946,
+      -0.12986140943973873
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   },
+   "rerun": {
+    "all": {
+     "magnitude": 0.30173301696777344,
+     "ci": [
+      0.2731480896472931,
+      0.3293984532356262
+     ],
+     "verdict": "exceedance",
+     "signed": -0.26897555589675903,
+     "signed_ci": [
+      -0.30040404200553894,
+      -0.23711048066616058
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.42210447788238525,
+     "ci": [
+      0.37759342789649963,
+      0.4634111523628235
+     ],
+     "verdict": "exceedance",
+     "signed": -0.4101518988609314,
+     "signed_ci": [
+      -0.45528462529182434,
+      -0.3604544997215271
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.19941730797290802,
+     "ci": [
+      0.18298090994358063,
+      0.2172248214483261
+     ],
+     "verdict": "exceedance",
+     "signed": -0.1489756554365158,
+     "signed_ci": [
+      -0.17140531539916992,
+      -0.12684878706932068
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   }
+  },
+  "b3_inv_s42": {
+   "unedited_rerun_vs_cache": {
+    "mean_abs": 0.01671609004212855,
+    "max_abs": 0.3713257908821106,
+    "share_over_0.05": 0.10270270270270271
+   },
+   "edited_rerun_vs_cache_mean_abs": 0.030429039067707525,
+   "unedited_rerun_vs_rerun_max_abs": 0.0,
+   "cache": {
+    "all": {
+     "magnitude": 0.20126373552788995,
+     "ci": [
+      0.17703780870611652,
+      0.2260390546084911
+     ],
+     "verdict": "exceedance",
+     "signed": 0.16019735086319814,
+     "signed_ci": [
+      0.13247460858009286,
+      0.1899803460984545
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.2290159102133728,
+     "ci": [
+      0.18616221371870045,
+      0.2706642493456303
+     ],
+     "verdict": "exceedance",
+     "signed": 0.14080170913149215,
+     "signed_ci": [
+      0.09152552517853756,
+      0.18965901230896823
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.17767438704522953,
+     "ci": [
+      0.15178183721347172,
+      0.20357546413504995
+     ],
+     "verdict": "exceedance",
+     "signed": 0.1766836463351482,
+     "signed_ci": [
+      0.15068513642456163,
+      0.2027748991601924
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   },
+   "rerun": {
+    "all": {
+     "magnitude": 0.19873309135437012,
+     "ci": [
+      0.17537595331668854,
+      0.2223084270954132
+     ],
+     "verdict": "exceedance",
+     "signed": 0.15526899695396423,
+     "signed_ci": [
+      0.1280653178691864,
+      0.18433217704296112
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.21882788836956024,
+     "ci": [
+      0.1768219918012619,
+      0.259177029132843
+     ],
+     "verdict": "exceedance",
+     "signed": 0.12510409951210022,
+     "signed_ci": [
+      0.0772455707192421,
+      0.17248353362083435
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.1816524863243103,
+     "ci": [
+      0.1557856649160385,
+      0.20809701085090637
+     ],
+     "verdict": "exceedance",
+     "signed": 0.18090921640396118,
+     "signed_ci": [
+      0.15522490441799164,
+      0.20742425322532654
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   }
+  },
+  "r50_erm_s42": {
+   "unedited_rerun_vs_cache": {
+    "mean_abs": 0.017355330494811406,
+    "max_abs": 0.200550839304924,
+    "share_over_0.05": 0.08108108108108109
+   },
+   "edited_rerun_vs_cache_mean_abs": 0.015823481304215493,
+   "unedited_rerun_vs_rerun_max_abs": 0.0,
+   "cache": {
+    "all": {
+     "magnitude": 0.1111720027897595,
+     "ci": [
+      0.10267225843000514,
+      0.12032401701491391
+     ],
+     "verdict": "exceedance",
+     "signed": 0.022959771048674058,
+     "signed_ci": [
+      0.00859847699377443,
+      0.03889259355554512
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.11253588380675544,
+     "ci": [
+      0.09983694722652309,
+      0.12686708587753512
+     ],
+     "verdict": "exceedance",
+     "signed": -0.04858938238364371,
+     "signed_ci": [
+      -0.07294321425799613,
+      -0.027050968740044035
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.11001270392531297,
+     "ci": [
+      0.09882906590591302,
+      0.12156726743798936
+     ],
+     "verdict": "exceedance",
+     "signed": 0.08377655146614416,
+     "signed_ci": [
+      0.06694145993652637,
+      0.10090487239438517
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   },
+   "rerun": {
+    "all": {
+     "magnitude": 0.11123281717300415,
+     "ci": [
+      0.10244476050138474,
+      0.12052587419748306
+     ],
+     "verdict": "exceedance",
+     "signed": 0.02081754058599472,
+     "signed_ci": [
+      0.0069522918201982975,
+      0.03672516345977783
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.11137847602367401,
+     "ci": [
+      0.0993427038192749,
+      0.1254340559244156
+     ],
+     "verdict": "exceedance",
+     "signed": -0.05201613903045654,
+     "signed_ci": [
+      -0.07631734013557434,
+      -0.03133758530020714
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.11110901832580566,
+     "ci": [
+      0.0998765230178833,
+      0.1229175478219986
+     ],
+     "verdict": "exceedance",
+     "signed": 0.08272617310285568,
+     "signed_ci": [
+      0.06500394642353058,
+      0.10069907456636429
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   }
+  },
+  "r50_slim_s42": {
+   "unedited_rerun_vs_cache": {
+    "mean_abs": 0.02795070488087682,
+    "max_abs": 0.3818915784358978,
+    "share_over_0.05": 0.16216216216216217
+   },
+   "edited_rerun_vs_cache_mean_abs": 0.02095778368415808,
+   "unedited_rerun_vs_rerun_max_abs": 0.0,
+   "cache": {
+    "all": {
+     "magnitude": 0.14358766916248478,
+     "ci": [
+      0.12935727942434555,
+      0.15707410603507277
+     ],
+     "verdict": "exceedance",
+     "signed": 0.00377834836716018,
+     "signed_ci": [
+      -0.017534033758123645,
+      0.02670690690645448
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.1850537787848974,
+     "ci": [
+      0.16120808481916113,
+      0.2111588674859319
+     ],
+     "verdict": "exceedance",
+     "signed": -0.08032278898719918,
+     "signed_ci": [
+      -0.12398156731054505,
+      -0.04186092630903295
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.10834147598343406,
+     "ci": [
+      0.09655411738602834,
+      0.12085148971242053
+     ],
+     "verdict": "exceedance",
+     "signed": 0.07526431511836564,
+     "signed_ci": [
+      0.05659846668358296,
+      0.09177604823855473
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   },
+   "rerun": {
+    "all": {
+     "magnitude": 0.14944571256637573,
+     "ci": [
+      0.1347942054271698,
+      0.16342389583587646
+     ],
+     "verdict": "exceedance",
+     "signed": -0.003949984908103943,
+     "signed_ci": [
+      -0.026062848046422005,
+      0.020046433433890343
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.19350038468837738,
+     "ci": [
+      0.16971848905086517,
+      0.21929298341274261
+     ],
+     "verdict": "exceedance",
+     "signed": -0.09284936636686325,
+     "signed_ci": [
+      -0.13578329980373383,
+      -0.05422220379114151
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.1119992733001709,
+     "ci": [
+      0.09868932515382767,
+      0.1262585073709488
+     ],
+     "verdict": "exceedance",
+     "signed": 0.07161449640989304,
+     "signed_ci": [
+      0.05094919726252556,
+      0.09012158215045929
+     ],
+     "signed_verdict": "exceedance",
+     "joint_verdict": "exceedance"
+    }
+   }
+  },
+  "r50_inv_s42": {
+   "unedited_rerun_vs_cache": {
+    "mean_abs": 0.01606294010550897,
+    "max_abs": 0.7221378684043884,
+    "share_over_0.05": 0.04864864864864865
+   },
+   "edited_rerun_vs_cache_mean_abs": 0.011487102698918063,
+   "unedited_rerun_vs_rerun_max_abs": 0.0,
+   "cache": {
+    "all": {
+     "magnitude": 0.08370891471563209,
+     "ci": [
+      0.06599225422283002,
+      0.1011701774872647
+     ],
+     "verdict": "exceedance",
+     "signed": 1.0445692766062302e-05,
+     "signed_ci": [
+      -0.023028461662444898,
+      0.02208846749025886
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.13727944331765898,
+     "ci": [
+      0.10610446492704602,
+      0.17262655898647233
+     ],
+     "verdict": "exceedance",
+     "signed": -0.04043273870505907,
+     "signed_ci": [
+      -0.08967871260631598,
+      0.0028842885321341224
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.03817396540390924,
+     "ci": [
+      0.02823927786920611,
+      0.04862066221569466
+     ],
+     "verdict": "equivalence",
+     "signed": 0.034387152430917424,
+     "signed_ci": [
+      0.02434129909858335,
+      0.04488808701040612
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "equivalence"
+    }
+   },
+   "rerun": {
+    "all": {
+     "magnitude": 0.08570551127195358,
+     "ci": [
+      0.06748101860284805,
+      0.10409212112426758
+     ],
+     "verdict": "exceedance",
+     "signed": -0.0014951641205698252,
+     "signed_ci": [
+      -0.02494947239756584,
+      0.020284229889512062
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "exceedance"
+    },
+    "malignant": {
+     "magnitude": 0.13863471150398254,
+     "ci": [
+      0.1076359748840332,
+      0.17402677237987518
+     ],
+     "verdict": "exceedance",
+     "signed": -0.04045014828443527,
+     "signed_ci": [
+      -0.08836175501346588,
+      0.000677670119330287
+     ],
+     "signed_verdict": "indeterminate",
+     "joint_verdict": "exceedance"
+    },
+    "benign": {
+     "magnitude": 0.04071569815278053,
+     "ci": [
+      0.030155465006828308,
+      0.05205294489860535
+     ],
+     "verdict": "indeterminate",
+     "signed": 0.03161657229065895,
+     "signed_ci": [
+      0.018751613795757294,
+      0.043785855174064636
+     ],
+     "signed_verdict": "equivalence",
+     "joint_verdict": "indeterminate"
+    }
+   }
+  }
+ },
+ "runtime_sec": 21.2
+}

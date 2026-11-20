@@ -1,0 +1,25 @@
+##### C29 disjoint-split training 15:21:58 dev=cuda #####
+  TRAIN     4872 images   553 patients   232 positive (4.76%)
+  SELECT    3978 images   203 patients    78 positive (1.96%)
+  AUDIT     4233 images   199 patients    83 positive (1.96%)
+  environments (site): 7   epochs=15
+
+[dj_causal_b3] training (causal) ...
+/mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/code/lib/phase3_invariance_v01.py:182: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  agg["focal"] += float(mean_r); agg["vrex"] += float(var_r)
+      [dj_causal_b3] ep01/15 auc=0.8720 focal=1.024 vrex=12.1534 cf=0.0000 pen=off (310s) [warm-up, not eligible for selection]
+      [dj_causal_b3] ep02/15 auc=0.8028 focal=0.694 vrex=5.5611 cf=0.0000 pen=off (131s) [warm-up, not eligible for selection]
+      [dj_causal_b3] ep03/15 auc=0.8219 focal=0.641 vrex=5.9231 cf=0.0000 pen=off (129s) [warm-up, not eligible for selection]
+      [dj_causal_b3] ep04/15 auc=0.8384 focal=0.390 vrex=2.7770 cf=0.0200 pen=on (135s)
+      [dj_causal_b3] ep05/15 auc=0.8593 focal=0.355 vrex=4.1722 cf=0.0163 pen=on (122s)
+      [dj_causal_b3] ep06/15 auc=0.8553 focal=0.207 vrex=2.1485 cf=0.0121 pen=on (125s)
+      [dj_causal_b3] ep07/15 auc=0.8741 focal=0.160 vrex=1.0350 cf=0.0137 pen=on (125s)
+      [dj_causal_b3] ep08/15 auc=0.8433 focal=0.085 vrex=0.9654 cf=0.0097 pen=on (124s)
+      [dj_causal_b3] ep09/15 auc=0.8433 focal=0.104 vrex=3.2540 cf=0.0063 pen=on (126s)
+      [dj_causal_b3] ep10/15 auc=0.8504 focal=0.053 vrex=0.6180 cf=0.0081 pen=on (119s)
+      [dj_causal_b3] ep11/15 auc=0.8667 focal=0.036 vrex=0.3112 cf=0.0045 pen=on (120s)
+      [dj_causal_b3] early stop @ ep11
+[dj_causal_b3] saved, select-AUC=0.8741  (1576s)
+
+Done: six checkpoints -> /mnt/data2/Toan/Causal_ML_XAI/Causal_XAI_v3/P3_clear/checkpoints   (1577s)
