@@ -1055,8 +1055,8 @@ if d:
           text="with the patient as the resampling unit", where="supp")
     check("multi-placebo: 29 patients", d.get("n_patients_common"), 29, text="from 29 patients")
     a = {m: {k: v["A"] for k, v in mv["A_corr_by_placebo"].items()} for m, mv in d["models"].items()}
-    check("Slim −0.34 under flip", a["slim"]["flip"], -0.34, 5e-3, text="−0.34")
-    check("Slim +5.14 under noise", a["slim"]["noise"], 5.14, 5e-3, text="+5.14")
+    check("Slim −0.34 under flip", a["slim"]["flip"], -0.34, 5e-3, text="@supp:but −0.34 under the flip placebo")
+    check("Slim +5.14 under noise", a["slim"]["noise"], 5.14, 5e-3, text="@supp:+5.14 under the noise placebo")
     flips = sum(1 for m in a if min(a[m].values()) < 0 < max(a[m].values()))
     check("sign changes for one of three models", flips, 1, text="changes sign for one model")
     # Table S30, cell by cell
@@ -1989,7 +1989,7 @@ _bad_rej = [t for t in ("cycle test rejects factorization", "a joint rejection f
                         "the rejections for ERM", "A disagreement rejects the null") if t in _P + _S]
 check("no unqualified cycle-test rejection wording left", len(_bad_rej), 0)
 check("four readings of the route test kept apart; no controlled-level rejection shown",
-      "%s %s" % (("It has no p-value" in _P + _S and "nominal counts, and no rejection of the joint package at a controlled family-wise level is shown" in _P), "No rejection of the conjunction under $Q_R$ at a controlled level is shown" in _S), "True True")
+      "%s %s" % (("It has no p-value" in _P + _S and "nominal counts, and no rejection at a controlled family-wise level is shown" in _P), "No rejection of the conjunction under $Q_R$ at a controlled level is shown" in _S), "True True")
 check("h* relative to M and the library (abstract, Table 1, III-C, conclusion, S1)",
       "%s %s %s %s %s" % ("footprint-relative concept component" in _ab, "relative to the footprint $M$, the library and the protocol $P$, net of the footprint term" in _P + _S,
                           "as the concept component relative to $M$, the library and $P$" in _P,
@@ -2003,7 +2003,7 @@ check("histopathology is a diagnosis-field proxy (main, S8, Table S21, S16)",
       "True True True True")
 check("N not settleable under this audit's rules; not an impossibility result",
       "%s %s" % ("Under this audit's rules N cannot be settled. Future libraries may still support identification conditional on N" in _P,
-                 "this is not an impossibility result for future edit designs" in _S), "True True")
+                 "N cannot be settled under these rules. Future libraries may still support identification conditional on N" in _S), "True True")
 
 check("Assumption (i) no longer equates a designated concept-neutral edit with Delta C = 0; recalibrated flag defined",
       "%s %s %s" % ("with $\\Delta C(e) = 0$ for a concept-neutral edit" in TEXT["paper"],
@@ -2014,7 +2014,7 @@ check("label proxy never called histopathological; V-E states no verified count"
       "%s %s %s" % ("read as histopathological" in TEXT["supp"] or "histopathological diagnosis by this proxy" in TEXT["supp"],
                     "no verified count of specimen-read labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["supp"]), "False True True")
 check("reproduction scope: verifier reads the repository's paper/, only the cross-pipeline comparisons need more (unreleased reimplementation); no 'only external dependency'",
-      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-submission-2026-11-21`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
+      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-final-2026-11-21`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
                        "for them only the stored result files can be checked" in TEXT["supp"], "The only external dependency" in TEXT["supp"]),
       "False True True False")
 check("C1a constrains only duplicate operators on this library; diagnostic (T) neither tests nor rejects C1a (Table 2, III-C, IV-B, S6)",
@@ -2356,7 +2356,6 @@ _v5_main = [
     ("16 of the 18 cells on their marginal intervals, and 12 cells exceed jointly", "occlusion (c66)"),
     ("at 0.069 to 0.096", "PAD-UFES-20 (c46)"),
     ("its point estimate changes sign for one model", "placebo sign (c10)"),
-    ("For Slim it is −0.34 logits under a mirror flip, with intervals covering zero on each concept, and +5.14 under noise", "placebo values (c10)"),
     ("Paired differences below 0.48 to 1.79 logits on the 58 scored malignant images", "resolution limit (c19)"),
     ("the band covered the fold-level design targets jointly in 95.4% of draws", "fold-level design coverage (c60)"),
     ("Audit-cohort AUROC is 0.856 to 0.893 across the six checkpoints (Supplementary Table S13)", "audit AUROC range over the six checkpoints (c30)"),
@@ -2456,7 +2455,8 @@ if _c90:
                                      _up(_c1["upper_bound_one_minus_joint_coverage"]), _up(_c2["upper_bound_one_minus_joint_coverage"])),
           "21.3 26.2 0.9 1.0 22.3 26.8",
           text=["@supp:found a least favourable rate of 21.3% in the first run and 26.2% in the second, with Monte Carlo standard errors of about 0.9 and 1.0 points",
-                "@supp:therefore lies in [21.3, 22.3]% in the first run and [26.2, 26.8]% in the second"])
+                "@supp:a lower bound from the searched feasible configurations, 21.3% in the first run and 26.2% in the second, and an upper bound from joint noncoverage, 22.3 and 26.8%",
+                "@supp:These are neither confidence intervals nor exact bounds"])
     check("c90(c): the non-unique 'nearest feasible configuration' rate is not reported",
           "The feasible configuration nearest to the sign of each estimate" in TEXT["supp"], False)
     _d = _c90["d_b5_structural"]
@@ -2571,11 +2571,12 @@ if _b1 and _bx:
 if _c90:
     _cs = _c90["c_cycle_test_feasible_size"]
     _upm = lambda x: "%.1f" % (math.ceil(1000 * x - 1e-9) / 10); _dnm = lambda x: "%.1f" % (math.floor(1000 * x + 1e-9) / 10)
-    check("main IV-B: family-wise size between 21.3 and 22.3% (first run) and between 26.2 and 26.8% (second) over the feasible boundary configurations",
-          "%s %s %s %s" % (_dnm(_cs["first"]["rate_feasible_least_favourable_found"]), _upm(_cs["first"]["upper_bound_one_minus_joint_coverage"]),
-                           _dnm(_cs["second"]["rate_feasible_least_favourable_found"]), _upm(_cs["second"]["upper_bound_one_minus_joint_coverage"])),
-          "21.3 22.3 26.2 26.8",
-          text="Over the feasible boundary configurations, the band's family-wise size lies between 21.3 and 22.3% in the first run and between 26.2 and 26.8% in the second, against a nominal 5%", strict=True)
+    check("main IV-B: false-disagreement rates approximately 21 to 23% and 26 to 27% (Monte Carlo bracket, lower ends down and upper ends up to whole points), MC s.e. about one point",
+          "%d %d %d %d %d %d" % (math.floor(100 * _cs["first"]["rate_feasible_least_favourable_found"] + 1e-9), math.ceil(100 * _cs["first"]["upper_bound_one_minus_joint_coverage"] - 1e-9),
+                                 math.floor(100 * _cs["second"]["rate_feasible_least_favourable_found"] + 1e-9), math.ceil(100 * _cs["second"]["upper_bound_one_minus_joint_coverage"] - 1e-9),
+                                 round(100 * _cs["first"]["mcse_least_favourable"]), round(100 * _cs["second"]["mcse_least_favourable"])),
+          "21 23 26 27 1 1",
+          text="post hoc empirical null checks gave false-disagreement rates of approximately 21 to 23% and 26 to 27% near the null boundary, against a nominal 5%, with Monte Carlo uncertainty of about one percentage point", strict=True)
 if _xd:
     _e1, _e2 = _xd["runs"]["first_run"]["exact_identity"], _xd["runs"]["second_run"]["exact_identity"]
     check("main IV-B: on the bit-exact subsets all 48 mean differences are nonzero in each run",
@@ -2587,6 +2588,25 @@ if _c42:
     check("main IV-A: for the ruler alone, ResNet-50 Inv is within tolerance in all three subgroups on the marginal intervals",
           "/".join(_rr[g]["verdict"] for g in ("all", "malignant", "benign")), "equivalence/equivalence/equivalence",
           text="For the ruler alone, ResNet-50 Inv is within tolerance in all three subgroups on the marginal intervals", strict=True)
+
+_c64d = load("c64_route_screens")
+if _c64d:
+    _rows = [(g, t, c, s) for g in ("registered", "frontier") for t, v in _c64d[g].items() for c, s in v.items()]
+    _tab37 = table_block("supp", "**TABLE S37.", "Table S37")
+    _avail_ok = all(abs(s["A3_share"] - s["n"] / 78) < 1e-12 for g, t, c, s in _rows)
+    _print_ok = all(("| %.1f |" % (100 * s["n"] / 78)) in _tab37 for g, t, c, s in _rows) if _tab37 else False
+    check("Table S37: availability uses all 78 images as denominator; other summaries use the available rows",
+          "%s %s %d" % (_avail_ok, _print_ok, len(_rows)), "True True 24",
+          text=["@supp:Availability percentages use all 78 images as denominator; the remaining summaries are computed on the available images for each control",
+                "@supp:For the optimized controls, availability records solver convergence only, including the two inexact hue solutions",
+                "@supp:G2: share of the available images of the control that pass the independent CIELAB check of the target"])
+check("ext05 wording: library-specific non-identification, verifier scope, Contribution 3 label, nominal target-only contrast",
+      "%s %s %s %s %s" % ("For a library whose shared-footprint entries implement the same transformation, as established here, assumption (i) and C0 let footprint incidence exclude every identification route" in TEXT["paper"],
+                          "For a general library, footprint incidence alone need not decide connectivity to the latent zero vertex" in TEXT["paper"],
+                          "A verifier checks the reported main-text results, their repeated occurrences and the supporting supplementary values against the result files" in TEXT["paper"],
+                          "**Library-specific identification analysis and route-consistency diagnostics for placebo corrections.**" in TEXT["paper"],
+                          "This contrast with the target-only screen is nominal: the Slim flag becomes indeterminate after recalibration" in TEXT["supp"]),
+      "True True True True True")
 
 # ================================================================ report
 w = max(len(r[1]) for r in rows)
