@@ -2014,7 +2014,7 @@ check("label proxy never called histopathological; V-E states no verified count"
       "%s %s %s" % ("read as histopathological" in TEXT["supp"] or "histopathological diagnosis by this proxy" in TEXT["supp"],
                     "no verified count of specimen-read labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["supp"]), "False True True")
 check("reproduction scope: verifier reads the repository's paper/, only the cross-pipeline comparisons need more (unreleased reimplementation); no 'only external dependency'",
-      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-final-2026-11-21`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
+      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-final-2026-11-21b`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
                        "for them only the stored result files can be checked" in TEXT["supp"], "The only external dependency" in TEXT["supp"]),
       "False True True False")
 check("C1a constrains only duplicate operators on this library; diagnostic (T) neither tests nor rejects C1a (Table 2, III-C, IV-B, S6)",
@@ -2356,12 +2356,12 @@ _v5_main = [
     ("16 of the 18 cells on their marginal intervals, and 12 cells exceed jointly", "occlusion (c66)"),
     ("at 0.069 to 0.096", "PAD-UFES-20 (c46)"),
     ("its point estimate changes sign for one model", "placebo sign (c10)"),
-    ("Paired differences below 0.48 to 1.79 logits on the 58 scored malignant images", "resolution limit (c19)"),
+    ("Paired differences below 0.48 to 1.79 logits are not resolvable", "resolution limit (c19)"),
     ("the band covered the fold-level design targets jointly in 95.4% of draws", "fold-level design coverage (c60)"),
     ("Audit-cohort AUROC is 0.856 to 0.893 across the six checkpoints (Supplementary Table S13)", "audit AUROC range over the six checkpoints (c30)"),
     ("the magnitude decides each cell", "magnitude decides the cell (c30)"),
     ("because the 10% part of (A2) and (A3) are not drawn", "Fig. 2 corner necessary, not sufficient"),
-    ("on the selection-fold images of Section IV-B, that concept's CIELAB measure changes by medians of 16 to 78%", "off-target CIELAB (c64)"),
+    ("on the selection-fold images of Section IV-B, its CIELAB measure changes by medians of 16 to 78%", "off-target CIELAB (c64)"),
     ("0.00 means that no margin gives disagreement", "Table 2 margins (c67)"),
 ]
 for _lit, _src in _v5_main:
@@ -2439,11 +2439,16 @@ if _c90:
                                       len({(v["binding_target"], tuple(v["binding_pair"])) for v in _pm.values()}) == 1, _fl(_b["envelope_floor"])),
           "0.74 0.92 1.09 True 1.09",
           text=["$L^g \\ge 1.09$ logits per scored unit for the Inv checkpoint, and 0.74 and 0.92 for ERM and Slim",
-                "@supp:gives floors of 0.74 for ERM and 0.92 for Slim from the same pair", "@supp:The envelope $L^g_{\\max} = \\max(L^g_{\\mathrm{ERM}}, L^g_{\\mathrm{Slim}}, L^g_{\\mathrm{Inv}})$ therefore has floor 1.09",
-                "@supp:gives floors of 0.74 for ERM and 0.92 for Slim from the same pair"], where=["paper", "supp"], strict=True)
+                "@supp:gives gaps of 7.52 logits for ERM and 9.36 for Slim on the same pair, so floors of 0.74 and 0.92, rounded down as lower bounds", "@supp:The envelope $L^g_{\\max} = \\max(L^g_{\\mathrm{ERM}}, L^g_{\\mathrm{Slim}}, L^g_{\\mathrm{Inv}})$ therefore has floor 1.09",
+                "@supp:gives gaps of 7.52 logits for ERM and 9.36 for Slim on the same pair, so floors of 0.74 and 0.92, rounded down as lower bounds"], where=["paper", "supp"], strict=True)
+    check("c90(b): one binding distance 10.10 for all three; gaps ERM 7.52, Slim 9.36, Inv 11.03",
+          "%.2f %.2f %.2f %.2f" % (_pm["ERM"]["distance"], _pm["ERM"]["gap"], _pm["Slim"]["gap"], _pm["Inv"]["gap"]) if len({round(v["distance"], 9) for v in _pm.values()}) == 1 else "distances differ",
+          "10.10 7.52 9.36 11.03",
+          text=["@supp:gives gaps of 7.52 logits for ERM and 9.36 for Slim on the same pair",
+                "@supp:On the Inv checkpoint it disagrees by 11.03 logits at 10.10 scored units"])
     check("c90(b): conservative floors 0.45, 0.54, 0.72 (rounded down)",
           "%.2f %.2f %.2f" % tuple(_fl(_pm[m]["conservative_floor"]) for m in ("ERM", "Slim", "Inv")), "0.45 0.54 0.72",
-          text="@supp:conservative floors, defined below, of 0.45, 0.54 and 0.72 for ERM, Slim and Inv")
+          text="@supp:Its conservative floors, defined below, are 0.45, 0.54 and 0.72 for ERM, Slim and Inv")
     _cc = _c90["c_cycle_test_feasible_size"]; _c1, _c2 = _cc["first"], _cc["second"]
     _up = lambda x: "%.1f" % (math.ceil(1000 * x - 1e-9) / 10); _dn = lambda x: "%.1f" % (math.floor(1000 * x + 1e-9) / 10)
     check("c90(c): identity holds for the estimates; 6 of 16 sign patterns feasible",
@@ -2608,9 +2613,62 @@ check("ext05 wording: library-specific non-identification, verifier scope, Contr
                           "This contrast with the target-only screen is nominal: the Slim flag becomes indeterminate after recalibration" in TEXT["supp"]),
       "True True True True True")
 
+
+# ---- cross-references: every cited table, section, figure, equation and reference has a target, and key targets hold the cited content ----
+_P, _S = TEXT["paper"], TEXT["supp"]
+_Pb, _Sb = _P.split("## References")[0], _S.split("## References")[0]
+_st = {int(n): c for n, c in re.findall(r"^\*\*TABLE S(\d+)\.\s*(.*)$", _S, re.M)}
+_ss = {int(n): c for n, c in re.findall(r"^## S(\d+)\.\s*(.*)$", _S, re.M)}
+_sf = {int(n): c for n, c in re.findall(r"^\*\*Fig\. S(\d+)\.\*\*\s*(.*)$", _S, re.M)}
+_mt = {int(n) for n in re.findall(r"^\*\*TABLE (\d+)\.", _P, re.M)}
+_mf = {int(n) for n in re.findall(r"^!\[.*?\]\(.*?\)\s*$\n+\*?\*?Fig\. (\d+)\.", _P, re.M)} | {int(n) for n in re.findall(r"^\*\*Fig\. (\d+)\.", _P, re.M)}
+_me = {int(n) for n in re.findall(r"\\tag\{(\d+)\}", _P)}
+def _sec(n):
+    m = re.search(r"^## S%d\..*?(?=^## |\Z)" % n, _S, re.M | re.S)
+    return m.group(0) if m else ""
+def _cites(txt):
+    out = []
+    for m in re.finditer(r"\b(Tables?|Sections?|Figs?\.)\s+((?:S?\d+(?![\d⁰¹²³⁴⁵⁶⁷⁸⁹⁻])(?:\([a-z]\))?(?:\s*(?:,|and|to|or)\s*)?)+)", txt):
+        v = re.findall(r"(S?)(\d+)", m.group(2))
+        if " to " in m.group(2) and len(v) == 2 and v[0][0] == v[1][0]:
+            v = [(v[0][0], str(i)) for i in range(int(v[0][1]), int(v[1][1]) + 1)]
+        out += [(m.group(1)[0], s, int(n)) for s, n in v]
+    return out
+_miss = []
+for _nm, _tx in (("paper", _Pb), ("supp", _Sb)):
+    for k, s, n in _cites(_tx):
+        if s == "S" and n not in {"T": _st, "S": _ss, "F": _sf}[k]:
+            _miss.append("%s:%s S%d" % (_nm, k, n))
+        if s == "" and _nm == "supp" and k in "TF" and n not in (_mt if k == "T" else _mf):
+            _miss.append("supp:%s %d of the main text" % (k, n))
+check("cross-references: every Table/Section/Fig. cited in either text exists", ", ".join(_miss) or "none", "none")
+_eqs = {int(x) for x in re.findall(r"(?:of|in|and|under|by|before|to|from|as) \((\d{1,2})\)", _Sb)}
+check("cross-references: every main-text equation the supplement cites exists", str(sorted(_eqs - _me)), "[]")
+_rp = {int(n): l.strip() for n, l in re.findall(r"^\[(\d+)\] (.*)$", _P.split("## References")[1], re.M)}
+_rs = {int(n): l.strip() for n, l in re.findall(r"^\[(\d+)\] (.*)$", _S.split("## References")[1], re.M)}
+check("references: every numbered supplement entry is the main-text entry of the same number",
+      str([n for n in sorted(_rs) if _rp.get(n) != _rs[n]]), "[]")
+_cs = {int(x) for x in re.findall(r"\[(\d+)\]", _Sb)}
+check("references: supplement cites only listed entries and lists only cited ones", "%s %s" % (sorted(_cs - set(_rs)), sorted(set(_rs) - _cs)), "[] []")
+# what the main text says each target holds, against that target's caption or heading
+_targets = [("T", 13, "AUROC of each audited checkpoint"), ("T", 27, "diagnostic graph"), ("T", 41, "four inference protocols"),
+            ("T", 32, "The cycle test, primary set, both runs"), ("T", 36, "How the verdicts move with the margin"),
+            ("T", 44, "Mean absolute and mean signed change"), ("T", 45, "estimands of the identification ladder"),
+            ("T", 46, "conditions the ladder"), ("T", 47, "three screens"), ("T", 48, "Decisions of the three screens"),
+            ("T", 49, "output of the procedure, by estimand"), ("T", 9, "Sensitivity of the screen"),
+            ("S", 23, "proof"), ("S", 15, "two graphs"), ("S", 19, "route test"), ("S", 2, "decision rule"), ("S", 5, "control library"),
+            ("F", 2, "concept edits and controls")]
+_wrong = [("%s S%d" % (k, n)) for k, n, kw in _targets if kw.lower() not in {"T": _st, "S": _ss, "F": _sf}[k].get(n, "").lower()]
+check("cross-references: 18 main-text targets hold the cited content (caption or heading)", ", ".join(_wrong) or "none", "none")
+check("cross-references: the whole-fold frontier 0.069 and the proof of Statement 1 are in the sections the main text cites",
+      "%s %s" % ("0.069" in _sec(2), "**Proof of Statement 1.**" in _sec(23)), "True True")
+check("one repository and commit: both texts name Causal_Audits_of_SLC_v3 and the same pin",
+      "%s %s" % (re.findall(r"commit `([0-9a-f]{12})`", _P) == re.findall(r"commit `([0-9a-f]{12})`", _S)[:1],
+                 "github.com/dqtoan87/Causal_Audits_of_SLC_v3" in _P and "github.com/dqtoan87/Causal_Audits_of_SLC_v3, and the numbers reported here correspond" in _S), "True True")
+
 # ================================================================ report
 w = max(len(r[1]) for r in rows)
-print("verification of paper3.md and supplementary3.md against %s" % RES)
+print("verification of %s and %s against %s" % (PAPER, SUPP, RES))
 print("=" * (w + 50))
 for st, cl, g, wv in rows:
     print("%-9s %-*s  got %-22s paper %s" % (st, w, cl, g, wv))
