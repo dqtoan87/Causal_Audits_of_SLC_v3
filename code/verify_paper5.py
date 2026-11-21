@@ -1269,7 +1269,7 @@ if _rs and _e1 and _e2:
     check("robust cells: ERM highest contrast in both runs, Inv highest contrast in the second, under every check", "%s %s" % (ok1, ok2), "True True",
           text=["@supp:the flags for ERM and Inv at the highest contrast dose survive every check of Table S38", "ERM at the highest contrast dose stays flagged under each variant in both runs"])
     check("robust cells: claims are restricted to the clipped scale (main text and S19)", True, True,
-          text=["Its flags hold on the clipped scale for a fixed inference protocol", "the plan's nominal band flagged route sums differing beyond 0.5 logit in three cells",
+          text=["Its flags hold on the clipped scale for a fixed inference protocol", "the plan's nominal band flagged route sums differing beyond 0.5 logit in three of twelve cells per run",
                 "Every route-test decision is made on the clipped scale"], where=["paper", "supp"])
     counts = [sum(v == "routes disagree" for v in x["cells"].values()) for x in allv1 + allv2]
     counts += [_e1["secondary_all_g1"]["summary"]["routes disagree"], _e2["secondary_all_g1"]["summary"]["routes disagree"]]
@@ -1982,7 +1982,7 @@ _P, _S = TEXT["paper"], TEXT["supp"]
 _ab = _P.split("## Abstract")[1].split("**Index Terms")[0]
 _concl = _P.split("## VI. Conclusion")[1].split("## Acknowledgment")[0]
 check("abstract and conclusion call the 3 cells nominal flags, not 5%-level/controlled rejections",
-      "%s %s %s" % ("so the flags carry no controlled error rate" in _ab, "nominal flags, not rejections at a controlled level" in _concl,
+      "%s %s %s" % ("so the flags carry no controlled error rate" in _ab, "these nominal flags are not controlled rejections" in _concl,
                     "rejecting factorization" in _ab or "rejected, in three cells" in _concl), "True True False")
 _bad_rej = [t for t in ("cycle test rejects factorization", "a joint rejection for the pair", "each disagreement rejects a joint package",
                         "A disagreeing cell rejects C1a", "the plan-locked run rejects, on the nominal band", "kept one rejection",
@@ -2002,7 +2002,7 @@ check("histopathology is a diagnosis-field proxy (main, S8, Table S21, S16)",
                        "a diagnosis-specificity proxy (the confirmation method is not recorded)" in _S, "so the argument is conditional on how each label was confirmed" in _S),
       "True True True True")
 check("N not settleable under this audit's rules; not an impossibility result",
-      "%s %s" % ("Under this audit's rules N cannot be settled. Future libraries may still support identification conditional on N" in _P,
+      "%s %s" % ("N cannot be settled under this audit's rules. Future libraries may support identification conditional on N" in _P,
                  "N cannot be settled under these rules. Future libraries may still support identification conditional on N" in _S), "True True")
 
 check("Assumption (i) no longer equates a designated concept-neutral edit with Delta C = 0; recalibrated flag defined",
@@ -2014,7 +2014,7 @@ check("label proxy never called histopathological; V-E states no verified count"
       "%s %s %s" % ("read as histopathological" in TEXT["supp"] or "histopathological diagnosis by this proxy" in TEXT["supp"],
                     "no verified count of specimen-read labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["supp"]), "False True True")
 check("reproduction scope: verifier reads the repository's paper/, only the cross-pipeline comparisons need more (unreleased reimplementation); no 'only external dependency'",
-      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-final-2026-11-21b`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
+      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-final-2026-11-21c`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
                        "for them only the stored result files can be checked" in TEXT["supp"], "The only external dependency" in TEXT["supp"]),
       "False True True False")
 check("C1a constrains only duplicate operators on this library; diagnostic (T) neither tests nor rejects C1a (Table 2, III-C, IV-B, S6)",
@@ -2092,7 +2092,7 @@ if _ev1a and _ev2a:
           text="@supp:the Inv scale pair at the highest contrast dose differs by +0.17 logit under the epoch-1 checkpoint and by +5.42 under the retrained one")
 check("main-text copies of verified numbers (abstract, IV-A, IV-B, conclusion)", True, True, where="paper",
       text=["All 18 model-by-subgroup cells exceeded every invariance tolerance below 0.042 probability units, jointly and one-sided at nominal 95%. This holds for a superpopulation exchangeable with the audited patients, given the realized overlays and benign draw",
-            "below 0.042 probability units, jointly and one-sided at nominal 95% for $Q_S$, given the realized overlays and benign draw. This applies under the exchangeability that defines $Q_S$ and is not shown for an independently defined clinical population",
+            "below 0.042 probability units, jointly and one-sided at nominal 95% for $Q_S$, given the realized overlays and benign draw. This result is not shown for an independently defined clinical population",
             "On PAD-UFES-20, all six cells exceed tolerance on their marginal intervals",
             "In the plan-locked first run, on the plan's nominal band, three of twelve model-by-target cells were flagged",
             "**All eighteen cells exceed jointly below 0.042.**",
@@ -2142,7 +2142,7 @@ check("artifact tolerance and nominal levels: eps 0.05; 95% intervals give alpha
 check("repeated statements in the contributions, discussion and Tables 6 and 7", True, True, where="paper",
       text=["exceed every tolerance below 0.042 probability units on a simultaneous bound (Section IV-A)",
             "every cell exceeds every tolerance below 0.042 jointly, 17 of 18 at 0.05",
-            "nominal flags of inconsistency beyond 0.5 logit in 3 of 12 plan-locked cells",
+            "nominal flags of route-sum differences beyond 0.5 logit in 3 of 12 plan-locked cells",
             "0.077 on the structural response, 0.067 [0.039, 0.094] with noise",
             "the nearest neutral control is 1.65 SMD from the concept edit's footprint",
             "the target exactly on the structural response, +1.111 with noise, for 1.117"])
@@ -2356,7 +2356,7 @@ _v5_main = [
     ("16 of the 18 cells on their marginal intervals, and 12 cells exceed jointly", "occlusion (c66)"),
     ("at 0.069 to 0.096", "PAD-UFES-20 (c46)"),
     ("its point estimate changes sign for one model", "placebo sign (c10)"),
-    ("Paired differences below 0.48 to 1.79 logits are not resolvable", "resolution limit (c19)"),
+    ("Treating 58 images as independent, a two-sided 5%-level test of one mean concept-minus-placebo difference has 80% power at 0.48 to 1.79 logits", "detection-power heuristic (c19)"),
     ("the band covered the fold-level design targets jointly in 95.4% of draws", "fold-level design coverage (c60)"),
     ("Audit-cohort AUROC is 0.856 to 0.893 across the six checkpoints (Supplementary Table S13)", "audit AUROC range over the six checkpoints (c30)"),
     ("the magnitude decides each cell", "magnitude decides the cell (c30)"),
@@ -2613,6 +2613,27 @@ check("ext05 wording: library-specific non-identification, verifier scope, Contr
                           "This contrast with the target-only screen is nominal: the Slim flag becomes indeterminate after recalibration" in TEXT["supp"]),
       "True True True True True")
 
+
+# ---- scope statements: MDE heuristic, noisy-response decomposition, marginal strata, route-sum flags, checkpoint scope ----
+from statistics import NormalDist as _ND
+_z = _ND().inv_cdf(0.975) + _ND().inv_cdf(0.80)
+check("MDE factor 2.8 is the normal approximation z_0.975 + z_0.80 (two-sided 5%, 80% power)", "%.1f" % _z, "2.8",
+      text=["@supp:This is a normal-approximation heuristic for 80% power in a two-sided test at the 5% level, since 2.8 is about 1.96 + 0.84",
+            "@supp:so it does not establish power under patient-clustered inference",
+            "@supp:Smaller effects are not undetectable"])
+_old_scope = [s for s in ("are not resolvable", "a patient-clustered version would be larger", "$\\hat R$ does not, because each edit carries its own noise mean", "Two facts bound what this design can resolve",
+                          "nominally flagged inconsistent routes", "The design can therefore exclude a route but cannot certify one",
+                          "six of seven within-range intervals still lie above 0.5") if s in _P + _S]
+check("no hard detection limit, no noise-implies-no-decomposition claim, no 'inconsistent routes' in the abstract", str(_old_scope), "[]")
+check("scope statements present (S14 decomposition, III-C library scope, IV-B marginal strata, abstract route sums, V-B checkpoints)",
+      " ".join(str(s in (_S if k == "S" else _P)) for k, s in (
+          ("S", "so an exact decomposition of $\\hat R$ need not recover the generating concept term"),
+          ("P", "For such a library, footprint incidence can thus rule out every route but never certify one"),
+          ("P", "Over both runs, six of seven within-range marginal intervals still lie above 0.5, and the split decides no cell"),
+          ("P", "A pre-specified selection-fold test nominally flagged route-sum differences beyond 0.5 logit"),
+          ("P", "Verdicts describe one audited checkpoint per architecture and objective, not effects of training objectives"),
+          ("S", "On the disputed cell it gives 0.041 with interval [0.030, 0.052], indeterminate"),
+          ("S", "with a marginal 95% patient-clustere"))), " ".join(["True"] * 7))
 
 # ---- cross-references: every cited table, section, figure, equation and reference has a target, and key targets hold the cited content ----
 _P, _S = TEXT["paper"], TEXT["supp"]

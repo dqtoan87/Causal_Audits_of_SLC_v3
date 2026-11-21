@@ -8,11 +8,12 @@ C19: recompute from the raw predictions two numbers that no result file stores.
     The script reports the fraction under several set definitions, so the number in the paper states
     which set it refers to.
 
-(2) MDE (minimum detectable effect) for the exact contrast argued in Section V-E: the per-image
+(2) MDE (minimum detectable effect) for the contrast reported in Supplementary Section S4: the per-image
     difference between the concept edit and the placebo, i.e. the quantity underlying A_corr, not the
     MDE of a single edit against baseline (that is what c11 stores). Computed on the common set of
-    62 images, with the paper's formula:
-    MDE = 2.8 · SD / sqrt(n).
+    images the three models score at 0.1 or above (58 in the stored result), with the paper's formula:
+    MDE = 2.8 · SD / sqrt(n), a normal-approximation heuristic for 80% power in a two-sided test at
+    the 5% level (2.8 ~ 1.96 + 0.84) that treats the images as independent.
 
 Reproduces the c13 pipeline exactly: same split, same 178 images, same edit set, same model_prob.
 Out -> results/c19_saturation_mde.json
