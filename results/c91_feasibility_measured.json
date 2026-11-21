@@ -1,0 +1,755 @@
+{
+ "note": "post hoc; image side only; (A3) measured on the final, clipped image for every control",
+ "match_tol": 0.02,
+ "n_images": 183,
+ "rebuild_max_abs_difference_vs_c25": 0.0,
+ "targets": {
+  "contrast@2": {
+   "rotd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 0.7213114754098361,
+    "median_rel_dev": 0.004823972094529034,
+    "max_rel_dev": 0.2439888929699741,
+    "a3_stored_c25": 1.0
+   },
+   "sgnd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 1.0,
+    "median_rel_dev": 0.0,
+    "max_rel_dev": 1.85420749657327e-07,
+    "a3_stored_c25": 1.0
+   },
+   "permd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 0.994535519125683,
+    "median_rel_dev": 1.1695895489220595e-05,
+    "max_rel_dev": 0.04013943049950228,
+    "a3_stored_c25": 1.0
+   },
+   "hybrid_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.8480358859000467e-07,
+    "max_rel_dev": 5.352541310149183e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "texswap_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.0,
+    "median_rel_dev": 0.8412468529590237,
+    "max_rel_dev": 0.9452838114598913,
+    "a3_stored_c25": 0.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "globrot_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 4.055008953865271e-07,
+    "max_rel_dev": 1.3111776363794102e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp2_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.7650273224043715,
+    "median_rel_dev": 1.016645262261199e-05,
+    "max_rel_dev": 0.4734575704134576,
+    "a3_stored_c25": 0.7650273224043715,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "pixperm_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.9562841530054644,
+    "median_rel_dev": 0.0008280711810366537,
+    "max_rel_dev": 0.276612134506415,
+    "a3_stored_c25": 0.9562841530054644,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.5683060109289617,
+    "median_rel_dev": 2.712169196409367e-05,
+    "max_rel_dev": 0.5032451219707835,
+    "a3_stored_c25": 0.5683060109289617,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "hue_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.0,
+    "median_rel_dev": 0.6257363972020309,
+    "max_rel_dev": 0.8382182049504673,
+    "a3_stored_c25": 0.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "rotax_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.5384689941189716e-07,
+    "max_rel_dev": 5.180208779249482e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "flip_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.37158469945355194,
+    "median_rel_dev": 0.12430428197387691,
+    "max_rel_dev": 0.6146768656617431,
+    "a3_stored_c25": 0.37158469945355194,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "jitter_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.02185792349726776,
+    "median_rel_dev": 0.3811230964680997,
+    "max_rel_dev": 0.7570537531025984,
+    "a3_stored_c25": 0.02185792349726776,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "noise_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 4.522585679820381e-07,
+    "max_rel_dev": 1.6731187216674621e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "invdose": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 8.268491136797639e-08,
+    "max_rel_dev": 2.7056830979494257e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "u:hue": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.0,
+    "median_rel_dev": 0.675880348416792,
+    "max_rel_dev": 0.8598928338136593,
+    "a3_stored_c25": 1.0
+   },
+   "u:flip": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.08743169398907104,
+    "median_rel_dev": 0.17066922496209266,
+    "max_rel_dev": 0.9106932311596021,
+    "a3_stored_c25": 1.0
+   },
+   "u:jitter": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.00546448087431694,
+    "median_rel_dev": 0.5483638130825449,
+    "max_rel_dev": 0.999999027532535,
+    "a3_stored_c25": 1.0
+   },
+   "u:noise": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.03825136612021858,
+    "median_rel_dev": 0.2563573556048351,
+    "max_rel_dev": 0.7295426107673044,
+    "a3_stored_c25": 1.0
+   }
+  },
+  "color_var@2": {
+   "rotd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 0.7377049180327869,
+    "median_rel_dev": 0.004029638820147568,
+    "max_rel_dev": 0.12699305630165608,
+    "a3_stored_c25": 1.0
+   },
+   "sgnd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 1.0,
+    "median_rel_dev": 0.0,
+    "max_rel_dev": 1.473487213041128e-07,
+    "a3_stored_c25": 1.0
+   },
+   "permd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 1.0,
+    "median_rel_dev": 4.5106524696386105e-06,
+    "max_rel_dev": 0.008175097012006773,
+    "a3_stored_c25": 1.0
+   },
+   "hybrid_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.7065717175671592e-07,
+    "max_rel_dev": 8.570689488594749e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "texswap_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.0,
+    "median_rel_dev": 0.8339936755125448,
+    "max_rel_dev": 0.9342704640516909,
+    "a3_stored_c25": 0.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "globrot_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 3.6538856790518166e-07,
+    "max_rel_dev": 1.1397242288187512e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp2_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.8579234972677595,
+    "median_rel_dev": 9.830762652901961e-06,
+    "max_rel_dev": 0.41814398893024296,
+    "a3_stored_c25": 0.8579234972677595,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "pixperm_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 0.0008114229992128519,
+    "max_rel_dev": 0.00626466730928102,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.6994535519125683,
+    "median_rel_dev": 1.7804266497886538e-05,
+    "max_rel_dev": 0.505945034373894,
+    "a3_stored_c25": 0.6994535519125683,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "hue_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.00546448087431694,
+    "median_rel_dev": 0.6088765450660366,
+    "max_rel_dev": 0.8258266763488918,
+    "a3_stored_c25": 0.00546448087431694,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "rotax_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.330334139360616e-07,
+    "max_rel_dev": 8.34281807463193e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "flip_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.3989071038251366,
+    "median_rel_dev": 0.07450034726745286,
+    "max_rel_dev": 0.6067280992664984,
+    "a3_stored_c25": 0.3989071038251366,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "jitter_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.0273224043715847,
+    "median_rel_dev": 0.3457601429439826,
+    "max_rel_dev": 0.7238694657260807,
+    "a3_stored_c25": 0.0273224043715847,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "noise_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 4.849638180619439e-07,
+    "max_rel_dev": 1.694759464782998e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "invdose": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 8.366355337851834e-08,
+    "max_rel_dev": 3.128556777986974e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "u:hue": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.0,
+    "median_rel_dev": 0.6613718217021654,
+    "max_rel_dev": 0.8491614709271367,
+    "a3_stored_c25": 1.0
+   },
+   "u:flip": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.07650273224043716,
+    "median_rel_dev": 0.14685249984380894,
+    "max_rel_dev": 1.696749059561617,
+    "a3_stored_c25": 1.0
+   },
+   "u:jitter": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.0,
+    "median_rel_dev": 0.5135015702123452,
+    "max_rel_dev": 0.9999990102700248,
+    "a3_stored_c25": 1.0
+   },
+   "u:noise": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.060109289617486336,
+    "median_rel_dev": 0.24476530509823038,
+    "max_rel_dev": 0.6909456564039761,
+    "a3_stored_c25": 1.0
+   }
+  },
+  "contrast@0": {
+   "rotd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 0.9344262295081968,
+    "median_rel_dev": 6.311262068485488e-07,
+    "max_rel_dev": 0.10921263147575702,
+    "a3_stored_c25": 1.0
+   },
+   "sgnd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 1.0,
+    "median_rel_dev": 0.0,
+    "max_rel_dev": 1.9835711381671684e-07,
+    "a3_stored_c25": 1.0
+   },
+   "permd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 1.0,
+    "median_rel_dev": 6.789331787176174e-08,
+    "max_rel_dev": 0.005799818884230096,
+    "a3_stored_c25": 1.0
+   },
+   "hybrid_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 6.414319326464399e-07,
+    "max_rel_dev": 1.3405525616548345e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "texswap_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.01092896174863388,
+    "median_rel_dev": 0.4736925396778083,
+    "max_rel_dev": 0.8333017165708346,
+    "a3_stored_c25": 0.01092896174863388,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "globrot_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.2036749701432185e-06,
+    "max_rel_dev": 5.099025812907637e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp2_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 2.1791888225425904e-05,
+    "max_rel_dev": 0.00033235948594821207,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "pixperm_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 0.0021626097829337255,
+    "max_rel_dev": 0.01561378288677282,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 2.3139113557009238e-05,
+    "max_rel_dev": 0.00030810859781101876,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "hue_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.7759562841530054,
+    "median_rel_dev": 1.1749016108018574e-07,
+    "max_rel_dev": 0.507115750486217,
+    "a3_stored_c25": 0.7759562841530054,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "rotax_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 5.950713414501505e-07,
+    "max_rel_dev": 1.4178584948864933e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "flip_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.9296633837303518e-07,
+    "max_rel_dev": 6.82370514224184e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "jitter_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.9726775956284153,
+    "median_rel_dev": 1.252145551402328e-07,
+    "max_rel_dev": 0.24282061333594673,
+    "a3_stored_c25": 0.9726775956284153,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "noise_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.5802419192354157e-06,
+    "max_rel_dev": 5.962381122896941e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "invdose": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 2.115493685357124e-07,
+    "max_rel_dev": 6.82370514224184e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "u:hue": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.02185792349726776,
+    "median_rel_dev": 0.22982069316658604,
+    "max_rel_dev": 1.38384088788148,
+    "a3_stored_c25": 1.0
+   },
+   "u:flip": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.0,
+    "median_rel_dev": 1.8982547309107858,
+    "max_rel_dev": 4.9044265034072465,
+    "a3_stored_c25": 1.0
+   },
+   "u:jitter": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.0273224043715847,
+    "median_rel_dev": 0.4915269678289625,
+    "max_rel_dev": 2.372524100355959,
+    "a3_stored_c25": 1.0
+   },
+   "u:noise": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.00546448087431694,
+    "median_rel_dev": 1.4863566523497105,
+    "max_rel_dev": 3.7353982546087265,
+    "a3_stored_c25": 1.0
+   }
+  },
+  "color_var@0": {
+   "rotd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 0.9398907103825137,
+    "median_rel_dev": 5.4319637934264e-07,
+    "max_rel_dev": 0.08146159646021943,
+    "a3_stored_c25": 1.0
+   },
+   "sgnd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 1.0,
+    "median_rel_dev": 0.0,
+    "max_rel_dev": 1.797373139157122e-07,
+    "a3_stored_c25": 1.0
+   },
+   "permd": {
+    "kind": "built from the edit's displacement",
+    "a3_measured": 1.0,
+    "median_rel_dev": 7.257825768779751e-08,
+    "max_rel_dev": 0.008353335148384058,
+    "a3_stored_c25": 1.0
+   },
+   "hybrid_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 5.674175373866096e-07,
+    "max_rel_dev": 2.3065093345393813e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "texswap_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.01639344262295082,
+    "median_rel_dev": 0.4544639649517732,
+    "max_rel_dev": 0.8026772141971524,
+    "a3_stored_c25": 0.01639344262295082,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "globrot_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.507237149898955e-06,
+    "max_rel_dev": 5.6940299348819345e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp2_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 2.57512445662557e-05,
+    "max_rel_dev": 0.0004045361093967126,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "pixperm_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 0.002366741914797291,
+    "max_rel_dev": 0.017892966312359006,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "warp_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.9992519693773022e-05,
+    "max_rel_dev": 0.00018413661232351877,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "hue_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.819672131147541,
+    "median_rel_dev": 1.651188426357987e-07,
+    "max_rel_dev": 0.4223028288094105,
+    "a3_stored_c25": 0.819672131147541,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "rotax_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 6.218123051266145e-07,
+    "max_rel_dev": 2.283726714215648e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "flip_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.847069424259225e-07,
+    "max_rel_dev": 8.329061485836655e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "jitter_m": {
+    "kind": "calibrated",
+    "a3_measured": 0.9890710382513661,
+    "median_rel_dev": 1.1724409775625281e-07,
+    "max_rel_dev": 0.1981064264303447,
+    "a3_stored_c25": 0.9890710382513661,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "noise_m": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 1.6266973570234692e-06,
+    "max_rel_dev": 7.618107628426701e-06,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "invdose": {
+    "kind": "calibrated",
+    "a3_measured": 1.0,
+    "median_rel_dev": 2.0186590034782166e-07,
+    "max_rel_dev": 5.039363983887339e-07,
+    "a3_stored_c25": 1.0,
+    "abs_diff_from_c25_share": 0.0
+   },
+   "u:hue": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.02185792349726776,
+    "median_rel_dev": 0.22906546957670196,
+    "max_rel_dev": 2.2597259214806713,
+    "a3_stored_c25": 1.0
+   },
+   "u:flip": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.0,
+    "median_rel_dev": 2.0702129824683975,
+    "max_rel_dev": 7.870133721800761,
+    "a3_stored_c25": 1.0
+   },
+   "u:jitter": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.01092896174863388,
+    "median_rel_dev": 0.6204331866856404,
+    "max_rel_dev": 2.546627489015425,
+    "a3_stored_c25": 1.0
+   },
+   "u:noise": {
+    "kind": "uncalibrated placebo",
+    "a3_measured": 0.0,
+    "median_rel_dev": 1.6087103748220322,
+    "max_rel_dev": 4.512231960098529,
+    "a3_stored_c25": 1.0
+   }
+  }
+ },
+ "schemes": {
+  "strict": {
+   "tol": [
+    0.05,
+    0.05,
+    0.1,
+    0.95
+   ],
+   "per_target": {
+    "contrast@2": {
+     "balanced": 1,
+     "neutral": 3,
+     "feasible_measured": 8,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@2": {
+     "balanced": 1,
+     "neutral": 3,
+     "feasible_measured": 8,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "contrast@0": {
+     "balanced": 2,
+     "neutral": 3,
+     "feasible_measured": 12,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@0": {
+     "balanced": 2,
+     "neutral": 3,
+     "feasible_measured": 12,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    }
+   },
+   "valid_total": 0
+  },
+  "main": {
+   "tol": [
+    0.1,
+    0.1,
+    0.15,
+    0.95
+   ],
+   "per_target": {
+    "contrast@2": {
+     "balanced": 1,
+     "neutral": 6,
+     "feasible_measured": 8,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@2": {
+     "balanced": 1,
+     "neutral": 6,
+     "feasible_measured": 8,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "contrast@0": {
+     "balanced": 2,
+     "neutral": 4,
+     "feasible_measured": 12,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@0": {
+     "balanced": 2,
+     "neutral": 3,
+     "feasible_measured": 12,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    }
+   },
+   "valid_total": 0
+  },
+  "relaxed": {
+   "tol": [
+    0.2,
+    0.2,
+    0.3,
+    0.9
+   ],
+   "per_target": {
+    "contrast@2": {
+     "balanced": 1,
+     "neutral": 9,
+     "feasible_measured": 8,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@2": {
+     "balanced": 1,
+     "neutral": 8,
+     "feasible_measured": 8,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "contrast@0": {
+     "balanced": 2,
+     "neutral": 9,
+     "feasible_measured": 13,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@0": {
+     "balanced": 2,
+     "neutral": 8,
+     "feasible_measured": 13,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    }
+   },
+   "valid_total": 0
+  },
+  "very relaxed": {
+   "tol": [
+    0.3,
+    0.3,
+    0.5,
+    0.85
+   ],
+   "per_target": {
+    "contrast@2": {
+     "balanced": 1,
+     "neutral": 12,
+     "feasible_measured": 8,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@2": {
+     "balanced": 1,
+     "neutral": 12,
+     "feasible_measured": 9,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "contrast@0": {
+     "balanced": 2,
+     "neutral": 13,
+     "feasible_measured": 13,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    },
+    "color_var@0": {
+     "balanced": 2,
+     "neutral": 10,
+     "feasible_measured": 13,
+     "balanced_and_neutral": 0,
+     "valid": 0
+    }
+   },
+   "valid_total": 0
+  }
+ },
+ "runtime_sec": 402.6
+}

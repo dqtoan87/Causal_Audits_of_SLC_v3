@@ -1,0 +1,31 @@
+# Fourteenth fresh-directory run: c91 (2026-11-21)
+# The directory was a copy of the tracked files of this repository at commit 84c4c234495da930528a9929f2f241f1c4addf21,
+# without .git, with code/c91_feasibility_measured.py added (not yet committed). c91 reads no model output and no
+# checkpoint. It rebuilds the edit library on the 183 audit images with c25's build_design (images read from
+# DATA_ROOT, left at the README's path on this machine), checks the rebuild against results/c25_screen_full.json
+# and measures screen (A3) for every control. Its result file c91_feasibility_measured.json was absent from the copy.
+# The written file is compared with the committed one leaf by leaf at a relative tolerance of 1e-9, ignoring runtime_sec.
+#
+# Outcome: every number equals the committed one.
+
+== run log
+=== post hoc fresh-directory run started 2026-11-21T08:55:09+07:00 ===
+##### C91 measured feasibility 08:55:17 #####
+rebuilt 183 images (479s)
+max abs difference from stored c25 design: 0
+contrast@2 {'rotd': 0.721, 'sgnd': 1.0, 'permd': 0.995, 'u:hue': 0.0, 'u:flip': 0.087, 'u:jitter': 0.005, 'u:noise': 0.038}
+   calibrated |measured - c25|: {'hybrid_m': 0.0, 'texswap_m': 0.0, 'globrot_m': 0.0, 'warp2_m': 0.0, 'pixperm_m': 0.0, 'warp_m': 0.0, 'hue_m': 0.0, 'rotax_m': 0.0, 'flip_m': 0.0, 'jitter_m': 0.0, 'noise_m': 0.0, 'invdose': 0.0}
+color_var@2 {'rotd': 0.738, 'sgnd': 1.0, 'permd': 1.0, 'u:hue': 0.0, 'u:flip': 0.077, 'u:jitter': 0.0, 'u:noise': 0.06}
+   calibrated |measured - c25|: {'hybrid_m': 0.0, 'texswap_m': 0.0, 'globrot_m': 0.0, 'warp2_m': 0.0, 'pixperm_m': 0.0, 'warp_m': 0.0, 'hue_m': 0.0, 'rotax_m': 0.0, 'flip_m': 0.0, 'jitter_m': 0.0, 'noise_m': 0.0, 'invdose': 0.0}
+contrast@0 {'rotd': 0.934, 'sgnd': 1.0, 'permd': 1.0, 'u:hue': 0.022, 'u:flip': 0.0, 'u:jitter': 0.027, 'u:noise': 0.005}
+   calibrated |measured - c25|: {'hybrid_m': 0.0, 'texswap_m': 0.0, 'globrot_m': 0.0, 'warp2_m': 0.0, 'pixperm_m': 0.0, 'warp_m': 0.0, 'hue_m': 0.0, 'rotax_m': 0.0, 'flip_m': 0.0, 'jitter_m': 0.0, 'noise_m': 0.0, 'invdose': 0.0}
+color_var@0 {'rotd': 0.94, 'sgnd': 1.0, 'permd': 1.0, 'u:hue': 0.022, 'u:flip': 0.0, 'u:jitter': 0.011, 'u:noise': 0.0}
+   calibrated |measured - c25|: {'hybrid_m': 0.0, 'texswap_m': 0.0, 'globrot_m': 0.0, 'warp2_m': 0.0, 'pixperm_m': 0.0, 'warp_m': 0.0, 'hue_m': 0.0, 'rotax_m': 0.0, 'flip_m': 0.0, 'jitter_m': 0.0, 'noise_m': 0.0, 'invdose': 0.0}
+{'strict': 0, 'main': 0, 'relaxed': 0, 'very relaxed': 0}
+wrote <fresh>/results/c91_feasibility_measured.json (479s)
+rc=0
+=== finished 2026-11-21T09:03:17+07:00 ===
+
+== comparison
+c91_feasibility_measured.json  EQUAL (532 leaves, runtime_sec ignored)
+files compared: 1, differing: 0

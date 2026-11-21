@@ -27,7 +27,7 @@ SCRIPTS = ["c63_route_exploratory", "c64_route_screens", "c65_route_robustness",
            "c84_label_provenance", "c85_artifact_band_calibration",
            "c86_batch_context_first_run",
            "c87_route_feature_strata", "c88_artifact_inv_epoch1", "c89_fullfold_artifact",
-           "c90_posthoc_rereads"]
+           "c90_posthoc_rereads", "c91_feasibility_measured"]
 
 
 def sha(path):

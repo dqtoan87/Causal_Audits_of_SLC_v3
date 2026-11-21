@@ -83,6 +83,7 @@ SCRIPTS=(
   c88_artifact_inv_epoch1
   c89_fullfold_artifact
   c90_posthoc_rereads
+  c91_feasibility_measured
   make_figures_split
   make_fig_edit_examples
   make_fig_shrinkage

@@ -225,7 +225,7 @@ def p2_fig1_dag():
     a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S)$", ha="center", va="center", fontsize=MD, bbox=obs)
     a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q)$", ha="center", va="center", fontsize=MD, bbox=box)
     a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
-    _rung(a2, 0.86, 0.21, 0.38, "coverage\nnot shown", "assumed", ASSC)
+    _rung(a2, 0.86, 0.21, 0.38, "T0  sampling\nassumed, untested", "assumed", ASSC)
     _rung(a2, 0.86, 0.62, 0.81, "T1  transfer\nassumed, untested", "assumed", ASSC)
     a2.text(0.0, 0.98, "artifact side", fontsize=SM, weight="bold", ha="left", color="0.30")
     # concept chain
@@ -284,7 +284,7 @@ def p3_fig1_dag():
     a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S)$", ha="center", va="center", fontsize=MD, bbox=obs)
     a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q)$", ha="center", va="center", fontsize=MD, bbox=box)
     a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
-    _rung(a2, 0.86, 0.21, 0.38, "coverage\nnot shown", "assumed", ASSC)
+    _rung(a2, 0.86, 0.21, 0.38, "T0  sampling\nassumed, untested", "assumed", ASSC)
     _rung(a2, 0.86, 0.62, 0.81, "T1  transfer\nassumed, untested", "assumed", ASSC)
     a2.text(0.0, 0.98, "artifact side", fontsize=SM, weight="bold", ha="left", color="0.30")
     a2.text(0.0, 0.71, "concept side", fontsize=SM, weight="bold", ha="left", color="0.30")
