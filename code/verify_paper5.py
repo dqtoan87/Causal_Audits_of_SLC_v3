@@ -372,7 +372,7 @@ if d:
     pr, comp = d["primary"], d["primary"]["components"]
     TT = ("contrast@0", "contrast@2", "color_var@0", "color_var@2")
     check("route test: 78 locked images from 54 patients", (reg["locked_set"]["n_images"], reg["locked_set"]["n_patients"]), (78, 54), 0,
-          text="78 malignant images of the selection fold, from 54 patients")
+          text=["On the 78 malignant selection-fold images", "@supp:Every malignant image of the selection fold: 78 images from 54 patients"])
     a4 = [con["summary"][t]["n_all_three_g1"] for t in TT]
     check("route test: all four controls pass G1 on 74 to 78 images", (min(a4), max(a4)), (74, 78), 0, text="74 to 78 of the 78 images")
     sx = sorted(v["est"] for k, v in comp.items() if v.get("decision_sim") == "exceeds" and ("D_rad4-rad16" in k or "D_hue4-hue16" in k))
@@ -579,14 +579,14 @@ sc = load("c64_route_screens")
 if sc:
     fr = sc["frontier"]
     nval = sum(s["valid"] for part in ("registered", "frontier") for t in sc[part] for s in sc[part][t].values())
-    check("screens: no constructed control passes all three", nval, 0, text="no constructed control passes all three screens")
+    check("screens: no constructed control passes all three", nval, 0, text="@supp:no constructed control passes all three checks")
     check("screens: optimised radial footprint-link scores 0.56 and 0.06",
           (fr["contrast@2"]["rad"]["footprint_link_score"], fr["color_var@2"]["rad"]["footprint_link_score"]),
           (0.56, 0.06), 5e-3, text="with footprint-link scores of 0.56 and 0.06", where="supp")
     tonly = sorted("%s|%s|%s" % (part, t, c) for part in ("registered", "frontier") for t in sc[part] for c, s in sc[part][t].items() if s["valid_target_only"])
     check("screens: two controls pass under a target-only (A2)", "/".join(tonly),
           "frontier|color_var@2|rad/registered|color_var@2|rad16",
-          text="@supp:Under the target-only reading two controls would pass all three screens")
+          text="@supp:Under the target-only reading two controls would pass all three checks")
     check("screens: they move the contrast proxy by 47 and 58%",
           (100 * sc["registered"]["color_var@2"]["rad16"]["offtarget_proxy_shift"], 100 * fr["color_var@2"]["rad"]["offtarget_proxy_shift"]),
           (47, 58), 0.5, text="@supp:move the contrast proxy by 47 and 58% on average")
@@ -674,7 +674,7 @@ if d:
         check("IV-B: median mismatches up to 69.0% (HF, any control) and 162.4% (CIELAB, hue); hue CIELAB from 139.2%",
               "%.1f %.1f %.1f" % (math.ceil(_md("rel_hf", ("rad4", "rad16", "hue4", "hue16")) * 10 - 1e-9) / 10, math.ceil(_md("rel_dE", ("hue4", "hue16")) * 10 - 1e-9) / 10,
                                   math.floor(_mn("rel_dE", ("hue4", "hue16")) * 10 + 1e-9) / 10), "69.0 162.4 139.2",
-              text=["median mismatches of up to 69.0% in high-frequency change and 162.4% in CIELAB $\\Delta E$ (Supplementary Table S31)", "@supp:the high-frequency change by 7.6 to 69.0%", "@supp:The hue controls missed $\\Delta E$ by 139.2 to 162.4%"], strict=True)
+              text=["@supp:the high-frequency change by 7.6 to 69.0%", "@supp:The hue controls missed $\\Delta E$ by 139.2 to 162.4%"], strict=True)
         check("high doses: seven of eight controls fail G2 on most images", sum(x < 0.5 for x in _g2), 7,
               text="@supp:At the high doses, seven of the eight controls fail it on most images")
 d = load("c56_simultaneous36")
@@ -1005,12 +1005,12 @@ if d:
     check("structural biases 135.8, 48.6, 6.9 and 42.9%; valid regime exact on R0",
           " ".join("%.1f" % (100 * rg[k]["abs_error_frac_of_target_noise_free"]) for k in ("R1_valid", "R2_footprint_mismatch", "R3_concept_contamination",
                    "R4_model_state", "R5_proxy_blind")), "0.0 135.7 48.6 6.9 42.9",
-          text=["@supp:| +1.194 | 6.9% |", "one moves the latent concept",
+          text=["@supp:| +1.194 | 6.9% |", "@supp:R3 and R5 end at a control that moves the latent concept",
                 "@supp:| +1.117 | 0.0% |", "@supp:| −0.399 | 135.7% |", "@supp:| +0.574 | 48.6% |", "@supp:| +1.194 | 6.9% |", "@supp:| +0.637 | 42.9% |"])
     check("R4 structural error equals the bias formula +0.077", "%+.3f %+.3f" % (rg["R4_model_state"]["error_noise_free"], rg["R4_model_state"]["predicted_bias_from_formula"]),
           "+0.077 +0.077", text="@supp:at +0.077, which is its error on $R^0$")
     check("designed route exact on R0", d["constructive_repair"]["chained_route_noise_free_abs_error"], 0.0, 1e-12,
-          text=["a designed length-four route returns it exactly on the structural response $R^0$", "@supp:On $R^0$ it returns the target exactly, to floating-point rounding"])
+          text=["A designed route returns a simulated generating concept term of 1.117 logits exactly on the structural response $R^0$", "@supp:On $R^0$ it returns the target exactly, to floating-point rounding"])
     check("proxy-blind regime biased 42.5%", 100 * rg["R5_proxy_blind"]["abs_error_frac_of_target"], 42.5, 0.05,
           text="@supp:42.5%")
     check("screens admit R1, R4, R5 and reject R2, R3",
@@ -1044,7 +1044,7 @@ if d:
     check("CAV accuracy 0.84 to 0.94 on all activations (S12)", rng(accs), (0.84, 0.94), 6e-3, text="unedited activations at 0.84 to 0.94 accuracy", where="supp")
     _ho = [e["cav_accuracy_heldout_mean"] for v in d["models"].values() for e in v["concepts"].values()]
     check("CAV accuracy 0.68 to 0.87 on held-out activations", rng(_ho), (0.68, 0.87), 5e-3,
-          text=["Out-of-sample accuracy of 0.68 to 0.87", "or 0.68 to 0.87 on the activations not used to fit them"], where=["paper", "supp"])
+          text=["or 0.68 to 0.87 on the activations not used to fit them"], where=["paper", "supp"])
     check("significant in 7 of 12 cells", "%d of %d" % (sum(flags), len(flags)), "7 of 12", text="7 of the 12 model-by-concept cells nominally significant")
 
 d = load("c10_multiplacebo")
@@ -1916,8 +1916,7 @@ if d and "shared_footprint_controls" in d:
     pdd = d["shared_footprint_controls"]
     check("R4 alone: library component +1.194 on R0, generating term 1.117",
           "%+.3f %.3f" % (pdd["library_component_R4_alone_noise_free"], pdd["generating_concept_term"]), "+1.194 1.117",
-          text=["Statement 1 identifies its own library's component, +1.194, not the generating term",
-                "@supp:Statement 1 identifies that library's component, +1.194 on $R^0$"])
+          text=["@supp:Statement 1 identifies that library's component, +1.194 on $R^0$"])
     ci = pdd["route_sum_R4_minus_R1_noisy_ci95"]
     check("Part D: both controls pass the screens, route gap 0.077 on R0, 0.067 [0.039, 0.094] with noise (outward)",
           "%s %.3f %.3f %.3f %.3f" % (pdd["both_pass_screens"], pdd["route_sum_R4_minus_R1_noise_free"], pdd["route_sum_R4_minus_R1_noisy"],
@@ -1992,10 +1991,10 @@ check("no unqualified cycle-test rejection wording left", len(_bad_rej), 0)
 check("four readings of the route test kept apart; no controlled-level rejection shown",
       "%s %s" % (("It has no p-value" in _P + _S and "nominal counts, and no rejection of the joint package at a controlled family-wise level is shown" in _P), "No rejection of the conjunction under $Q_R$ at a controlled level is shown" in _S), "True True")
 check("h* relative to M and the library (abstract, Table 1, III-C, conclusion, S1)",
-      "%s %s %s %s %s" % ("footprint-relative concept component" in _ab, "relative to the footprint $M$ and the library, net of the footprint term" in _P + _S,
-                          "as the concept component relative to $M$ and the library" in _P,
-                          "the concept component relative to the measured footprint is identified exactly" in _concl,
-                          "relative to the footprint *M* and the library" in _S), "True True True True True")
+      "%s %s %s %s %s" % ("footprint-relative concept component" in _ab, "relative to the footprint $M$, the library and the protocol $P$, net of the footprint term" in _P + _S,
+                          "as the concept component relative to $M$, the library and $P$" in _P,
+                          "the footprint-relative concept component is identified exactly" in _concl,
+                          "relative to the footprint *M*, the library and the protocol *P*" in _S), "True True True True True")
 check("G0 concept vertices include 0, isolated when no edit is latently neutral",
       "%s %s" % ("realized by the library together with $0$" in _P, "The vertex $0$ is isolated when no edit is latently neutral" in _P), "True True")
 check("histopathology is a diagnosis-field proxy (main, S8, Table S21, S16)",
@@ -2003,8 +2002,8 @@ check("histopathology is a diagnosis-field proxy (main, S8, Table S21, S16)",
                        "a diagnosis-specificity proxy (the confirmation method is not recorded)" in _S, "so the argument is conditional on how each label was confirmed" in _S),
       "True True True True")
 check("N not settleable under this audit's rules; not an impossibility result",
-      "%s %s" % ("Under this audit's rules N cannot be settled, so any reported route sum would remain conditional on N" in _P,
-                 "this is not an impossibility result for future edit designs" in _P), "True True")
+      "%s %s" % ("Under this audit's rules N cannot be settled. Future libraries may still support identification conditional on N" in _P,
+                 "this is not an impossibility result for future edit designs" in _S), "True True")
 
 check("Assumption (i) no longer equates a designated concept-neutral edit with Delta C = 0; recalibrated flag defined",
       "%s %s %s" % ("with $\\Delta C(e) = 0$ for a concept-neutral edit" in TEXT["paper"],
@@ -2015,7 +2014,7 @@ check("label proxy never called histopathological; V-E states no verified count"
       "%s %s %s" % ("read as histopathological" in TEXT["supp"] or "histopathological diagnosis by this proxy" in TEXT["supp"],
                     "no verified count of specimen-read labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["supp"]), "False True True")
 check("reproduction scope: verifier reads the repository's paper/, only the cross-pipeline comparisons need more (unreleased reimplementation); no 'only external dependency'",
-      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `submission-2026-11-21`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
+      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-submission-2026-11-21`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
                        "for them only the stored result files can be checked" in TEXT["supp"], "The only external dependency" in TEXT["supp"]),
       "False True True False")
 check("C1a constrains only duplicate operators on this library; diagnostic (T) neither tests nor rejects C1a (Table 2, III-C, IV-B, S6)",
@@ -2098,11 +2097,11 @@ check("main-text copies of verified numbers (abstract, IV-A, IV-B, conclusion)",
             "In the plan-locked first run, on the plan's nominal band, three of twelve model-by-target cells were flagged",
             "**All eighteen cells exceed jointly below 0.042.**",
             "Every cell exceeds 0.05 on its marginal interval",
-            "the frontier's central 95% range is 0.032 to 0.066",
+            "@supp:a central 95% range of 0.032 to 0.066",
             "@supp:to ten at 0.15 and to seven at 0.20",
             "@supp:moves the proxies by less than 0.1% at a maximum absolute SMD of 1.40",
             "the placebo contrast, of length two, 9.6 to 13.3",
-            "a generating concept term of 1.117 logits",
+            "a simulated generating concept term of 1.117 logits",
             "and +1.111 with noise",
             "@supp:at most $6.4 \\times 10^{-7}$ relative",
             "@supp:Slim at the lowest contrast dose, +1.99 [+0.50, +3.47]; ERM at the highest contrast dose, +4.63 [+1.91, +7.34]; and Slim at the highest variegation dose, +5.27 [+1.83, +8.70]",
@@ -2116,7 +2115,7 @@ if _pre and _a30:
           text=["every cell exceeds every tolerance below 0.042 probability units",
                 "and 17 of the 18 cells exceed 0.05 jointly",
                 "with 95% patient-clustered percentile confidence intervals (CIs) from 4,000 resamples",
-                                "the 0.5-logit margin, an operational tolerance",
+                                "The operational null of a pair $(a, b)$ is $\\lvert\\mu_{ab}\\rvert \\le 0.5$ logit",
                 "that the library protocol scores at 0.1 or above",
                 "that all three EfficientNet-B3 models score at 0.1 or above in per-control batches",
                 "@supp:came within 0.1% of the concept edit on all six descriptors for 13 and 15 of the 78 images at the highest doses",
@@ -2319,7 +2318,7 @@ if os.path.exists(_tovp):
           "+4.61 +5.46 +2.17 | ['erm|contrast@2', 'slim|color_var@2', 'slim|contrast@0', 'slim|contrast@2'] | indeterminate indeterminate True",
           text=["@supp:flag the same three cells, by +4.61, +5.46 and +2.17 logits, and one more, Slim at the highest contrast dose",
                 "@supp:`log/e2e_route_first_run_other_versions.txt`",
-                "fixed inference protocol, image decoding included",
+                "fixed inference protocol and package versions",
                 "@supp:the first run keeps its three flags, adds one for Slim at the highest contrast dose and turns both cells in which the Inv model's routes agree indeterminate"])
 else:
     rows.append(("MISSING", "other-versions record of the route test's first run", "-", "-"))
@@ -2327,7 +2326,7 @@ else:
 # ---- scope of the benign-redraw range; single statements of repeated results; cross-references ----
 _d60 = load("c60_design_coverage")
 check("benign-redraw range: main text and S2 say the overlay realization is another one, held fixed; S2 calls it percentiles",
-      "%s %s %s %s" % ("On a separate overlay realization, held fixed while the benign images were redrawn 500 times" in TEXT["paper"],
+      "%s %s %s %s" % ("Over 500 benign redraws on another overlay realization" in TEXT["paper"],
                        "It is held fixed across all draws, so the analysis varies the benign draw alone" in TEXT["supp"],
                        "These are empirical percentiles over the 500 draws, not a confidence interval" in TEXT["supp"],
                        "95.4% of draws" in TEXT["paper"]), "True True True True")
@@ -2347,11 +2346,10 @@ _v5_main = [
     ("the signed component is −0.006 [−0.024, +0.018] while the magnitude is 0.085 [0.077, 0.093]", "cancellation example (c30)"),
     ("the footprints of the 88 performed edits coincide for exactly four pairs", "exact graph, 183 images (c55)"),
     ("three more pairs coincide", "exact graph, 83 malignant images (c82)"),
-    ("Statement 1 identifies its own library's component, +1.194, not the generating term", "simulation R4 (c54)"),
     ("hold jointly in 97.3% of cohorts, although the two-sided band covers jointly in only 85%", "artifact band calibration (c85)"),
     ("75 to 92% of the summed differences of the high-dose flags", "feature strata (c87)"),
     ("has bottleneck $\\rho$ from 1.17 to 2.13, and the placebo contrast, of length two, 9.6 to 13.3", "bottleneck (c55)"),
-    ("a generating concept term of 1.117 logits", "simulation (c54)"),
+    ("a simulated generating concept term of 1.117 logits", "simulation (c54)"),
     ("and +1.111 with noise", "simulation (c54)"),
     ("maximum absolute SMD of 0.05 but moves the concept proxies by 99 to 104%", "best-balanced control, highest doses (c25)"),
     ("give 126 cells besides the identity edit; 37 are within tolerance and 19 indeterminate", "dose ladder (c26)"),
@@ -2359,7 +2357,7 @@ _v5_main = [
     ("at 0.069 to 0.096", "PAD-UFES-20 (c46)"),
     ("its point estimate changes sign for one model", "placebo sign (c10)"),
     ("For Slim it is −0.34 logits under a mirror flip, with intervals covering zero on each concept, and +5.14 under noise", "placebo values (c10)"),
-    ("On the 58 malignant images above the library protocol's score floor, paired differences below 0.48 to 1.79 logits", "resolution limit (c19)"),
+    ("Paired differences below 0.48 to 1.79 logits on the 58 scored malignant images", "resolution limit (c19)"),
     ("the band covered the fold-level design targets jointly in 95.4% of draws", "fold-level design coverage (c60)"),
     ("Audit-cohort AUROC is 0.856 to 0.893 across the six checkpoints (Supplementary Table S13)", "audit AUROC range over the six checkpoints (c30)"),
     ("the magnitude decides each cell", "magnitude decides the cell (c30)"),
@@ -2408,8 +2406,9 @@ if _c89:
           "0.069 0.065 18 18", text=["the frontier is again 0.069", "it is 0.065, so the overlay realization and batch context account for about 0.005 of the rise. Both give 18 of 18"], where="supp")
     check("c89: rise attributable to overlays and batches about 0.005", round(_pr["frontier_36"] - _hy["frontier_36"], 3), 0.005, 0.0005)
     check("c89: main-text copy (IV-A) and Table 3", "%.3f %d" % (math.floor(_pr["frontier_36"] * 1000) / 1000, _pr["n_exceed_0.05_joint"]), "0.069 18",
-          text=["It gives a frontier of 0.069 for the corresponding working superpopulation of the fold's 199 patients, with all 18 cells exceeding 0.05 jointly (Supplementary Section S2)",
-                "17 of 18 at 0.05; whole-fold superpopulation, other realization, post hoc: below 0.069", "estimated for $Q_S$; T0 assumed, untested; overlay generator: a separate target",
+          text=["gives a frontier of 0.069 for a working superpopulation of the fold's 199 patients (Supplementary Section S2)",
+                "@supp:Both give 18 of 18",
+                "estimated for $Q_S$; T0 assumed, untested; overlay generator: a separate target",
                 "@supp:The whole fold thus supports a higher frontier than the audit cohort's 0.042; single cohorts of the design can fall lower, as the redraw range above shows"], where="paper", strict=True)
 else:
     rows.append(("MISSING", "c89_fullfold_band", "-", "-"))
@@ -2425,7 +2424,7 @@ if _c90:
           text=["@supp:The high-frequency change sets the maximum for 12, 14, 13 and 15 controls at the four targets of Table S8, in that order, and CIELAB $\\Delta E$ for 2, 0, 1 and 2"])
     check("c90(a): main text, 12 to 15 of 19 by HF, at most two by Delta E",
           "%d %d %d %d" % (min(_arg(t, "hf_change") for t in _T4), max(_arg(t, "hf_change") for t in _T4), max(_arg(t, "lab_dE") for t in _T4), _a["contrast@2"]["n_controls"]), "12 15 2 19",
-          text="High-frequency change sets the largest imbalance for 12 to 15 of the 19 controls per target and CIELAB $\\Delta E$ for at most two; removed from (A1), $\\Delta E$ changes no screen decision (post hoc, Supplementary Section S5)", strict=True)
+          text="High-frequency change, not CIELAB $\\Delta E$, sets most of the imbalance, and removing $\\Delta E$ from (A1) changes no screen decision (post hoc, Supplementary Section S5)", strict=True)
     check("c90(a): above 0.10, HF for 18, 18, 16, 16 and Delta E for 12, 11, 10, 10",
           "%s; %s" % (", ".join(str(_ovr(t, "hf_change")) for t in _T4), ", ".join(str(_ovr(t, "lab_dE")) for t in _T4)), "18, 18, 16, 16; 12, 11, 10, 10",
           text="@supp:The high-frequency change exceeds 0.10 for 18, 18, 16 and 16 controls, and $\\Delta E$ for 12, 11, 10 and 10")
@@ -2486,7 +2485,7 @@ if _fz:
           "True True True 83 4150 199",
           text=["@supp:draws benign images at 50 per malignant image, uniformly without replacement, with seed 4202",
                 "@supp:a frame of 83 malignant and 4,150 benign images from 199 patients, 198 of whom have benign images",
-                "all 83 malignant and 4,150 benign images, 50 per malignant image as undersampled with a fixed seed"], where=["paper", "supp"], strict=True)
+                ], where=["paper", "supp"], strict=True)
 
 # ---- c91: (A3) measured on the final image for every control (post hoc; S5, Tables S7 and S8, S9, S23, IV-B) ----
 _c91 = load("c91_feasibility_measured")
@@ -2560,6 +2559,34 @@ check("no 'coverage for Q' rung left in either text",
 check("supplement cites main-text (10) as the shift target", True, True, where="supp", strict=True,
       text=["shift target of (10), whose form the edited images match", "| shift target of (10), whose form the edited images match |",
             "while the edited images match the form of the shift target (10)", "Section III-C states C3a, C3b and the shift target (10)"])
+
+# ================================================================ main-text copies added for the inference-protocol range, the band size and the bit-exact sets
+_PROT = ("stack_bf16", "stack_fp32", "single_bf16", "single_fp32")
+if _b1 and _bx:
+    _n1 = [len(_b1["cycle"][v]["disagreeing_cells"]) for v in _PROT]
+    _n2 = [len(_bx["cycle"][v]["disagreeing_cells"]) for v in _PROT]
+    check("main IV-B: across the four protocols of Table S41 each protocol's nominal band flags 3 to 5 cells (first run) and 3 to 6 (second run)",
+          "%d %d %d %d" % (min(_n1), max(_n1), min(_n2), max(_n2)), "3 5 3 6",
+          text="Across the four inference protocols of Supplementary Table S41, each protocol's nominal band flags 3 to 5 cells in the first run and 3 to 6 in the second", strict=True)
+if _c90:
+    _cs = _c90["c_cycle_test_feasible_size"]
+    _upm = lambda x: "%.1f" % (math.ceil(1000 * x - 1e-9) / 10); _dnm = lambda x: "%.1f" % (math.floor(1000 * x + 1e-9) / 10)
+    check("main IV-B: family-wise size between 21.3 and 22.3% (first run) and between 26.2 and 26.8% (second) over the feasible boundary configurations",
+          "%s %s %s %s" % (_dnm(_cs["first"]["rate_feasible_least_favourable_found"]), _upm(_cs["first"]["upper_bound_one_minus_joint_coverage"]),
+                           _dnm(_cs["second"]["rate_feasible_least_favourable_found"]), _upm(_cs["second"]["upper_bound_one_minus_joint_coverage"])),
+          "21.3 22.3 26.2 26.8",
+          text="Over the feasible boundary configurations, the band's family-wise size lies between 21.3 and 22.3% in the first run and between 26.2 and 26.8% in the second, against a nominal 5%", strict=True)
+if _xd:
+    _e1, _e2 = _xd["runs"]["first_run"]["exact_identity"], _xd["runs"]["second_run"]["exact_identity"]
+    check("main IV-B: on the bit-exact subsets all 48 mean differences are nonzero in each run",
+          "%d %d %d %d" % (_e1["n_differences"], _e1["n_nonzero_mean"], _e2["n_differences"], _e2["n_nonzero_mean"]), "48 48 48 48",
+          text="On bit-exact footprint matches, all 48 mean differences are nonzero in each run", strict=True)
+_c42 = load("c42_positive_control")
+if _c42:
+    _rr = _c42["models"]["r50"]["Inv"]["ruler"]
+    check("main IV-A: for the ruler alone, ResNet-50 Inv is within tolerance in all three subgroups on the marginal intervals",
+          "/".join(_rr[g]["verdict"] for g in ("all", "malignant", "benign")), "equivalence/equivalence/equivalence",
+          text="For the ruler alone, ResNet-50 Inv is within tolerance in all three subgroups on the marginal intervals", strict=True)
 
 # ================================================================ report
 w = max(len(r[1]) for r in rows)
