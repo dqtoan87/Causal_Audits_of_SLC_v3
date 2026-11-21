@@ -747,7 +747,7 @@ if d:
     check("dose grid: 144 cells", len(verd), 144, text="@supp:55 of 144 cells")
     check("dose grid: 55 within tolerance", verd.count("equivalence"), 55, text="@supp:55 of 144 cells", where="supp")
     check("dose grid: 19 indeterminate", verd.count("indeterminate"), 19, text=["19 are indeterminate"], where=["paper", "supp"])
-    check("first exceedance 0.34 to 2.37%", rng(first), (0.34, 2.37), 5e-3, text="0.34 to 2.37%")
+    check("first exceedance 0.34 to 2.37%", rng(first), (0.34, 2.37), 5e-3, text="@supp:running from 0.34% of altered pixels for EfficientNet-B3 Slim to 2.37%")
     idv = [v["verdict"] for bk in d["models"] for mk in d["models"][bk]
            for v in d["models"][bk][mk]["identity"].values()]
     check("identity edit within tolerance in all eighteen cells", idv.count("equivalence"), 18)
@@ -1044,7 +1044,7 @@ if d:
     check("CAV accuracy 0.84 to 0.94 on all activations (S12)", rng(accs), (0.84, 0.94), 6e-3, text="unedited activations at 0.84 to 0.94 accuracy", where="supp")
     _ho = [e["cav_accuracy_heldout_mean"] for v in d["models"].values() for e in v["concepts"].values()]
     check("CAV accuracy 0.68 to 0.87 on held-out activations", rng(_ho), (0.68, 0.87), 5e-3,
-          text=["Held-out accuracy of 0.68 to 0.87", "or 0.68 to 0.87 on the activations not used to fit them"], where=["paper", "supp"])
+          text=["Out-of-sample accuracy of 0.68 to 0.87", "or 0.68 to 0.87 on the activations not used to fit them"], where=["paper", "supp"])
     check("significant in 7 of 12 cells", "%d of %d" % (sum(flags), len(flags)), "7 of 12", text="7 of the 12 model-by-concept cells nominally significant")
 
 d = load("c10_multiplacebo")
@@ -1133,7 +1133,7 @@ if _c42b:
     _top = max(_fe.values())
     check("ResNet-50 Inv alone has the highest first-exceeding hair dose, 2.37%",
           "%s %.2f" % (",".join(k for k, v in _fe.items() if v == _top), _top), "r50-Inv 2.37",
-          text="to 2.37% for the ResNet-50 invariance model, spanning four of the six grid steps", where="supp")
+          text="to 2.37% for ResNet-50 Inv, spanning four of the six grid steps", where="supp")
 _c62p = load("c62_preregistration")
 if _c62p:
     check("cycle test uses 20,000 resamples", _c62p["criteria"]["boot"], 20000,
@@ -1905,7 +1905,7 @@ if _pc:
           text=["@supp:scores each malignant audit image in one batch with all 88 library edits", "@supp:with a largest absolute difference of 0.0 logit for each of the three EfficientNet-B3 models on all 83 malignant audit images"])
     check("route test: 24 edited versions per batch in both runs", sorted(set(v["edited_versions"] for v in _pc["route_test"].values())) == [24], True,
           text="@supp:scores each selection-fold image in one batch with its 24 edited versions")
-check("plan commit given by its full SHA", True, True, text=["@supp:40b6367b84fea2d1f11894484b11d2f0634d4306 (https://github.com/dqtoan87/Causal_Audits_of_SLC_v2/commit/40b6367b84fea2d1f11894484b11d2f0634d4306)"])
+check("plan commit given by its full SHA", True, True, text=["@supp:commit 40b6367 at https://github.com/dqtoan87/Causal_Audits_of_SLC_v2/commit/40b6367b84fea2d1f11894484b11d2f0634d4306, whose history this repository includes"])
 _abs = TEXT["paper"].split("## Abstract")[1].split("**Index Terms")[0]
 check("abstract at most 250 words", len(_abs.split()), 250, ceil=True)
 check("no 'registered outcome' wording; T1 is Q-almost sure only", ("registered outcome" in TEXT["paper"] + TEXT["supp"]) or ("in particular every audited image" in TEXT["paper"]), False)
@@ -2013,20 +2013,20 @@ check("Assumption (i) no longer equates a designated concept-neutral edit with D
 # ---- label proxy wording, reproduction scope, C1a vs diagnostic (T) ----
 check("label proxy never called histopathological; V-E states no verified count",
       "%s %s %s" % ("read as histopathological" in TEXT["supp"] or "histopathological diagnosis by this proxy" in TEXT["supp"],
-                    "no verified count of such labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["supp"]), "False True True")
+                    "no verified count of specimen-read labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["supp"]), "False True True")
 check("reproduction scope: verifier reads the repository's paper/, only the cross-pipeline comparisons need more (unreleased reimplementation); no 'only external dependency'",
-      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-2026-11-21b`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
+      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `submission-2026-11-21`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
                        "for them only the stored result files can be checked" in TEXT["supp"], "The only external dependency" in TEXT["supp"]),
       "False True True False")
 check("C1a constrains only duplicate operators on this library; diagnostic (T) neither tests nor rejects C1a (Table 2, III-C, IV-B, S6)",
-      "%s %s %s %s" % ("no equality beyond duplicate operators, whose responses are identical; diagnostic (L) neither tests nor rejects C1a" in TEXT["supp"], "the diagnostic neither tests nor rejects C1a" in TEXT["supp"],
-                       "its only restriction is that two edits with the same footprint and the same concept change respond alike" in TEXT["paper"], "The diagnostic therefore neither tests nor rejects C1a" in TEXT["supp"]),
-      "True True True True")
+      "%s %s %s" % ("no equality beyond duplicate operators, whose responses are identical; diagnostic (L) neither tests nor rejects C1a" in TEXT["supp"], "the diagnostic neither tests nor rejects C1a" in TEXT["supp"],
+                       "its only restriction is that two edits with the same footprint and the same concept change respond alike" in TEXT["paper"]),
+      "True True True")
 
 # ---- bounded set over latent labelings; verifier/runner exit status described consistently ----
 check("bounded interval (10) = identified set with latent labels unrestricted, outer bound under a labeling",
       "%s %s %s" % ("with the other edits' changes left unrestricted, (S4) is the bounded identified set" in TEXT["supp"],
-                    "the bounded identified set when no latent labeling is assumed" in TEXT["supp"],
+                    "is the bounded identified set" in TEXT["supp"],
                     "over all admissible labelings the bounded identified set is the single-edge interval" in TEXT["supp"]), "True True True")
 check("verifier described as reading results and both texts; exit 1 on mismatch, 2 on missing text; runner non-zero",
       "%s %s %s" % ("The verifier reads only the result files" in TEXT["supp"],
@@ -2072,8 +2072,8 @@ if _a30 and _a35:
     check("protocol factors: 1.4/1.8/1.3 per objective, 2.0/2.0/1.2 per protocol, 0.287 to 0.769 (2.7)",
           "%.1f %.1f %.1f | %.1f %.1f %.1f | %.3f %.3f %.1f" % tuple(_fo + [math.floor(x * 10) / 10 for x in _fp] + [min(_allm), max(_allm), max(_allm) / min(_allm)]),
           "1.4 1.8 1.3 | 2.0 2.0 1.2 | 0.287 0.769 2.7",
-          text=["@supp:gives factors of 1.4 for ERM, 1.8 for Slim and 1.3 for the invariance model",
-                "@supp:gives factors of 1.4 for ERM, 1.8 for Slim and 1.3 for the invariance model",
+          text=["@supp:gives factors of 1.4 for ERM, 1.8 for Slim and 1.3 for Inv",
+                "@supp:gives factors of 1.4 for ERM, 1.8 for Slim and 1.3 for Inv",
                 "@supp:Holding the protocol fixed and varying the objective gives 2.0, 2.0 and 1.2",
                 "@supp:runs from 0.287 to 0.769, a factor of 2.7"])
 if _a30:
@@ -2113,9 +2113,9 @@ if _pre and _a30:
     _cr = _pre["criteria"]
     check("design constants: artifact tolerance 0.05; route-test score floor 0.1, margin 0.5 logit",
           "%.2f %.1f %.1f" % (_a30["margin_p"], _cr["score_floor"], _cr["margin_logit"]), "0.05 0.1 0.5", where="paper",
-          text=["**every cell exceeds every tolerance below 0.042 probability units**",
+          text=["every cell exceeds every tolerance below 0.042 probability units",
                 "and 17 of the 18 cells exceed 0.05 jointly",
-                "with 95% patient-clustered percentile confidence intervals (CI) from 4,000 resamples",
+                "with 95% patient-clustered percentile confidence intervals (CIs) from 4,000 resamples",
                                 "the 0.5-logit margin, an operational tolerance",
                 "that the library protocol scores at 0.1 or above",
                 "that all three EfficientNet-B3 models score at 0.1 or above in per-control batches",
@@ -2179,7 +2179,7 @@ if _b1:
                        load("c67_route_sensitivity")["numerics_first_run"]["variants"]["fp32_stack"]["crit"]))
     check("main text: every variant applied to both runs; Table 5 robust scoped to the variants", True, True,
           text=["@supp:Every variant was applied to both runs", 
-                "@supp:The versions of the libraries that decode the images are not among these variants",
+                "@supp:The versions of the image-decoding packages are not among these variants",
                 "@supp:the robust and fragile labels of this section do not cover that change"])
 else:
     rows.append(("MISSING", "c86_batch_context_first_run", "-", "-"))
@@ -2253,7 +2253,7 @@ for _g in re.findall(r"\[(\d{1,2})\]", _body):
         _ord.append(int(_g))
 _listed = [int(x) for x in re.findall(r"^\[(\d+)\] ", TEXT["paper"].split("## References")[1], re.M)]
 check("references: cited in order of first appearance, every listed one cited", "%s %s %d" % (_ord == sorted(_ord), sorted(_ord) == _listed, len(_listed)), "True True 45",
-      text=["on each of the six footprint components [37]", "@supp:a modified-treatment-policy target [38], [39]", "The patient is the resampling unit throughout [43]",
+      text=["on each of the six footprint components [37]", "@supp:$R_{\\mathcal S}(e^\\ast) = \\theta^C_{\\mathrm{sh}}$, a target of modified-treatment-policy form [38], [39]", "The patient is the resampling unit throughout [43]",
             "Indirect comparisons through a common comparator [34] and loop-inconsistency checks in treatment networks [35]",
             "Benchmarks with human-written counterfactuals [26]", "Counterfactual language models [27] and causal proxy models [28]",
             "which has the form of a modified-treatment-policy target [38], [39]"])
@@ -2440,7 +2440,7 @@ if _c90:
           "%.2f %.2f %.2f %s %.2f" % (_fl(_pm["ERM"]["floor"]), _fl(_pm["Slim"]["floor"]), _fl(_pm["Inv"]["floor"]),
                                       len({(v["binding_target"], tuple(v["binding_pair"])) for v in _pm.values()}) == 1, _fl(_b["envelope_floor"])),
           "0.74 0.92 1.09 True 1.09",
-          text=["two of them force $L^g \\ge 1.09$ logits per scored unit for the Inv checkpoint, and 0.74 and 0.92 for ERM and Slim",
+          text=["$L^g \\ge 1.09$ logits per scored unit for the Inv checkpoint, and 0.74 and 0.92 for ERM and Slim",
                 "@supp:gives floors of 0.74 for ERM and 0.92 for Slim from the same pair", "@supp:The envelope $L^g_{\\max} = \\max(L^g_{\\mathrm{ERM}}, L^g_{\\mathrm{Slim}}, L^g_{\\mathrm{Inv}})$ therefore has floor 1.09",
                 "@supp:gives floors of 0.74 for ERM and 0.92 for Slim from the same pair"], where=["paper", "supp"], strict=True)
     check("c90(b): conservative floors 0.45, 0.54, 0.72 (rounded down)",
@@ -2552,14 +2552,14 @@ check("condition T0: stated in III-A and (2); the design fixes the malignant sha
       text=["> **T0 (sampling).**", "T0 holds when the audited patients are exchangeable with the patients of $Q$",
             "The design fixes the malignant share at 83 of 183 images, about 45%", "T0 is a sampling condition, assumed and untested",
             "estimated for $Q_S$; T0 assumed, untested", "@supp:| T0 (sampling) | the audited patients are exchangeable with those of $Q$",
-            "@supp:| T0, a sampling condition |", "@supp:The main text states this step as condition T0"])
+            "@supp:| T0, a sampling condition |", "@supp:The main text states this step, and the case-mix caveat, as condition T0"])
 check("no 'coverage for Q' rung left in either text",
       ("coverage for $Q$" in TEXT["paper"]) or ("\\text{coverage for } Q" in TEXT["paper"]) or ("| coverage for $Q$ |" in TEXT["supp"]), False)
 
 # ---- supplement citations of the main-text shift target (10) survive the build ----
 check("supplement cites main-text (10) as the shift target", True, True, where="supp", strict=True,
       text=["shift target of (10), whose form the edited images match", "| shift target of (10), whose form the edited images match |",
-            "while the edited images match the form of the shift target (10)", "The edited images instead define the shift target (10) of the main text"])
+            "while the edited images match the form of the shift target (10)", "Section III-C states C3a, C3b and the shift target (10)"])
 
 # ================================================================ report
 w = max(len(r[1]) for r in rows)

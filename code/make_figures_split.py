@@ -222,9 +222,9 @@ def p2_fig1_dag():
     box = dict(boxstyle="round,pad=0.28", fc="#eef3fb", ec="0.45", lw=0.9)
     obs = dict(boxstyle="round,pad=0.28", fc="#e7f5e9", ec="0.45", lw=0.9)
     # artifact chain
-    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S)$", ha="center", va="center", fontsize=MD, bbox=obs)
-    a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q)$", ha="center", va="center", fontsize=MD, bbox=box)
-    a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
+    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S,\pi)$", ha="center", va="center", fontsize=MD, bbox=obs)
+    a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q,\pi)$", ha="center", va="center", fontsize=MD, bbox=box)
+    a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}(Q,\nu)$", ha="center", va="center", fontsize=MD, bbox=box)
     _rung(a2, 0.86, 0.21, 0.38, "T0  sampling\nassumed, untested", "assumed", ASSC)
     _rung(a2, 0.86, 0.62, 0.81, "T1  transfer\nassumed, untested", "assumed", ASSC)
     a2.text(0.0, 0.98, "artifact side", fontsize=SM, weight="bold", ha="left", color="0.30")
@@ -281,9 +281,9 @@ def p3_fig1_dag():
     a2.set_title("(b) The identification ladder", fontsize=LG, weight="bold", pad=2)
     box = dict(boxstyle="round,pad=0.28", fc="#eef3fb", ec="0.45", lw=0.9)
     obs = dict(boxstyle="round,pad=0.28", fc="#e7f5e9", ec="0.45", lw=0.9)
-    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S)$", ha="center", va="center", fontsize=MD, bbox=obs)
-    a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q)$", ha="center", va="center", fontsize=MD, bbox=box)
-    a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}$", ha="center", va="center", fontsize=MD, bbox=box)
+    a2.text(0.09, 0.86, r"$\theta^{\,\mathrm{edit}}(Q_S,\pi)$", ha="center", va="center", fontsize=MD, bbox=obs)
+    a2.text(0.50, 0.86, r"$\theta^{\,\mathrm{edit}}(Q,\pi)$", ha="center", va="center", fontsize=MD, bbox=box)
+    a2.text(0.88, 0.86, r"$\theta^{\,\mathrm{do}}(Q,\nu)$", ha="center", va="center", fontsize=MD, bbox=box)
     _rung(a2, 0.86, 0.21, 0.38, "T0  sampling\nassumed, untested", "assumed", ASSC)
     _rung(a2, 0.86, 0.62, 0.81, "T1  transfer\nassumed, untested", "assumed", ASSC)
     a2.text(0.0, 0.98, "artifact side", fontsize=SM, weight="bold", ha="left", color="0.30")
@@ -332,11 +332,11 @@ def p3_fig1_dag():
 
 
 # ----------------------------------------------------------------- paper 2, figure 2
-def p2_fig2_tradeoff():
+def p2_fig2_tradeoff(name="p2_fig2_tradeoff", hi="top dose", lo="low dose"):
     require_p2_source(BASE, "p2_fig2_tradeoff", "make_figures_split.py")
     d = load("c25_screen_full.json")["design"]
-    tgt_lbl = {"contrast@2": "contrast, top dose", "color_var@2": "color variegation, top dose",
-               "contrast@0": "contrast, low dose", "color_var@0": "color variegation, low dose"}
+    tgt_lbl = {"contrast@2": "contrast, " + hi, "color_var@2": "color variegation, " + hi,
+               "contrast@0": "contrast, " + lo, "color_var@0": "color variegation, " + lo}
     mk = {"contrast@2": "o", "color_var@2": "s", "contrast@0": "^", "color_var@0": "D"}
     fig, ax = plt.subplots(figsize=(W1, 4.05))
     for t, ctrls in d.items():
@@ -366,11 +366,16 @@ def p2_fig2_tradeoff():
     ax.text(0.093, 2.7, "(A1) tolerance", fontsize=SM, color="#1f77b4", rotation=90, va="top", ha="right")
     ax.text(0.027, 0.165, "(A2) relative tolerance", fontsize=SM, color="#d62728", ha="left", va="bottom")
     fig.subplots_adjust(left=0.115, right=0.985, top=0.975, bottom=0.185)
-    return save(fig, "p2_fig2_tradeoff")
+    return save(fig, name)
+
+
+def p3_fig2_tradeoff():
+    """Figure 2 of the manuscript: the same plot as p2_fig2_tradeoff, with the doses named highest and lowest."""
+    return p2_fig2_tradeoff("p3_fig2_tradeoff", "highest dose", "lowest dose")
 
 
 if __name__ == "__main__":
-    for fn in (p1_fig1_dag, p1_fig2_forest, p2_fig1_dag, p3_fig1_dag, p2_fig2_tradeoff):
+    for fn in (p1_fig1_dag, p1_fig2_forest, p2_fig1_dag, p3_fig1_dag, p2_fig2_tradeoff, p3_fig2_tradeoff):
         try:
             print("wrote", fn())
         except WrongSourceTree as e:
