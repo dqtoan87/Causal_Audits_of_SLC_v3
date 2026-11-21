@@ -2014,7 +2014,7 @@ check("label proxy never called histopathological; V-E states no verified count"
       "%s %s %s" % ("read as histopathological" in TEXT["supp"] or "histopathological diagnosis by this proxy" in TEXT["supp"],
                     "no verified count of specimen-read labels exists" in TEXT["paper"], "diagnosis-specificity proxy" in TEXT["supp"]), "False True True")
 check("reproduction scope: verifier reads the repository's paper/, only the cross-pipeline comparisons need more (unreleased reimplementation); no 'only external dependency'",
-      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-final-2026-11-21c`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
+      "%s %s %s %s" % ("covered every analysis script," in TEXT["paper"], "from a directory passed with `--paper-dir`, by default the repository's `paper/` directory. The submitted texts are those at the repository tag `manuscript-final-2026-11-21d`" in TEXT["supp"] and "Only the cross-pipeline comparisons need more." in TEXT["supp"] and "the repository does not hold them" not in TEXT["supp"],
                        "for them only the stored result files can be checked" in TEXT["supp"], "The only external dependency" in TEXT["supp"]),
       "False True True False")
 check("C1a constrains only duplicate operators on this library; diagnostic (T) neither tests nor rejects C1a (Table 2, III-C, IV-B, S6)",
@@ -2606,7 +2606,7 @@ if _c64d:
                 "@supp:For the optimized controls, availability records solver convergence only, including the two inexact hue solutions",
                 "@supp:G2: share of the available images of the control that pass the independent CIELAB check of the target"])
 check("ext05 wording: library-specific non-identification, verifier scope, Contribution 3 label, nominal target-only contrast",
-      "%s %s %s %s %s" % ("For a library whose shared-footprint entries implement the same transformation, as established here, assumption (i) and C0 let footprint incidence exclude every identification route" in TEXT["paper"],
+      "%s %s %s %s %s" % ("For a library whose shared-footprint entries implement the same transformation, as in the audited library (Supplementary Section S15), assumption (i) and C0 let footprint incidence exclude every identification route" in TEXT["paper"],
                           "For a general library, footprint incidence alone need not decide connectivity to the latent zero vertex" in TEXT["paper"],
                           "A verifier checks the reported main-text results, their repeated occurrences and the supporting supplementary values against the result files" in TEXT["paper"],
                           "**Library-specific identification analysis and route-consistency diagnostics for placebo corrections.**" in TEXT["paper"],
@@ -2627,8 +2627,8 @@ _old_scope = [s for s in ("are not resolvable", "a patient-clustered version wou
 check("no hard detection limit, no noise-implies-no-decomposition claim, no 'inconsistent routes' in the abstract", str(_old_scope), "[]")
 check("scope statements present (S14 decomposition, III-C library scope, IV-B marginal strata, abstract route sums, V-B checkpoints)",
       " ".join(str(s in (_S if k == "S" else _P)) for k, s in (
-          ("S", "so an exact decomposition of $\\hat R$ need not recover the generating concept term"),
-          ("P", "For such a library, footprint incidence can thus rule out every route but never certify one"),
+          ("S", "$h^\\ast_0$ need not equal the generating concept term, as R4 shows"),
+          ("P", "Footprints never certify a route, because identification also needs N"),
           ("P", "Over both runs, six of seven within-range marginal intervals still lie above 0.5, and the split decides no cell"),
           ("P", "A pre-specified selection-fold test nominally flagged route-sum differences beyond 0.5 logit"),
           ("P", "Verdicts describe one audited checkpoint per architecture and objective, not effects of training objectives"),
@@ -2671,6 +2671,18 @@ check("references: every numbered supplement entry is the main-text entry of the
       str([n for n in sorted(_rs) if _rp.get(n) != _rs[n]]), "[]")
 _cs = {int(x) for x in re.findall(r"\[(\d+)\]", _Sb)}
 check("references: supplement cites only listed entries and lists only cited ones", "%s %s" % (sorted(_cs - set(_rs)), sorted(set(_rs) - _cs)), "[] []")
+_corr = {int(n): m for n, m in re.findall(r"^\| S(\d+) \| [^|]* \| ([^|]*?) \|", _S, re.M)}
+_main_secs = {n for k, s, n in _cites(_Pb) if k == "S" and s == "S"}
+check("correspondence table: no section the main text cites is marked 'supplement only'",
+      str(sorted(n for n in _main_secs if _corr.get(n) == "supplement only")), "[]")
+check("correspondence table: S1 points to III (notation), S13 to V-B with the checkpoint-dependent cell",
+      "%s %s" % (_corr.get(1), "one ResNet-50 Inv benign cell exceeds under the reported checkpoint and is indeterminate, near the tolerance, under a reimplemented one" in _S), "III (notation) True")
+check("route sums use Gamma; no S_a, S_b or route sum S left", str(re.findall(r"S_[ab]\b|route sum is \$S\b|h\^\\ast - S\b", _P + _S)), "[]")
+check("no 'such a library' right after the general-library sentence; conclusion keeps (i) and C0",
+      "%s %s" % ("For such a library, footprint incidence" in _P + _S, "Under assumption (i) and C0, the tested library holds no such route" in _P), "False True")
+check("S14: decomposition needs distinct concept changes; noisy route sum anchored on the R0 component",
+      "%s %s" % ("A library of only two edits that share a footprint and differ in concept change is exactly additive for any two mean responses" in _S,
+                 "the noisy route sum equals the component identified from $R^0$, written $h^\\ast_0$" in _S), "True True")
 # what the main text says each target holds, against that target's caption or heading
 _targets = [("T", 13, "AUROC of each audited checkpoint"), ("T", 27, "diagnostic graph"), ("T", 41, "four inference protocols"),
             ("T", 32, "The cycle test, primary set, both runs"), ("T", 36, "How the verdicts move with the margin"),
